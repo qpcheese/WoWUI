@@ -1,0 +1,5149 @@
+
+AUCTIONATOR_CONFIG = {
+["show_selling_bag_2"] = true,
+["no_price_database"] = false,
+["crafting_info_show_cheapest_qualities_cost"] = false,
+["hide_splash_screen"] = true,
+["enchant_tooltips"] = false,
+["debug"] = false,
+["vendor_tooltips"] = true,
+["selling_favourites_sort_owned"] = false,
+["auctions_history_length"] = 10,
+["selling_icon_size_2"] = 42,
+["auction_duration"] = 24,
+["price_history_days"] = 21,
+["selling_prev_shortcut"] = "BACKSPACE",
+["selling_skip_shortcut"] = "SHIFT-SPACE",
+["shopping_list_missing_terms"] = false,
+["columns_shopping_buy_item"] = {
+["Item Level"] = false,
+["Bid Price"] = false,
+["Available"] = false,
+["Buyout Price"] = false,
+["Seller(s)"] = true,
+["Owned?"] = true,
+},
+["selling_cancel_shortcut"] = "right click",
+["selling_ignored_keys"] = {
+},
+["default_tab"] = 0,
+["shopping_always_confirm_commodity_quantity"] = false,
+["undercut_items_ahead"] = 0,
+["undercut_scan_not_lifo"] = true,
+["undercut_percentage"] = 0,
+["columns_posting_history"] = {
+["Date"] = false,
+["Unit Price"] = false,
+["Bid Price"] = false,
+["Quantity"] = false,
+},
+["pet_tooltips"] = true,
+["selling_missing_favourites"] = true,
+["selling_item_matching"] = "item name and level",
+["gear_vendor_price_multiplier"] = 0,
+["selling_post_shortcut"] = "SPACE",
+["shift_stack_tooltips"] = true,
+["selling_favourite_keys_2"] = {
+},
+["selling_bag_select_shortcut"] = "alt left click",
+["auction_tooltips"] = true,
+["auction_age_tooltips"] = false,
+["replicate_scan_3"] = false,
+["small_tabs"] = false,
+["selling_buy_shortcut"] = "alt right click",
+["selling_confirm_low_price"] = true,
+["selling_should_reselect_item"] = false,
+["columns_selling_search_3"] = {
+["Item Level"] = false,
+["Bid Price"] = false,
+["Available"] = false,
+["Buyout Price"] = false,
+["Time Left"] = true,
+["Seller(s)"] = true,
+["Owned?"] = false,
+},
+["cancel_undercut_shortcut"] = "SPACE",
+["historical_prices"] = {
+["Date"] = false,
+["Unit Price"] = false,
+["Upper Unit Price"] = true,
+["Available"] = false,
+},
+["columns_shopping"] = {
+["Item Level"] = true,
+["Name"] = false,
+["Available"] = false,
+["Price"] = false,
+["Owned?"] = true,
+},
+["autoscan_interval"] = 15,
+["save_last_duration_as_default"] = false,
+["crafting_info_show_cost"] = true,
+["auction_mean_tooltips"] = false,
+["selling_auto_select_next"] = false,
+["columns_shopping_buy_commodity"] = {
+["Buyout Price"] = false,
+["Seller(s)"] = true,
+["Available"] = false,
+},
+["show_selling_bid_price"] = false,
+["columns_shopping_historical_prices"] = {
+["Date"] = false,
+["Unit Price"] = false,
+["Upper Unit Price"] = true,
+["Available"] = false,
+},
+["default_list_2"] = "",
+["auction_mean_days_limit"] = 21,
+["auto_list_search"] = true,
+["auction_chat_log"] = true,
+["crafting_info_show_profit"] = true,
+["mailbox_tooltips"] = true,
+["undercut_static_value"] = 0,
+["selling_bag_collapsed"] = false,
+["default_quantities"] = {
+0,
+1,
+0,
+1,
+nil,
+nil,
+0,
+0,
+0,
+[0] = 0,
+[17] = 1,
+[15] = 0,
+[12] = 0,
+[19] = 0,
+[16] = 0,
+},
+["columns_cancelling"] = {
+["Items Ahead"] = false,
+["Bidder"] = true,
+["Undercut Price"] = true,
+["Quantity"] = false,
+["Bid Price"] = true,
+["Name"] = false,
+["Unit Price"] = false,
+["Time Left"] = false,
+["Undercut?"] = false,
+},
+["auction_sales_preference"] = "percentage",
+["autoscan_2"] = false,
+["splash_screen_version"] = "10.1.6",
+["crafting_info_show"] = true,
+["selling_split_panels"] = false,
+["shopping_last_container_view"] = 1,
+}
+AUCTIONATOR_SAVEDVARS = {
+}
+AUCTIONATOR_SHOPPING_LISTS = {
+{
+["items"] = {
+"\"Aqirite\";;;;;;;;;;;;;5",
+"\"Frayed Wiring\";;;;;;;;;;;;;8",
+"\"Bismuth\";;;;;;;;;;;;;33",
+},
+["name"] = "PSL",
+["isTemporary"] = false,
+},
+{
+["items"] = {
+"Pattern: Draconic Combatant's Resilient Shoulderpads",
+},
+["name"] = "s",
+["isTemporary"] = false,
+},
+}
+AUCTIONATOR_PRICE_DATABASE = {
+["Ragnaros"] = "¹'f193559x¤aa¡d1712Šal€am»ah¡d1712»f127844x¤aa¡d1707al€am'ah¡d1707'f219908x\"¤aa¡d1712àal€amk³°ah¡d1712k³°f200574x!¤aa¡d1705al€am\000pah¡d1705\000pe14593x!¤aa¡d1705al€am\000]˜ah¡d1705\000]˜f210798x9¤aa€al¡d1707\000_¤ah£d1707\0005´d1712\000Ù„d1710\000S\000am\000Ù„e32948x!¤aa¡d1707al€am}x@ah¡d1707}x@f191382x¤aa¡d1707¶al€am¨ah¡d1707¨f223700x\"¤aa¡d1704dal€am€Şah¡d1704€Şf160328x!¤aa¡d1712al€amõàœah¡d1712õàœf223746x¤aa¡d1712ëal€amÃPah¡d1712ÃPe38817x¤aa¡d1712al€am°ah¡d1712°d6043x!¤aa¡d1705\ral€am\000Ùpah¡d1705\000Ùpe25078x!¤aa¡d1712al€ah¡d1712\000LK@am\000LK@d9745x!¤aa¡d1705al€am\0007áxah¡d1705\0007áxf207040x¤aa¡d1707	Çal€am\r¬ah¡d1707\r¬e22838x#¤aa¡d1707^al€am\000³ ah¡d1707\000³ e22829x¤aa¡d1707$al€amìah¡d1707ìe17185x!¤aa¡d1712al€ah¡d1712}ğam}ğe38082x!¤aa¡d1712al€ah¡d1712ëJ amëJ e38862x¤aa¡d1712°al€ah¡d1712qHamqHf121122x!¤aa¡d1705al€amÔk ah¡d1705Ôk e15552x!¤aa¡d1712al€ah¡d1712}äam}äf222894x\"¤aa¡d1712gal€am\000Õxah¡d1712\000Õxf217125x!¤aa¡d1705al€am©•Àah¡d1705©•Àf172413x¤aa¡d1712µal€ah¡d1712hamhf200048x!¤aa¡d1704al€am\000âq$ah¡d1704\000âq$lg:180487:320x!¤aa¡d1712al€ah¡d1712In amIn e38919x!¤aa¡d1705al€am\000‘Dah¡d1705\000‘De22847x\"¤aa¡d17076al€am\000„€ah¡d1707\000„€f152503x¤aa¡d17072al€amŞ¨ah¡d1707Ş¨f183738x¤aa¡d1712*al€am0ah¡d17120e86597x1¤aa¢d1705d1712al€ah¢d1705\000-pd1712\000*j˜am\000*j˜e52775x2¤aa¢d1705	d1712&al€ah¢d1705\000èd1712\000¼am\000¼f224593x\"¤aa¡d1705wal€ah¡d1705\000\n®`am\000\n®`f204623x2¤aa¢d1705jd1712al€ah¢d1705\000‡¤œd1712blÀamblÀd2215x!¤aa¡d1712al€ah¡d1712ÉÂ¸amÉÂ¸f182558x!¤aa¡d1705al€am\000LK@ah¡d1705\000LK@lg:116708:186x!¤aa¡d1705al€am„)xah¡d1705„)xd9899x!¤aa¡d1712al€ah¡d1712\000ù@am\000ù@f191397x\"¤aa¡d1707al€am\000_ah¡d1707\000_e15298x!¤aa¡d1712al€ah¡d1712å°amå°f223777x3¤aa¢d1705±d1712qal€ah¢d1705œ¤d1712ÃüamÃüe15123x!¤aa¡d1712al€ah¡d1712)	am)	d5633x¤aa¡d17079al€am‚ah¡d1707‚e24276x!¤aa¡d1712al€am E\nôah¡d1712 E\nôe15661x!¤aa¡d1705al€am\000¡Œah¡d1705\000¡Œf200572x¤aa¡d17057al€am\"`ah¡d1705\"`lg:224592:561x!¤aa¡d1705al€ah¡d1705\000„€am\000„€e38801x\"¤aa¡d1712*al€am\000 LÀah¡d1712\000 LÀf199938x\"¤aa¡d1712aal€am\000²ah¡d1712\000²f184778x!¤aa¡d1705al€am,ğah¡d1705,ğf153478x3¤aa¢d1705/d1712Pal€ah¢d1705\0002Àd1712\000Ğ,am\000Ğ,e40668x!¤aa¡d1712al€ah¡d1712(am(d9512x!¤aa¡d1705al€ambuXah¡d1705buXd6400x!¤aa¡d1712al€ah¡d1712è¼amè¼lg:160127:242x!¤aa¡d1705al€am\000\\äah¡d1705\000\\äf200576x!¤aa¡d1705al€am\000flah¡d1705\000flf208442x)¤aa¡d1705al€ah¡d1705\000\000\000¡;^ğam\000\000\000¡;^ğe38867x¤aa¡d1712mal€amLah¡d1712Lf168446x#¤aa¡d1712al€ah¡d1712\000	ê¬am\000	ê¬e25082x!¤aa¡d1712al€ah¡d1712\000øèam\000øèd4066x!¤aa¡d1712al€ah¡d1712\000eÕìam\000eÕìe68784x\"¤aa¡d1712 al€am\000T\nØah¡d1712\000T\nØe74705x\"¤aa¡d1712Mal€am\000 ah¡d1712\000 f192994x#¤aa¡d1712[al€am\000-*€ah¡d1712\000-*€e38872x\"¤aa¡d1712$al€am\000)ö0ah¡d1712\000)ö0f198313x!¤aa¡d1705al€amº•,ah¡d1705º•,e31140x!¤aa¡d1705al€am\000˜¶$ah¡d1705\000˜¶$f211574x!¤aa¡d1705al€am\000rah¡d1705\000rf222617x#¤aa¡d1708\rsal€am\000¾ºôah¡d1708\000¾ºôd4500x!¤aa¡d1712\nal€ah¡d1712\000ï,am\000ï,e14602x!¤aa¡d1705al€am}t¬ah¡d1705}t¬f225373x!¤aa¡d1712al€amúğ€ah¡d1712úğ€d2212x!¤aa¡d1712al€ah¡d1712T«üamT«üf199987x#¤aa¡d1712al€am\0003˜ah¡d1712\0003˜e21872x!¤aa¡d1712al€ah¡d1712;š¹˜am;š¹˜f222417x-¤aa¡d17072Òal€am\0003jah¢d1707\000-¹xd1712\0003je38787x¤aa¡d1712%al€ampah¡d1712pe52763x¤aa¡d1712 al€amĞah¡d1712Ğe14409x!¤aa¡d1705al€am\000|°ah¡d1705\000|°e40216x\"¤aa¡d1707zal€am\000Alah¡d1707\000Alf191532x¤aa¡d1707al€amÃPah¡d1707ÃPf159811x!¤aa¡d1712al€ah¡d1712ûÜamûÜf199977x\"¤aa¡d1712~al€ah¡d1712\000BŒam\000BŒf223694x\"¤aa¡d1704bal€am®Ëìah¡d1704®Ëìf164648x!¤aa¡d1712al€ah¡d1712æ½Ôamæ½Ôf128540x¤aa¡d1712Ñal€ah¡d1712LamLf219912x#¤aa¡d1712\r!al€am\000¢œah¡d1712\000¢œf198318x\"¤aa¡d1705íal€amºÀah¡d1705ºÀd8266x!¤aa¡d1705al€am\000jÊ¬ah¡d1705\000jÊ¬f223730x#¤aa¡d1712'al€ah¡d1712Í°èamÍ°èf204622x3¤aa¢d1705d1712al€ah¢d1705\000$ød1712\000&% am\000&% e52784x\"¤aa¡d1712 al€am\000{ah¡d1712\000{e13082x!¤aa¡d1712al€ah¡d1712\000‰6am\000‰6d9805x!¤aa¡d1705al€am\000œah¡d1705\000œf200567x¤aa¡d1705al€amüah¡d1705ülg:222480:550x!¤aa¡d1704al€ah¡d1704\000§ØÀam\000§ØÀd9030x\"¤aa¡d1707Qal€am\000 ¼ah¡d1707\000 ¼f212259x\"¤aa¡d1707Kal€am\000<áğah¡d1707\000<áğe57193x¤aa¡d1707ºal€am´ah¡d1707´f153480x.¤aa¢d1705d1712…al€ah¢d1705\000™Äd1712­pam­pe38842x\"¤aa¡d1712/al€am\00028ah¡d1712\00028lg:224592:545x!¤aa¡d1705al€ah¡d1705\000˜–€am\000˜–€f112164x2¤aa¢d1705	d1712€al€ah¢d1705\000dpd1712\000/¸am\000/¸e44313x!¤aa¡d1712al€ah¡d1712úï¸amúï¸f128550x\"¤aa¡d1712al€ah¡d1712\000J¼am\000J¼e14313x!¤aa¡d1705al€am\000)¼ah¡d1705\000)¼e38918x3¤aa¢d1705!d1712<al€ah¢d1705\000åˆd1712\000åˆam\000åˆe87429x!¤aa¡d1705al€am3Óß\000ah¡d17053Óß\000e38928x¤aa¡d1712Ñal€amÜah¡d1712Üe29536x!¤aa¡d1712al€am§¸ah¡d1712§¸f191398x#¤aa¡d1707ßal€am\000@ˆah¡d1707\000@ˆe17190x!¤aa¡d1712al€ah¡d1712\000OÌam\000OÌe82961x!¤aa¡d1712\nal€ah¡d1712\000Â;pam\000Â;pe39004x¤aa¡d17120al€ah¡d1712âôamâôe15165x!¤aa¡d1705al€am\000Çxah¡d1705\000Çxf198536x\"¤aa¡d1705Ral€am\000¨ah¡d1705\000¨e41602x!¤aa¡d1712al€am\0001—´ah¡d1712\0001—´e44467x2¤aa¢d1705d17121al€ah¢d1705\000ÍÔd1712\000©€am\000©€f128560x¤aa¡d1712:al€am[hah¡d1712[hf200020x\"¤aa¡d1712cal€ah¡d1712\000ÚÏ am\000ÚÏ f194566x¤aa¡d1705?al€amFPah¡d1705FPd2021x!¤aa¡d1712al€ah¡d1712½àam½àf221859x¤aa€al€ah¡d1712\000+Xam\000+Xe74726x3¤aa¢d1705%d1712Tal€ah¢d1705\000\nĞÀd1712\000\nÁèam\000\nÁèf222558x#¤aa¡d1708Q%al€am\000> ah¡d1708\000> lg:224635:545x!¤aa¡d1712al€am\0005s4ah¡d1712\0005s4f121012x!¤aa¡d1705al€amÏ(°ah¡d1705Ï(°kg:76160:171x!¤aa¡d1705al€am;šªÀah¡d1705;šªÀe38809x¤aa¡d1712_al€am\"`ah¡d1712\"`f191389x#¤aa¡d17073al€am\000æ0ah¡d1707\000æ0e67124x!¤aa¡d1712al€ah¡d1712\000ln˜am\000ln˜f110640x¤aa¡d1712mal€ah¡d1712éüaméüe38927x1¤aa¢d1705d1712al€ah¢d1705\000>>`d1712\000><am\000><e56518x!¤aa¡d1705al€am\000˜–ah¡d1705\000˜–f212498x%¤aa€al€ah¢d1710\000lld1712\000Lam\000Le39003x¤aa¡d1712al€ah¡d1712ÂìamÂìf210937xM¤aa¡d1707\000ÙÅal¡d1707\000t„am\000»œah¤d1707\000xd1712\000»œd1705\000¸ d1710\000Käe38948x3¤aa¢d1705.d1712fal€ah¢d1705\000Kq¬d1712\000!‰(am\000!‰(f199976x#¤aa¡d17122al€ah¡d1712\000ğ am\000ğ e38904x\"¤aa¡d1712)al€am\000ãˆah¡d1712\000ãˆf200577x¤aa¡d1705al€am\\0ah¡d1705\\0e13518x!¤aa¡d1707al€amÍd8ah¡d1707Íd8d2221x!¤aa¡d1712al€ah¡d1712N©pamN©pf223666x'¤aa¡d1712\r—al¡d1712Ûˆah¡d1712ÛìamÛˆe74724x3¤aa¢d1705d1712Val€ah¢d1705\000	áLd1712\000	/,am\000	/,f152497x¤aa¡d1707˜al€am¢ah¡d1707¢f221874x\"¤aa¡d1707pal€am\000jÔah¡d1707\000jÔlg:215130:518x!¤aa¡d1705al€ah¡d1705\000¹Xam\000¹Xd2459x¤aa¡d17070èal€am:˜ah¡d1707:˜f221799x\"¤aa¡d1704Xal€ah¡d1704u\000amu\000f141908x\"¤aa¡d1712Fal€am\000\n!Àah¡d1712\000\n!Àe23530x!¤aa¡d1712al€am@ ¼ah¡d1712@ ¼e43530x!¤aa¡d1707al€am×„\000ah¡d1707×„\000lg:198243:346x!¤aa¡d1704al€ah¡d1704¿Œam¿Œf201316x\"¤aa¡d1712:al€am\000-ÆÀah¡d1712\000-ÆÀf194017x#¤aa¡d1712al€ah¡d1712\000ÕDam\000ÕDlg:222480:564x\"¤aa¡d1704al€ah¡d1704O_xamO_xe14912x!¤aa¡d1712al€ah¡d1712'¨am'¨f223688x!¤aa¡d1712	al€amÚÁøah¡d1712ÚÁøf152494x¤aa¡d1707Ìal€ampah¡d1707pf224800x#¤aa¡d1707.al€am\000¬ah¡d1707\000¬e38911x3¤aa¢d1707>d1712)al€ah¢d1707\000hèd1712\000hèam\000hèf110654x\"¤aa¡d17120al€ah¡d1712\000BDam\000BDf204568x!¤aa¡d1712al€amõàœah¡d1712õàœf199957x¤aa¡d1712éal€ah¡d1712× am× lg:215130:521x!¤aa¡d1705al€ah¡d1705\000ªÈam\000ªÈd6559x!¤aa¡d1712al€ah¡d1712\000C©|am\000C©|e38940x\"¤aa¡d1712)al€ah¡d1712\000^ am\000^ e38823x\"¤aa¡d1712al€am\000[ah¡d1712\000[f181393x!¤aa¡d1712al€ah¡d1712#Y†„am#Y†„f172360x¤aa¡d1712)al€ah¡d1712lamle82281x!¤aa¡d1705al€am\000>×ah¡d1705\000>×lg:222480:557x!¤aa¡d1704al€ah¡d1704\000äº°am\000äº°f223788x!¤aa¡d1712al€ah¡d1712b^Lamb^Lf223794x\"¤aa¡d1712<al€ah¡d1712®¥@am®¥@e38773x.¤aa¢d1707vd1712,al€ah¢d1707Üd1712:4am:4lg:182558:320x!¤aa¡d1705al€amÎ\"@ah¡d1705Î\"@e15530x!¤aa¡d1712al€ah¡d1712\000íEham\000íEhe52750x¤aa¡d1712mal€ah¡d1712´am´f222835x\"¤aa¡d1705Nal€am\000/¼ah¡d1705\000/¼f199975x3¤aa¢d1705Ñd1712Pal€ah¢d1705\000h d1712\000Æ<am\000Æ<f110639x\"¤aa¡d1712&al€ah¡d1712\000—lam\000—lf191393x¤aa¡d1707Val€am¸ah¡d1707¸f200570x¤aa¡d1705al€amWah¡d1705Wf199961x¤aa¡d1704al€amøÔah¡d1704øÔf144396x!¤aa¡d1707al€amëµah¡d1707ëµe15332x!¤aa¡d1712al€ah¡d1712BEÄamBEÄf221876x#¤aa¡d1707ºal€am\000pah¡d1707\000pf194020x!¤aa¡d1712al€am/¡Lah¡d1712/¡Le38782x/¤aa¢d1707qd1712aal€ah¢d1707\000‘d1712¹(am¹(f199981x\"¤aa¡d1712èal€am\0008€ah¡d1712\0008€f200035x#¤aa¡d1712nal€ah¡d1712\000G˜am\000G˜e39001x\"¤aa¡d1712Kal€ah¡d1712\000jäam\000jäf177716x¤aa¡d1712\nÚal€amèah¡d1712èe10185x!¤aa¡d1705al€am\000<ah¡d1705\000<lg:121012:214x!¤aa¡d1705al€amÏ(°ah¡d1705Ï(°f109221x¤aa¡d1707.al€amˆah¡d1707ˆe38980x¤aa¡d1712[al€am*øah¡d1712*øf191383x#¤aa¡d1707¥åal€am\000&$ah¡d1707\000&$lg:204965:379x!¤aa¡d1712al€ama-î\000ah¡d1712a-î\000f199999x¤aa¡d1712{al€ah¡d1712ÅDamÅDf200058x3¤aa¢d1705±d17128al€ah¢d1705÷‰d1712\000ÕÅdam\000ÕÅde38808x.¤aa¢d1707åd1712¿al€ah¢d1707¤d1712@am@f159809x!¤aa¡d1712al€ah¡d1712bY8ambY8e25073x!¤aa¡d1712	al€ah¡d1712zŞ amzŞ e18511x!¤aa¡d1705al€amSÔ­üah¡d1705SÔ­üd9804x!¤aa¡d1712al€ah¡d1712\000pqğam\000pqğd9294x¤aa¡d1707al€amKdah¡d1707Kde36413x!¤aa¡d1705al€am\000O€ah¡d1705\000O€f109222x¤aa¡d1707ƒal€amM¼ah¡d1707M¼e74722x¤aa¡d17124al€amA<ah¡d1712A<f200056x2¤aa¢d1705\nd1712,al€ah¢d1705\000ş\\Ìd1712b/amb/f222896x#¤aa¡d1712cal€ams· ah¡d1712s· e52769x\"¤aa¡d17125al€ah¡d1712\000ô\\am\000ô\\f201315x¤aa¡d1712™al€amÌ°ah¡d1712Ì°lg:176795:170x!¤aa¡d1712al€ah¡d1712\000«…`am\000«…`f191379x¤aa¡d1707\r]al€am\\ah¡d1707\\f168593x3¤aa¢d1705d1712šal€ah¢d1705\000ôxd1712\000#Ğam\000#Ğf169433x!¤aa¡d1705al€améˆ@ah¡d1705éˆ@d6572x!¤aa¡d1712al€ah¡d1712\000—õôam\000—õôe36453x!¤aa¡d1712al€ah¡d1712±|am±|f206494x!¤aa¡d1712al€ah¡d1712(cGÜam(cGÜd4597x)¤aa¡d1707al€am\000\000\000¨È\000ah¡d1707\000\000\000¨È\000e14916x!¤aa¡d1712al€ah¡d1712\000[˜pam\000[˜pe55426x!¤aa¡d1712al€ah¡d1712	\nïam	\nïf201394x!¤aa¡d1712al€ah¡d1712'}„am'}„e56551x!¤aa¡d1712al€am\0000Ô\000ah¡d1712\0000Ô\000e13494x!¤aa¡d1707al€am\000œah¡d1707\000œf200045x\"¤aa¡d1704«al€amb2ğah¡d1704b2ğf223618x!¤aa¡d1712al€ah¡d1712xhÀamxhÀf128561x\"¤aa¡d1712Üal€am\000¥àah¡d1712\000¥àkg:37747:202x!¤aa¡d1712al€ah¡d1712Û¨ amÛ¨ e45810x!¤aa¡d1705al€amğï ah¡d1705ğï e52774x2¤aa¢d1705d1712\"al€ah¢d1705\000Jld1712\000Ãam\000Ãf172347x¤aa¡d1704éal€amĞah¡d1704Ğe22837x\"¤aa¡d1707Âal€am\00020ah¡d1707\00020d2217x!¤aa¡d1712al€ah¡d1712\000-æÈam\000-æÈe44463x\"¤aa¡d1712#al€am\000—&ìah¡d1712\000—&ìe31677x!¤aa¡d1707al€am\000!ah¡d1707\000!e22826x¤aa¡d1707xal€amÒ(ah¡d1707Ò(f192993x#¤aa¡d1712al€am\000WPah¡d1712\000WPe38894x!¤aa¡d1712al€ah¡d1712\000M÷`am\000M÷`e38831x#¤aa¡d1712óal€am\000òğah¡d1712\000òğf223652x\"¤aa¡d1712wal€ah¡d1712¼ÀÈam¼ÀÈf199996x¤aa¡d1712(al€ah¡d1712Ê¼amÊ¼e38832x\"¤aa¡d1712Dal€am\000Ëüah¡d1712\000Ëüe52762x¤aa¡d1712fal€am4Xah¡d17124Xe98810x!¤aa¡d1712al€ah¡d1712èamèe87486x!¤aa¡d1712al€ah¡d1712'Œam'Œd9397x!¤aa¡d1705al€am&lah¡d1705&lf116266x¤aa¡d1707óal€amÜah¡d1707Ülg:222841:544x!¤aa¡d1704al€ah¡d1704ÉÃ€amÉÃ€f223724x#¤aa¡d1712yal€amÈ<àah¡d1712È<àf180318x¤aa¡d1707ual€amxah¡d1707xe38810x¤aa¡d1712ªal€ah¡d1712PÜamPÜf217707xC¤aa€al¡d1707\000WÍXam\0007şÄah¤d1707\000ZÊ0d1712\0007şÄd1705\000-ÆÀd1710\000Ub4lg:224599:525x¤aa€al€am\000˜–€ah¡d1712\000˜–€lg:224609:434x!¤aa¡d1712al€ah¡d1712\000=\nôam\000=\nôe38836x\"¤aa¡d1712 al€am\000pah¡d1712\000pe15153x!¤aa¡d1705al€am\000E•¬ah¡d1705\000E•¬d2216x!¤aa¡d1712al€ah¡d1712\000äàøam\000äàød8216x!¤aa¡d1705al€am$óœah¡d1705$óœf199994x\"¤aa¡d1712”al€ah¡d1712\000\\am\000\\e38800x\"¤aa¡d1712#al€am\000 ah¡d1712\000 d3817x!¤aa¡d1712al€ah¡d1712\000?Ådam\000?Ådlg:224609:538x¤aa€al€am\0007ôœah¡d1712\0007ôœd2451x!¤aa¡d1712al€ah¡d1712\000T9Tam\000T9Tf223707x\"¤aa¡d1704½al€am\n.ˆah¡d1704\n.ˆe25074x!¤aa¡d1712	al€ah¡d1712êAamêAe14954x!¤aa¡d1712al€ah¡d1712{©Lam{©Le10366x!¤aa¡d1712al€ah¡d1712f¯pamf¯plg:168602:274x!¤aa¡d1705al€amü¹üah¡d1705ü¹üf193208x¤aa¡d1705\000ß†al€amdah¡d1705de25031x!¤aa¡d1705al€amŠ2Èah¡d1705Š2Èe15486x!¤aa¡d1712al€ah¡d1712!Eüam!Eüe45060x¤aa¡d1705al€amhah¡d1705hd2304x¤aa¡d1704Šal€amˆah¡d1704ˆe38966x¤aa¡d1712al€ah¡d1712Á\\amÁ\\f191365x¤aa¡d1707ºal€am0ah¡d17070e38925x3¤aa¢d1705Bd1712‡al€ah¢d1705\000=ìd1712\000oìam\000oìe74721x\"¤aa¡d1712al€am\000§Lah¡d1712\000§Ld1470x¤aa¡d1712al€ah¡d1712'am'e38951x¤aa¡d1712cal€amXah¡d1712Xe44936x!¤aa¡d1712al€am\000jÏÀah¡d1712\000jÏÀlg:211543:451x!¤aa¡d1705al€amõà8ah¡d1705õà8e22914x!¤aa¡d1707al€amxhÀah¡d1707xhÀlg:224609:483x!¤aa¡d1712al€ah¡d1712\0007ôœam\0007ôœf223753x\"¤aa¡d1712al€am\000ålah¡d1712\000åle15894x!¤aa¡d1712al€ah¡d1712ßÒ@amßÒ@f110653x\"¤aa¡d17120al€ah¡d1712\000	8am\000	8e38886x\"¤aa¡d1712al€am\000jxah¡d1712\000jxd1204x!¤aa¡d1712al€ah¡d1712­Ìam­Ìe74713x¤aa¡d1712kal€ah¡d1712xamxf224802x#¤aa¡d1707Ğ¸al€am\000¬„ah¡d1707\000¬„e38863x!¤aa¡d1712al€ah¡d1712\000rp|am\000rp|lg:199019:357x!¤aa¡d1705al€am\000-ÆÀah¡d1705\000-ÆÀf211602x!¤aa¡d1705al€am\000rah¡d1705\000rf219911x#¤aa¡d1712Xal€am\000pah¡d1712\000pf213612xM¤aa¡d1708\000“gal¢d1707\000\nhd1708\000¼Àah£d1707\000\rFpd1712\000é@d1708\000Âøam\000é@e38835x\"¤aa¡d1712!al€ah¡d1712\000¥˜am\000¥˜e38779x2¤aa¢d1705d17127al€ah¢d1705\000† d1712\000†<am\000†<f128543x¤aa¡d1712ñal€ah¡d17120Ôam0Ôf172346x¤aa¡d1704al€am\nğah¡d1704\nğf194570x¤aa¡d17053al€am:˜ah¡d1705:˜d7056x!¤aa¡d1705al€am%« ah¡d1705%« f199940x¤aa¡d1712Eal€amĞ4ah¡d1712Ğ4f210933xC¤aa¡d1707\000yÃal¡d1707\000=Ôam\000\"|ah£d1707\000W8d1712\000\"|d1710\000&dd4797x!¤aa¡d1705al€am\000P›ğah¡d1705\000P›ğlg:204916:418x!¤aa¡d1705al€ah¡d1705o²¼amo²¼e38975x¤aa¡d1712%al€am&Hah¡d1712&Hf212239x#¤aa¡d1707,;al€am\000¬ah¡d1707\000¬f159464x¤aa¡d1712sal€am*øah¡d1712*øe93437x!¤aa¡d1705al€am0Àah¡d17050Àf223657x#¤aa¡d1712áal€ah¡d1712\000[„am\000[„f199955x¤aa¡d1712¨al€ah¡d1712Ã´amÃ´f116693x!¤aa¡d1705al€am\000LY´ah¡d1705\000LY´e85853x!¤aa¡d1705al€amM^„ah¡d1705M^„f200566x¤aa¡d1705al€am'ah¡d1705'e38774x¤aa¡d1712/al€amddah¡d1712ddlg:224592:483x!¤aa¡d1705al€am\000%bPah¡d1705\000%bPf199966x3¤aa¢d1705?d1712Ûal€ah¢d1705ô$d1712\000	'Àam\000	'Àe14800x!¤aa¡d1712al€ah¡d1712+†Tam+†Tf199979x¤aa¡d1712mal€amÇ8ah¡d1712Ç8d6051x¤aa¡d1707Dal€am*øah¡d1707*øf200036x#¤aa¡d1712~al€ah¡d1712\000\r@am\000\r@lg:222474:545x!¤aa¡d1712al€am\000*£ ah¡d1712\000*£ f191241x!¤aa¡d1704al€ah¡d1704\000<AÈam\000<AÈf224828x9¤aa€al¡d1707\000[`ah£d1707\000‚pd1712\000·d1710\000ºğam\000·f128542x\"¤aa¡d1712Lal€ah¡d1712\000kHam\000kHe38954x¤aa¡d1712Pal€am-´ah¡d1712-´e38902x\"¤aa¡d1712al€am\000’°ah¡d1712\000’°e54447x¤aa¡d1712dal€amN ah¡d1712N f168448x\"¤aa¡d1712|al€ah¡d1712\000Tam\000Tf211605x!¤aa¡d1705al€am\000˜opah¡d1705\000˜ope86599x!¤aa¡d1712al€amW|lah¡d1712W|lf207041x¤aa¡d1707&al€amLah¡d1707Ld2219x!¤aa¡d1712al€ah¡d1712\000[Ñam\000[Ñf201317x\"¤aa¡d1712*al€am\000<áğah¡d1712\000<áğf142541x!¤aa¡d1705al€am\000¾¼ ah¡d1705\000¾¼ e38999x\"¤aa¡d1712+al€am\000\r ah¡d1712\000\r f207087x3¤aa¢d1705Jd1712al€ah¢d1705å0d1712}x@am}x@d7483x!¤aa¡d1705al€am\000!êĞah¡d1705\000!êĞe38840x2¤aa¢d1705d17122al€ah¢d1705\000°d1712\000\rÖ0am\000\rÖ0lg:222480:538x!¤aa¡d1704al€ah¡d1704\000Èàam\000Èàe38922x!¤aa¡d1705\nal€am\000ºğah¡d1705\000ºğlg:191242:326x!¤aa¡d1704al€amø ah¡d1704ø f204370x#¤aa¡d1707¦al€am\000’xah¡d1707\000’xf199963x!¤aa¡d1704al€am\000Å˜ah¡d1704\000Å˜e10078x!¤aa¡d1712al€ah¡d1712\000Ëk\000am\000Ëk\000f194569x!¤aa¡d1705al€am\000>pah¡d1705\000>pe31942x!¤aa¡d1705al€amNKh€ah¡d1705NKh€e10060x!¤aa¡d1705al€am\000œtah¡d1705\000œte40087x¤aa¡d1707hal€am|ah¡d1707|lg:224624:564x!¤aa¡d1705al€am\000;‚`ah¡d1705\000;‚`e44470x\"¤aa¡d1712-al€am\000µah¡d1712\000µd6048x\"¤aa¡d1707oal€am\000©€ah¡d1707\000©€e38853x\"¤aa¡d1712Val€am\000µ\\ah¡d1712\000µ\\e22660x!¤aa¡d1705al€am(¬ah¡d1705(¬f191384x¤aa¡d1707=.al€amlüah¡d1707lüe69800x!¤aa¡d1705al€am\000ÿŒah¡d1705\000ÿŒlg:224609:545x!¤aa¡d1712al€ah¡d1712\000˜–am\000˜–f118874x!¤aa¡d1712al€ah¡d1712âg*àamâg*àe38946x1¤aa¢d1705d1712al€ah¢d1705\0004_d1712\0004Vam\0004Vf199973x2¤aa¢d1705d1712Dal€ah¢d1705\000Zôd1712\000öØam\000öØf127017x!¤aa¡d1705al€amz™lah¡d1705z™lf118814x!¤aa¡d1705al€amÍi°ah¡d1705Íi°f128537x¤aa¡d1712al€ah¡d1712%am%f128558x¤aa¡d1712*al€am\"`ah¡d1712\"`f194572x¤aa¡d1705al€am@ah¡d1705@e38847x\"¤aa¡d1712`al€am\000Xäah¡d1712\000Xäf223738x#¤aa¡d1712Mal€ah¡d1712\000¶Àam\000¶Àd6599x!¤aa¡d1712al€ah¡d1712\000p;@am\000p;@f172367x,¤aa¢d1705d1712¬al€ah¢d1705s<d1712:˜am:˜f223780x5¤aa¢d1705d1712Val€ah¢d1705	÷ d1712WìàamWìàf128554x\"¤aa¡d1712­al€am\000¾Xah¡d1712\000¾Xf210796xW¤aa€al£d1707\000”d1705\000Ğd1710\000º(ah¤d1707\000©€d1712\000Îd1705\000Öd1710\000(am\000Îf199954x¤aa¡d1712ùal€ah¡d1712Å¨amÅ¨f204916x!¤aa¡d1705al€ah¡d1705o²¼amo²¼f171264x¤aa¡d1707al€am ah¡d1707 f222480x\"¤aa¡d17046al€ah¡d1704\000Èàam\000Èàf191520x¤aa¡d1707Qal€amXah¡d1707Xf201365x!¤aa¡d1712al€ah¡d1712G;ÀamG;Àf153445x\"¤aa¡d1712Yal€ah¡d1712\000Aam\000Af193564x\"¤aa¡d1712”al€am\0008'\000ah¡d1712\0008'\000e55432x!¤aa¡d1712al€ah¡d1712\0005gàam\0005gàe38812x¤aa¡d1712.al€am%€ah¡d1712%€e38929x¤aa¡d1712Ual€amìah¡d1712ìf144305x\"¤aa¡d17128al€am\000E<ah¡d1712\000E<e31676x¤aa¡d1707+al€am'ah¡d1707'lg:224609:564x!¤aa¡d1712al€ah¡d1712+öpam+öpe22846x\"¤aa¡d1707~al€am\000ú¤ah¡d1707\000ú¤e38870x2¤aa¢d1705d1712:al€ah¢d1705\000âÀd1712\000â\\am\000â\\f222890x#¤aa¡d1712mal€am\000İ;Œah¡d1712\000İ;Œf153441x¤aa¡d1712fal€ah¡d1712|am|e38769x¤aa¡d17121al€am\000ah¡d1712\000lg:224609:561x!¤aa¡d1712	al€ah¡d1712\000ÎÎ”am\000ÎÎ”f128538x¤aa¡d1712tal€ah¡d1712:4am:4f222855x\"¤aa¡d1712Mal€am\000j¨Lah¡d1712\000j¨Le44453x,¤aa¢d1705\nd1712Dal€ah¢d17053d1712‘´am‘´f175241x¤aa¡d1707ğal€am¸ah¡d1707¸f210246x¤aa€al€am\000NÄah¡d1712\000NÄlg:224593:525x!¤aa¡d1705al€am1,œah¡d17051,œf204701x#¤aa¡d1712×al€am\000\n90ah¡d1712\000\n90f223687x!¤aa¡d1712al€amŞ)\000ah¡d1712Ş)\000e13446x¤aa¡d1707<al€amXah¡d1707Xf223786x\"¤aa¡d1712&al€ah¡d1712“‰Xam“‰Xf127031x!¤aa¡d1705al€amB{ah¡d1705B{f198262x\"¤aa¡d1704!al€ah¡d1704\000¾âÌam\000¾âÌf172364x¤aa¡d1712Gal€ah¡d1712ˆamˆlg:193522:346x!¤aa¡d1705al€am‹~|ah¡d1705‹~|f223664x5¤aa¢d1707rd1712µal€ah¢d1707\000Pd1712\000KÖam\000KÖkg:90575:168x!¤aa¡d1712al€ah¡d1712Š(amŠ(e15893x!¤aa¡d1712al€ah¡d1712\000å5¼am\000å5¼e45493x!¤aa¡d1705al€am\000„€ah¡d1705\000„€e38879x2¤aa¢d1705d1712)al€ah¢d1705\000å(d1712\000nham\000nhe74725x1¤aa¢d1705d1712!‡al€ah¢d1705\0000Ld1712İamİkg:71038:181x!¤aa¡d1712al€ah¡d1712n6\000amn6\000f112160x0¤aa¢d1705d17126al€ah¢d1705œ@d1712\0002Àam\0002Àd7969x!¤aa¡d1712al€ah¡d1712\000L4üam\000L4üf200009x2¤aa¢d1705d1712³al€ah¢d1705\000·\000d1712\000Í\\am\000Í\\f124661x#¤aa¡d1707Šal€am\000Üah¡d1707\000Üe52747x0¤aa¢d1705d1712Cal€ah¢d1705¸Äd1712\000^0am\000^0e10518x!¤aa¡d1705al€amÀDØah¡d1705ÀDØf121067x!¤aa¡d1705al€am\000‡ah¡d1705\000‡f191381x¤aa¡d1707Hal€am'ah¡d1707'f223758x4¤aa¢d1705zd1712al€ah¢d1705G9Ìd1712ùUôamùUôe14673x!¤aa¡d1705al€am\000TŒ$ah¡d1705\000TŒ$e44493x3¤aa¢d1705,d17127al€ah¢d1705\0009Ød1712\000Ÿ,am\000Ÿ,f204613x1¤aa¢d1705d1712al€ah¢d1705\000zd1712\000S\000am\000S\000e38767x¤aa¡d1712’al€am	Äah¡d1712	Äf174780x!¤aa¡d1712al€ah¡d1712\000¡„am\000¡„f200017x3¤aa¢d1705:d17124al€ah¢d1705\0009ûÀd1712\000*¹€am\000*¹€e13460x!¤aa¡d1707al€am\000äáÀah¡d1707\000äáÀf222892x#¤aa¡d1712Lal€amÊŒah¡d1712ÊŒe94214x!¤aa¡d1712al€ah¡d1712;ëÜam;ëÜe52772x\"¤aa¡d1712ƒal€am\000«Pah¡d1712\000«Pf128549x\"¤aa¡d1712/al€ah¡d1712\000¸Òam\000¸Òe22839x¤aa¡d1707al€amÃPah¡d1707ÃPf128552x\"¤aa¡d1712èal€am\000\nÈ(ah¡d1712\000\nÈ(f223653x\"¤aa¡d1712Oal€ah¡d1712¬˜am¬˜f200047x#¤aa¡d1704åal€am\0005°ah¡d1704\0005°f192553x¤aa¡d1705eal€am:˜ah¡d1705:˜e25072x!¤aa¡d1712al€ah¡d1712¢mtam¢mtf223655x\"¤aa¡d1712ˆal€ah¡d1712©2$am©2$f212240x#¤aa¡d1707ßal€am\000,0ah¡d1707\000,0lg:215130:528x!¤aa¡d1705al€ah¡d1705“¨˜am“¨˜f199947x¤aa¡d1712§al€ah¡d1712ò0amò0e52770x¤aa¡d1712]al€amˆah¡d1712ˆkg:36448:170x!¤aa¡d1712al€ah¡d1712“•tam“•tf194015x\"¤aa¡d1712al€am\000\rmah¡d1712\000\rmf222891x#¤aa¡d17122al€am )ˆah¡d1712 )ˆe24273x!¤aa¡d1712al€amB>ˆah¡d1712B>ˆf200000x¤aa¡d1712’al€ah¡d1712ğ amğ e42508x!¤aa¡d1712al€ah¡d1712ÄB\000amÄB\000e38807x¤aa¡d1712Mal€ah¡d1712¤am¤f116276x¤aa¡d1707¸al€am4ah¡d17074lg:184778:200x!¤aa¡d1705al€am,ğah¡d1705,ğe52781x\"¤aa¡d1712al€ah¡d1712\000†¸am\000†¸e14729x!¤aa¡d1712al€ah¡d1712\000ØeDam\000ØeDf200021x¤aa¡d1712øal€améüah¡d1712éüf177659x¤aa¡d1712al€am<ah¡d1712<f223750x\"¤aa¡d1712al€amŞ:Pah¡d1712Ş:Pf225566w¤aa€al€ah¡d1712'am'e41117x!¤aa¡d1712al€ah¡d17124F€am4F€e14852x!¤aa¡d1712al€ah¡d1712i½Üami½Üf199946x!¤aa¡d1712al€amS+€ah¡d1712S+€f223693x!¤aa¡d1704al€am4“@ah¡d17044“@f223672x\"¤aa¡d1712@al€ah¡d1712ÄÇìamÄÇìf164282x!¤aa¡d1712al€ah¡d1712aÉ(amaÉ(lg:144401:243x!¤aa¡d1705al€am\000äáÀah¡d1705\000äáÀf153440x¤aa¡d1712;al€ah¡d1712üamülg:106430:186x!¤aa¡d1712al€ah¡d1712	D¦am	D¦f168501x\"¤aa¡d1707÷al€am\000pah¡d1707\000plg:116693:186x!¤aa¡d1705al€am\000LY´ah¡d1705\000LY´f172357x¤aa¡d1712ral€ah¡d1712@am@e55430x!¤aa¡d1712al€ah¡d1712‘@”am‘@”lg:144399:243x!¤aa¡d1705al€am¿·<ah¡d1705¿·<f199986x#¤aa¡d1712Õal€am\0003˜ah¡d1712\0003˜e38901x¤aa¡d1712al€amu”ah¡d1712u”f223667x#¤aa¡d1712ßal€ah¡d1712\000øÌam\000øÌe40093x¤aa¡d1707àal€amu0ah¡d1707u0f200055x5¤aa¢d1705d1712Qal€ah¢d1705\0005{hd1712\000<Õam\000<Õe14781x!¤aa¡d1705al€am\000´ah¡d1705\000´f171391x!¤aa¡d1712al€ah¡d1712v+@amv+@e46026x!¤aa¡d1712al€am\000L,dah¡d1712\000L,de38884x\"¤aa¡d1712)al€am\000´ah¡d1712\000´e38811x¤aa¡d1712*al€amrØah¡d1712rØlg:229069:564x!¤aa¡d1705al€amõá\000ah¡d1705õá\000lg:159199:320x!¤aa¡d1705al€amş\\Xah¡d1705ş\\Xlg:175010:278x!¤aa¡d1712al€ah¡d1712kIìamkIìe24275x!¤aa¡d1712al€am\000{òah¡d1712\000{òe38860x\"¤aa¡d1712}al€am\000\räah¡d1712\000\räe52745x¤aa¡d17124al€ah¡d1712º¸amº¸e38964x¤aa¡d1712Fal€amD\\ah¡d1712D\\f199998x¤aa¡d17122al€ah¡d1712Ç8amÇ8f223696x\"¤aa¡d1704½al€am’\000`ah¡d1704’\000`lg:224593:564x\"¤aa¡d1705*al€ah¡d1705\000Dª am\000Dª f223764x4¤aa¢d1705Gd1712?al€ah¢d1705/ƒÀd1712j¹Lamj¹Le45811x!¤aa¡d1705al€am<8ah¡d1705<8kg:14982:186x!¤aa¡d1712al€ah¡d1712ÕùœamÕùœe40214x#¤aa¡d1707!al€am\000	£øah¡d1707\000	£øe52767x¤aa¡d1712oal€ah¡d17120am0f223681x!¤aa¡d1712al€amxoÈah¡d1712xoÈf223663x3¤aa¢d1707>d1712Õal€ah¢d1707ÃPd1712\000â€am\000â€e30729x!¤aa¡d1705al€am\000zah¡d1705\000zlg:121232:214x!¤aa¡d1705al€am\000Xr0ah¡d1705\000Xr0f210134x!¤aa¡d1705al€amAµ8ah¡d1705Aµ8f199019x!¤aa¡d1705al€am\000-ÆÀah¡d1705\000-ÆÀf211562x!¤aa¡d1705al€amş}lah¡d1705ş}lf205043x\"¤aa¡d1712Œal€amÄÚ¬ah¡d1712ÄÚ¬lg:191241:346x!¤aa¡d1704al€ah¡d1704\000<ELam\000<ELf211593x!¤aa¡d1705al€ah¡d1705\000ram\000re54443x!¤aa¡d1712al€ah¡d1712\000L]œam\000L]œf223712x#¤aa¡d1712bal€amÍ6@ah¡d1712Í6@e15648x!¤aa¡d1712al€ah¡d1712¸•Tam¸•Te14930x!¤aa¡d1712al€ah¡d1712-Alam-Allg:175010:272x!¤aa¡d1712al€ah¡d1712kI[@amkI[@f118015x2¤aa¢d1705d17128al€ah¢d1705\0006ˆd1712\000Vham\000Vhf213611x¤aa€al€ah¡d1712\000ùğam\000ùğf221910x!¤aa¡d1707al€amæ‹pah¡d1707æ‹pe25650x¤aa¡d1704;al€am'ah¡d1704'kg:59466:177x!¤aa¡d1705al€amúè°ah¡d1705úè°f200044x#¤aa¡d1712Åal€ah¡d1712\000B@am\000B@f199960x¤aa¡d1712«al€ah¡d1712ËèamËèf193253x¤aa¡d1705\"al€amˆah¡d1705ˆe38818x¤aa¡d1712mal€am\r¬ah¡d1712\r¬f219907x#¤aa¡d1712:al€amå9øah¡d1712å9øe45628x¤aa¡d17127al€ah¡d1712MXamMXf187442x!¤aa¡d1712al€ah¡d1712õá\000amõá\000f172366x-¤aa¢d1705d1712al€ah¢d1705Td1712N amN f187802x¤aa¡d1707	1al€amCøah¡d1707Cøf171271x¤aa¡d1707ëal€amhah¡d1707hlg:165925:270x!¤aa¡d1705al€am\000CæĞah¡d1705\000CæĞf199953x¤aa¡d1712Áal€ah¡d1712ÍÜamÍÜf198312x!¤aa¡d1705al€amNœah¡d1705Nœf223752x\"¤aa¡d1712Mal€am\000—Èah¡d1712\000—Èf164271x!¤aa¡d1712al€ah¡d1712ë¢Àamë¢Àe74711x¤aa¡d1712hal€ah¡d1712%am%f199204x¤aa¡d1705/al€amah¡d1705lg:224593:532x!¤aa¡d1705al€am\000\n®`ah¡d1705\000\n®`f223726x#¤aa¡d1712Ìal€ah¡d1712\000ü4am\000ü4f222609x#¤aa¡d1708]al€am\000—€ah¡d1708\000—€e15990x!¤aa¡d1712al€ah¡d1712ƒ\\amƒ\\e15687x!¤aa¡d1712al€ah¡d1712ß\\Hamß\\Hkg:10098:197x!¤aa¡d1705al€am\0005hah¡d1705\0005hf172412x¤aa¡d1712al€ah¡d1712#(am#(f121232x!¤aa¡d1705al€am\000Xr0ah¡d1705\000Xr0lg:211536:451x!¤aa¡d1705al€ah¡d1705Ğ\000amĞ\000f210802xM¤aa¡d1707\000ËÜal¡d1707\000\rdah¤d1707\000/`d1712\000d1705\000IŒd1710\000\"àam\000e14964x!¤aa¡d1712al€ah¡d1712Ş,€amŞ,€f223783x!¤aa¡d1712al€am;š¢ğah¡d1712;š¢ğf198311x!¤aa¡d1705al€am\000q\\ah¡d1705\000q\\f183823x¤aa¡d1707Íal€am\nŒah¡d1707\nŒe38990x\"¤aa¡d1712#al€am\000øah¡d1712\000ølg:169433:242x!¤aa¡d1705al€améˆ@ah¡d1705éˆ@e14103x!¤aa¡d1705al€am\000Õ5¤ah¡d1705\000Õ5¤f193560x#¤aa¡d1712[al€am\000Ï$ah¡d1712\000Ï$e38803x¤aa¡d1712Lal€amÜah¡d1712Üf199949x¤aa¡d1712al€ah¡d1712Ù0amÙ0f223671x#¤aa¡d1712@al€ah¡d1712\000T¯°am\000T¯°f171270x¤aa¡d1707)al€am\nğah¡d1707\nğlg:224632:558x¤aa€al€ah¡d1712\0008u am\0008u f106562x!¤aa¡d1712al€ah¡d1712»|ôam»|ôf177962x¤aa¡d1712‚al€am#(ah¡d1712#(f223776x3¤aa¢d1705sd1712al€ah¢d1705õôìd1712şÜamşÜlg:169435:242x!¤aa¡d1705al€amXx”ah¡d1705Xx”f210806xM¤aa€al¢d1707\000Ş`d1710\000\r@am\000ÆŒah¤d1707\000Z˜d1712\000ÆŒd1705\000åhd1710\000pe22198x!¤aa¡d1712al€ah¡d1712#­U4am#­U4f164266x!¤aa¡d1712al€ah¡d1712;Ò0am;Ò0f153436x!¤aa¡d1712al€am›î¨ah¡d1712›î¨e74720x¤aa¡d1712(al€am7Üah¡d17127Üe38930x\"¤aa¡d1712al€am\0003dah¡d1712\0003de14155x!¤aa¡d1712al€ah¡d1712\n}Œ\000am\n}Œ\000e38821x,¤aa¢d1705d1712(al€ah¢d1705'd1712_´am_´f221880x#¤aa¡d1707­al€am\000E@ah¡d1707\000E@e38441x!¤aa¡d1705al€am–3äah¡d1705–3äe38824x¤aa¡d1712hal€amO°ah¡d1712O°e38917x3¤aa¢d1705&d17126al€ah¢d1705\000d1712\000am\000f159810x!¤aa¡d1712al€ah¡d1712\000˜opam\000˜ope38778x¤aa¡d1712Eal€am,ah¡d1712,f144306x\"¤aa¡d1712al€am\000¿ ah¡d1712\000¿ e38893x\"¤aa¡d1712 al€ah¡d1712\000šàam\000šàe28101x¤aa¡d17072al€am2dah¡d17072de38914x¤aa¡d1712Pal€ah¡d1712\rHam\rHf211880x#¤aa¡d1707lal€am\000İAah¡d1707\000İAe52687x¤aa¡d1712tal€amÏah¡d1712Ïlg:222474:554x!¤aa¡d1712al€amÉÃ€ah¡d1712ÉÃ€e38923x2¤aa¢d1705d1712!al€ah¢d1705Ìd1712¾Xam¾Xlg:225373:554x!¤aa¡d1712al€amúğ€ah¡d1712úğ€f112165x3¤aa¢d1705d1712sal€ah¢d1705\000üœd1712\000¨am\000¨jg:1168:330x!¤aa¡d1712al€ah¡d1712YgààamYgààf223713x\"¤aa¡d1712»al€amõÑÄah¡d1712õÑÄf210810x-¤aa¡d17073al€am\000'6¬ah¢d1707\000)Yğd1712\000'6¬f191353x#¤aa¡d17075al€am\0006Œah¡d1707\0006Œe38875x\"¤aa¡d1705al€am\000 ¼ah¡d1705\000 ¼f110626x\"¤aa¡d17129al€am\000;|ah¡d1712\000;|e93421x!¤aa¡d1705al€amAAÌah¡d1705AAÌf210800xC¤aa€al¡d1707\000	Ãœam\000	Nah¤d1707\000\n`@d1712\000	Nd1705\000¥Pd1710\000	+¨e38962x¤aa¡d1712Ial€am.ah¡d1712.f222419x#¤aa¡d17077al€amEpah¡d1707Epe38908x\"¤aa¡d1712al€ah¡d1712\000¸˜am\000¸˜e71720x!¤aa¡d1712al€am\0008ß`ah¡d1712\0008ß`e38816x¤aa¡d1712/al€amô$ah¡d1712ô$f223800x\"¤aa¡d1712…al€ah¡d1712õ½Øamõ½Ølg:221795:544x!¤aa¡d1704al€ah¡d1704º@amº@f194018x\"¤aa¡d17128al€ah¡d17121ğam1ğe57099x¤aa¡d1707€al€amØah¡d1707Øf200033x#¤aa¡d1712al€ah¡d1712\000™`am\000™`f210932x9¤aa€al¡d1707\000ïah£d1707\0006 d1712\000„€d1710\000$œam\000„€f180317x#¤aa¡d1707Sal€am\000í¸ah¡d1707\000í¸e52780x\"¤aa¡d1712al€am\000\"ah¡d1712\000\"e10204x!¤aa¡d1712al€ah¡d1712\000ŸÜam\000ŸÜd5634x\"¤aa¡d1707Ral€am\000‚Tah¡d1707\000‚Te74710x¤aa¡d1712pal€ah¡d1712amd8173x¤aa¡d1704%al€amèah¡d1704èe38829x¤aa¡d1712ual€am¤ah¡d1712¤f221909x\"¤aa¡d1707/al€amxlah¡d1707xle38989x\"¤aa¡d1712Cal€am\000ÒÌah¡d1712\000ÒÌe58146x¤aa¡d1707al€am\000ah¡d1707\000kg:13079:362x!¤aa¡d1712al€ah¡d1712ğÛDamğÛDf168447x\"¤aa¡d1712°al€ah¡d1712\000Â am\000Â f172419x¤aa¡d1712Jal€ah¡d1712ÜamÜf215130x!¤aa¡d1705al€ah¡d1705\000¹Xam\000¹Xf199934x#¤aa¡d1712©al€ah¡d1712\000%bPam\000%bPf204094x!¤aa¡d1705al€ah¡d1705\000¶êôam\000¶êôe13462x¤aa¡d1707al€amĞah¡d1707Ğf128548x\"¤aa¡d1712al€ah¡d1712\000ƒam\000ƒe56503x¤aa¡d17120al€amIpah¡d1712Ipf112093x.¤aa¢d1705Pd1712+al€ah¢d1705ød1712œ@amœ@f201458x!¤aa¡d1712\nal€ah¡d1712b~Tamb~Tf191521x¤aa¡d1707B3al€am8¤ah¡d17078¤f193565x#¤aa¡d1712Mal€am\000§ò$ah¡d1712\000§ò$e17189x!¤aa¡d1712al€ah¡d1712\000¶Üäam\000¶Üäe36416x!¤aa¡d1705al€am\000>Àah¡d1705\000>Àc929x¤aa¡d1707”al€am ah¡d1707 e74712x¤aa¡d1712\\al€ah¡d1712èamèe44458x¤aa¡d1712ˆal€am£¬ah¡d1712£¬f110655x!¤aa¡d1712al€ah¡d1712B8amB8f165925x!¤aa¡d1705al€am\000CæĞah¡d1705\000CæĞf205015x!¤aa¡d1708al€amaäĞah¡d1708aäĞlg:211562:451x!¤aa¡d1705al€amş}lah¡d1705ş}llg:118814:196x!¤aa¡d1705al€amÍi°ah¡d1705Íi°e38781x\"¤aa¡d1705al€am\000Cah¡d1705\000Cf141909x\"¤aa¡d1712Îal€am\000\n¶øah¡d1712\000\n¶øe74706x¤aa¡d1712Šal€am\nŒah¡d1712\nŒlg:210110:424x!¤aa¡d1712al€amá£\000ah¡d1712á£\000f168602x!¤aa¡d1705al€amü¹üah¡d1705ü¹üe44963x\"¤aa¡d1712oal€am\000C8ah¡d1712\000C8e38780x,¤aa¢d1705\nd1712Xal€ah¢d1705)d1712a¨ama¨lg:188038:229x!¤aa¡d1712al€ah¡d1712F˜amF˜f223799x\"¤aa¡d1712®al€ah¡d1712ÈĞamÈĞlg:175010:274x!¤aa¡d1712al€ah¡d1712kIÑ8amkIÑ8lg:182560:197x!¤aa¡d1705al€am È|,ah¡d1705 È|,f144397x!¤aa¡d1707al€amëÈ@ah¡d1707ëÈ@lg:224593:538x!¤aa¡d1705al€am\000\n®`ah¡d1705\000\n®`e85568x\"¤aa¡d1712“al€am\000Ì`ah¡d1712\000Ì`e32665x)¤aa¡d1705al€am\000\000\000*ó,ah¡d1705\000\000\000*ó,d3987x!¤aa¡d1712al€ah¡d1712\000*ÍĞam\000*ÍĞe24274x\"¤aa¡d1712al€am\000ô#œah¡d1712\000ô#œkg:15621:186x!¤aa¡d1712al€ah¡d1712 2àam 2àe15563x!¤aa¡d1712al€ah¡d1712\000«5°am\000«5°f159787x/¤aa¢d17057d17126al€ah¢d1705\000æ0d1712¤tam¤tf120261x!¤aa¡d1712al€ah¡d1712fÄÔamfÄÔe15633x!¤aa¡d1712al€ah¡d1712>Vìam>Vìe44466x2¤aa¢d1705d1712Lal€ah¢d1705\000cød1712\0007am\0007f191533x\"¤aa¡d17079al€am\000I„ah¡d1707\000I„f193256x¤aa¡d1705¶al€amcœah¡d1705cœf166270x¤aa¡d1707ral€amu0ah¡d1707u0d5642x!¤aa¡d1707al€am	õ-tah¡d1707	õ-tf201320x\"¤aa¡d1712„al€am\000KaDah¡d1712\000KaDe15991x!¤aa¡d1712al€ah¡d1712¤\r˜am¤\r˜f199935x\"¤aa¡d1712Gal€ah¡d1712\0000am\0000lg:222835:524x!¤aa¡d1705al€am\000j¨Lah¡d1705\000j¨Lf199991x\"¤aa¡d1712ƒal€ah¡d1712\000_am\000_lg:106661:186x!¤aa¡d1712al€ah¡d1712\"&lam\"&lf223743w¤aa€al€am,ah¡d1712,f223762x4¤aa¢d1705_d1712–al€ah¢d1705_@d1712ÿ:°amÿ:°d4064x!¤aa¡d1712al€ah¡d1712\000y¤am\000y¤lg:106529:186x!¤aa¡d1712al€ah¡d1712ú\r„amú\r„d7787x!¤aa¡d1712al€ah¡d1712ñ>Ìamñ>Ìe22903x!¤aa¡d1707al€am\000˜–€ah¡d1707\000˜–€lg:190334:278x!¤aa¡d1705al€amá´”ah¡d1705á´”f206502x!¤aa¡d1712al€ah¡d1712úYüamúYüf193251x¤aa¡d1705è%al€ah¡d1705a¨ama¨d8134x!¤aa¡d1712al€ah¡d1712\000é,øam\000é,øf200616x\"¤aa¡d1712Ual€am\000LI°ah¡d1712\000LI°f219005x\"¤aa¡d1707¹al€am\000B¤ah¡d1707\000B¤f219909x#¤aa¡d1712°al€am\000“àah¡d1712\000“àf212242x!¤aa€al€amØÌah¢d1707\0008€d1712ØÌf172365x,¤aa¢d1705d1712Tal€ah¢d1705d1712'am'f223704x\"¤aa¡d1704-al€amâØah¡d1704âØe20008x¤aa¡d1707]al€amÇ8ah¡d1707Ç8d4680x!¤aa¡d1705al€am\"ÜÚ€ah¡d1705\"ÜÚ€e38830x¤aa¡d1712ßal€ah¡d1712ÜamÜd5640x!¤aa¡d1707al€am\000:˜dah¡d1707\000:˜df201312x#¤aa¡d1712Sal€am\000)èah¡d1712\000)èf200040x¤aa¡d1712al€ah¡d1712ÆÔamÆÔlg:142541:243x!¤aa¡d1705al€am\000äáÀah¡d1705\000äáÀe14780x!¤aa¡d1712al€ah¡d1712\000]Pam\000]Pe38963x/¤aa¢d1705Yd1712yal€ah¢d1705\000ø¨d1712BhamBhf199974x\"¤aa¡d1712Mal€am\000%Ã”ah¡d1712\000%Ã”d3655x!¤aa¡d1712al€ah¡d1712\0002Lam\0002Le55041x!¤aa¡d1712al€ah¡d1712\000vÈ4am\000vÈ4f191352x#¤aa¡d1707Ÿal€am\000_ah¡d1707\000_e52773x\"¤aa¡d1712Jal€ah¡d1712\000[`am\000[`e40213x\"¤aa¡d1707al€am\000–èĞah¡d1707\000–èĞe52778x!¤aa¡d1712al€am\000:”ah¡d1712\000:”f223757x3¤aa¢d1705ıd1712al€ah¢d1705Vé(d1712!æØam!æØlg:224593:515x!¤aa¡d1705al€am\000\n®`ah¡d1705\000\n®`lg:224592:434x!¤aa¡d1705al€ah¡d1705\000Nn am\000Nn lg:204120:379x!¤aa¡d1705al€amÁHah¡d1705ÁHf191386x¤aa¡d1707›åal€am_´ah¡d1707_´lg:224624:558x!¤aa¡d1705al€am\000\n®Äah¡d1705\000\n®Älg:221799:564x\"¤aa¡d1704Pal€ah¡d1704“8àam“8àlg:222835:521x!¤aa¡d1705al€am\000\n†ìah¡d1705\000\n†ìf153479x-¤aa¢d1705\"d1712²al€ah¢d1705Nèd1712N amN e38995x3¤aa¢d1705&d1712Yal€ah¢d1705\000,Üd1712\000I am\000I f191371x¤aa¡d1707Oal€am&Hah¡d1707&Hlg:159280:320x!¤aa¡d1705al€amÛ¸ah¡d1705Û¸f199956x¤aa¡d1712al€ah¡d1712ÆÔamÆÔd2555x!¤aa¡d1707al€am\000œß`ah¡d1707\000œß`e50816x\"¤aa¡d1712/al€am\000/TÌah¡d1712\000/TÌf152615x\"¤aa¡d1707Şal€am\000B@ah¡d1707\000B@f199982x¤aa¡d17124al€amé4ah¡d1712é4f200057x4¤aa¢d1705¨d1712/al€ah¢d1705\000[fpd1712\000-Ÿ°am\000-Ÿ°kg:15887:186x!¤aa¡d1712al€ah¡d17125`am5`f193557x\"¤aa¡d1712al€am\000„ah¡d1712\000„f223701x\"¤aa¡d1704¡al€am\nº•\000ah¡d1704\nº•\000d7495x!¤aa¡d1712al€ah¡d1712\000®}ìam\000®}ìd2455x¤aa¡d1707Æal€amah¡d1707f201318x¤aa¡d1712®al€amàœah¡d1712àœlg:116720:186x!¤aa¡d1705al€am/X@ah¡d1705/X@f222615x#¤aa¡d1708\"^al€am\000&Kèah¡d1708\000&Kèd6041x1¤aa¢d1705d1712\ral€ah¢d1705\000yêğd1712\000‰,am\000‰,lg:211538:451x!¤aa¡d1705al€amõàœah¡d1705õàœf110638x\"¤aa¡d1712al€ah¡d1712\000Qam\000Qd3395x!¤aa¡d1707al€am\000×ah¡d1707\000×d4070x!¤aa¡d1712al€ah¡d1712\000h§ham\000h§hlg:208442:522x)¤aa¡d1705al€ah¡d1705\000\000\000¡;^ğam\000\000\000¡;^ğf200007x\"¤aa¡d1704al€am\000¦`ah¡d1704\000¦`f193563x¤aa¡d1712·al€am%äah¡d1712%äf223739x#¤aa¡d1712êal€ah¡d1712\000]pam\000]pf219910x#¤aa¡d1712ıal€am\000Aœàah¡d1712\000Aœàf180487x!¤aa¡d1712al€ah¡d1712In amIn f210935x-¤aa¡d1707ial€am\000}xah¢d1707\000Šxd1710\000}xlg:211544:451x!¤aa¡d1705al€amõàœah¡d1705õàœf223793x\"¤aa¡d1712Ğal€ah¡d1712	‰X`am	‰X`f110628x\"¤aa¡d1712.al€am\000Yah¡d1712\000Yf223761x4¤aa¢d1705¨d1712Ûal€ah¢d1705Ä¸d1712úîŒamúîŒf210221x%¤aa€al¡d1710\000<üah¡d1710\000=`am\000<ülg:224624:538x!¤aa¡d1705al€am\000-Ç$ah¡d1705\000-Ç$f221881x\"¤aa¡d1707}al€am\000-Æ\\ah¡d1707\000-Æ\\e83007x\"¤aa¡d1712al€am\000O`ah¡d1712\000O`f169435x!¤aa¡d1705al€amXx”ah¡d1705Xx”e67140x!¤aa¡d1705al€am1-\000ah¡d17051-\000f199941x¤aa¡d1712Lal€amÇ8ah¡d1712Ç8e25043x!¤aa¡d1705al€am\000Oah¡d1705\000Of193479x!¤aa¡d1704	al€ah¡d1704\000äá\\am\000äá\\f223748x\"¤aa¡d1712“al€am\000Lelah¡d1712\000Lelf172361x¤aa¡d1712ual€ah¡d1712¸am¸f193522x!¤aa¡d1705al€am‹~|ah¡d1705‹~|f223773x3¤aa¢d17052d17125al€ah¢d1705x d1712b€Hamb€Hd9974x!¤aa¡d1712al€ah¡d1712:æØam:æØe39005x1¤aa¢d1707!d1712\"al€ah¢d1707İ|d1712\000z am\000z e40067x!¤aa¡d1707al€am\000–iÜah¡d1707\000–iÜf193258x¤aa¡d1705$al€amdah¡d1705de25038x!¤aa¡d1705al€amÚû@ah¡d1705Úû@f171273x¤aa¡d1707\n™al€am\nğah¡d1707\nğf201322x!¤aa¡d1712al€amËah¡d1712Ëd9172x\"¤aa¡d1707Şal€am\000Ñ|ah¡d1707\000Ñ|e38777x¤aa¡d1712Eal€amèah¡d1712èf164297x)¤aa¡d1712al€ah¡d1712\000\000\000)m4pam\000\000\000)m4pe15657x!¤aa¡d1712	al€ah¡d1712ß;$amß;$e38783x\"¤aa¡d1712%al€am\000Û\000ah¡d1712\000Û\000f223756x!¤aa¡d1712al€am\000[€ah¡d1712\000[€e22871x¤aa¡d1707]al€am4Xah¡d17074Xf199990x\"¤aa¡d1712Åal€ah¡d1712\000_am\000_lg:159810:242x!¤aa¡d1712al€ah¡d1712\000˜opam\000˜opf191534x\"¤aa¡d1707)al€am\000\r@ah¡d1707\000\r@lg:224592:538x!¤aa¡d1705al€am\000%bPah¡d1705\000%bPe68744x!¤aa¡d1705al€am\000_ah¡d1705\000_f200054x5¤aa¢d1705Kd1712‰al€ah¢d1705n6\000d17121„am1„e55427x!¤aa¡d1712al€ah¡d1712\000r—ğam\000r—ğf173242x!¤aa¡d1705al€am(Üah¡d1705(Üd4820x!¤aa¡d1712al€ah¡d1712?+am?+e15675x!¤aa¡d1712al€ah¡d1712Á¨`amÁ¨`f191367x¤aa¡d17078al€amäah¡d1707äf110620x\"¤aa¡d1712&al€ah¡d1712\000•?am\000•?d7108x!¤aa¡d1712al€ah¡d1712‹œam‹œe25079x!¤aa¡d1712al€ah¡d1712x¸amx¸f106496x!¤aa¡d1712al€ah¡d1712¹`am¹`e41604x!¤aa¡d1712al€am\000‚z¼ah¡d1712\000‚z¼f223669x-¤aa¡d17127al¡d1712\000Stah¡d1712\000SØam\000Stf212508x¤aa€al€ah¡d1712\000˜Àam\000˜Àd6372x¤aa¡d1707%al€am`àah¡d1707`àd7372x!¤aa¡d1712al€ah¡d17123xam3xf110632x¤aa¡d1712 al€ah¡d1712`am`f225784x#¤aa¡d1707Åal€am\000w@ah¡d1707\000w@lg:204094:379x!¤aa¡d1705al€ah¡d1705\000¶êôam\000¶êôe15133x!¤aa¡d1712al€ah¡d1712IÓ(amIÓ(f127843x¤aa¡d1707£al€amTah¡d1707Td1429x!¤aa¡d1705al€am\000&% ah¡d1705\000&% e18251x!¤aa¡d1704al€am\000ş`ah¡d1704\000ş`lg:224624:545x!¤aa¡d1705al€am\000[ah¡d1705\000[lg:118874:196x!¤aa¡d1712al€ah¡d1712âgQğamâgQğf163223x¤aa¡d1707al€amah¡d1707f110647x\"¤aa¡d1712-al€am\000‚Tah¡d1712\000‚Td7465x!¤aa¡d1712	al€ah¡d1712\000=\"dam\000=\"de14825x!¤aa¡d1712al€ah¡d1712\000Qœøam\000Qœøf161890x!¤aa¡d1712al€ah¡d1712âhamâhd4713x!¤aa¡d1705al€am\000\"îøah¡d1705\000\"îøf171349x¤aa¡d1707-al€am\n(ah¡d1707\n(e15584x!¤aa¡d1712al€ah¡d1712\0004am\0004f200030x#¤aa¡d1712#5al€am\000‘ìah¡d1712\000‘ìe38979x¤aa¡d1712äal€amKÈah¡d1712KÈkg:14763:170x!¤aa¡d1705al€am.<ah¡d1705.<d3654x!¤aa¡d1712al€ah¡d1712¶Bxam¶Bxe46098x!¤aa¡d1712al€am\000)±Ôah¡d1712\000)±Ôf212268x!¤aa¡d1707al€am\000*¹€ah¡d1707\000*¹€e74715x¤aa¡d1712¹al€ah¡d1712€èam€èf223781x5¤aa¢d1705d1712†al€ah¢d1705`±0d1712ØamØe87560x\"¤aa¡d1712?al€am\000`4ah¡d1712\000`4lg:222841:538x!¤aa¡d1704al€ah¡d1704\000&% am\000&% f212257x#¤aa¡d1707al€am\000RHah¡d1707\000RHlg:106562:186x!¤aa¡d1712al€ah¡d1712»|ôam»|ôd1203x!¤aa¡d1712al€ah¡d1712\000L0°am\000L0°f194010x#¤aa¡d1712\rmal€am\000ah¡d1712\000e38845x¤aa¡d1705&al€amèah¡d1705èe38960x¤aa¡d1712;al€am”ah¡d1712”d1979x!¤aa¡d1712al€ah¡d1712´S<am´S<e82443x¤aa¡d1712qal€am€„ah¡d1712€„e21876x!¤aa¡d1712al€ah¡d1712	Dû4am	Dû4e52758x¤aa¡d1712[al€am&Hah¡d1712&Hf223699x\"¤aa¡d1704#al€am\000JÄ ah¡d1704\000JÄ f160330x!¤aa¡d1712al€amw5”\000ah¡d1712w5”\000lg:221799:550x!¤aa¡d1704al€ah¡d1704“_ğam“_ğlg:191241:339x!¤aa¡d1704al€ah¡d1704\000<AÈam\000<AÈf144401x!¤aa¡d1705al€am\000äáÀah¡d1705\000äáÀf223720x¤aa¡d1712	¥al€amäèah¡d1712äèe43987x2¤aa¢d1705d1712Ral€ah¢d1705\000AÜd1712\000ïpam\000ïpe33092x\"¤aa¡d1707¡al€am\000\nÊ€ah¡d1707\000\nÊ€e38932x\"¤aa¡d1712Dal€am\000mlah¡d1712\000mle38799x¤aa¡d1712%al€am$ah¡d1712$f212667x¤aa€al€ah¡d1712\000­°am\000­°f106529x!¤aa¡d1712al€ah¡d1712ú\r„amú\r„e38785x¤aa¡d1712•al€ah¡d1712LamLf199968x4¤aa¢d1705‰d1712#al€ah¢d1705\000\000¸d1712!óXam!óXlg:210134:418x!¤aa¡d1705al€amAµ8ah¡d1705Aµ8f199984x¤aa¡d1712cal€amÔ€ah¡d1712Ô€f152819x!¤aa¡d1712al€ah¡d1712õÂ$amõÂ$lg:222835:515x!¤aa¡d1705al€am\000}Üah¡d1705\000}Üf199965x!¤aa¡d1704al€am]J€ah¡d1704]J€f191378x¤aa¡d1707\"Üal€amèah¡d1707èe67061x!¤aa¡d1712al€ah¡d1712Ó6damÓ6df191522x¤aa¡d1707ral€amN ah¡d1707N e36456x!¤aa¡d1712al€ah¡d1712ĞÑÀamĞÑÀe76092x¤aa¡d1707\\al€amˆah¡d1707ˆf171268x¤aa¡d1707¿al€am¸ah¡d1707¸f223684x\"¤aa¡d1712%al€amù@Üah¡d1712ù@Ülg:221795:538x!¤aa¡d1704al€ah¡d1704'\000am'\000f223651x\"¤aa¡d1712`al€ah¡d17127$àam7$àe37647x!¤aa¡d1705al€am\000wDah¡d1705\000wDe13455x\"¤aa¡d1707?al€am\000—lah¡d1707\000—le38868x1¤aa¢d1705\rd1712al€ah¢d1705\000×ød1712\000ŞDam\000ŞDd9779x!¤aa¡d1705al€am\000‰”ah¡d1705\000‰”lg:160161:320x!¤aa¡d1705al€amúíÄah¡d1705úíÄe90575x!¤aa¡d1712al€ah¡d1712Š(amŠ(lg:225373:548x!¤aa¡d1712	al€amúğ€ah¡d1712úğ€f110635x¤aa¡d1712al€ah¡d1712MXamMXf192997x!¤aa¡d1705al€ah¡d17051J°am1J°f109218x¤aa¡d1707Lal€amèah¡d1707èf199950x¤aa¡d1712al€ah¡d1712ÄàamÄàf199945x\"¤aa¡d1712›al€am\000€ah¡d1712\000€e39006x\"¤aa¡d1712^al€ah¡d1712\000Îäam\000Îäf223686x\"¤aa¡d1712al€am\nm†pah¡d1712\nm†pe40211x\"¤aa¡d1707Áal€am\0008€ah¡d1707\0008€e13443x¤aa¡d1707al€amXah¡d1707Xf200037x¤aa¡d1712zal€ah¡d1712ÇœamÇœf210804x7¤aa¡d1707\"al€am\000ºŒah£d1707\000ö4d1712\000ºŒd1710\000 e44455x¤aa¡d1712.al€am`àah¡d1712`àe87488x!¤aa¡d1712al€ah¡d1712nÚ`amnÚ`f114821x!¤aa¡d1712\ral€ah¡d1712\000-Æ\\am\000-Æ\\f144304x\"¤aa¡d1712fal€am\000Q\\ah¡d1712\000Q\\f199997x¤aa¡d1712al€ah¡d1712ØhamØhe41609x!¤aa¡d1705al€amb`ah¡d1705b`f163082x¤aa¡d1707`al€am4ah¡d17074lg:173242:190x!¤aa¡d1705al€am(Üah¡d1705(Üf210934x7¤aa¡d1707§ial€ah£d1707\000ù¸d1712\000	Xd1710\000 \000am\000	Xe15307x!¤aa¡d1712al€ah¡d1712\000ÿ°am\000ÿ°f110621x¤aa¡d1712;al€ah¡d1712&¬am&¬f200049x\"¤aa¡d1704¼al€am\000cah¡d1704\000ce40217x\"¤aa¡d1707×al€am\000@ah¡d1707\000@f211572x+¤aa¡d1705al¡d1705\000ram\000rah¡d1705\000„€f223683x\"¤aa¡d1712@al€amëÁ8ah¡d1712ëÁ8lg:144403:243x!¤aa¡d1705al€am\000LK@ah¡d1705\000LK@f191242x!¤aa¡d1704al€am\000&K„ah¡d1704\000&K„f204614x1¤aa¢d1705d1712al€ah¢d1705\000€d1712\000‰T@am\000‰T@e52752x¤aa¡d1712Fal€am6°ah¡d17126°f198310x!¤aa¡d1705al€am\0006hah¡d1705\0006hd9144x#¤aa¡d1707\nal€am\000dah¡d1707\000de38973x\"¤aa¡d1712qal€ah¡d1712\000–¼am\000–¼lg:193538:346x!¤aa¡d1704al€ah¡d17041-\000am1-\000e52759x¤aa¡d1712\\al€am\"`ah¡d1712\"`e40081x¤aa¡d1707Zal€amˆah¡d1707ˆf204621x1¤aa¢d1705d1712al€ah¢d1705\000A`Td1712õá\000amõá\000f113277x!¤aa¡d1707al€am\0005´ah¡d1707\0005´e28100x¤aa¡d1707Ûal€am”ah¡d1707”f172414x¤aa¡d1712Ÿal€amlah¡d1712lf153443x\"¤aa¡d1712zal€ah¡d1712\000´am\000´e52748x2¤aa¢d1705	d17127al€ah¢d1705\000|xd1712\000'Ìam\000'Ìe22845x\"¤aa¡d1707Øal€am\000<Ìah¡d1707\000<Ìkg:90586:168x!¤aa¡d1705al€amğªpah¡d1705ğªpe13461x\"¤aa¡d1707al€am\000FŒah¡d1707\000FŒe31200x!¤aa¡d1712al€ah¡d1712¿ì am¿ì d4265x¤aa¡d1704al€am¼ah¡d1704¼f106463x!¤aa¡d1712al€ah¡d1712´am´f223727x\"¤aa¡d1712Tal€ah¡d1712\000ˆğam\000ˆğf200043x¤aa¡d1712ôal€ah¡d1712ØamØlg:188054:229x!¤aa¡d1705al€am\000[¡ah¡d1705\000[¡f223768x3¤aa¢d1705Yd17122al€ah¢d1705°v\000d1712hÑ(amhÑ(lg:222481:544x!¤aa¡d1704al€am\000-x ah¡d1704\000-x d2220x!¤aa¡d1712al€ah¡d1712\00096àam\00096àe15943x!¤aa¡d1712al€ah¡d1712\000ö_am\000ö_e25084x!¤aa¡d1712al€ah¡d1712!ÜLam!ÜLe13490x!¤aa¡d1707al€am\000;„ah¡d1707\000;„f223678x\"¤aa¡d1712Gal€ah¡d1712QC\000amQC\000e21340x!¤aa¡d1712al€ah¡d1712à\rÔamà\rÔf213610x9¤aa€al¡d1707ê`amu0ah¤d1707\000Æ°d1712u0d1705ˆ¸d1710²èe38806x¤aa¡d1712al€ah¡d1712\nğam\nğf191368x¤aa¡d1707|al€amØah¡d1707Øe68748x!¤aa¡d1705al€am\000_ah¡d1705\000_d8320x!¤aa¡d1712al€ah¡d1712‰Ìam‰Ìe98913x!¤aa¡d1705al€amÍ“Hah¡d1705Í“He38775x¤aa¡d1712^al€ah¡d1712LamLf128541x¤aa¡d1712Ial€ah¡d1712'am'kg:66895:219x!¤aa¡d1712al€ah¡d1712AypamAypf208350x!¤aa¡d1705al€ah¡d1705;™C`am;™C`f152560x¤aa¡d1707	al€ams<ah¡d1707s<d8286x!¤aa¡d1705al€am\000T,Ôah¡d1705\000T,Ôf223747x\"¤aa¡d1712'al€am¨€ah¡d1712¨€f199951x¤aa¡d1712×al€ah¡d1712ÅDamÅDe38855x\"¤aa¡d1712Nal€am\000í8ah¡d1712\000í8e25076x!¤aa¡d1712al€ah¡d1712\000Ğ¶am\000Ğ¶f168498x#¤aa¡d1707³al€am\000lĞah¡d1707\000lĞe38828x¤aa¡d1712<al€am-Pah¡d1712-Pf168449x\"¤aa¡d1712+al€ah¡d1712\000\r¢ am\000\r¢ lg:217125:558x!¤aa¡d1705al€am;ˆÜah¡d1705;ˆÜf205036x!¤aa¡d1708al€am‹8Àah¡d1708‹8Àf118872x!¤aa¡d1712al€ah¡d1712CºàamCºàlg:118874:330x!¤aa¡d1712al€ah¡d1712âg*àamâg*àf197777x¤aa¡d1707\\al€amĞah¡d1707Ğf199970x\"¤aa¡d1712©al€am\000zah¡d1712\000zf201054x!¤aa¡d1705al€am\000AÜah¡d1705\000AÜd9295x!¤aa¡d1707al€am\000&8`ah¡d1707\000&8`f152561x¤aa¡d1707Ñal€am\rHah¡d1707\rHf110633x¤aa¡d1712*al€ah¡d1712³°am³°d3928x¤aa¡d1707±al€am\nğah¡d1707\nğe75076x!¤aa¡d1705al€amê1Øah¡d1705ê1Øe38793x¤aa¡d1712“al€amLah¡d1712Llg:106397:186x!¤aa¡d1712al€ah¡d1712/˜Ğam/˜Ğf171263x¤aa¡d1707Ôal€am\rHah¡d1707\rHf199967x4¤aa¢d1705'd1712\ral€ah¢d1705\000ed1712\000B@am\000B@f210110x!¤aa¡d1712al€amá£\000ah¡d1712á£\000f223729x\"¤aa¡d1712´al€ah¡d1712bYœambYœkg:15991:170x!¤aa¡d1712al€ah¡d1712pÿ|ampÿ|e38943x\"¤aa¡d1712al€ah¡d1712\"d,am\"d,e41601x¤aa¡d1712\"al€amŞDah¡d1712ŞDe38903x!¤aa¡d1712al€am\000L%\\ah¡d1712\000L%\\f212262x#¤aa¡d1707Eal€am\000%0ah¡d1707\000%0f223710x#¤aa¡d1712\000al€am\000°8€ah¡d1712\000°8€e38833x.¤aa¢d1707qd1712al€ah¢d1707èd1712xamxe15667x!¤aa¡d1712al€ah¡d1712¿¼øam¿¼øe13081x!¤aa¡d1712al€ah¡d1712}xam}xe89737x\"¤aa¡d1712val€am\000öXah¡d1712\000öXe38788x!¤aa¡d1705al€am\000!Øah¡d1705\000!Øf110617x¤aa¡d1712Tal€ah¡d1712tÌamtÌf159788x2¤aa¢d1705d1712ral€ah¢d1705\000_d1712\000G¼am\000G¼e14608x!¤aa¡d1712al€ah¡d1712\000[am\000[e38839x¤aa¡d1712Ial€am&Hah¡d1712&He13456x¤aa¡d1707,al€am\"Äah¡d1707\"Älg:224635:460x!¤aa¡d1712al€amúûÔah¡d1712úûÔf199989x¤aa¡d1712zal€ah¡d1712ÔäamÔäe15543x!¤aa¡d1712al€ah¡d1712\000Ş3üam\000Ş3üe15890x!¤aa¡d1712al€ah¡d1712«°am«°lg:106496:186x!¤aa¡d1712al€ah¡d1712¹`am¹`f200019x!¤aa¡d1712al€ah¡d17121ğam1ğf152550x#¤aa¡d17078al€am\000W\\ah¡d1707\000W\\lg:211542:451x!¤aa¡d1705al€amõàœah¡d1705õàœe38878x2¤aa¢d1705d1712Gal€ah¢d1705\000FAŒd1712\000L!am\000L!f193252x¤aa¡d1705õ’al€amˆah¡d1705ˆf200002x¤aa¡d1712Pal€ah¡d1712É,amÉ,e14665x!¤aa¡d1705al€am\000_Ğah¡d1705\000_Ğe38814x2¤aa¢d1705d1712-al€ah¢d1705\000P0d1712\000‹ôam\000‹ôe38856x¤aa¡d1712Pal€am&¬ah¡d1712&¬f116708x!¤aa¡d1705al€am„)xah¡d1705„)xf223787x\"¤aa¡d1712Lal€ah¡d1712ÌˆamÌˆf223790x\"¤aa¡d1712@al€ah¡d1712Út amÚt e38921x3¤aa¢d1705‡d1712|al€ah¢d1705\000\"|„d1712\000\ngHam\000\ngHe41611x\"¤aa¡d1712al€am\000©ah¡d1712\000©f204120x!¤aa¡d1705al€amÁHah¡d1705ÁHe38888x\"¤aa¡d1712'al€am\000¡Tah¡d1712\000¡Tf222611x#¤aa¡d1708al€am\000‰a$ah¡d1708\000‰a$e74704x\"¤aa¡d17122al€am\000Ëœah¡d1712\000Ëœe93608x!¤aa¡d1705al€am–Äah¡d1705–Äf223736x\"¤aa¡d1712şal€ah¡d1712qœ@amqœ@e52753x¤aa¡d1712™al€ah¡d1712\n(am\n(e38766x.¤aa¢d1707¯d1712_al€ah¢d1707Üd1712 lam le56550x!¤aa¡d1712al€am\000LJah¡d1712\000LJf210797xM¤aa€al¢d1705\000hd1707\000‚pam\000âdah¤d1707\000õHd1712\000âdd1705\000â\000d1710\000â\000e38375x¤aa¡d1704al€amLah¡d1704Lf200032x#¤aa¡d1712cal€ah¡d1712\000Ölam\000Öle74707x¤aa¡d1712Xal€am%ah¡d1712%e10098x!¤aa¡d1705al€am\0005hah¡d1705\0005hf109226x¤aa¡d1707ºal€amèah¡d1707èlg:224592:525x!¤aa¡d1705al€am\000äçœah¡d1705\000äçœf168489x#¤aa¡d1707.al€am\000?œah¡d1707\000?œf198317x#¤aa¡d1705±al€am\000	õ8ah¡d1705\000	õ8lg:224609:460x¤aa€al€ah¡d1712\0007óÔam\0007óÔe36406x!¤aa¡d1705al€amØY˜ah¡d1705ØY˜e38797x¤aa¡d1712al€amah¡d1712f223775x3¤aa¢d1705)d17123al€ah¢d1705á–äd1712bŸ°ambŸ°d9822x!¤aa¡d1705al€am\0000!àah¡d1705\0000!àf222610x#¤aa¡d1708Nal€am\000\r¢<ah¡d1708\000\r¢<e12253x!¤aa¡d1705al€ame{äah¡d1705e{äe41608x!¤aa¡d1705al€am\000Í`ôah¡d1705\000Í`ôf223722x#¤aa¡d1712Tal€am\000·}Ôah¡d1712\000·}Ôe38852x¤aa¡d1712dal€am$Tah¡d1712$Te15354x!¤aa¡d1705al€am\000­<ah¡d1705\000­<f215137x!¤aa¡d1705al€amMù<ah¡d1705Mù<c858x¤aa¡d1707Îal€am¸ah¡d1707¸kg:67140:168x!¤aa¡d1705al€am1-\000ah¡d17051-\000f163225x¤aa¡d1707'al€am\n(ah¡d1707\n(e14420x!¤aa¡d1705al€am\000˜¤ah¡d1705\000˜¤f199937x¤aa¡d1712al€amÒğah¡d1712Òğd9877x!¤aa¡d1705al€am\0003Ü,ah¡d1705\0003Ü,e38889x!¤aa¡d1712al€am\000Á„ah¡d1712\000Á„e44456x¤aa¡d1712¡al€ah¡d1712XamXf110656x\"¤aa¡d1712)al€ah¡d1712\000ƒam\000ƒd9790x!¤aa¡d1712al€ah¡d1712\000xèam\000xèd6571x!¤aa¡d1712al€ah¡d1712\000CÑ¸am\000CÑ¸e13083x!¤aa¡d1712al€ah¡d1712\000Ú}4am\000Ú}4f198243x!¤aa¡d1704al€ah¡d1704¿Œam¿Œf223779x3¤aa¢d1705?d1712Mal€ah¢d1705\n\" d1712ğÑ€amğÑ€e37603x¤aa¡d1712al€ah¡d1712u0amu0d5571x¤aa¡d1712al€ah¡d1712€ am€ e25081x!¤aa¡d1712al€ah¡d1712\000n8am\000n8e14210x!¤aa¡d1705al€am\000œah¡d1705\000œe33093x¤aa¡d1707al€amÃPah¡d1707ÃPf110645x¤aa¡d1712,al€amN ah¡d1712N f194574x6¤aa¡d1705ˆal¡d1707\0000am\0000ah¢d1705\000Ôd1707\0003lg:222835:518x\"¤aa¡d1705(al€am\000/¼ah¡d1705\000/¼e15891x!¤aa¡d1712al€ah¡d1712\nå„ham\nå„he29533x!¤aa¡d1712	al€am1-\000ah¡d17121-\000f212258x#¤aa¡d1707$al€am\000dah¡d1707\000df204702x\"¤aa¡d1712èal€am\000c. ah¡d1712\000c. f200013x2¤aa¢d1705	d1712Lal€ah¢d1705\000B@d1712\000=<am\000=<e38844x¤aa¡d1712|al€ah¡d1712FPamFPf194019x\"¤aa¡d1712‰al€am\000\rŒah¡d1712\000\rŒf200012x5¤aa¢d1705œd1712	øal€ah¢d1705\000;©Ôd1712\000? am\000? e85663x!¤aa¡d1704al€ah¡d1704\000LK@am\000LK@e85569x¤aa¡d1712Xal€amê`ah¡d1712ê`e15569x!¤aa¡d1712al€ah¡d1712\000‚äam\000‚äe52771x¤aa¡d1712‹al€ah¡d1712%€am%€lg:193479:346x!¤aa¡d1704	al€ah¡d1704\000äá\\am\000äá\\e38805x¤aa¡d1712Fal€amu0ah¡d1712u0f200031x#¤aa¡d1712al€ah¡d1712\000\n am\000\n e31201x!¤aa¡d1705al€am\000‰T@ah¡d1705\000‰T@f221877x#¤aa¡d1707al€am\000©\000ah¡d1707\000©\000f200029x\"¤aa¡d1712=al€am\000ï‹Ôah¡d1712\000ï‹Ôd7331x!¤aa¡d1712al€ah¡d1712\000ñ}am\000ñ}d4263x!¤aa¡d1712al€ah¡d1712+ \\am+ \\d7537x!¤aa¡d1712al€ah¡d1712\000½(am\000½(d4771x!¤aa¡d1705al€am,´€ah¡d1705,´€lg:224635:561x\"¤aa¡d1712Fal€am\0005gàah¡d1712\0005gàf184479x\"¤aa¡d1712nal€ah¡d1712\000&!¸am\000&!¸e38974x¤aa¡d1712-al€ah¡d1712wˆamwˆf172408x¤aa¡d1712»al€amtÌah¡d1712tÌf199972x\"¤aa¡d1712al€am\000:ah¡d1712\000:f200038x¤aa¡d1712:al€ah¡d1712ËèamËèe38371x!¤aa¡d1712\ral€am\000vpah¡d1712\000vpe54444x!¤aa¡d1712al€ah¡d1712	))Tam	))Te56517x!¤aa¡d1704al€am\000şah¡d1704\000şf188054x!¤aa¡d1705al€am\000[¡ah¡d1705\000[¡e52783x\"¤aa¡d17128al€am\0003ah¡d1712\0003e74716x¤aa¡d1712al€ah¡d1712°am°f223676x\"¤aa¡d1712:al€ah¡d1712•—\000am•—\000e52754x\"¤aa¡d1712Sal€am\000Y¸ah¡d1712\000Y¸f199939x!¤aa¡d1712	al€amõá\000ah¡d1712õá\000f205044x#¤aa¡d1712ßal€am\000vApah¡d1712\000vApf223721x\"¤aa¡d1712•al€am\000!èxah¡d1712\000!èxe41113x!¤aa¡d1712al€ah¡d1712ì_Üamì_Üf207022x¤aa¡d1707Øal€am|ah¡d1707|e56477x¤aa¡d1704.al€am<ah¡d1704<f199978x#¤aa¡d1712	°al€ah¡d1712\0000am\0000f210807x/¤aa€al€ah£d1707\000øPd1712\000\rm€d1710\000\rFam\000\rm€lg:221795:550x!¤aa¡d1704al€ah¡d1704ÙTamÙTe52765x¤aa¡d1712fal€am»€ah¡d1712»€e93351x\"¤aa¡d1707,al€am\0008ah¡d1707\0008f223662x\"¤aa¡d1712›al€ah¡d1712°lam°lf223766x4¤aa¢d1705,d1712hal€ah¢d1705\000Şy d1712!êÀam!êÀf200050x2¤aa¢d17054d1712al€ah¢d1705\000—Òhd1712\000LK@am\000LK@f193210x¤aa¡d1705\000°ãal€amdah¡d1705df172362x¤aa¡d1712al€ah¡d1712°am°e74728x\"¤aa¡d17124al€am\000Şìah¡d1712\000Şìf153476x.¤aa¢d1705Kd1712\ral€ah¢d1705|d1712thamthe38372x!¤aa¡d1712al€am\000,ah¡d1712\000,f223711x\"¤aa¡d1712¾al€amËpÌah¡d1712ËpÌe38881x!¤aa¡d1712al€am\000#”4ah¡d1712\000#”4d5631x¤aa¡d1707al€am'ah¡d1707'f223675x\"¤aa¡d1712-al€ah¡d1712]J€am]J€e25077x!¤aa¡d1712al€ah¡d1712\000ğùtam\000ğùtd4722x!¤aa¡d1705al€am1Èah¡d17051Èe82444x\"¤aa¡d1712*al€am\000	œğah¡d1712\000	œğd3990x!¤aa¡d1712al€ah¡d1712\000#A\000am\000#A\000f199992x¤aa¡d1712Yal€ah¡d1712ÃPamÃPf200008x3¤aa¢d1705~d1712üal€ah¢d1705\0005gàd1712\000\rBˆam\000\rBˆf205039x#¤aa¡d1712	¬al€am\000Æ]@ah¡d1712\000Æ]@e56480x!¤aa¡d1705al€am\000K ah¡d1705\000K d4792x!¤aa¡d1705al€am\000‚(ah¡d1705\000‚(d1685x!¤aa¡d1712al€ah¡d1712\000•<am\000•<d3386x¤aa¡d1707Pal€am&¬ah¡d1707&¬e38772x¤aa¡d1705.al€am°ah¡d1705°e13444x¤aa¡d1707Aal€am3ah¡d17073e74709x¤aa¡d17129al€am;Äah¡d1712;Äe90586x!¤aa¡d1705al€amğªpah¡d1705ğªpe98757x!¤aa¡d1705al€am8ah¡d17058kg:87641:174x!¤aa¡d1712al€ah¡d1712-µpam-µpf211601x!¤aa¡d1705al€am\000rah¡d1705\000rf170339x!¤aa¡d1705al€am\nnX˜ah¡d1705\nnX˜e10249x!¤aa¡d1705al€am\0002‹ah¡d1705\0002‹f206967x\"¤aa¡d1712$al€am\000kah¡d1712\000kf138488x#¤aa¡d1707ƒal€am\0004üah¡d1707\0004üf192554x¤aa¡d1705al€am0ah¡d17050f199980x¤aa¡d1712al€amÇ8ah¡d1712Ç8e38876x2¤aa¢d1705d1712al€ah¢d1705\0003äd1712\0003äam\0003äe15309x!¤aa¡d1705al€am\000JÅah¡d1705\000JÅf200010x4¤aa¢d1705Àd1712¾al€ah¢d1705\000˜d1712\000~Œam\000~Œf142117x¤aa¡d1707Ral€amN ah¡d1707N e31287x!¤aa¡d1712al€ah¡d17120g¬am0g¬f199964x!¤aa¡d1704al€am\000İĞah¡d1704\000İĞe58489x#¤aa¡d1707:”al€am\000	'Àah¡d1707\000	'Àe15113x!¤aa¡d1712al€ah¡d1712æ|amæ|d2040x!¤aa¡d1712al€ah¡d1712y€amy€f172411x¤aa¡d1712™al€ah¡d1712\n(am\n(lg:222841:547x!¤aa¡d1704al€ah¡d1704bVambVf159467x¤aa¡d1712val€am*øah¡d1712*ølg:192997:346x!¤aa¡d1705al€ah¡d17051J°am1J°f159797x!¤aa¡d1712al€ah¡d1712ë³¸amë³¸e34330x¤aa¡d1704Cal€amzDah¡d1704zDd2222x!¤aa¡d1712al€ah¡d1712\000y¿øam\000y¿øf191385x¤aa¡d1707¸al€amˆTah¡d1707ˆTf223656x\"¤aa¡d1712pal€ah¡d1712œ\000Hamœ\000Hf223789x\"¤aa¡d1712®al€ah¡d1712O 0amO 0kg:67145:168x!¤aa¡d1712al€ah¡d1712úÉamúÉf200005x\"¤aa¡d1704«al€am\000	&”ah¡d1704\000	&”e25033x!¤aa¡d1705al€am\000©U8ah¡d1705\000©U8f110619x¤aa¡d1712Fal€ah¡d1712&¬am&¬e82969x!¤aa¡d1712al€ah¡d1712SüamSüf159471x¤aa¡d1712~al€amah¡d1712f127841x¤aa¡d1707val€améüah¡d1707éüf200025x¤aa¡d1712«al€amÈdah¡d1712Èdd2446x!¤aa¡d1712al€ah¡d1712\000·»ğam\000·»ğf212505x¤aa€al€ah¡d1712\000˜\\am\000˜\\f199959x¤aa¡d1712­al€ah¡d1712áÈamáÈf220143x#¤aa¡d170531al€ah¡d1705\000€am\000€f199983x¤aa¡d1712Val€amÆah¡d1712Æf222559x#¤aa¡d1708#şal€am\000Büpah¡d1708\000Büpf127835x¤aa¡d1707×al€am\000ah¡d1707\000f229157x!¤aa¡d1712al€amÄÚ¬ah¡d1712ÄÚ¬e38992x\"¤aa¡d1705al€am\000ñÄah¡d1705\000ñÄf211543x!¤aa¡d1705al€amõà8ah¡d1705õà8f223785x\"¤aa¡d1712'al€ah¡d1712úğ€amúğ€f219004x#¤aa¡d1705#al€ah¡d1705\000B@am\000B@f171267x¤aa¡d1707\nÚal€am\r¬ah¡d1707\r¬e68134x!¤aa¡d1705al€am\000	Üœah¡d1705\000	Üœf128547x\"¤aa¡d1712/al€ah¡d1712\000,Èam\000,Èd4068x!¤aa¡d1712al€ah¡d1712\0008¢am\0008¢f200581x¤aa¡d1705!al€amLah¡d1705Le38949x¤aa¡d1712pal€amÜah¡d1712Üe38883x2¤aa¢d1705d1712#al€ah¢d1705\000	ã@d1712\000	à„am\000	à„f138728x¤aa¡d1707$<al€am˜ah¡d1707˜f223734x\"¤aa¡d1712Òal€ah¡d1712\000¶ó(am\000¶ó(e10367x!¤aa¡d1712al€ah¡d1712JŒ¤amJŒ¤d1710x¤aa¡d1707	al€amôah¡d1707ôf159806x!¤aa¡d1712al€ah¡d1712\000µ,xam\000µ,xf159800x!¤aa¡d1712al€ah¡d1712.¶ìam.¶ìlg:224599:558x¤aa€al€am\0005gàah¡d1712\0005gàlg:224609:558x!¤aa¡d1712al€ah¡d1712\0007ôœam\0007ôœe38987x¤aa¡d1712$al€am`àah¡d1712`àf201314x\"¤aa¡d1712Äal€am\000pah¡d1712\000pf200027x\"¤aa¡d1712—al€amŒìah¡d1712Œìd3986x!¤aa¡d1712al€ah¡d1712\000E„am\000E„f223673x,¤aa¡d1712ÿal¡d1712]Jah¡d1712]J€am]Jf200001x¤aa¡d1712al€ah¡d1712ĞüamĞüf194014x\"¤aa¡d1712Qal€am\0005@Ğah¡d1712\0005@Ğlg:159811:242x!¤aa¡d1712al€ah¡d1712ûÜamûÜf107640x\"¤aa¡d17075al€am\000&&ah¡d1707\000&&e93420x!¤aa¡d1705al€am\000ÿø„ah¡d1705\000ÿø„d7463x!¤aa¡d1712al€ah¡d1712\000,¹œam\000,¹œf194013x\"¤aa¡d17127al€am/¦`ah¡d1712/¦`f144307x#¤aa¡d1712	al€am\000lah¡d1712\000ld3650x)¤aa¡d1712al€ah¡d1712\000\000\000„kåÜam\000\000\000„kåÜf194008x#¤aa¡d1712al€am\000ÔÀah¡d1712\000ÔÀe18253x¤aa¡d17071al€amTah¡d1707Te36452x!¤aa¡d1712al€ah¡d1712XÔamXÔe14229x!¤aa¡d1705al€am\000!·@ah¡d1705\000!·@d3385x¤aa¡d1707¬al€amÈah¡d1707Èe32420x!¤aa¡d1705al€am	\nkah¡d1705	\nklg:159808:242x!¤aa¡d1712al€ah¡d17121:¬am1:¬e82294x!¤aa¡d1712al€ah¡d1712ßÍôamßÍôd5965x!¤aa¡d1705al€amŒ6xah¡d1705Œ6xd2584x!¤aa¡d1705al€am\000\"Œ$ah¡d1705\000\"Œ$f200565x!¤aa¡d1705al€am\000Lah¡d1705\000Lf223770x3¤aa¢d1705Rd1712al€ah¢d1705ÚÜd1712q¯Èamq¯Èf194575x¤aa¡d1705al€amˆTah¡d1705ˆTe38931x¤aa¡d1712™al€amı ah¡d1712ı lg:219861:550x!¤aa¡d1704\nal€ah¡d17041¬am1¬f210805x9¤aa€al¡d1707\000º”am\000Ìğah£d1707\000ú¤d1712\000Ìğd1710\000ûle68762x!¤aa¡d1705al€am\000pW`ah¡d1705\000pW`f116720x!¤aa¡d1705al€am/X@ah¡d1705/X@f212308x5¤aa¢d17084ıd1712Hñal€ah¢d1708\000\rm€d1712\000\r(am\000\r(f191351x¤aa¡d17077al€amıèah¡d1707ıèe14376x!¤aa¡d1705al€am\000øah¡d1705\000ølg:224592:564x!¤aa¡d1705al€ah¡d1705\000%°Ôam\000%°Ôlg:106463:186x!¤aa¡d1712al€ah¡d1712´am´f199988x#¤aa¡d1712al€am\000“|ah¡d1712\000“|d2901x!¤aa¡d1704al€am\000\n‡Pah¡d1704\000\n‡Pf201434x!¤aa¡d1712al€ah¡d1712HamHf176795x!¤aa¡d1712al€ah¡d1712\000«…`am\000«…`f229069x!¤aa¡d1705al€amõá\000ah¡d1705õá\000e36450x!¤aa¡d1712al€ah¡d1712U;XamU;Xe36412x!¤aa¡d1705al€am«¬ìah¡d1705«¬ìlg:224609:408x!¤aa¡d1712al€ah¡d1712ğªpamğªpd9444x!¤aa¡d1712al€ah¡d1712ÍcÔamÍcÔe38819x\"¤aa¡d17129al€ah¡d1712\000	ê¬am\000	ê¬f200052x3¤aa¢d1705yd1712al€ah¢d1705\000D‚¬d1712Ú³pamÚ³pf210809xA¤aa¡d1707‘¡al€ah¤d1707\000›„d1712\000\n_xd1705\000=`d1710\000=`am\000\n_xf199952x¤aa¡d1712al€ah¡d1712å°amå°e55308x!¤aa¡d1705al€amŸèÜah¡d1705ŸèÜf110648x!¤aa¡d1712al€amû¸ah¡d1712û¸d4623x\"¤aa¡d1707Óal€am\000~dah¡d1707\000~dlg:144401:241x!¤aa¡d1705al€amWR ah¡d1705WR f160161x!¤aa¡d1705al€amúíÄah¡d1705úíÄe14459x!¤aa¡d1705al€am‡\000ah¡d1705‡\000d2376x!¤aa¡d1712al€ah¡d1712\000úìam\000úìe25037x!¤aa¡d1705al€am\000ààah¡d1705\000ààf206969x#¤aa¡d1712Œal€am\0002ÏĞah¡d1712\0002ÏĞf138486x#¤aa¡d1707FÇal€am\000´ah¡d1707\000´f200004x\"¤aa¡d1704/al€am\000@Èah¡d1704\000@Èf224609x,¤aa¡d1712:al¡d1712\0007óÔah¡d1712\0007ôœam\0007ôœf199993x¤aa¡d1712al€ah¡d1712Ã´amÃ´e15522x!¤aa¡d1712al€ah¡d1712\nšbam\nšbd8275x!¤aa¡d1712al€ah¡d1712\000ˆ^Œam\000ˆ^Œf200034x#¤aa¡d1712oal€ah¡d1712\000èHam\000èHe25085x!¤aa¡d1712al€ah¡d1712\000F©am\000F©d9858x!¤aa¡d1712al€ah¡d1712\000Â$Èam\000Â$Èf212264x#¤aa¡d1707*\ral€am\000\"ğ$ah¡d1707\000\"ğ$e38790x¤aa¡d1712Ÿal€ah¡d1712\nŒam\nŒf204700x!¤aa¡d1712al€am]J€ah¡d1712]J€f194011x\"¤aa¡d1712al€am\000-Xah¡d1712\000-Xe98756x!¤aa¡d1705al€amUW4ah¡d1705UW4f191394x¤aa¡d1707öal€amˆah¡d1707ˆd9958x!¤aa¡d1712al€ah¡d1712(”œam(”œd3823x¤aa¡d1707al€amé˜ah¡d1707é˜f198535x\"¤aa¡d1705al€am\0005ƒ8ah¡d1705\0005ƒ8d7544x!¤aa¡d1705al€amÉÍ¨ah¡d1705ÉÍ¨f200011x2¤aa¢d1705d17120al€ah¢d1705\000O€d1712\000JPam\000JPe15652x!¤aa¡d1705al€am\000¨Æ¤ah¡d1705\000¨Æ¤f223714x#¤aa¡d1712al€am\000ah¡d1712\000e87641x!¤aa¡d1712al€ah¡d1712-µpam-µpf223740x#¤aa¡d1712»al€ah¡d1712\000©ˆÈam\000©ˆÈd2313x¤aa¡d1704al€amôah¡d1704ôf138727x¤aa¡d1707âal€am˜ah¡d1707˜e75065x!¤aa¡d1705al€am8ah¡d17058e38792x¤aa¡d17124al€amm`ah¡d1712m`d8313x!¤aa¡d1712al€ah¡d1712\0002äèam\0002äèf199969x2¤aa¢d1705d1712Gal€ah¢d1705\000¡ d1712\0005\000am\0005\000e38972x2¤aa¢d1705d17123al€ah¢d1705\000n0d1712\000¾Ìam\000¾Ìf223763x4¤aa¢d1705d1712Fal€ah¢d1705bZ\000d1712ÅVLamÅVLe22832x¤aa¡d1707$al€amìah¡d1707ìe38865x\"¤aa¡d1712Xal€am\000eÈah¡d1712\000eÈe52756x¤aa¡d1712Yal€amˆah¡d1712ˆe52779x\"¤aa¡d17128al€am\000ïPah¡d1712\000ïPe38885x!¤aa¡d1712al€am\000aOTah¡d1712\000aOTd6049x#¤aa¡d1707al€am\000Mtah¡d1707\000Mtf223697x#¤aa¡d1704ÿal€amßÑÜah¡d1704ßÑÜf191401x¤aa¡d1707+al€amäah¡d1707äe38967x\"¤aa¡d1712²al€am\000^ah¡d1712\000^f219861x\"¤aa¡d17047al€ah¡d1704\000-É|am\000-É|kg:14964:186x!¤aa¡d1712al€ah¡d17124)4am4)4lg:224592:558x\"¤aa¡d17052al€ah¡d1705\000„€am\000„€f193538x!¤aa¡d1704al€ah¡d17041-\000am1-\000d7276x!¤aa¡d1705al€am\000˜–€ah¡d1705\000˜–€f106661x!¤aa¡d1712al€ah¡d1712\"&lam\"&le38971x\"¤aa¡d1712Yal€am\000ùxah¡d1712\000ùxe38873x3¤aa¢d1705¤d1712€al€ah¢d1705\000<D d1712\000LJÜam\000LJÜf172359x¤aa¡d1712õal€ah¡d1712\r¬am\r¬f224592x\"¤aa¡d1705lal€ah¡d1705\000„€am\000„€e83764x\"¤aa¡d1712{al€am\000„€ah¡d1712\000„€e38679x/¤aa¢d1707±d1712~al€ah¢d1707èd1712LamLe34207x\"¤aa¡d1712/al€am\000!¸ah¡d1712\000!¸f171350x¤aa¡d1707ÿal€am$¸ah¡d1707$¸f223659x-¤aa¡d1712tal¡d1712\000jÎ”ah¡d1712\000jÎøam\000jÎ”e82445x\"¤aa¡d1712>al€am\000O€ah¡d1712\000O€f154695x!¤aa¡d1712al€ah¡d1712\000am\000e38968x¤aa¡d1712val€am\"`ah¡d1712\"`f193236x\"¤aa¡d1705Hal€am\000€ah¡d1705\000€f200028x#¤aa¡d1712…al€am\000r“@ah¡d1712\000r“@e13499x!¤aa¡d1707al€amjLah¡d1707jLe52764x¤aa¡d1712aal€ah¡d1712|am|f110682x2¤aa¢d1705d17124al€ah¢d1705\000Ç°d1712\000X(am\000X(f154696x!¤aa¡d1712al€ah¡d1712Í=€amÍ=€e21843x!¤aa¡d1712al€ah¡d1712õá\000amõá\000f223674x\"¤aa¡d1712°al€ah¡d1712Y¼amY¼f205016x!¤aa¡d1708al€am¦-¬ah¡d1708¦-¬e38871x3¤aa¢d1705=d1712Nal€ah¢d1705\000)ö0d1712\000Nj8am\000Nj8f182560x!¤aa¡d1705al€am È|,ah¡d1705 È|,f211538x!¤aa¡d1705al€amõàœah¡d1705õàœf200014x3¤aa¢d1705 d1712al€ah¢d1705\000=œd17121-\000am1-\000d2210x!¤aa¡d1712al€ah¡d1712öHamöHe38887x!¤aa¡d1712\nal€am\000y¾Ìah¡d1712\000y¾Ìf222856x\"¤aa¡d1712{al€ah¡d1712–òèam–òèf159280x!¤aa¡d1705al€amÛ¸ah¡d1705Û¸d2657x!¤aa¡d1712al€ah¡d1712\000vTam\000vTe21841x\"¤aa¡d17125al€ah¡d1712\000“|am\000“|f184782x!¤aa¡d1705al€amëÂ\000ah¡d1705ëÂ\000f224632x¤aa€al€ah¡d1712\0008u am\0008u lg:211539:451x!¤aa¡d1705al€amõàœah¡d1705õàœf200046x\"¤aa¡d1704}al€am¨€ah¡d1704¨€e58487x#¤aa¡d1707Jal€am\000,<ah¡d1707\000,<f200016x5¤aa¢d1705§d1712\nİal€ah¢d1705\000Âäd1712\000W|am\000W|e36448x!¤aa¡d1712al€ah¡d1712“•tam“•te41599x!¤aa¡d1712	al€ah¡d1712\000i\"Øam\000i\"Øf159786x2¤aa¢d1705d1712áal€ah¢d1705\000/ d1712\000Müam\000Müe85851x!¤aa¡d1705al€amşˆah¡d1705şˆe12997x!¤aa¡d1712al€ah¡d17121-\000am1-\000f194578x¤aa¡d1705¯al€am¯Èah¡d1705¯Èe87578x\"¤aa¡d1712Mal€am\000ÌDah¡d1712\000ÌDlg:222841:551x\"¤aa¡d1704\\al€ah¡d1704Û amÛ f199962x\"¤aa¡d1704fal€am\000Ğah¡d1704\000Ğlg:222474:551x!¤aa¡d1712al€am/¦`ah¡d1712/¦`e52777x\"¤aa¡d1712-al€ah¡d1712\000rĞam\000rĞe33185x1¤aa¢d1705d1712al€ah¢d1705\000ªÈd1712\000¥am\000¥f223716x#¤aa¡d1712kal€am\000¡—0ah¡d1712\000¡—0e38838x-¤aa¢d1705ld1712Çal€ah¢d1705tÌd1712À0amÀ0f194577x¤aa¡d17057al€amüah¡d1705üe14973x!¤aa¡d1712al€ah¡d1712ÄÎamÄÎd1202x!¤aa¡d1712al€ah¡d1712\000’B0am\000’B0f172370x.¤aa¢d1705d17123al€ah¢d1705+\\d1712*øam*øf112115x4¤aa¢d1705d1712al€ah¢d1705\000\nDd1712\000¨Lam\000¨Le52744x¤aa¡d1712;al€amIÔah¡d1712IÔe36458x!¤aa¡d1712al€ah¡d1712\000C,|am\000C,|e82074x!¤aa¡d1712al€ah¡d1712\000•ZÄam\000•ZÄf223695x\"¤aa¡d17048al€amëœah¡d1704ëœe13457x¤aa¡d1707+al€am°ah¡d1707°d6383x!¤aa¡d1712al€ah¡d1712\000q’8am\000q’8e38804x\"¤aa¡d1712Jal€am\0004´ah¡d1712\0004´f210936xM¤aa¡d1707\000±1al¡d1707\000(ah¤d1707\000d1712\000õd1705\000V”d1710\000Ô\\am\000õe38926x1¤aa¢d1705\nd1712al€ah¢d1705\000d1712\000ğèam\000ğèf193254x¤aa¡d1705³al€ah¡d1705ame38866x-¤aa¢d17074d1712.al€ah¢d1707C”d1712C”amC”f223728x#¤aa¡d1712)al€ah¡d1712\000Æ-4am\000Æ-4f109219x¤aa¡d1707ªal€am#(ah¡d1707#(e21342x!¤aa¡d1712al€ah¡d1712¾¡üam¾¡üe37810x!¤aa¡d1712al€ah¡d1712	‰h\000am	‰h\000e22828x\"¤aa¡d1707Dal€am\000sØah¡d1707\000sØe76093x¤aa¡d1707gal€amàah¡d1707àe38898x¤aa¡d1712ral€amM¼ah¡d1712M¼f194567x¤aa¡d1705(al€am[hah¡d1705[hf223733x\"¤aa¡d1712yal€ah¡d1712\000=$am\000=$lg:222481:550x!¤aa¡d1704al€am\000j¨°ah¡d1704\000j¨°f223731x#¤aa¡d1712al€ah¡d1712'”am'”f199944x\"¤aa¡d1712¿al€am\000ópah¡d1712\000ópf206510x!¤aa¡d1712al€ah¡d17123—/Øam3—/Øf127019x!¤aa¡d1705al€amÉÊ$ah¡d1705ÉÊ$f210799xC¤aa€al¢d1707\000	4d1710\000•ah£d1707\000Æ„d1712\000õld1710\000•pam\000õle55056x\"¤aa¡d1712)al€am\000 ˆah¡d1712\000 ˆe45056x\"¤aa¡d1705val€am\000†”ah¡d1705\000†”e32947x!¤aa¡d1707al€am>Ædah¡d1707>Æde38899x\"¤aa¡d1712.al€am\000İôah¡d1712\000İôe38900x!¤aa¡d1712al€am\000Ã¼ah¡d1712\000Ã¼f191370x¤aa¡d1707 al€am ah¡d1707 e29534x!¤aa¡d1712al€am\000gf´ah¡d1712\000gf´e76095x¤aa¡d1707ùal€am	Äah¡d1707	Äd2448x!¤aa¡d1712al€ah¡d1712\000¦0am\000¦0e38798x¤aa¡d17127al€amBah¡d1712Bf200053x4¤aa¢d1705*d1712al€ah¢d1705\000+|Ğd1712\0000ØLam\0000ØLe38854x\"¤aa¡d1712*al€am\000Pah¡d1712\000Pe38991x2¤aa¢d1705\nd1712–al€ah¢d1705\000sàd1712\000_am\000_f223715x#¤aa¡d1712	Wal€am\000“àah¡d1712\000“àe25080x!¤aa¡d1712al€ah¡d1712\000—¸am\000—¸f194009x¤aa¡d1712‰al€amİah¡d1712İf168499x¤aa¡d1707âal€am Ğah¡d1707 Ğe38848x1¤aa¢d17054d1712cal€ah¢d1705#(d1712\0008am\0008e15114x!¤aa¡d1705al€am\000˜tah¡d1705\000˜tf172415x¤aa¡d1712µal€amˆah¡d1712ˆe36447x!¤aa¡d1712al€ah¡d1712N­š\000amN­š\000e55055x\"¤aa¡d1712Mal€am\0007hah¡d1712\0007he13496x!¤aa¡d1707al€amË8àah¡d1707Ë8àf212263x#¤aa¡d1707Z@al€am\000àah¡d1707\000àe38813x2¤aa¢d1705d1712*al€ah¢d1705\000P0d1712\000m˜am\000m˜lg:198243:326x!¤aa¡d1704al€ah¡d1704\n}Œ\000am\n}Œ\000e22901x!¤aa¡d1707al€am\000íTah¡d1707\000íTf110649x¤aa¡d1712%al€amÙ”ah¡d1712Ù”e38955x.¤aa¢d1707Xd1712Tal€ah¢d1707d1712JœamJœf121177x!¤aa¡d1705al€amj(ah¡d1705j(e22850x¤aa¡d1707dal€am'ah¡d1707'e38981x!¤aa¡d1705al€am\000Ülah¡d1705\000Üle52766x¤aa¡d1712Šal€am¤ah¡d1712¤e68785x\"¤aa¡d1712al€am\000‰Œah¡d1712\000‰Œe58090x¤aa¡d1707Åal€amN ah¡d1707N f159468x¤aa¡d1712bal€am( ah¡d1712( f225752x\"¤aa¡d1712\"al€ah¡d1712\000#am\000#f172368x-¤aa¢d1705Sd1712±al€ah¢d1705–Èd17128@am8@f211879x#¤aa¡d1707«al€am\000â\000ah¡d1707\000â\000f191396x¤aa¡d1707yal€am˜ah¡d1707˜e14947x!¤aa¡d1712al€ah¡d1712)# am)# e38882x\"¤aa¡d1712$al€am\000dÔah¡d1712\000dÔe15621x!¤aa¡d1712al€ah¡d1712\000Ô–¨am\000Ô–¨lg:221799:557x!¤aa¡d1704al€ah¡d1704u\000amu\000f159199x!¤aa¡d1705al€am\000˜›0ah¡d1705\000˜›0f169300x\"¤aa¡d1707al€am\0005<ah¡d1707\0005<f203796x!¤aa¡d1705al€amÍNah¡d1705ÍNf219914x#¤aa¡d1712zal€am\000yçĞah¡d1712\000yçĞd2211x!¤aa¡d1712al€ah¡d1712¡äam¡äe58145x¤aa¡d1707™al€am¨ah¡d1707¨e55314x!¤aa¡d1705al€am\000&% ah¡d1705\000&% f200006x#¤aa¡d1704'al€am\000KÀah¡d1704\000KÀe38933x¤aa¡d1712¦al€amxah¡d1712xf200580x\"¤aa¡d1705(al€am\000uah¡d1705\000ue18257x!¤aa¡d1707al€am\000*lah¡d1707\000*le38936x!¤aa¡d1712al€am\000[fpah¡d1712\000[fpe38796x¤aa¡d1705al€am3,ah¡d17053,lg:191242:346x!¤aa¡d1704	al€am\000&K„ah¡d1704\000&K„f207021x#¤aa¡d1707Ual€am\000ÔÀah¡d1707\000ÔÀe20002x#¤aa¡d1707Gal€am\000?èah¡d1707\000?èe38794x,¤aa¢d1705d1712|al€ah¢d17053ôd17121œam1œf159785x1¤aa¢d1705 d1712Áal€ah¢d1705N d1712\000Jxam\000Jxe87559x\"¤aa¡d1712bal€am\000Û€ah¡d1712\000Û€f184090x#¤aa¡d1707al€am\000Á”ah¡d1707\000Á”f200571x¤aa¡d1705al€amœ@ah¡d1705œ@e44947x\"¤aa¡d1712kal€am\000Ó”ah¡d1712\000Ó”e34440x¤aa¡d1707éal€am¼ah¡d1707¼f201443x!¤aa¡d1712al€ah¡d1712\"Ham\"He22911x!¤aa¡d1707al€am\000‚Œah¡d1707\000‚Œf193556x\"¤aa¡d17129al€am\000ôah¡d1712\000ôf210803x7¤aa¡d17072Èal€am\000Vah£d1707\000A,d1712\000Vd1710\000Ô0f194012x#¤aa¡d1712>al€am\000]pah¡d1712\000]pe38877x\"¤aa¡d1712al€am\000.Ö<ah¡d1712\000.Ö<f222889x\"¤aa¡d1712\\al€am\000rpàah¡d1712\000rpàe38373x\"¤aa¡d1712ìal€am\000µøah¡d1712\000µøf128545x\"¤aa¡d1712:al€ah¡d1712\000kü$am\000kü$f223771x3¤aa¢d1705jd1712×al€ah¢d1705]J€d17120X`am0X`lg:106727:186x!¤aa¡d1712al€ah¡d1712\r\"Ôam\r\"Ôf219906x#¤aa¡d1712Ôal€am\000‰Sxah¡d1712\000‰Sxf222560x#¤aa¡d17083al€aml±Tah¡d1708l±Tf224635x,¤aa¡d1712§al¡d1712\0005gàam\0005gàah¡d1712úûÔf223660x\"¤aa¡d1712hal€ah¡d1712	nˆam	nˆe41603x\"¤aa¡d1712‘al€am\000Ÿ,ah¡d1712\000Ÿ,e21022x!¤aa¡d1712al€ah¡d1712ÂÒ€amÂÒ€f223512w¤aa€al€am/¨ah¡d1707/¨e38837x#¤aa¡d1712al€ah¡d1712\000sPam\000sPf138729x¤aa¡d1707pÛal€amLah¡d1707Le38988x\"¤aa¡d1712$al€am\000‹´ah¡d1712\000‹´e82226x!¤aa¡d1705al€am\000D€ah¡d1705\000D€f206513x!¤aa¡d1712al€ah¡d1712VKŒamVKŒf191380x¤aa¡d1707üĞal€am¸ah¡d1707¸e22841x\"¤aa¡d17074al€am\000dpah¡d1707\000dpf152557x¤aa¡d1707€al€am\r¬ah¡d1707\r¬f211600x!¤aa¡d1705al€am\000‡€ah¡d1705\000‡€e38374x\"¤aa¡d17129al€am\000€¼ah¡d1712\000€¼f201321x\"¤aa¡d1712Dal€amiRøah¡d1712iRøf113585x¤aa¡d1707/al€amkĞah¡d1707kĞf210801x9¤aa€al¡d1707\0005gàah£d1707\0006+0d1712\0002”d1710\0006 am\0002”f160127x!¤aa¡d1705al€am\000\\äah¡d1705\000\\äf223698x\"¤aa¡d1704tal€am*t@ah¡d1704*t@f191369x\"¤aa¡d1707ral€am\000˜màah¡d1707\000˜màe38939x!¤aa¡d1712al€ah¡d1712\000/ûüam\000/ûüf177715x¤aa¡d1712ßal€am¼ah¡d1712¼e14331x!¤aa¡d1705al€amèH\000ah¡d1705èH\000e15014x!¤aa¡d1712al€ah¡d1712\000ÂÀam\000ÂÀf223650x\"¤aa¡d1712@al€ah¡d1712Úß¨amÚß¨f199942x¤aa¡d1712Tal€amæxah¡d1712æxf184343x!¤aa¡d1707al€am§+ ah¡d1707§+ e23883x!¤aa¡d1707al€am\000…\\<ah¡d1707\000…\\<d4477x!¤aa¡d1712al€ah¡d1712qhamqhc118x¤aa¡d1707lal€amdah¡d1707de15145x!¤aa¡d1712al€ah¡d1712\000\"!am\000\"!f193567x#¤aa¡d1712ial€am\000pah¡d1712\000plg:210110:421x!¤aa¡d1712al€amƒ½xah¡d1712ƒ½xe14607x!¤aa¡d1712al€ah¡d1712\000‹Å@am\000‹Å@e38827x¤aa¡d1712/al€amN ah¡d1712N e15494x!¤aa¡d1712al€ah¡d1712\000ìHam\000ìHe83765x\"¤aa¡d1712Bal€am\000 §`ah¡d1712\000 §`e41607x!¤aa¡d1705al€am\000{6øah¡d1705\000{6øf159466x¤aa¡d1712Ôal€amXah¡d1712Xf219913x,¤aa¡d1712`al¡d1712\000Å`am\000Å`ah¡d1712\000ìd4596x!¤aa¡d1707al€amÏ¤øah¡d1707Ï¤øf106727x!¤aa¡d1712al€ah¡d1712\r\"Ôam\r\"Ôf194016x\"¤aa¡d1712Kal€am}wÜah¡d1712}wÜf222481x\"¤aa¡d1704©al€am\000&% ah¡d1704\000&% e15895x!¤aa¡d1712al€ah¡d1712:§am:§e82968x!¤aa¡d1712al€ah¡d1712	B¸am	B¸e39671x¤aa¡d1707al€amyah¡d1707yf110646x\"¤aa¡d1712Dal€am\000pah¡d1712\000plg:190334:239x!¤aa¡d1705al€am;šÊ\000ah¡d1705;šÊ\000f175010x!¤aa¡d1712\nal€ah¡d1712kI[@amkI[@f207085x2¤aa¢d1705d1712al€ah¢d1705\000ä|d1712\000‰T@am\000‰T@e38945x¤aa¡d1712\"al€am'ah¡d1712'f223772x3¤aa¢d1705™d17129al€ah¢d17059Şôd1712õ`amõ`lg:224624:532x!¤aa¡d1705al€am\000-Ç$ah¡d1705\000-Ç$e52757x¤aa¡d1712dal€ah¡d1712?¬am?¬e90046x\"¤aa¡d1712Ëal€am\000)q`ah¡d1712\000)q`f222533x-¤aa¡d1705:7al¡d1705\000ûĞah¡d1705\000@,am\000ûĞf194571x!¤aa¡d1705	al€am\000ËfPah¡d1705\000ËfPe38978x\"¤aa¡d1712.al€ah¡d1712\000%	¤am\000%	¤f199943x\"¤aa¡d1712}al€am\000B@ah¡d1712\000B@e39000x\"¤aa¡d1712*al€ah¡d1712\000J am\000J e74708x¤aa¡d1712ıal€amé4ah¡d1712é4f171351x¤aa¡d1707¬al€amah¡d1707f223749x\"¤aa¡d1712_al€am\000r”ah¡d1712\000r”f192992x\"¤aa¡d1712Úal€am\000=	\000ah¡d1712\000=	\000lg:201322:343x!¤aa¡d1712al€amËah¡d1712Ëe59466x!¤aa¡d1705al€amúè°ah¡d1705úè°e38864x\"¤aa¡d1712al€ah¡d1712\000pœam\000pœf205014x!¤aa¡d1708al€am;š¢ğah¡d1708;š¢ğf127845x\"¤aa¡d1707Ğal€am\000UÈah¡d1707\000UÈe38771x¤aa¡d1712al€am¤ah¡d1712¤f223677x\"¤aa¡d1712‹al€ah¡d1712W$àamW$àf168506x¤aa¡d1707al€amu0ah¡d1707u0e67145x!¤aa¡d1712al€ah¡d1712úÉamúÉf200579x!¤aa¡d1705al€am\000	ëah¡d1705\000	ëf168598x2¤aa¢d1705d17129al€ah¢d1705\000nüd1712\000÷¼am\000÷¼e74717x¤aa¡d17122al€ah¡d1712»äam»äf192552x¤aa¡d1705al€am¯Èah¡d1705¯Èf171272x¤aa¡d1707al€am0pah¡d17070pe38834x\"¤aa¡d1712`al€am\000^éDah¡d1712\000^éDe38997x¤aa¡d1712{al€amıèah¡d1712ıèf198534x!¤aa¡d1705al€am\000-ÆÀah¡d1705\000-ÆÀf201311x#¤aa¡d1712&al€am\000…ìah¡d1712\000…ìe38820x\"¤aa¡d1712³al€am\000°ìah¡d1712\000°ìe25652x!¤aa¡d1704al€am¼9¦ah¡d1704¼9¦e38934x¤aa¡d1712[al€am9lah¡d17129ld9935x!¤aa¡d1712al€ah¡d1712\000{”am\000{”f223751x¤aa¡d1712Ãal€amÃPah¡d1712ÃPlg:215137:558x!¤aa¡d1705al€amMù<ah¡d1705Mù<f199985x#¤aa¡d1712Şal€am\000-ŸLah¡d1712\000-ŸLe38986x¤aa¡d1712>al€ah¡d1712»€am»€e29535x!¤aa¡d1712\nal€ambXÔah¡d1712bXÔe41238x!¤aa¡d1705al€am%„ah¡d1705%„f144398x!¤aa¡d1707al€am`Ğ¤ah¡d1707`Ğ¤f203803x!¤aa¡d1705al€am'ùMÈah¡d1705'ùMÈf191400x¤aa¡d1707al€am”ah¡d1707”e33448x¤aa¡d1707Ùal€ampah¡d1707pe23884x!¤aa¡d1707al€am\000LJÜah¡d1707\000LJÜe82962x!¤aa¡d1712al€ah¡d1712\000²Äam\000²Äd2456x¤aa¡d1707Öal€am	`ah¡d1707	`e10364x!¤aa¡d1712al€ah¡d1712\000lïam\000lïe10258x!¤aa¡d1705al€am\000!&Tah¡d1705\000!&Tlg:184806:190x!¤aa¡d1712al€ah¡d17125˜´\000am5˜´\000e38976x¤aa¡d1712Dal€ah¡d1712ÃPamÃPf223719x\"¤aa¡d1712]al€amôjÈah¡d1712ôjÈf200041x¤aa¡d1712al€ah¡d1712Ç8amÇ8f211536x!¤aa¡d1705al€ah¡d1705Ğ\000amĞ\000lg:142541:239x!¤aa¡d1705al€am\000¾¼ ah¡d1705\000¾¼ e38947x1¤aa¢d1705d1712al€ah¢d1705\000Lfüd1712\000‘èam\000‘èf153438x¤aa¡d1712ıal€ah¡d1712ÀamÀe13495x!¤aa¡d1707al€amG†Œ\000ah¡d1707G†Œ\000kg:14800:186x!¤aa¡d1712al€ah¡d1712\n·ZÔam\n·ZÔe10267x!¤aa¡d1705al€am\000m5ah¡d1705\000m5e38998x1¤aa¢d1705d1712al€ah¢d1705\000]×pd1712\000†F8am\000†F8f159789x-¤aa¢d1705!d1712¯al€ah¢d1705T`d1712&¬am&¬d1168x!¤aa¡d1712al€ah¡d1712G†Œ\000amG†Œ\000f159851x!¤aa¡d1712al€ah¡d1712KYxamKYxf199995x¤aa¡d1712¯al€ah¡d1712ä amä e38924x1¤aa¢d1705d1712al€ah¢d1705\000¿\n¤d1712\000˜¹¨am\000˜¹¨e38786x\"¤aa¡d1712val€ah¡d1712\000pam\000pe16221x!¤aa¡d1707al€am\0004lah¡d1707\0004lf222888x#¤aa¡d1712al€am\000Dª ah¡d1712\000Dª e68786x\"¤aa¡d1712al€am\000+–üah¡d1712\000+–üf128553x#¤aa¡d1712,al€am\000?°ah¡d1712\000?°e98773x!¤aa¡d1705al€amÔÀ\000ah¡d1705ÔÀ\000e38851x\"¤aa¡d1712%al€am\000 ˜ìah¡d1712\000 ˜ìe15564x¤aa¡d1704^al€amäah¡d1704älg:181393:190x!¤aa¡d1712al€ah¡d1712#Y†„am#Y†„e15173x!¤aa¡d1705al€am\000³Üˆah¡d1705\000³Üˆe14763x!¤aa¡d1705al€am.<ah¡d1705.<e52749x¤aa¡d1712al€amN ah¡d1712N f171352x¤aa¡d1707pal€am\r¬ah¡d1707\r¬e57194x¤aa¡d1707kal€am”pah¡d1707”pf184806x!¤aa¡d1712al€ah¡d17125˜´\000am5˜´\000e14270x!¤aa¡d1705al€am\000*İah¡d1705\000*İf153444x\"¤aa¡d1712Xal€ah¡d1712\000æ am\000æ f223725x\"¤aa¡d1712<al€am© ah¡d1712© d2214x!¤aa¡d1712al€ah¡d1712G¤,amG¤,f191395x#¤aa¡d1707L¬al€am\000lah¡d1707\000lf213197x/¤aa€al¡d1710\000-é am\000-é ah¢d1705\000	'Àd1710\000:E0e57192x¤aa¡d1707al€am9lah¡d17079lf223796x\"¤aa¡d1712%al€ah¡d1712Úâ\000amÚâ\000e14812x!¤aa¡d1712al€ah¡d1712¦'am¦'f224624x\"¤aa¡d1705<al€am\000\n®Äah¡d1705\000\n®Äe55054x#¤aa¡d1712al€am\000VDah¡d1712\000VDe38850x\"¤aa¡d1712_al€am\0009Ôah¡d1712\0009Ôe94218x!¤aa¡d1712al€ah¡d1712iŒamiŒe44469x\"¤aa¡d1712™al€ah¡d1712\000‡Äam\000‡Äe22849x¤aa¡d1707õal€amMXah¡d1707MXf223708x#¤aa¡d1712…al€am\000(˜ah¡d1712\000(˜f211542x!¤aa¡d1705al€amõàœah¡d1705õàœd3387x\"¤aa¡d1707Mal€am\000˜ah¡d1707\000˜e38984x¤aa¡d1712Bal€amšLah¡d1712šLlg:217125:554x!¤aa¡d1705al€am©•Àah¡d1705©•Àd4327x!¤aa¡d1705al€amúì4ah¡d1705úì4f211544x!¤aa¡d1705al€amõàœah¡d1705õàœe36449x!¤aa¡d1712al€ah¡d1712.ı¼am.ı¼lg:190334:252x!¤aa¡d1705al€am\000LK@ah¡d1705\000LK@f210931xM¤aa€al¢d1707\000?\\d1710\000Ôxah¤d1705\000xd1712\000aüd1707\000h d1710\000º¨am\000aüf223690x\"¤aa¡d1712al€am¡ô ah¡d1712¡ô d4726x!¤aa¡d1705al€am\000LK@ah¡d1705\000LK@f110618x¤aa¡d1712eal€ah¡d1712åLamåLe15592x!¤aa¡d1712al€ah¡d1712\000V(am\000V(e38841x¤aa¡d1712Ial€am¤ah¡d1712¤f223668x#¤aa¡d1712-al€ah¡d1712\000`9˜am\000`9˜e21021x!¤aa¡d1712al€ah¡d1712‰Cxam‰Cxf199958x¤aa¡d1712Ïal€ah¡d1712Ã´amÃ´f223682x\"¤aa¡d1712Úal€am]Eah¡d1712]Ee12190x¤aa¡d1707Ual€amÜah¡d1707Üe38993x¤aa¡d1712œal€ah¡d1712'am'e13459x\"¤aa¡d17070al€am\000–Jœah¡d1707\000–Jœe83763x\"¤aa¡d1712Bal€am\0003ˆah¡d1712\0003ˆf110624x#¤aa¡d1712êal€am\000²`ah¡d1712\000²`f211539x!¤aa¡d1705al€amõàœah¡d1705õàœf128544x¤aa¡d1712ƒal€ah¡d1712¶am¶f224801x#¤aa¡d1707ÌNal€am\000HÄah¡d1707\000HÄf207023x¤aa¡d1707w”al€am\nğah¡d1707\nğf163954x!¤aa¡d1712al€ah¡d1712k¡<amk¡<f200024x¤aa¡d1712Ïal€amÓTah¡d1712ÓTf222853x\"¤aa¡d1712&al€ah¡d1712\000³qam\000³qd7536x!¤aa¡d1712al€ah¡d1712\000|C¸am\000|C¸f193237x#¤aa¡d1705$al€am\000 ah¡d1705\000 f223778x3¤aa¢d1705Hd1712tal€ah¢d1705àCd1712ës|amës|f213613xC¤aa€al¡d1707\000˜am\000ÎÀah¤d1707\000¦`d1712\000ÎÀd1705\000æ0d1710\000Df220145x#¤aa¡d1707al€am\000©xah¡d1707\000©xd5762x!¤aa¡d1712al€ah¡d1712\000Ü,am\000Ü,e38895x\"¤aa¡d1712al€ah¡d1712\000\r0ôam\000\r0ôd3914x!¤aa¡d1712al€ah¡d1712\000EÀam\000EÀf177661x¤aa¡d17123al€ah¡d1712IpamIpe52743x\"¤aa¡d1712yal€ah¡d1712\000zam\000zf199971x2¤aa¢d1705d1712Lal€ah¢d1705\000%Ãød1712\000\"üam\000\"üe13506x#¤aa¡d1707Ral€am\000õdah¡d1707\000õde38905x¤aa¡d1712(al€am¨Àah¡d1712¨Àf171274x¤aa¡d1707–al€am@ah¡d1707@f223702x\"¤aa¡d1704al€amGO¬ah¡d1704GO¬d9919x!¤aa¡d1705al€amb?pah¡d1705b?pf222418x#¤aa¡d1707pal€am\000/€ğah¡d1707\000/€ğf223654x\"¤aa¡d1712<al€ah¡d1712©»¤am©»¤e55310x!¤aa¡d1705al€am\000äíÜah¡d1705\000äíÜf191364x¤aa¡d1707Dal€amˆah¡d1707ˆe17183x!¤aa¡d1712al€ah¡d1712\000µ|(am\000µ|(e38869x\"¤aa¡d1705Oal€am\0006\\ah¡d1705\0006\\f109220x¤aa¡d1707gal€amTah¡d1707Te22842x#¤aa¡d1707al€am\000\r\000ah¡d1707\000\r\000f153442x\"¤aa¡d1712¼al€ah¡d1712\000•¸am\000•¸e82442x¤aa¡d1712Dal€am^ˆah¡d1712^ˆf172418x¤aa¡d1712al€amˆah¡d1712ˆf220136x%¤aa€al€am\000Iğah¢d1707\000n d1712\000Iğf144403x!¤aa¡d1705al€am\000LK@ah¡d1705\000LK@e14777x!¤aa¡d1712al€ah¡d1712\000gİØam\000gİØd6053x!¤aa¡d1707al€am\000‚Œah¡d1707\000‚Œe76096x¤aa¡d1707-al€amYtah¡d1707Ytd8127x!¤aa¡d1705al€am\000{¨¤ah¡d1705\000{¨¤d6057x!¤aa¡d1707al€am\000|üah¡d1707\000|üe25040x!¤aa¡d1705al€am\000Q˜ah¡d1705\000Q˜f200018x\"¤aa¡d1712al€ah¡d1712ˆ~Øamˆ~Øe58488x#¤aa¡d1707Jal€am\000\r`ah¡d1707\000\r`f223703x#¤aa¡d1704!al€am¦ªœah¡d1704¦ªœe40212x¤aa¡d1707@al€amœ@ah¡d1707œ@e10195x!¤aa¡d1712al€ah¡d1712\000¥x(am\000¥x(f201448x!¤aa¡d1712al€ah¡d1712\n\ràam\n\ràf210808xM¤aa¡d1707\000Òal¡d1710\000† ah¤d1707\0004d1712\000ù¸d1705\000ğôd1710\000˜am\000ù¸e15618x!¤aa¡d1712al€ah¡d1712\000ñtam\000ñtf211591x!¤aa¡d1705al€ah¡d1705\000‡€am\000‡€e76160x!¤aa¡d1705al€am;šªÀah¡d1705;šªÀe10365x!¤aa¡d1712al€ah¡d1712\000˜”(am\000˜”(lg:224635:564x\"¤aa¡d1712al€am¦Àah¡d1712¦Àe38944x\"¤aa¡d1712Aal€ah¡d1712\000Û\000am\000Û\000lg:224609:515x!¤aa¡d1712al€ah¡d1712\000<:\\am\000<:\\f218339x¤aa€al€amĞah¢d1710<d1712Ğe87580x\"¤aa¡d1712bal€am\000,¤ah¡d1712\000,¤e13497x!¤aa¡d1707al€amG†Œ\000ah¡d1707G†Œ\000e25651x!¤aa¡d1704al€am\000;EÔah¡d1704\000;EÔf201313x!¤aa¡d1712al€am\000Lp\\ah¡d1712\000Lp\\e52785x\"¤aa¡d17126al€am\000#­˜ah¡d1712\000#­˜e38880x2¤aa¢d1705d1712$al€ah¢d1705\000\rY”d1712\000 Üam\000 Üf223791x\"¤aa¡d1712%al€ah¡d1712ú¢`amú¢`f198315x\"¤aa¡d1705al€am\000äáÀah¡d1705\000äáÀf182556x!¤aa¡d1705al€am\000˜Ÿ|ah¡d1705\000˜Ÿ|f159812x!¤aa¡d1712al€ah¡d1712\000ô$\000am\000ô$\000e57191x¤aa¡d1707Æal€amah¡d1707e38857x¤aa¡d1712#al€amÃPah¡d1712ÃPf194573x¤aa¡d1705al€am ah¡d1705 lg:224624:561x!¤aa¡d1705al€am\000\n®Äah¡d1705\000\n®Äf200573x¤aa¡d1705:al€am­pah¡d1705­pe38825x¤aa¡d1712åal€ah¡d1712\n(am\n(f128551x#¤aa¡d1712±al€am\000\n¬Ğah¡d1712\000\n¬Ğf222854x\"¤aa¡d1712¿al€am\000Ï~Àah¡d1712\000Ï~Àf110634x!¤aa¡d1712al€ah¡d1712;šÊ\000am;šÊ\000e74701x¤aa¡d1712™al€am|ah¡d1712|d2213x!¤aa¡d1712al€ah¡d1712}ùàam}ùàe52746x¤aa¡d1712;al€am›xah¡d1712›xe15138x\"¤aa¡d1705-al€amù/8ah¡d1705ù/8f169299x#¤aa¡d1707`Ìal€am\000ñ|ah¡d1707\000ñ|f193561x#¤aa¡d17125al€am\000|ah¡d1712\000|e55057x2¤aa¢d1705d1712Val€ah¢d1705\000-ÆÀd1712\000Iğam\000Iğf127834x¤aa¡d1707İal€am.àah¡d1707.àf200051x5¤aa¢d1705d1712šal€ah¢d1705\0005g|d1712\000[fam\000[fe52761x\"¤aa¡d1712/al€am\000‘ôah¡d1712\000‘ôe14790x!¤aa¡d1712al€ah¡d1712dDamdDf212261x#¤aa¡d1707åal€am\000÷<ah¡d1707\000÷<f223706x#¤aa¡d1704Jal€amŞ¾$ah¡d1704Ş¾$d7411x!¤aa¡d1705al€am\000äáÀah¡d1705\000äáÀlg:224592:515x!¤aa¡d1705al€am\nKˆah¡d1705\nKˆf221795x\"¤aa¡d17040al€ah¡d1704º@amº@e13442x\"¤aa¡d1707ÿal€am\000‹€ah¡d1707\000‹€f200042x¤aa¡d1712Cal€ah¡d1712É,amÉ,d9764x!¤aa¡d1712al€ah¡d1712\000ÄaÔam\000ÄaÔd6042x\"¤aa¡d17126al€am\000<áğah¡d1712\000<áğe42500x!¤aa¡d1712al€am\000İĞah¡d1712\000İĞlg:159813:242x!¤aa¡d1712al€ah¡d1712TÈ amTÈ lg:184782:207x!¤aa¡d1705al€amëÂ\000ah¡d1705ëÂ\000lg:219861:538x!¤aa¡d1704al€ah¡d1704\000-É|am\000-É|f110631x¤aa¡d1712½al€ah¡d17126°am6°e17188x!¤aa¡d1712al€ah¡d1712&N”am&N”e14982x!¤aa¡d1712al€ah¡d1712\000Îû€am\000Îû€e76090x¤aa¡d1707^al€amˆah¡d1707ˆf110625x\"¤aa¡d1712Mal€am\000Š$ah¡d1712\000Š$lg:225373:558x!¤aa¡d1712al€am\n!ô¼ah¡d1712\n!ô¼e15512x!¤aa¡d1712al€ah¡d1712ÚtğamÚtğe38861x¤aa¡d1712ªal€amTÄah¡d1712TÄd9794x!¤aa¡d1705al€am\000à¤ah¡d1705\000à¤e87577x\"¤aa¡d1712|al€am\000ƒäah¡d1712\000ƒälg:222481:564x\"¤aa¡d1704xal€am\000¯MXah¡d1704\000¯MXe74719x¤aa¡d1712­al€amÀah¡d1712Àf199948x¤aa¡d1712¡al€ah¡d1712Ğ4amĞ4e74729x¤aa¡d17125al€amÂ$ah¡d1712Â$d3656x!¤aa¡d1712al€ah¡d1712\000…Tam\000…Te58091x¤aa¡d1707al€am,ah¡d1707,e38791x¤aa¡d1712&al€amî¬ah¡d1712î¬e38906x\"¤aa¡d17122al€am\000'(ah¡d1712\000'(f212265x#¤aa¡d1707Aal€am1,œah¡d17071,œd6050x#¤aa¡d17071al€am\000†<ah¡d1707\000†<f172410x¤aa¡d1712Aal€ah¡d1712:˜am:˜e12645x\"¤aa¡d1712al€am\000:Æah¡d1712\000:Æf212241x\"¤aa¡d1707µal€am\000-íah¡d1707\000-íd4311x!¤aa¡d1705al€am\000ëú(ah¡d1705\000ëú(e38910x¤aa¡d1712al€ah¡d17120Ôam0Ôe18168x!¤aa¡d1712al€ah¡d1712ë™`amë™`lg:159806:170x!¤aa¡d1712al€ah¡d1712\000µ,xam\000µ,xe20911x!¤aa¡d1712al€ah¡d1712\000LK¤am\000LK¤f210938xA¤aa¡d1707£Lal¡d1707\000—€am\000–Üah£d1707\000\nğ\000d1712\000–Üd1710\000Ge20912x!¤aa¡d1712al€ah¡d1712úğäamúğäf124640x¤aa¡d1707`\\al€am„lah¡d1707„lf191388x¤aa¡d17075al€amM¼ah¡d1707M¼f190334x!¤aa¡d1705al€am\000LK@ah¡d1705\000LK@e52782x\"¤aa¡d1712Ial€ah¡d1712\000<am\000<f200015x2¤aa¢d1705d1712Aal€ah¢d1705\000<d1712\000*\000am\000*\000e10271x!¤aa¡d1712al€ah¡d1712L¼amL¼d9778x!¤aa¡d1712al€ah¡d1712\000-ëÜam\000-ëÜe38789x¤aa¡d1712Wal€ah¡d1712lamlf223774x3¤aa¢d1705^d1712Mal€ah¢d1705ü­€d1712¾rÔam¾rÔf109217x¤aa¡d1707‡al€am\n(ah¡d1707\n(e22912x!¤aa¡d1707al€amÉÃäah¡d1707ÉÃälg:224593:561x\"¤aa¡d1705al€ah¡d1705\000\n®`am\000\n®`f207560x!¤aa¡d1712al€ah¡d1712,]<am,]<f223745x\"¤aa¡d1712Ëal€am\000\r´ah¡d1712\000\r´lg:224593:558x\"¤aa¡d1705*al€ah¡d1705\000\n®`am\000\n®`e52768x\"¤aa¡d1712@al€am\000¦ah¡d1712\000¦e45450x!¤aa¡d1712al€ah¡d1712\000‰Sam\000‰Se36451x!¤aa¡d1712al€ah¡d1712ìamìf201446x!¤aa¡d1712al€ah¡d1712áTàamáTàe33447x¤aa¡d1707{al€amÔah¡d1707Ôe98774x!¤aa¡d1705al€amîÓÈah¡d1705îÓÈf168529x¤aa¡d1707ÿal€amu0ah¡d1707u0e38897x¤aa¡d17120al€am˜ah¡d1712˜f223795x,¤aa¡d1712fal¡d17127öÄah¡d17127÷(am7öÄd9830x!¤aa¡d1712al€ah¡d1712uûamuûf221872x#¤aa¡d1707Üal€am\000äah¡d1707\000äd6560x!¤aa¡d1712\nal€ah¡d1712\000ÿí”am\000ÿí”e38920x2¤aa¢d1705d17122al€ah¢d1705\000€d1712\000\n„”am\000\n„”e56519x!¤aa¡d1705al€am\000-ÆÀah¡d1705\000-ÆÀe38913x\"¤aa¡d1712yal€am\000<ah¡d1712\000<f223737x\"¤aa¡d1712eal€ah¡d1712õ,ìamõ,ìe38961x¤aa¡d1712ªal€ah¡d1712&¬am&¬e74718x¤aa¡d1712Sal€ah¡d1712ÂìamÂìe22844x\"¤aa¡d1707×al€am\000÷<ah¡d1707\000÷<d3827x¤aa¡d1707Tal€amPah¡d1707Pf212309x5¤aa¢d1708&Td1712ˆal€ah¢d1708\000ğ d1712\000Ö am\000Ö f200614x\"¤aa¡d1712÷al€am\000Lah¡d1712\000Le78340x!¤aa¡d1705al€amõàœah¡d1705õàœlg:224635:515x!¤aa¡d1712al€am€ãah¡d1712€ãe44465x\"¤aa¡d1712¥al€am\000oÔah¡d1712\000oÔf172363x¤aa¡d1712´al€ah¡d1712$am$e15604x!¤aa¡d1712al€ah¡d1712‹Ôam‹Ôe38935x\"¤aa¡d1712/al€am\000•R,ah¡d1712\000•R,d7967x!¤aa¡d1712al€am\000.tah¡d1712\000.te76097x¤aa¡d1707*al€amÔah¡d1707Ôlg:222481:557x!¤aa¡d1704al€am\000˜opah¡d1704\000˜opf199936x#¤aa¡d1712Lal€ah¡d1712\000+ììam\000+ììlg:222480:544x!¤aa¡d1704al€ah¡d1704\000¼Pam\000¼Pe40077x¤aa¡d1707öal€am”ah¡d1707”f200003x\"¤aa¡d1704al€am\000W0ah¡d1704\000W0f106397x!¤aa¡d1712al€ah¡d1712/˜Ğam/˜Ğf159805x!¤aa¡d1712al€ah¡d1712\000äçœam\000äçœe13458x#¤aa¡d1707\ral€am\000pah¡d1707\000pe38938x¤aa¡d1712`al€amÜah¡d1712Ülg:178950:170x!¤aa¡d1712al€ah¡d17120„am0„f160937x!¤aa¡d1712al€ah¡d1712\000TÌam\000TÌf170365x!¤aa¡d1712al€ah¡d1712¢—Tam¢—Td3989x!¤aa¡d1712al€ah¡d1712\000\rüam\000\rüe22658x!¤aa¡d1705al€am“ƒàah¡d1705“ƒàd2570x!¤aa¡d1705al€am\000V\000ah¡d1705\000V\000e74703x\"¤aa¡d1712Mal€am\000\rl¸ah¡d1712\000\rl¸e38959x¤aa¡d17127al€ah¡d1712\rHam\rHe74723x,¤aa¢d1705d1712Èal€ah¢d1705:˜d1712M¼amM¼f223754x\"¤aa¡d1712Kal€am\000Spah¡d1712\000Spf206968x#¤aa¡d17121al€am\000\\lah¡d1712\000\\lf223691x#¤aa¡d1712¹al€am¯¬ah¡d1712¯¬e87579x\"¤aa¡d1712Jal€am\000Güah¡d1712\000Güf172358x¤aa¡d1712Wal€ah¡d1712\rHam\rHf223723x\"¤aa¡d1712æal€am\000 7 ah¡d1712\000 7 e87487x!¤aa¡d1712al€ah¡d1712\000«±„am\000«±„lg:165925:266x!¤aa¡d1705al€am\000LK@ah¡d1705\000LK@lg:180487:170x!¤aa¡d1712al€ah¡d1712In amIn f141910x\"¤aa¡d1712Ëal€am\0003Ôah¡d1712\0003Ôf211590x!¤aa¡d1705al€am\000rah¡d1705\000rf223755x\"¤aa¡d1712ˆal€am\000C¿Àah¡d1712\000C¿Àe10093x!¤aa¡d1712al€ah¡d1712\000\\j4am\000\\j4e38874x!¤aa¡d1705al€am\000	 ah¡d1705\000	 f211598x!¤aa¡d1705al€am1/¼ah¡d17051/¼f211575x!¤aa¡d1705al€am\000&&ah¡d1705\000&&e38912x\"¤aa¡d1712=al€am\000HzLah¡d1712\000HzLf223705x\"¤aa¡d1704:al€am®ÅHah¡d1704®ÅHf221873x#¤aa¡d1707al€am\000]xah¡d1707\000]xf193211x)¤aa¡d1705\0008Val¡d1705äamäah¡d1705\rHf172416x¤aa¡d1712íal€amdah¡d1712dlg:224624:434x!¤aa¡d1705al€amõºTah¡d1705õºTe10363x!¤aa¡d1712al€ah¡d1712\000ƒØ¼am\000ƒØ¼d1169x!¤aa¡d1712al€ah¡d1712Ñ¸LamÑ¸Ld3651x!¤aa¡d1712al€ah¡d1712\000Í³`am\000Í³`f106430x!¤aa¡d1712al€ah¡d1712	D¦am	D¦lg:224592:532x!¤aa¡d1705al€am\000$Ÿ\000ah¡d1705\000$Ÿ\000lg:208350:418x!¤aa¡d1705al€ah¡d1705;™C`am;™C`e55431x!¤aa¡d1712al€ah¡d1712õá\000amõá\000f221878x\"¤aa¡d1707}al€am\000LK@ah¡d1707\000LK@e38822x¤aa¡d1705;al€amĞah¡d1705Ğe17192x!¤aa¡d1712al€ah¡d1712[1@am[1@d9918x!¤aa¡d1712	al€ah¡d1712!OHam!OHf152495x¤aa¡d1707Oal€amEìah¡d1707Eìf212267x#¤aa¡d1707Qal€am\000Ïdah¡d1707\000Ïde36446x!¤aa¡d1712al€ah¡d1712ËgÀamËgÀe14251x!¤aa¡d1705al€am\000[Wüah¡d1705\000[Wüf223760x5¤aa¢d17055d1712êal€ah¢d1705Ë|d1712_Üam_Üf224599x%¤aa€al¡d1712\0005gàah¡d1712\000˜–€am\0005gàf200022x#¤aa¡d1712Eal€am\000©Èah¡d1712\000©Èf191387x#¤aa¡d1707al€am\000[Dah¡d1707\000[De24253x!¤aa¡d1705al€am\rDã„ah¡d1705\rDã„d3394x!¤aa¡d1707al€am\000`Óäah¡d1707\000`Óäe36457x!¤aa¡d1712al€ah¡d1712bqpambqpf163222x¤aa¡d1707·al€am#ğah¡d1707#ğf204965x!¤aa¡d1712al€ama-î\000ah¡d1712a-î\000f221754x%¤aa€al€am\000Iğah¢d1707\000F0Àd1712\000Iğd3816x!¤aa¡d1712al€ah¡d1712\0005rĞam\0005rĞf223765x3¤aa¢d1705™d1712Šal€ah¢d1705dœd1712ºéamºéf168592x2¤aa¢d1705d17123al€ah¢d1705\000	+¨d1712\000‹am\000‹f188038x!¤aa¡d1712al€ah¡d1712F˜amF˜f201319x\"¤aa¡d1712al€am\000·A¬ah¡d1712\000·A¬f223649x!¤aa¡d1712al€ah¡d1712õá\000amõá\000f200575x¤aa¡d1705al€amLah¡d1705Le39002x¤aa¡d17125al€amIÔah¡d1712IÔe55069x!¤aa¡d1712al€ah¡d1712T´amT´f221908x\"¤aa¡d1707al€am\000J,ah¡d1707\000J,f191363x¤aa¡d1707Ûal€am¸ah¡d1707¸e55042x!¤aa¡d1712al€ah¡d1712FT¤amFT¤f163639x\"¤aa¡d1707al€am\000qmäah¡d1707\000qmäf172406x¤aa¡d1712¼al€am\n(ah¡d1712\n(d7496x!¤aa¡d1712al€ah¡d1712\000‰SÜam\000‰SÜe38859x¤aa¡d1712al€ah¡d1712L,amL,d9873x!¤aa¡d1712al€ah¡d1712\000Lltam\000Llte37747x!¤aa¡d1712al€ah¡d1712ü´amü´f222893x\"¤aa¡d1712al€amşsüah¡d1712şsüd6052x¤aa¡d1707(al€am¼ah¡d1707¼d4069x!¤aa¡d1712al€ah¡d1712\000ó_„am\000ó_„f200615x\"¤aa¡d1712Mal€am\000¸ah¡d1712\000¸e13079x!¤aa¡d1712al€ah¡d1712ğÛDamğÛDe36455x!¤aa¡d1712al€ah¡d1712\000@Èam\000@Èf223685x#¤aa¡d1712al€amvâ ah¡d1712vâ f193238x#¤aa¡d1705¥al€am\000 ah¡d1705\000 f128539x¤aa¡d1712Gal€ah¡d1712'am'e14161x!¤aa¡d1705al€am\000£ah¡d1705\000£f163224x¤aa¡d1707al€am:˜ah¡d1707:˜lg:222835:528x!¤aa¡d1705al€am\000xèah¡d1705\000xèe74727x,¤aa¢d1705d1712Hal€ah¢d1705ÃPd1712ä„amä„f159813x!¤aa¡d1712al€ah¡d1712TÈ amTÈ f223709x\"¤aa¡d1712µal€am\000˜kˆah¡d1712\000˜kˆf159808x!¤aa¡d1712al€ah¡d17121:¬am1:¬d4065x!¤aa¡d1712al€ah¡d1712vQdamvQdlg:118873:230x!¤aa¡d1712al€ah¡d17125’-°am5’-°e66895x!¤aa¡d1712al€ah¡d1712AypamAypjg:2217:207x!¤aa¡d1712al€ah¡d1712\000Í}Üam\000Í}Üe98920x!¤aa¡d1712al€ah¡d1712²º am²º lg:160937:207x!¤aa¡d1712al€ah¡d1712\000TÌam\000TÌlg:198262:346x\"¤aa¡d1704al€ah¡d1704\000¾âÌam\000¾âÌf110641x!¤aa¡d1712\nal€ah¡d1712ókäamókäe36415x!¤aa¡d1705al€am¸=,ah¡d1705¸=,f168596x4¤aa¢d1705d1712xal€ah¢d1705\000rÈd1712\000»am\000»lg:118872:196x!¤aa¡d1712al€ah¡d1712CºàamCºàf127836x¤aa¡d1707al€am@ah¡d1707@e52760x0¤aa¢d1705d1712(al€ah¢d1705@d1712\000\nß4am\000\nß4d1200x!¤aa¡d1712al€ah¡d1712ŠHüamŠHüf223792x\"¤aa¡d1712`al€ah¡d1712¬…am¬…f194579x¤aa¡d1705ial€amÆah¡d1705Æd6149x¤aa¡d1707Ëal€am#Œah¡d1707#Œf223679x\"¤aa¡d1712:al€ah¡d1712: am: e41976x0¤aa¢d1705d1712-al€ah¢d1705\\ød1712\000’4am\000’4e15671x!¤aa¡d1705al€amoª¨ah¡d1705oª¨e40670x!¤aa¡d1712al€ah¡d1712Û£¬amÛ£¬f186139x!¤aa¡d1712al€ah¡d1712ÖkXamÖkXf194568x¤aa¡d1705al€am.àah¡d1705.àe54448x\"¤aa¡d1712%al€am\000\rm€ah¡d1712\000\rm€e44457x¤aa¡d1712~al€ah¡d1712M¼amM¼e44449x¤aa¡d1712Pal€ah¡d1712\\am\\e54449x\"¤aa¡d1712<al€am\000‰èah¡d1712\000‰èe38909x\"¤aa¡d1712$al€ah¡d1712\000H am\000H e38953x¤aa¡d1712;al€am|ah¡d1712|e38849x¤aa¡d1712šal€amnŒah¡d1712nŒf223692x\"¤aa¡d1712íal€am\n°| ah¡d1712\n°| lg:224593:545x!¤aa¡d1705al€am\000\n®`ah¡d1705\000\n®`f200103x!¤aa¡d1705al€am\000Dììah¡d1705\000Dììf212260x#¤aa¡d1707ÿal€am\000ˆ0ah¡d1707\000ˆ0f191399x¤aa¡d1707)al€am6°ah¡d17076°f177660x¤aa¡d1712Âal€ah¡d1712\n(am\n(f159803x!¤aa¡d1712al€ah¡d1712\000Íş`am\000Íş`f136569x¤aa¡d1707al€ah¡d1707lamle38965x\"¤aa¡d1712;al€am\000f;|ah¡d1712\000f;|f200568x¤aa¡d1705al€am¦ah¡d1705¦f220137x%¤aa€al¡d1707\000\r@ah¡d1707\000am\000\r@f211878x#¤aa¡d1707×~al€am\000Z˜ah¡d1707\000Z˜f118704x#¤aa¡d17078al€am\000­°ah¡d1707\000­°lg:219861:544x!¤aa¡d1704al€ah¡d1704\000-É|am\000-É|lg:221795:564x\"¤aa¡d1704'al€ah¡d1704K(€amK(€f222895x\"¤aa¡d1712„al€amfbah¡d1712fbe22836x¤aa¡d1707Èal€am,ah¡d1707,f204615x\"¤aa¡d1712$al€am\000@Ùah¡d1712\000@Ùe55425x!¤aa¡d1712al€ah¡d1712	²äam	²äf200582x#¤aa¡d17054al€am\000?ìah¡d1705\000?ìf116647x!¤aa¡d1712al€ah¡d1712	}èam	}èe38802x\"¤aa¡d1712\"al€am\0002Ğah¡d1712\0002Ğe56502x¤aa¡d1712Ral€amˆah¡d1712ˆf169451x#¤aa¡d1707Øal€am\000&ìah¡d1707\000&ìf110642x\"¤aa¡d1712^al€ah¡d1712\000h(am\000h(f221756x¤aa€al€ah¡d1705\000©Èam\000©Èf200059x4¤aa¢d1705d1712Éal€ah¢d1705\000-ÆÀd1712\000;Ğam\000;Ğf194576x\"¤aa¡d1705Aal€am\000_ah¡d1705\000_e38376x¤aa¡d1704al€amu0ah¡d1704u0f191366x¤aa¡d1707al€amtÌah¡d1707tÌf223759x3¤aa¢d1705(d1712Ÿal€ah¢d1705d*Àd1712ëòÀamëòÀd9838x!¤aa¡d1705al€am\000^Æäah¡d1705\000^Æäe98776x!¤aa¡d1712al€ah¡d1712³s$am³s$lg:215130:524x!¤aa¡d1705al€ah¡d1705\000Æ]@am\000Æ]@lg:229157:564x!¤aa¡d1712al€amÄÚ¬ah¡d1712ÄÚ¬e38890x!¤aa¡d1712al€amıÎğah¡d1712ıÎğd2445x!¤aa¡d1712al€ah¡d1712GamGf201310x\"¤aa¡d17126al€am\000Sëüah¡d1712\000Sëüe38776x¤aa¡d1712[al€am2dah¡d17122df127846x\"¤aa¡d1707`al€am\000Iğah¡d1707\000Iğe15183x!¤aa¡d1705al€am\0000ah¡d1705\0000d3653x!¤aa¡d1712al€ah¡d1712š–\\amš–\\f222616x#¤aa¡d1708×al€am\000%ø´ah¡d1708\000%ø´e14842x!¤aa¡d1712al€ah¡d1712ÀamÀlg:219861:564x\"¤aa¡d1704al€ah¡d17041P(am1P(lg:118873:191x!¤aa¡d1712al€ah¡d17125’.am5’.e25075x!¤aa¡d1712al€ah¡d1712ı¬amı¬d4444x!¤aa¡d1712al€ah¡d1712š˜amš˜e15504x!¤aa¡d1712al€ah¡d1712Ô´amÔ´e71038x!¤aa¡d1712al€ah¡d1712n6\000amn6\000f223689x\"¤aa¡d1712al€amN\000ah¡d1712N\000e83006x\"¤aa¡d1712mal€am\000Xah¡d1712\000Xf212495x¤aa€al€ah¡d1712\000Ù˜am\000Ù˜f223665x5¤aa¢d1707¼d17129al€ah¢d1707\000I;¨d1712\000f×Xam\000f×Xf223661x\"¤aa¡d1712Pal€ah¡d1712l–„aml–„f144399x!¤aa¡d1705al€am¿·<ah¡d1705¿·<f171269x¤aa¡d1707‰al€amGàah¡d1707Gàf212310x5¤aa¢d1708Gd1712al€ah¢d1708}\\d1712›ûøam›ûøe25034x!¤aa¡d1705al€am\000İøah¡d1705\000İøe82004x!¤aa¡d1712al€ah¡d1712d¬amd¬lg:222481:538x\"¤aa¡d1704)al€am\000&% ah¡d1704\000&% f118873x!¤aa¡d1712al€ah¡d17125’-°am5’-°f200578x¤aa¡d1705\n°al€amM¼ah¡d1705M¼e44815x\"¤aa¡d17127al€am\000Ğah¡d1712\000Ğe15367x!¤aa¡d1712al€ah¡d1712\"Œam\"Œf204567x\"¤aa¡d17128al€am\000&%<ah¡d1712\000&%<f210930xW¤aa€al£d1705\000	Xd1707\000ÿLd1710\000û@am\000\"Pah¤d1705\000tXd1712\000\"Pd1707\0004d1710\000f223767x3¤aa¢d1705xd1712üal€ah¢d1705bÈd1712C÷àamC÷àe15342x!¤aa¡d1712al€ah¡d1712Tv¼amTv¼e52751x¤aa¡d1712$al€am,ìah¡d1712,ìe40215x\"¤aa¡d1707Şal€am\000z|ah¡d1707\000z|e38768x¤aa¡d1712\000al€am&¬ah¡d1712&¬d9816x!¤aa¡d1712al€ah¡d1712\000»kLam\000»kLf204565x!¤aa¡d1712al€am\0001ªtah¡d1712\0001ªtf212266x#¤aa¡d17079al€am\000ö¼ah¡d1707\000ö¼f223798x#¤aa¡d1712	¯al€ah¡d1712\000ó¼am\000ó¼f207039x#¤aa¡d17075al€am\000S\000ah¡d1707\000S\000f116268x¤aa¡d1707Mal€amLah¡d1707Lf176811x¤aa¡d1707­al€amÒğah¡d1707Òğf200039x#¤aa¡d1712×al€ah¡d1712\000Úxam\000Úxd9843x!¤aa¡d1712al€ah¡d1712}ğam}ğe85570x¤aa¡d1712Hal€am“Dah¡d1712“Df200023x#¤aa¡d1712Gal€am\000cøah¡d1712\000cøf171275x¤aa¡d1707{al€am'ah¡d1707'lg:198262:332x!¤aa¡d1704al€ah¡d1704\000¾âÌam\000¾âÌe15892x!¤aa¡d1712\ral€ah¡d1712«\\Lam«\\Lf172407x¤aa¡d1712|al€amWäah¡d1712Wäf223784x!¤aa¡d1712al€am•Ñğah¡d1712•Ñğd7330x!¤aa¡d1712al€ah¡d1712\000¾¼ am\000¾¼ e52776x\"¤aa¡d1712al€am\000Ü¸ah¡d1712\000Ü¸f212664x+¤aa€al¡d1707\000Ÿ<ah¢d1707\000Ìğd1712­pam­pf110627x\"¤aa¡d1712al€am\000‰SÜah¡d1712\000‰SÜf223717x#¤aa¡d1712tal€am;oah¡d1712;of152559x¤aa¡d1707Dal€ampah¡d1707pf168500x#¤aa¡d1707ˆal€am\000Ğah¡d1707\000Ğd7533x!¤aa¡d1705al€am\000)•´ah¡d1705\000)•´f200026x¤aa¡d1712Aal€amÉah¡d1712Éf206479x!¤aa¡d1712al€ah¡d1712‘é|”am‘é|”e38937x¤aa¡d17128al€amèah¡d1712èd4067x!¤aa¡d1712al€ah¡d1712\0001‡Lam\0001‡Le51809x!¤aa¡d1712al€ah¡d1712Í=€amÍ=€f110652x\"¤aa¡d1712/al€ah¡d1712\000^Èam\000^Èe74700x¤aa¡d1712åal€am\n(ah¡d1712\n(f222841x\"¤aa¡d1704mal€ah¡d1704\000&% am\000&% e15887x!¤aa¡d1712al€ah¡d1712İHamİHf223658x\"¤aa¡d1712¸al€ah¡d1712\000Emam\000Eme44497x\"¤aa¡d1712/al€am\000\r¤ah¡d1712\000\r¤lg:222841:541x!¤aa¡d1704al€ah¡d1704\000T¯°am\000T¯°f128546x\"¤aa¡d1712Äal€ah¡d1712\000Cpam\000Cpd8282x!¤aa¡d1712al€ah¡d1712\000*U€am\000*U€d8135x!¤aa¡d1712al€ah¡d1712\000Œ´am\000Œ´lg:210110:418x!¤aa¡d1712al€am;™C`ah¡d1712;™C`e55070x!¤aa¡d1712al€ah¡d1712Tµ<amTµ<e54450x#¤aa¡d1712ôal€am\000\r”,ah¡d1712\000\r”,d8218x!¤aa¡d1712al€ah¡d17122†Òtam2†Òte52755x,¤aa¢d1705d17122al€ah¢d1705ıèd1712ù8amù8f223718x\"¤aa¡d1712°al€am0`ah¡d17120`f221882x#¤aa¡d1707(al€amk°ah¡d1707k°f223732x#¤aa¡d1712\r al€ah¡d1712\000\rˆam\000\rˆe85559x¤aa¡d1704al€am˜ah¡d1704˜lg:222474:558x!¤aa¡d1712al€am<S ah¡d1712<S f223670x#¤aa¡d1712	3al€ah¡d1712\000føam\000føf171370x¤aa¡d1707ÿal€am\n(ah¡d1707\n(f159265x!¤aa¡d1705al€am\000˜›”ah¡d1705\000˜›”f223735x#¤aa¡d1712ºal€ah¡d1712\000zœam\000zœe76098x¤aa¡d1707hal€amMXah¡d1707MXlg:224635:483x!¤aa¡d1712al€amúûÔah¡d1712úûÔf222474x\"¤aa¡d1712!al€am\000*£ ah¡d1712\000*£ f128559x¤aa¡d1712°al€amrtah¡d1712rte10362x!¤aa¡d1712al€ah¡d1712\0002ë(am\0002ë(f171266x¤aa¡d1707şal€am	Äah¡d1707	Äf153439x¤aa¡d1712*al€ah¡d1712˜am˜e55313x!¤aa¡d1705al€am\000F°àah¡d1705\000F°àf198314x\"¤aa¡d1705al€amİah¡d1705İf207086x3¤aa¢d1705]d1712Šal€ah¢d1705\000‰f8d1712\000Ia(am\000Ia(c856x!¤aa¡d1712al€ah¡d1712\000† am\000† d1725x!¤aa¡d1712al€ah¡d1712\000r¤am\000r¤f127035x!¤aa¡d1712al€ah¡d1712\000Sì`am\000Sì`e82446x!¤aa¡d1712al€ah¡d1712Í=€amÍ=€e15352x!¤aa¡d1712al€ah¡d1712\000«£am\000«£d9753x!¤aa¡d1712al€ah¡d1712\000cY4am\000cY4c805x¤aa¡d1712al€ah¡d1712yamylg:224635:558x\"¤aa¡d1712Aal€am\0005s4ah¡d1712\0005s4d5574x!¤aa¡d1712al€ah¡d1712\000† am\000† f178950x!¤aa¡d1712al€ah¡d17120„am0„f184480x\"¤aa¡d17120al€ah¡d1712\000<ÿ am\000<ÿ d5764x!¤aa¡d1712al€ah¡d1712“Dam“Dd8217x!¤aa¡d1712al€ah¡d17122†Òtam2†Òte38846x¤aa¡d1712İal€am°ah¡d1712°e10138x!¤aa¡d1705al€am\000'5ah¡d1705\000'5f223680x\"¤aa¡d1712 al€ah¡d1712‚›€am‚›€",
+["__dbversion"] = 8,
+["Auchindoun"] = {
+["g:204415:402"] = "¤aa¡d1705al€ah¡d1705w5“œamw5“œ",
+["14559"] = "¤aa¡d1705al€am\000Ï«¬ah¡d1705\000Ï«¬",
+["g:229072:564"] = "¤aa¡d1705al€amúğ€ah¡d1705úğ€",
+["136637"] = "¤aa¡d1708µal€amg„ah¡d1708g„",
+["151720"] = "¤aa¡d1708al€am\000©€ah¡d1708\000©€",
+["194846"] = "¤aa¡d1708S²al€amˆTah¡d1708ˆT",
+["171833"] = "¤aa¡d1708ÕŸal€am\000† ah¡d1708\000† ",
+["221923"] = "¤aa¡d1708al€am\000óah¡d1708\000ó",
+["200574"] = "¤aa¡d1708!al€am\000Iğah¡d1708\000Iğ",
+["217128"] = "¤aa¡d1705al€amxhÀah¡d1705xhÀ",
+["g:210120:424"] = "¤aa¡d1705al€am/‘$ah¡d1705/‘$",
+["g:219471:528"] = "¤aa¡d1705al€amúÉpah¡d1705úÉp",
+["127991"] = "¤aa¡d1708Æal€amèah¡d1708è",
+["7415"] = "¤aa¡d1705al€am\000&tah¡d1705\000&t",
+["183955"] = "¤aa¡d1708\"Tal€amthah¡d1708th",
+["199058"] = "¤aa¡d1708#al€amN ah¡d1708N ",
+["128736"] = "¤aa¡d1708\nal€amö³àah¡d1708ö³à",
+["210798"] = "¤aa¡d1708\000Ual€am\000î¸ah¡d1708\000î¸",
+["219955"] = "¤aa¡d1708Ïal€am\000‡’¤ah¡d1708\000‡’¤",
+["14681"] = "¤aa¡d1705al€am\000ah¡d1705\000",
+["44281"] = "¤aa¡d1708 al€am\000\\ah¡d1708\000\\",
+["8959"] = "¤aa¡d1708åal€am.|ah¡d1708.|",
+["g:224632:525"] = "¤aa¡d1705al€am\000&% ah¡d1705\000&% ",
+["112304"] = "¤aa¡d1708al€amGC,ah¡d1708GC,",
+["15408"] = "¤aa¡d1708Ñal€am\000Ù ah¡d1708\000Ù ",
+["14341"] = "¤aa¡d1708bal€am ah¡d1708 ",
+["44292"] = "¤aa¡d1708al€am\000Ğah¡d1708\000Ğ",
+["64396"] = "¤aa¡d1708]al€am\000Lqìah¡d1708\000Lqì",
+["193936"] = "¤aa¡d1708ùal€am\000#Û°ah¡d1708\000#Û°",
+["79251"] = "¤aa¡d1708,1al€ama¨ah¡d1708a¨",
+["223700"] = "¤aa¡d1708Bal€ah¡d1708}ˆam}ˆ",
+["14585"] = "¤aa¡d1705al€am\000jíah¡d1705\000jí",
+["2143"] = "¤aa¡d1705al€am\000¾‚´ah¡d1705\000¾‚´",
+["194507"] = "¤aa¡d1708al€am_ah¡d1708_",
+["194577"] = "¤aa¡d1708¼al€am\000—-,ah¡d1708\000—-,",
+["204463"] = "¤aa¡d1708¡al€am\000\n†ìah¡d1708\000\n†ì",
+["24773"] = "¤aa¡d1705al€am\000f,ah¡d1705\000f,",
+["204709"] = "¤aa¡d1708al€am\000B@ah¡d1708\000B@",
+["7911"] = "¤aa¡d1708\000ªÌal€am„lah¡d1708„l",
+["62011"] = "¤aa¡d1708al€am\000-ÆÀah¡d1708\000-ÆÀ",
+["9833"] = "¤aa¡d1705al€am\000iÜdah¡d1705\000iÜd",
+["193955"] = "¤aa¡d1708Ral€am'ah¡d1708'",
+["44676"] = "¤aa¡d1705al€amğçÄah¡d1705ğçÄ",
+["g:224606:545"] = "¤aa¡d1705al€ah¡d1705\000;üam\000;ü",
+["g:224600:558"] = "¤aa¡d1705al€am\000)XÄah¡d1705\000)XÄ",
+["15127"] = "¤aa¡d1705al€am\000¨¢Pah¡d1705\000¨¢P",
+["846"] = "¤aa¡d1705al€am\000³ÄPah¡d1705\000³ÄP",
+["13464"] = "¤aa¡d1708‡{al€am\000\"ah¡d1708\000\"",
+["14343"] = "¤aa¡d1708®Îal€amäah¡d1708ä",
+["36918"] = "¤aa¡d1708Ûal€am\000ah¡d1708\000",
+["172438"] = "¤aa¡d17083¦al€am\000¼Èah¡d1708\000¼È",
+["g:193485:346"] = "¤aa¡d1708al€am\000˜½,ah¡d1708\000˜½,",
+["194752"] = "¤aa¡d1708\ral€am\000´ah¡d1708\000´",
+["194567"] = "¤aa¡d1708îal€amah¡d1708",
+["200048"] = "¤aa¡d1708al€ah¡d1708\000‰?ğam\000‰?ğ",
+["8343"] = "¤aa¡d1708\000Xúal€am*øah¡d1708*ø",
+["36928"] = "¤aa¡d1708Jal€amthah¡d1708th",
+["197747"] = "¤aa¡d1708 ‹al€amah¡d1708",
+["222500"] = "¤aa¡d1708Lal€am\000$Ÿ\000ah¡d1708\000$Ÿ\000",
+["2776"] = "¤aa¡d1708¶al€am\000àğah¡d1708\000àğ",
+["15011"] = "¤aa¡d1705al€am\000Dlah¡d1705\000Dl",
+["g:224600:532"] = "¤aa¡d1705al€ah¡d1705\000-ÆÀam\000-ÆÀ",
+["173083"] = "¤aa¡d17084al€am\000*4ah¡d1708\000*4",
+["193927"] = "¤aa¡d1708\000£ñal€am0Ôah¡d17080Ô",
+["152508"] = "¤aa¡d1708\000&Bal€am!˜ah¡d1708!˜",
+["112283"] = "¤aa¡d1708#al€am®œah¡d1708®œ",
+["204414"] = "¤aa¡d1705al€am\"òB”ah¡d1705\"òB”",
+["18256"] = "¤aa¡d1708al€am\000LW\\ah¡d1708\000LW\\",
+["222880"] = "¤aa¡d1708¤al€am\000Ëüah¡d1708\000Ëü",
+["2145"] = "¤aa¡d1705al€am\000–š°ah¡d1705\000–š°",
+["g:121239:225"] = "¤aa¡d1705al€am\"„Àah¡d1705\"„À",
+["40305"] = "¤aa¡d1705al€am\000Ülah¡d1705\000Ül",
+["191872"] = "¤aa¡d1708Lal€am\000uah¡d1708\000u",
+["39690"] = "¤aa¡d1708OÍal€am\000zèah¡d1708\000zè",
+["g:224604:532"] = "¤aa¡d1705al€ah¡d1705\0008 àam\0008 à",
+["190327"] = "¤aa¡d1708w0al€am\000Á¸ah¡d1708\000Á¸",
+["60838"] = "¤aa¡d17082al€am\000•Tah¡d1708\000•T",
+["197750"] = "¤aa¡d1708UCal€am¼ah¡d1708¼",
+["36107"] = "¤aa¡d1705al€am3H@ah¡d17053H@",
+["2899"] = "¤aa¡d1705al€am3Û%€ah¡d17053Û%€",
+["198415"] = "¤aa¡d1708Cal€amMXah¡d1708MX",
+["39338"] = "¤aa¡d1708al€am\000âüah¡d1708\000âü",
+["6123"] = "¤aa¡d1705al€am\000\000\000póTah¡d1705\000\000\000póT",
+["52339"] = "¤aa¡d1708al€amJ|äah¡d1708J|ä",
+["200572"] = "¤aa¡d1708$al€amN ah¡d1708N ",
+["124444"] = "¤aa¡d1708*zal€amu0ah¡d1708u0",
+["52078"] = "¤aa¡d1708ƒal€amßah¡d1708ß",
+["g:219478:551"] = "¤aa¡d1705al€am\000-pah¡d1705\000-p",
+["g:204414:506"] = "¤aa¡d1705al€amYhHÈah¡d1705YhHÈ",
+["g:106729:186"] = "¤aa¡d1705al€am\000}Ç8ah¡d1705\000}Ç8",
+["1805"] = "¤aa¡d1705al€am\000#B,ah¡d1705\000#B,",
+["43011"] = "¤aa¡d1708Dal€am$¸ah¡d1708$¸",
+["201584"] = "¤aa¡d1708al€ah¡d1708N amN ",
+["171292"] = "¤aa¡d1708<al€amLah¡d1708L",
+["4400"] = "¤aa¡d1708\nµal€amØah¡d1708Ø",
+["226033"] = "¤aa¡d1708Çal€amSpah¡d1708Sp",
+["224173"] = "¤aa¡d1708?al€am\000ìah¡d1708\000ì",
+["172097"] = "¤aa¡d1708\000Ú~al€amÁÀah¡d1708ÁÀ",
+["g:198992:357"] = "¤aa¡d1705al€am”üah¡d1705”ü",
+["112158"] = "¤aa¡d1708#al€amxah¡d1708x",
+["191325"] = "¤aa¡d1708Ôal€am ah¡d1708 ",
+["108363"] = "¤aa¡d1708)al€am\0007¸ah¡d1708\0007¸",
+["219885"] = "¤aa¡d1708ğal€am0Àah¡d17080À",
+["g:224605:558"] = "¤aa¡d1705al€am\000^Äah¡d1705\000^Ä",
+["173102"] = "¤aa¡d17089al€am\000&%<ah¡d1708\000&%<",
+["74661"] = "¤aa¡d1708Bal€am\000Ğah¡d1708\000Ğ",
+["24705"] = "¤aa¡d1705al€am›üÀah¡d1705›üÀ",
+["15409"] = "¤aa¡d1708al€amÉÂTah¡d1708ÉÂT",
+["221792"] = "¤aa£d1707+d1712;d17084al€am\000˜–€ah£d1707\000 7 d1712\000˜–€d1708\000 7 ",
+["173059"] = "¤aa¡d1708\000=ral€amšLah¡d1708šL",
+["1705"] = "¤aa¡d1708Dal€am]Àah¡d1708]À",
+["144405"] = "¤aa¡d1705al€amÍe\000ah¡d1705Íe\000",
+["168645"] = "¤aa¡d1708\000¼½al€amÈah¡d1708È",
+["130903"] = "¤aa¡d17086al€am\000Iğah¡d1708\000Iğ",
+["222617"] = "¤aa¡d1708‰al€am\000ú>€ah¡d1708\000ú>€",
+["211879"] = "¤aa¡d1712\000al€ah¡d1712\000=ham\000=h",
+["173135"] = "¤aa¡d1708al€am\0008”ah¡d1708\0008”",
+["192858"] = "¤aa¡d1708al€amLah¡d1708L",
+["27668"] = "¤aa¡d1708ğal€amèah¡d1708è",
+["165518"] = "¤aa¡d1705al€am\000LZah¡d1705\000LZ",
+["33470"] = "¤aa¡d1708\000†ºal€am@ah¡d1708@",
+["194857"] = "¤aa¡d1708	êal€amhah¡d1708h",
+["219472"] = "¤aa¡d1705al€am\000Ì`ah¡d1705\000Ì`",
+["172232"] = "¤aa¡d1708\0009al€am„ah¡d1708„",
+["g:224638:532"] = "¤aa¡d1705al€amÍe\000ah¡d1705Íe\000",
+["198619"] = "¤aa¡d1708\nal€am\000\"Uah¡d1708\000\"U",
+["198201"] = "¤aa¡d1708al€am\000\rèŒah¡d1708\000\rèŒ",
+["156930"] = "¤aa¡d1708\000nal€am ah¡d1708 ",
+["18298"] = "¤aa¡d1705al€am\000áäah¡d1705\000áä",
+["221940"] = "¤aa¡d1708*al€ah¡d1708õ¹ğamõ¹ğ",
+["191532"] = "¤aa¡d1708al€amÃPah¡d1708ÃP",
+["108326"] = "¤aa¡d1708èal€am&¬ah¡d1708&¬",
+["12206"] = "¤aa¡d1708yal€amôah¡d1708ô",
+["223694"] = "¤aa¡d1708al€ah¡d1708è ğamè ğ",
+["190328"] = "¤aa¡d1708îıal€amN ah¡d1708N ",
+["37602"] = "¤aa¡d1708=al€am\000ğah¡d1708\000ğ",
+["215236"] = "¤aa¡d1708—al€am¢É@ah¡d1708¢É@",
+["23784"] = "¤aa¡d1708¯al€am\000\ri˜ah¡d1708\000\ri˜",
+["4611"] = "¤aa¡d1708al€am\000ÔÀah¡d1708\000ÔÀ",
+["193956"] = "¤aa¡d1708Dal€am¼ah¡d1708¼",
+["62784"] = "¤aa¡d1708Kal€am1œah¡d17081œ",
+["32227"] = "¤aa¡d1708tal€amé˜ah¡d1708é˜",
+["108329"] = "¤aa¡d1708al€amXah¡d1708X",
+["108294"] = "¤aa¡d1708al€am\000B¨ah¡d1708\000B¨",
+["212311"] = "¤aa¡d1708àal€am\000† ah¡d1708\000† ",
+["62000"] = "¤aa¡d1708al€am\000˜–ah¡d1708\000˜–",
+["204708"] = "¤aa¡d1708al€am\000ƒ¸ah¡d1708\000ƒ¸",
+["192862"] = "¤aa¡d1708¢al€am&Hah¡d1708&H",
+["164567"] = "¤aa¡d1705al€amõ¿Ìah¡d1705õ¿Ì",
+["222594"] = "¤aa¡d1708Val€am\000Ÿ<ah¡d1708\000Ÿ<",
+["226205"] = "¤aa¡d1708\000\n&Úal€amah¡d1708",
+["226029"] = "¤aa¡d1708]al€am\000÷äŒah¡d1708\000÷äŒ",
+["213399"] = "¤aa¡d1708ªal€am\000\\ah¡d1708\000\\",
+["222614"] = "¤aa¡d1708—al€am\0006+0ah¡d1708\0006+0",
+["108347"] = "¤aa¡d1708/al€am\000;üah¡d1708\000;ü",
+["164444"] = "¤aa¡d1705al€am7şøah¡d17057şø",
+["222675"] = "¤aa¡d1708al€am\000©dah¡d1708\000©d",
+["225912"] = "¤aa¡d1708§/al€am\000ªˆah¡d1708\000ªˆ",
+["24801"] = "¤aa¡d1705al€am\000Ì0ah¡d1705\000Ì0",
+["193378"] = "¤aa¡d1708âal€am\000¦ ah¡d1708\000¦ ",
+["1121"] = "¤aa¡d1705al€am,ah¡d1705,",
+["221941"] = "¤aa¡d1708al€ah¡d1708\000¢am\000¢",
+["173160"] = "¤aa¡d1708al€am\000	’\000ah¡d1708\000	’\000",
+["4232"] = "¤aa¡d1708VÆal€am˜Xah¡d1708˜X",
+["12363"] = "¤aa¡d1708°!al€am\000G ah¡d1708\000G ",
+["172230"] = "¤aa¡d1708\000Ù[al€amxah¡d1708x",
+["199057"] = "¤aa¡d1708\"al€amN ah¡d1708N ",
+["124113"] = "¤aa¡d1708\000€al€am*0ah¡d1708*0",
+["166821"] = "¤aa¡d1705al€amœë°ah¡d1705œë°",
+["191496"] = "¤aa¡d1708Œal€am,ìah¡d1708,ì",
+["221757"] = "¤aa¡d1708+al€am\0002ah¡d1708\0002",
+["15305"] = "¤aa¡d1705al€am\0001Ftah¡d1705\0001Ft",
+["109126"] = "¤aa¡d1708¹Øal€am6Lah¡d17086L",
+["194812"] = "¤aa¡d1708.al€am\000ºğah¡d1708\000ºğ",
+["198536"] = "¤aa¡d1708lal€amé4ah¡d1708é4",
+["154124"] = "¤aa¡d1708˜al€amŒ<ah¡d1708Œ<",
+["212310"] = "¤aa¡d1708Öal€amûö¬ah¡d1708ûö¬",
+["g:224606:561"] = "¤aa¡d1705al€ah¡d1705\000-Ÿ°am\000-Ÿ°",
+["222878"] = "¤aa¡d1708\n9al€am\000˜\\ah¡d1708\000˜\\",
+["64395"] = "¤aa¡d1708al€am\000³xah¡d1708\000³x",
+["27429"] = "¤aa¡d1708<al€amTah¡d1708T",
+["193938"] = "¤aa¡d1708hal€am\000<º|ah¡d1708\000<º|",
+["169411"] = "¤aa¡d1705al€am¼3 ah¡d1705¼3 ",
+["222558"] = "¤aa¡d1708R¯al€am\000L¤ah¡d1708\000L¤",
+["219497"] = "¤aa¡d1708,al€am,Œah¡d1708,Œ",
+["10068"] = "¤aa¡d1705al€am\000OX€ah¡d1705\000OX€",
+["40411"] = "¤aa¡d1708ual€am\000B@ah¡d1708\000B@",
+["30817"] = "¤aa¡d1708\000°Qal€amah¡d1708",
+["228414"] = "¤aa¢d1708ÄÖd1712Val¡d1708‹am‰€ah¢d1708Œ<d1712‰€",
+["20817"] = "¤aa¡d1708Lal€am\000Ôah¡d1708\000Ô",
+["2321"] = "¤aa¡d1708\000<2al€amah¡d1708",
+["g:169410:242"] = "¤aa¡d1705al€am‘àah¡d1705‘à",
+["52183"] = "¤aa¡d1708Uíal€am\000\"<ah¡d1708\000\"<",
+["224600"] = "¤aa¡d1705Hal€am\000b0ah¡d1705\000b0",
+["116164"] = "¤aa¡d1705al€amè¸ah¡d1705è¸",
+["71341"] = "¤aa¡d1705al€am\000-ÂØah¡d1705\000-ÂØ",
+["173076"] = "¤aa¡d1708Ñal€am\000\\Àah¡d1708\000\\À",
+["184789"] = "¤aa¡d1705al€amúİÀah¡d1705úİÀ",
+["111673"] = "¤aa¡d1708‡al€amˆah¡d1708ˆ",
+["213769"] = "¤aa¡d1708Mal€amùiàah¡d1708ùià",
+["210937"] = "¤aa¡d1708\000ßal€am\000hhah¡d1708\000hh",
+["32423"] = "¤aa¡d1708èal€am\000Ğ,ah¡d1708\000Ğ,",
+["153612"] = "¤aa¡d1708	al€am\000­Øah¡d1708\000­Ø",
+["200577"] = "¤aa¡d1708<al€am[hah¡d1708[h",
+["34053"] = "¤aa¡d1708Ğal€am\000† ah¡d1708\000† ",
+["19768"] = "¤aa¡d1708\nÌal€am\000	ş˜ah¡d1708\000	ş˜",
+["22661"] = "¤aa¡d1705al€am©2¼ah¡d1705©2¼",
+["36784"] = "¤aa¡d1708Gal€am\000a ah¡d1708\000a ",
+["222659"] = "¤aa¡d1708 óal€am\000ah¡d1708\000",
+["219480"] = "¤aa¡d1705al€am\0004œah¡d1705\0004œ",
+["74864"] = "¤aa¡d1708Gal€am<Œah¡d1708<Œ",
+["194576"] = "¤aa¡d17088al€am\000	&øah¡d1708\000	&ø",
+["29548"] = "¤aa¡d1708äal€am\000h ah¡d1708\000h ",
+["200568"] = "¤aa¡d1708Ial€amu0ah¡d1708u0",
+["213771"] = "¤aa¢d1708Šd1712mal€ah¢d1708 ÕPd1712%Oam%O",
+["110610"] = "¤aa¡d1708Eçal€amLah¡d1708L",
+["g:198243:346"] = "¤aa¡d1708al€am\000˜oah¡d1708\000˜o",
+["152638"] = "¤aa¡d1708Îal€am\000I(ah¡d1708\000I(",
+["61994"] = "¤aa¡d1708al€amêbah¡d1708êb",
+["g:201601:276"] = "¤aa¡d1708al€am\n}Œ\000ah¡d1708\n}Œ\000",
+["222883"] = "¤aa¡d1708ßal€amÂìah¡d1708Âì",
+["g:221786:564"] = "¤aa£d1707d1712Ld1708al¡d17081ğam\000§ØÀah£d17071-\000d1712\000§ØÀd17081-\000",
+["71808"] = "¤aa¡d1708Ãal€am\000	'\\ah¡d1708\000	'\\",
+["15128"] = "¤aa¡d1705al€am\0005«ah¡d1705\0005«",
+["g:193485:332"] = "¤aa¡d1708al€am\000äá\\ah¡d1708\000äá\\",
+["41808"] = "¤aa¡d17087`al€am ah¡d1708 ",
+["30183"] = "¤aa¡d1708\n*al€amN ah¡d1708N ",
+["229073"] = "¤aa¡d1705al€am¯$ah¡d1705¯$",
+["g:219470:521"] = "¤aa¡d1705al€am\000&% ah¡d1705\000&% ",
+["168635"] = "¤aa¡d1708Ñal€am\0001Dah¡d1708\0001D",
+["g:204415:428"] = "¤aa¡d1705al€ah¡d1705Í=ğamÍ=ğ",
+["11185"] = "¤aa¡d1707çal€am*øah¡d1707*ø",
+["192898"] = "¤aa¡d1708šal€am¸ah¡d1708¸",
+["219900"] = "¤aa¡d1708\n†al€am\000ì‚|ah¡d1708\000ì‚|",
+["106313"] = "¤aa¡d1705al€amhâ¸ah¡d1705hâ¸",
+["44146"] = "¤aa¡d17085al€am\000…Øah¡d1708\000…Ø",
+["52185"] = "¤aa¡d1708Œ‡al€am\000øah¡d1708\000ø",
+["79300"] = "¤aa¡d1708al€am\000\\Àah¡d1708\000\\À",
+["27516"] = "¤aa¡d1708Ral€amÄ|ah¡d1708Ä|",
+["36904"] = "¤aa¡d1708|al€am'ah¡d1708'",
+["210671"] = "¤aa¡d1708al€am×\\€ah¡d1708×\\€",
+["225987"] = "¤aa¡d17081éal€am\000\n8Ìah¡d1708\000\n8Ì",
+["g:224601:558"] = "¤aa¡d1705al€am\000-Ÿ°ah¡d1705\000-Ÿ°",
+["13422"] = "¤aa¡d1708/’al€am8¤ah¡d17088¤",
+["220139"] = "¤aa¡d17086¬al€am\000“àah¡d1708\000“à",
+["g:225643:528"] = "¤aa¡d1705al€amÉœpah¡d1705Éœp",
+["3288"] = "¤aa¡d1705al€am]j$ah¡d1705]j$",
+["212675"] = "¤aa¡d1708$ÿal€am\000(ãøah¡d1708\000(ãø",
+["191340"] = "¤aa¡d1708Zal€am¤ah¡d1708¤",
+["79255"] = "¤aa¡d1708åal€amˆ¸ah¡d1708ˆ¸",
+["g:161072:266"] = "¤aa¡d1705al€am\000[€ah¡d1705\000[€",
+["44128"] = "¤aa¡d1708¦al€am\000‹€ah¡d1708\000‹€",
+["1288"] = "¤aa¡d1708ÅÌal€am,ah¡d1708,",
+["102541"] = "¤aa¡d1708al€amah¡d1708",
+["43146"] = "¤aa¡d1708al€am\000Nœah¡d1708\000Nœ",
+["111662"] = "¤aa¡d1708Kal€amĞah¡d1708Ğ",
+["172320"] = "¤aa¡d1705al€am\r(pah¡d1705\r(p",
+["225883"] = "¤aa¡d1708al€am\000Ítah¡d1708\000Ít",
+["111668"] = "¤aa¡d1708Xal€am\n(ah¡d1708\n(",
+["12811"] = "¤aa¡d1708–al€am\000$vÄah¡d1708\000$vÄ",
+["44165"] = "¤aa¡d1708/al€amN ah¡d1708N ",
+["191525"] = "¤aa¡d1708üal€amœ@ah¡d1708œ@",
+["g:217131:558"] = "¤aa¡d1705al€amõ¹ğah¡d1705õ¹ğ",
+["12808"] = "¤aa¡d1708bal€am\000[”ah¡d1708\000[”",
+["200570"] = "¤aa¡d1708%al€am\000¡øah¡d1708\000¡ø",
+["222595"] = "¤aa¡d1708µal€am\000†G\000ah¡d1708\000†G\000",
+["g:15370:357"] = "¤aa¡d1705al€am\000'ÌHah¡d1705\000'ÌH",
+["222797"] = "¤aa¡d1708ápal€am\000Üah¡d1708\000Ü",
+["g:224632:564"] = "¤aa¡d1705 al€ah¡d1705\000&% am\000&% ",
+["118825"] = "¤aa¡d1705al€amİåXah¡d1705İåX",
+["59467"] = "¤aa¡d1705al€am~ò$ah¡d1705~ò$",
+["g:224602:483"] = "¤aa¡d1705al€ah¡d1705\000<êˆam\000<êˆ",
+["10721"] = "¤aa¡d1705al€amGè$ah¡d1705Gè$",
+["173094"] = "¤aa¡d1708•al€am\000ˆah¡d1708\000ˆ",
+["63128"] = "¤aa¡d1708.al€am\0006Ÿüah¡d1708\0006Ÿü",
+["121242"] = "¤aa¡d1705al€am\000CÛàah¡d1705\000CÛà",
+["35625"] = "¤aa¡d1708	dal€am\000å|ah¡d1708\000å|",
+["219477"] = "¤aa¡d1705,al€am\000Lqìah¡d1705\000Lqì",
+["4359"] = "¤aa¡d1708Uµal€am\000n„ah¡d1708\000n„",
+["160712"] = "¤aa¡d1708?™al€am¼ah¡d1708¼",
+["172255"] = "¤aa¡d1705al€amƒÅˆah¡d1705ƒÅˆ",
+["g:193388:315"] = "¤aa¡d1705al€am\000LK@ah¡d1705\000LK@",
+["77535"] = "¤aa¡d1705al€amÚc°ah¡d1705Úc°",
+["164560"] = "¤aa¡d1705al€am©•Àah¡d1705©•À",
+["222681"] = "¤aa¡d1708Œal€am\0005<ah¡d1708\0005<",
+["222635"] = "¤aa¡d1708©al€am\000pÃ0ah¡d1708\000pÃ0",
+["41801"] = "¤aa¡d1708nal€amlah¡d1708l",
+["43009"] = "¤aa¡d1708	 al€am„ah¡d1708„",
+["197742"] = "¤aa¡d1708wƒal€am,ah¡d1708,",
+["168589"] = "¤aa¡d1708ä©al€am‰ah¡d1708‰",
+["23787"] = "¤aa¡d1708ìal€am\000W¼(ah¡d1708\000W¼(",
+["39343"] = "¤aa¡d1708‘al€amëŒah¡d1708ëŒ",
+["g:175005:272"] = "¤aa¡d1708al€am-Ğah¡d1708-Ğ",
+["3859"] = "¤aa¡d1708\000üeal€amâah¡d1708â",
+["208748"] = "¤aa¡d1708ˆal€am\000F ah¡d1708\000F ",
+["15146"] = "¤aa¡d1705al€am\000<œah¡d1705\000<œ",
+["g:198994:357"] = "¤aa¡d1705al€amà» ah¡d1705à» ",
+["121240"] = "¤aa¡d1705al€am\000oû0ah¡d1705\000oû0",
+["222870"] = "¤aa¡d1708 al€amõŞDah¡d1708õŞD",
+["154854"] = "¤aa¡d1705al€am!êÀah¡d1705!êÀ",
+["221853"] = "¤aa£d1707\000.|d1712\000d1708\000-al¢d1712\000©Ìd1708\000\n­üam\000\rµ`ah£d1707\000gìd1712\000\r¶Œd1708\000Ü0",
+["193951"] = "¤aa¡d1708@al€am4ah¡d17084",
+["3804"] = "¤aa¡d1705al€am_f˜ah¡d1705_f˜",
+["169701"] = "¤aa¡d1708\000Ìal€am”pah¡d1708”p",
+["128726"] = "¤aa¡d1708	al€am\000+|Ğah¡d1708\000+|Ğ",
+["118831"] = "¤aa¡d1705al€am>ÃtÀah¡d1705>ÃtÀ",
+["44291"] = "¤aa¡d1708al€am\000,@ ah¡d1708\000,@ ",
+["19261"] = "¤aa¡d1708al€am\000L¬ah¡d1708\000L¬",
+["2472"] = "¤aa¡d1705al€am(dah¡d1705(d",
+["112287"] = "¤aa¡d1708al€am\000z3üah¡d1708\000z3ü",
+["53067"] = "¤aa¡d1708	Eal€am\000Üah¡d1708\000Ü",
+["3356"] = "¤aa¡d1708\00016al€am\000CÔah¡d1708\000CÔ",
+["108338"] = "¤aa¡d1708#al€amàah¡d1708à",
+["147425"] = "¤aa¡d1705al¡d1705úåah¡d170598!àamúå",
+["g:15121:320"] = "¤aa¡d1705al€amá¶$ah¡d1705á¶$",
+["109145"] = "¤aa¡d1708ial€am}\000ah¡d1708}\000",
+["74837"] = "¤aa¡d1708oal€amQ¤ah¡d1708Q¤",
+["g:161072:260"] = "¤aa¡d1705al€am\000LK@ah¡d1705\000LK@",
+["76137"] = "¤aa¡d1708­al€am6°ah¡d17086°",
+["222658"] = "¤aa¡d1708·al€am\0008ah¡d1708\0008",
+["36782"] = "¤aa¡d1708‰al€am4ah¡d17084",
+["15410"] = "¤aa¡d1708,al€am\000 ¼ah¡d1708\000 ¼",
+["127849"] = "¤aa¡d1708gal€am\000 ¼ah¡d1708\000 ¼",
+["g:224607:532"] = "¤aa¡d1705al€ah¡d1705\0002Z am\0002Z ",
+["21882"] = "¤aa¡d1708\r‹al€am\n(ah¡d1708\n(",
+["74865"] = "¤aa¡d1708éal€am\000ûah¡d1708\000û",
+["153618"] = "¤aa¡d1708al€am\000*ilah¡d1708\000*il",
+["211880"] = "¤aa¡d17121al€ah¡d1712\0002Z am\0002Z ",
+["211878"] = "¤aa¡d1712¨¹al€ah¡d1712\000­¨am\000­¨",
+["194859"] = "¤aa¡d1708zal€am\000ñXah¡d1708\000ñX",
+["168649"] = "¤aa¡d1708al€am\000Käah¡d1708\000Kä",
+["22791"] = "¤aa¡d1708 3al€am\0008€ah¡d1708\0008€",
+["199961"] = "¤aa¡d1708al€ah¡d1708ÑÄamÑÄ",
+["226030"] = "¤aa¡d1708Sal€am’ ah¡d1708’ ",
+["168427"] = "¤aa¡d1708oal€ah¡d1708\000‰zìam\000‰zì",
+["108305"] = "¤aa¡d1708al€am+\\ah¡d1708+\\",
+["97620"] = "¤aa¡d1708²al€amxah¡d1708x",
+["36154"] = "¤aa¡d1705al€am\000’Tah¡d1705\000’T",
+["109132"] = "¤aa¡d1708jal€am\"Äah¡d1708\"Ä",
+["206432"] = "¤aa¡d1705al€am Ã”ah¡d1705 Ã”",
+["15419"] = "¤aa¡d1708Eoal€am\000	Pah¡d1708\000	P",
+["221790"] = "¤aa£d1707dd1712bd1708lal¡d1712ÉÃ€amÉÃ€ah£d1707\000Æ\\Üd1712Kv d1708\000Æ\\Ü",
+["56516"] = "¤aa¡d1708“al€am\000Ğah¡d1708\000Ğ",
+["194793"] = "¤aa¡d1708\nal€amÉœpah¡d1708Éœp",
+["111656"] = "¤aa¡d1708Âal€amüah¡d1708ü",
+["221908"] = "¤aa¡d1708Œal€am\0009^¸ah¡d1708\0009^¸",
+["58085"] = "¤aa¡d1708şal€amtÌah¡d1708tÌ",
+["22577"] = "¤aa¡d1708k·al€amÖah¡d1708Ö",
+["172347"] = "¤aa¡d1708~al€ah¡d1708\r¬am\r¬",
+["193370"] = "¤aa¡d1708™“al€am\"Äah¡d1708\"Ä",
+["200045"] = "¤aa¡d1708›al€ah¡d1708\000x†°am\000x†°",
+["191337"] = "¤aa¡d1708øal€ama¨ah¡d1708a¨",
+["197744"] = "¤aa¡d1708Iæal€am,ah¡d1708,",
+["194787"] = "¤aa¡d1708Kal€am\000EÀah¡d1708\000EÀ",
+["222428"] = "¤aa¡d1708al€amÔ{@ah¡d1708Ô{@",
+["g:121133:214"] = "¤aa¡d1705al€am\000˜–€ah¡d1705\000˜–€",
+["197746"] = "¤aa¡d1708\000õ³al€am,ah¡d1708,",
+["124461"] = "¤aa¡d1708Öal€am\000Ô\\ah¡d1708\000Ô\\",
+["130180"] = "¤aa¡d1708Íal€amê`ah¡d1708ê`",
+["39341"] = "¤aa¡d1708\\al€am²„ah¡d1708²„",
+["171288"] = "¤aa¡d1708ç5al€am\\ah¡d1708\\",
+["225988"] = "¤aa¡d1708/Ìal€am\000	G\000ah¡d1708\000	G\000",
+["2672"] = "¤aa¡d1708}al€amôah¡d1708ô",
+["191348"] = "¤aa¡d1708^al€am\000\"àah¡d1708\000\"à",
+["31224"] = "¤aa¡d1705al€amçdah¡d1705çd",
+["25699"] = "¤aa¡d1708FÑal€am'ah¡d1708'",
+["g:219864:564"] = "¤aa¡d1708al€am«e¬ah¡d1708«e¬",
+["g:221795:557"] = "¤aa£d1707d1712d1708al¡d1708\000ÕÆ,ah£d17070Şàd1712€d17080Şàam€",
+["128876"] = "¤aa¡d1705al€amúôÌah¡d1705úôÌ",
+["210109"] = "¤aa¡d1705al€am×\\€ah¡d1705×\\€",
+["10400"] = "¤aa¡d1705al€amÉ·\000ah¡d1705É·\000",
+["g:225643:521"] = "¤aa¡d1705al€am\000ƒTah¡d1705\000ƒT",
+["175005"] = "¤aa¡d1708al€am”mhah¡d1708”mh",
+["58246"] = "¤aa¡d1705al€am:´ah¡d1705:´",
+["12800"] = "¤aa¡d1708!Aal€amj@ah¡d1708j@",
+["g:172316:190"] = "¤aa¡d1705al€am\nº”œah¡d1705\nº”œ",
+["198254"] = "¤aa¡d1708al€am\000dpah¡d1708\000dp",
+["226202"] = "¤aa¡d1708\000Ğñal€am\nŒah¡d1708\nŒ",
+["2167"] = "¤aa¡d1705al€amûÛah¡d1705ûÛ",
+["194868"] = "¤aa¡d1708%al€ama¨ah¡d1708a¨",
+["200046"] = "¤aa¡d1708€al€ah¡d1708\000[?`am\000[?`",
+["6217"] = "¤aa¡d1708al€am\000ãÄah¡d1708\000ãÄ",
+["19283"] = "¤aa¡d1708al€am\000a€ah¡d1708\000a€",
+["14680"] = "¤aa¡d1705al€am\000gšDah¡d1705\000gšD",
+["g:147425:243"] = "¤aa¡d1705al€amúåah¡d1705úå",
+["128500"] = "¤aa¡d1708&al€amÜah¡d1708Ü",
+["5504"] = "¤aa¡d1708yal€ampäah¡d1708pä",
+["200652"] = "¤aa¡d1708\n8al€am\000S\000ah¡d1708\000S\000",
+["172319"] = "¤aa¡d1705al€amşÜah¡d1705şÜ",
+["24769"] = "¤aa¡d1705al€am\000øˆ8ah¡d1705\000øˆ8",
+["109624"] = "¤aa¡d1708Aüal€amah¡d1708",
+["g:152087:251"] = "¤aa¡d1705al€amW÷xah¡d1705W÷x",
+["222628"] = "¤aa¡d1708Ual€am,.Ğah¡d1708,.Ğ",
+["2772"] = "¤aa¡d1708Sgal€am\000xôah¡d1708\000xô",
+["10069"] = "¤aa¡d1705al€am\000M¢8ah¡d1705\000M¢8",
+["37700"] = "¤aa¡d1708!\ral€am5èah¡d17085è",
+["36116"] = "¤aa¡d1705al€am9úCˆah¡d17059úCˆ",
+["218338"] = "¤aa¡d1708\000\nd€al€am-Pah¡d1708-P",
+["221943"] = "¤aa¡d1708gal¡d1708õ¹Œah¡d1708õ¹ğamõ¹Œ",
+["27678"] = "¤aa¡d1708m“al€am,ah¡d1708,",
+["6397"] = "¤aa¡d1705al€am\000#‡´ah¡d1705\000#‡´",
+["3819"] = "¤aa¡d1708µal€améüah¡d1708éü",
+["108342"] = "¤aa¡d17085al€am\"Äah¡d1708\"Ä",
+["172314"] = "¤aa¡d1705al€am]J€ah¡d1705]J€",
+["224174"] = "¤aa¡d1708al€am\000%°ah¡d1708\000%°",
+["193485"] = "¤aa¡d1708al€am\000˜½,ah¡d1708\000˜½,",
+["192869"] = "¤aa¡d1708³al€am\000cÜah¡d1708\000cÜ",
+["g:198204:332"] = "¤aa¡d1708al€amŞ)\000ah¡d1708Ş)\000",
+["g:90720:174"] = "¤aa¡d1705al€am\000LSØah¡d1705\000LSØ",
+["128725"] = "¤aa¡d1708al€am\000F0Àah¡d1708\000F0À",
+["44277"] = "¤aa¡d1708+al€am\000ıàah¡d1708\000ıà",
+["194761"] = "¤aa¡d1708al€am‚ah¡d1708‚",
+["6317"] = "¤aa¡d1708¼al€am#(ah¡d1708#(",
+["191464"] = "¤aa¡d1708„Wal€am˜ah¡d1708˜",
+["228387"] = "¤aa£d1707d1712d1708al€am\000Iğah£d1707\000p0d1712\000Iğd1708\000p0",
+["10559"] = "¤aa¡d1708Ûal€am\000hah¡d1708\000h",
+["213773"] = "¤aa¢d1708d1712´al€ah¢d1708nñ`d1712®Å¬am®Å¬",
+["31902"] = "¤aa¡d1708al€am\000\n`@ah¡d1708\000\n`@",
+["194123"] = "¤aa¡d1708\000Uzal€am,$ah¡d1708,$",
+["194791"] = "¤aa¡d1708qal€amÃPah¡d1708ÃP",
+["39683"] = "¤aa¡d1708|al€am\000AÜah¡d1708\000AÜ",
+["10290"] = "¤aa¡d1708Sal€am´ah¡d1708´",
+["222637"] = "¤aa¡d1708-al€amWàah¡d1708Wà",
+["g:221786:550"] = "¤aa£d1707d1712d1708	al¡d17081ğamG;Àah£d17071-\000d1712G;Àd17081-\000",
+["50001"] = "¤aa¡d1705al€am\000Êtèah¡d1705\000Êtè",
+["173074"] = "¤aa¡d1708@al€am\000æìah¡d1708\000æì",
+["200113"] = "¤aa¡d1708’al€am\000	ÁDah¡d1708\000	ÁD",
+["4404"] = "¤aa¡d1708\"al€am\000ah¡d1708\000",
+["199344"] = "¤aa¡d1708†2al€amˆah¡d1708ˆ",
+["193944"] = "¤aa¡d17086al€am\000O€ah¡d1708\000O€",
+["3404"] = "¤aa¡d1708Çal€amu0ah¡d1708u0",
+["197741"] = "¤aa¡d1708\000yƒal€am,ah¡d1708,",
+["60224"] = "¤aa¡d1708	‡al€am\000“àah¡d1708\000“à",
+["227772"] = "¤aa¡d1708al€am]J€ah¡d1708]J€",
+["31916"] = "¤aa¡d1708al€am\000\n‡Pah¡d1708\000\n‡P",
+["194758"] = "¤aa¡d1708Gal€am\000pah¡d1708\000p",
+["222885"] = "¤aa¡d1708Aal€am\0008€ah¡d1708\0008€",
+["172321"] = "¤aa¡d1705al€amj“Î°ah¡d1705j“Î°",
+["15440"] = "¤aa¡d1705al€am\000à+äah¡d1705\000à+ä",
+["14047"] = "¤aa¡d1708\000èal€am\000¸ah¡d1708\000¸",
+["37705"] = "¤aa¡d1708al€amˆ¸ah¡d1708ˆ¸",
+["223707"] = "¤aa¡d1708&al€ah¡d1708ƒHHamƒHH",
+["62010"] = "¤aa¡d1708al€am\000„€ah¡d1708\000„€",
+["222739"] = "¤aa¡d1708\000ùáal€am6°ah¡d17086°",
+["224834"] = "¤aa¡d17083Oal€am\000#`ah¡d1708\000#`",
+["80431"] = "¤aa¡d1708«al€am\000äah¡d1708\000ä",
+["190536"] = "¤aa¡d17084al€am\000&% ah¡d1708\000&% ",
+["5470"] = "¤aa¡d1708	al€amah¡d1708",
+["4470"] = "¤aa¡d1708\000âØal€amdah¡d1708d",
+["8838"] = "¤aa¡d1708&“al€amœ@ah¡d1708œ@",
+["41334"] = "¤aa¡d1708al€am\000øPah¡d1708\000øP",
+["15151"] = "¤aa¡d1705al€am\000 ‚¨ah¡d1705\000 ‚¨",
+["40362"] = "¤aa¡d1705al€am«?dah¡d1705«?d",
+["109127"] = "¤aa¡d1708¤oal€am6°ah¡d17086°",
+["36925"] = "¤aa¡d1708‚al€ams ah¡d1708s ",
+["223695"] = "¤aa¡d1708Oal€ah¡d1708ÄŒğamÄŒğ",
+["36153"] = "¤aa¡d1705al€am\000s?„ah¡d1705\000s?„",
+["193208"] = "¤aa¡d1708\000ïËal€ampah¡d1708p",
+["44280"] = "¤aa¡d17086al€am\000	'\\ah¡d1708\000	'\\",
+["15131"] = "¤aa¡d1705al€am\000¬`ah¡d1705\000¬`",
+["219954"] = "¤aa¡d1708_ÿal€am\000\r”ah¡d1708\000\r”",
+["g:224632:561"] = "¤aa¡d1705al€ah¡d1705\000&% am\000&% ",
+["193222"] = "¤aa¡d1708>{al€amK\000ah¡d1708K\000",
+["198198"] = "¤aa¡d1708Lal€am\000z ah¡d1708\000z ",
+["158378"] = "¤aa¡d1708\000al€am,ah¡d1708,",
+["2997"] = "¤aa¡d1708€´al€am€ah¡d1708€",
+["27681"] = "¤aa¡d1708Õal€am'ah¡d1708'",
+["221924"] = "¤aa¡d1708Ial€am\000$wğah¡d1708\000$wğ",
+["g:224600:506"] = "¤aa¡d1705al€ah¡d1705\000)X`am\000)X`",
+["7972"] = "¤aa¡d1708Zal€amah¡d1708",
+["188708"] = "¤aa¡d1705al€am\000Ğah¡d1705\000Ğ",
+["221865"] = "¤aa¡d1708pal€ah¡d1708u× amu× ",
+["191533"] = "¤aa¡d1708ğal€am\000œah¡d1708\000œ",
+["3806"] = "¤aa¡d1705al€am\000/nøah¡d1705\000/nø",
+["79290"] = "¤aa¡d1708al€am\000˜¼Èah¡d1708\000˜¼È",
+["198487"] = "¤aa¡d1708¡xal€am'tah¡d1708't",
+["40404"] = "¤aa¡d1708al€amÍe\000ah¡d1708Íe\000",
+["3470"] = "¤aa¡d1708´al€amœah¡d1708œ",
+["2470"] = "¤aa¡d1705al€am\000½øah¡d1705\000½ø",
+["4304"] = "¤aa¡d1708%÷al€am\000,¤ah¡d1708\000,¤",
+["172253"] = "¤aa¡d1705al€amXah¡d1705X",
+["23573"] = "¤aa¡d1708Kal€am\0000ÒÔah¡d1708\0000ÒÔ",
+["224114"] = "¤aa£d1707Ud1712‰d1708]al€am\000C#ah£d1707\000,@ d1712\000C#d1708\000,@ ",
+["219893"] = "¤aa¡d1708Èal€am\000L%\\ah¡d1708\000L%\\",
+["211270"] = "¤aa¡d1708\ral€am\000&6ah¡d1708\000&6",
+["130173"] = "¤aa¡d1708yal€am’|ah¡d1708’|",
+["219886"] = "¤aa¡d1708\n>al€am\000L#ah¡d1708\000L#",
+["130178"] = "¤aa¡d1708ial€amklah¡d1708kl",
+["86843"] = "¤aa¡d1705al€ah¡d1705:eàam:eà",
+["62001"] = "¤aa¡d1708al€am\000/ŒDah¡d1708\000/ŒD",
+["193237"] = "¤aa¡d1708ìal€am\000%şah¡d1708\000%ş",
+["212565"] = "¤aa¡d1708Åal€amÍd,ah¡d1708Íd,",
+["200573"] = "¤aa¡d1708&al€amœ@ah¡d1708œ@",
+["193959"] = "¤aa¡d1708µal€am<ah¡d1708<",
+["g:224638:561"] = "¤aa¡d1705al€ah¡d1705\000_(am\000_(",
+["198258"] = "¤aa¡d1708al€am„Ğah¡d1708„Ğ",
+["41812"] = "¤aa¡d1708	”al€amdah¡d1708d",
+["191512"] = "¤aa¡d1708al€amˆah¡d1708ˆ",
+["g:151993:245"] = "¤aa¡d1705al€am¡@ah¡d1705¡@",
+["198421"] = "¤aa¡d1708³Lal€amtah¡d1708t",
+["224833"] = "¤aa¡d1708Ô‚al€am\000\\ah¡d1708\000\\",
+["226023"] = "¤aa¡d1708°al€amˆ\000Xah¡d1708ˆ\000X",
+["172092"] = "¤aa¡d1708\00072al€amah¡d1708",
+["42225"] = "¤aa¡d1708al€am\000  ah¡d1708\000  ",
+["g:224603:564"] = "¤aa¡d1705al€ah¡d1705\0005lôam\0005lô",
+["213612"] = "¤aa¡d1708\000Ofal€am\000½xah¡d1708\000½x",
+["226028"] = "¤aa¡d1708al€am\000-Ÿ°ah¡d1708\000-Ÿ°",
+["222803"] = "¤aa¡d1708ƒal€am\000Ívpah¡d1708\000Ívp",
+["61993"] = "¤aa¡d1708al€am\000=*üah¡d1708\000=*ü",
+["222613"] = "¤aa¡d1708™\ral€am\000Ë˜ah¡d1708\000Ë˜",
+["g:227208:512"] = "¤aa£d1707/d1712d1708,al¡d1712\000däam\000däah£d1707\000‡Äd1712\000(4d1708\000‡Ä",
+["g:224600:460"] = "¤aa¡d1705al€ah¡d1705\000)XÄam\000)XÄ",
+["14256"] = "¤aa¡d1708!val€am\000#ah¡d1708\000#",
+["190311"] = "¤aa¤d1707\000{Vd1712\000sd1705\000yd1708\000Oal¢d1708\000¬èd1712\000q\000ah¤d1707\000¿ d1712\000áäd1705ed1708\000Ò¨am\000ºp",
+["106533"] = "¤aa¡d1705al€am@4ah¡d1705@4",
+["113289"] = "¤aa¡d1708val€am9lah¡d17089l",
+["172346"] = "¤aa¡d1708–al€ah¡d1708	Äam	Ä",
+["43010"] = "¤aa¡d1708€al€amÜah¡d1708Ü",
+["53010"] = "¤aa¡d1708Ñêal€am+Àah¡d1708+À",
+["g:224632:545"] = "¤aa¡d1705al€am\000-ÆÀah¡d1705\000-ÆÀ",
+["186137"] = "¤aa¡d1705al€am\0005gàah¡d1705\0005gà",
+["199051"] = "¤aa¡d1708Sal€am¡Tah¡d1708¡T",
+["164448"] = "¤aa¡d1705al€am…–Hah¡d1705…–H",
+["222804"] = "¤aa¡d1708\000+ôal€am\000Lah¡d1708\000L",
+["g:118831:191"] = "¤aa¡d1705al€am>ÃtÀah¡d1705>ÃtÀ",
+["111676"] = "¤aa¡d1708h\"al€am ah¡d1708 ",
+["133590"] = "¤aa¡d1708Ûal€amah¡d1708",
+["g:224606:538"] = "¤aa¡d1705al€ah¡d1705\000B@am\000B@",
+["g:172319:190"] = "¤aa¡d1705al€amşÜah¡d1705şÜ",
+["211808"] = "¤aa¡d1708%pal€am\000,@ah¡d1708\000,@",
+["106733"] = "¤aa¡d1705al€am\000Z Dah¡d1705\000Z D",
+["154722"] = "¤aa¡d1708\000Ùˆal€amèah¡d1708è",
+["2464"] = "¤aa¡d1705al€am\000.$ah¡d1705\000.$",
+["44157"] = "¤aa¡d17083al€am\000†<ah¡d1708\000†<",
+["23437"] = "¤aa¡d1708¸al€amÀah¡d1708À",
+["1791"] = "¤aa¡d1705al€am\000˜„ah¡d1705\000˜„",
+["113588"] = "¤aa¢d1707d1708Ìal€ah¢d1707m`d1708\000†<am\000†<",
+["108302"] = "¤aa¡d1708ğal€amˆah¡d1708ˆ",
+["52721"] = "¤aa¡d1708¥Bal€am>ah¡d1708>",
+["173163"] = "¤aa¡d1708al€am\000û,ah¡d1708\000û,",
+["124117"] = "¤aa¡d1708bëal€am3ôah¡d17083ô",
+["52329"] = "¤aa¡d1708‚al€am\000ûlah¡d1708\000ûl",
+["62004"] = "¤aa¡d1708al€am\000¡ ah¡d1708\000¡ ",
+["109627"] = "¤aa¡d1708\000al€am.àah¡d1708.à",
+["g:172252:233"] = "¤aa¡d1705al€am“‡\000ah¡d1705“‡\000",
+["222695"] = "¤aa¡d1708\000G¦al€am„ah¡d1708„",
+["g:219470:515"] = "¤aa¡d1705\ral€am\000 ah¡d1705\000 ",
+["23447"] = "¤aa¡d1708al€am\000ƒ ah¡d1708\000ƒ ",
+["4060"] = "¤aa¡d1705al€am\000?ı@ah¡d1705\000?ı@",
+["g:36164:357"] = "¤aa¡d1705al€am\0008ÂÜah¡d1705\0008ÂÜ",
+["90146"] = "¤aa¡d1708ìal€am'ah¡d1708'",
+["14599"] = "¤aa¡d1705al€am\000 *Äah¡d1705\000 *Ä",
+["194864"] = "¤aa¡d1708	al€am\000~ğah¡d1708\000~ğ",
+["221861"] = "¤aa¢d1708d1712al¡d1708\000Gˆah¢d1708\000H¡Àd1712\0009^¸am\0009^¸",
+["200566"] = "¤aa¡d1708dal€amÖØah¡d1708ÖØ",
+["194785"] = "¤aa¡d1708õal€am\000j¨°ah¡d1708\000j¨°",
+["222799"] = "¤aa¡d1708=al€am\000k’¬ah¡d1708\000k’¬",
+["130182"] = "¤aa¡d17081al€amœ@ah¡d1708œ@",
+["46377"] = "¤aa¡d1708–al€amœ@ah¡d1708œ@",
+["187829"] = "¤aa¡d1708 al€am\000Š|ah¡d1708\000Š|",
+["12207"] = "¤aa¡d1708½al€am9ah¡d17089",
+["25700"] = "¤aa¡d17086Úal€am\000$øah¡d1708\000$ø",
+["22447"] = "¤aa¡d1708 +al€amhah¡d1708h",
+["g:8118:296"] = "¤aa¡d1705al€am\000ê˜ah¡d1705\000ê˜",
+["24800"] = "¤aa¡d1705al€am\000é0ah¡d1705\000é0",
+["222419"] = "¤aa¡d1708al€am\000ô!Dah¡d1708\000ô!D",
+["27677"] = "¤aa¡d1708›Öal€am,ah¡d1708,",
+["9060"] = "¤aa¡d1708Ôal€am\000äah¡d1708\000ä",
+["g:224602:561"] = "¤aa¡d1705\ral€ah¡d1705\000-ÏXam\000-ÏX",
+["224178"] = "¤aa¡d1708	{al€am\000äah¡d1708\000ä",
+["74851"] = "¤aa¡d1708ìal€amN ah¡d1708N ",
+["74846"] = "¤aa¡d1708Ïval€amIah¡d1708I",
+["22448"] = "¤aa¡d1708^al€amÈah¡d1708È",
+["224828"] = "¤aa¡d1708\000\"7al€am\000€|ah¡d1708\000€|",
+["24798"] = "¤aa¡d1705al€am\000)\\ah¡d1705\000)\\",
+["6219"] = "¤aa¡d1708%al€am\000\r}„ah¡d1708\000\r}„",
+["194571"] = "¤aa¡d1708Şal€am\000÷°ah¡d1708\000÷°",
+["108308"] = "¤aa¡d1708êal€am~ôah¡d1708~ô",
+["194969"] = "¤aa¡d1708\000..al€amDah¡d1708D",
+["24271"] = "¤aa¡d1708ñal€am\000c.<ah¡d1708\000c.<",
+["222556"] = "¤aa¡d1708Îal€am\000-$¤ah¡d1708\000-$¤",
+["164446"] = "¤aa¡d1705al€amk¾ ah¡d1705k¾ ",
+["g:221792:544"] = "¤aa£d1707d1712d1708al€am\000˜–€ah£d1707\000 7 d1712\000˜–€d1708\000 7 ",
+["36164"] = "¤aa¡d1705al¡d1705\0008ÂÜah¡d1705\000˜–€am\0008ÂÜ",
+["108333"] = "¤aa¡d1708ıal€am\000åhah¡d1708\000åh",
+["g:106537:186"] = "¤aa¡d1705al€amÌah¡d1705Ì",
+["220318"] = "¤aa¡d1705al€am\000…Øah¡d1705\000…Ø",
+["193249"] = "¤aa¡d1708Şal€am\000&% ah¡d1708\000&% ",
+["25686"] = "¤aa¡d1705al€amá£\000ah¡d1705á£\000",
+["74842"] = "¤aa¡d1708ĞÊal€am]\\ah¡d1708]\\",
+["222741"] = "¤aa¡d1708\000áal€am\000llah¡d1708\000ll",
+["4191"] = "¤aa¡d1705al€amŞ©Äah¡d1705Ş©Ä",
+["212495"] = "¤aa¡d1708]<al€am\000Ô`ah¡d1708\000Ô`",
+["222656"] = "¤aa¡d1708!al€am\000=pah¡d1708\000=p",
+["36909"] = "¤aa¡d1708\"al€am\000n„ah¡d1708\000n„",
+["9262"] = "¤aa¡d1708N•al€am\0008€ah¡d1708\0008€",
+["g:182978:226"] = "¤aa¡d1705al€amğ­,ah¡d1705ğ­,",
+["222425"] = "¤aa¡d1708\r´al€am½åğah¡d1708½åğ",
+["74660"] = "¤aa¡d1708¤al€ampah¡d1708p",
+["173088"] = "¤aa¡d1708£al€am\000)2àah¡d1708\000)2à",
+["221937"] = "¤aa¡d1708$al€ah¡d1708\n!ş€am\n!ş€",
+["173070"] = "¤aa¡d1708Fal€am\000f”ah¡d1708\000f”",
+["221934"] = "¤aa¡d1708#al€am&üah¡d1708&ü",
+["194569"] = "¤aa¡d1708¿al€am\0005\000ah¡d1708\0005\000",
+["7191"] = "¤aa¡d1708#7al€ah¡d1708\000Ğ,am\000Ğ,",
+["g:204934:418"] = "¤aa¡d1705al€am2©ø€ah¡d17052©ø€",
+["g:121189:214"] = "¤aa¡d1705al€am\000i”èah¡d1705\000i”è",
+["25867"] = "¤aa¡d1708ëal€am\000Jv€ah¡d1708\000Jv€",
+["198416"] = "¤aa¡d1708al€am\000.¼ah¡d1708\000.¼",
+["154165"] = "¤aa¡d1708\000ØÁal€amÈah¡d1708È",
+["193214"] = "¤aa¡d1708›õal€am\nŒah¡d1708\nŒ",
+["23107"] = "¤aa¡d1708	,al€am%äah¡d1708%ä",
+["128740"] = "¤aa¡d1708al€am†¿Tah¡d1708†¿T",
+["g:147038:243"] = "¤aa¡d1705al€am~VTah¡d1705~VT",
+["194807"] = "¤aa¡d1708äal€amÃPah¡d1708ÃP",
+["222515"] = "¤aa¡d17082al€am\000/é ah¡d1708\000/é ",
+["199963"] = "¤aa¡d1708al€ah¡d1708\000¸am\000¸",
+["194805"] = "¤aa¡d1708”al€am\000¤¤ah¡d1708\000¤¤",
+["15166"] = "¤aa¡d1705al€am\000„ˆèah¡d1705\000„ˆè",
+["199055"] = "¤aa¡d1708Hal€amÈah¡d1708È",
+["128714"] = "¤aa¡d1708	al€am1-\000ah¡d17081-\000",
+["3730"] = "¤aa¡d1708yal€am”ah¡d1708”",
+["222596"] = "¤aa¡d1708˜al€amùa¬ah¡d1708ùa¬",
+["39469"] = "¤aa¡d1708\nal€am\000¸ah¡d1708\000¸",
+["2251"] = "¤aa¡d17087al€amØah¡d1708Ø",
+["22644"] = "¤aa¡d1708+al€amÔah¡d1708Ô",
+["4291"] = "¤aa¡d1708al€amèah¡d1708è",
+["36166"] = "¤aa¡d1705al€amèH\000ah¡d1705èH\000",
+["187707"] = "¤aa¡d1708²al€am\000'äah¡d1708\000'ä",
+["31885"] = "¤aa¡d1708al€am\000=	\000ah¡d1708\000=	\000",
+["21885"] = "¤aa¡d1708Öal€am\000&´ah¡d1708\000&´",
+["43107"] = "¤aa¡d1708ßal€am\000'dah¡d1708\000'd",
+["6260"] = "¤aa¡d1708\000	val€am°ah¡d1708°",
+["221858"] = "¤aa¢d1712Xd1708wal€ah¢d1712\000;kTd1708\0003ğam\000;kT",
+["153636"] = "¤aa¡d1708OÏal€am_´ah¡d1708_´",
+["226025"] = "¤aa¡d1708”al€am\000-ÆÀah¡d1708\000-ÆÀ",
+["222641"] = "¤aa¡d1708Ğal€am\000LK@ah¡d1708\000LK@",
+["164561"] = "¤aa¡d1705al€am;šÈÔah¡d1705;šÈÔ",
+["106535"] = "¤aa¡d1705al€am” \000ah¡d1705” \000",
+["97546"] = "¤aa¡d1708Jal€amíah¡d1708í",
+["2964"] = "¤aa¡d1705al€am“RDah¡d1705“RD",
+["18698"] = "¤aa¡d1705al€amIĞah¡d1705IĞ",
+["118829"] = "¤aa¡d1705al€am\000-ÆÀah¡d1705\000-ÆÀ",
+["124439"] = "¤aa¡d1708\000l2al€amdah¡d1708d",
+["108352"] = "¤aa¡d1708%al€am&Hah¡d1708&H",
+["g:118890:196"] = "¤aa¡d1705al€amÍE\\ah¡d1705ÍE\\",
+["193928"] = "¤aa¡d1708·Ùal€amthah¡d1708th",
+["129284"] = "¤aa¡d1708?al€am\000eĞah¡d1708\000eĞ",
+["194968"] = "¤aa¡d1708ñÆal€am°ah¡d1708°",
+["193215"] = "¤aa¡d1708\0005×al€am ah¡d1708 ",
+["g:220320:362"] = "¤aa¡d1705al€am\000°ah¡d1705\000°",
+["23786"] = "¤aa¡d1708bal€am\000”œìah¡d1708\000”œì",
+["153628"] = "¤aa¡d1708al€am\000ıah¡d1708\000ı",
+["g:219477:548"] = "¤aa¡d1705!al€am\000€(˜ah¡d1705\000€(˜",
+["11291"] = "¤aa¡d1708\ral€am˜ah¡d1708˜",
+["112285"] = "¤aa¡d1708€al€am\000¿@ah¡d1708\000¿@",
+["38376"] = "¤aa¡d1708al€ah¡d1708\000±am\000±",
+["193958"] = "¤aa¡d1708Pal€am¼ah¡d1708¼",
+["8294"] = "¤aa¡d1705al€am\000 ¸ah¡d1705\000 ¸",
+["63127"] = "¤aa¡d1708Çal€am\000<ah¡d1708\000<",
+["7532"] = "¤aa¡d1705al€am\000AÜah¡d1705\000AÜ",
+["106335"] = "¤aa¡d1705al€am\000ã`ah¡d1705\000ã`",
+["212265"] = "¤aa¡d1708(al€ah¡d1708 <am <",
+["191472"] = "¤aa¡d1708\000 ™al€am†`ah¡d1708†`",
+["129288"] = "¤aa¡d1708gal€am\0006`ah¡d1708\0006`",
+["43127"] = "¤aa¡d1708al€am\000¥|ah¡d1708\000¥|",
+["g:159168:320"] = "¤aa¡d1705al€am\000'„hah¡d1705\000'„h",
+["208747"] = "¤aa¡d1708>al€amÃPah¡d1708ÃP",
+["173097"] = "¤aa¡d1708_al€am\000ã`ah¡d1708\000ã`",
+["183954"] = "¤aa¡d17086Qal€amWäah¡d1708Wä",
+["112279"] = "¤aa¡d1708al€amˆ¸ah¡d1708ˆ¸",
+["129285"] = "¤aa¡d1708‡al€am\000&LLah¡d1708\000&LL",
+["121239"] = "¤aa¡d1705al€am\000®œah¡d1705\000®œ",
+["g:224600:483"] = "¤aa¡d1705al€ah¡d1705\000)XÄam\000)XÄ",
+["g:204415:519"] = "¤aa¡d1705al€ah¡d1705\000\000\000e ”ğam\000\000\000e ”ğ",
+["45909"] = "¤aa¡d1708·al€am\000»|ah¡d1708\000»|",
+["193946"] = "¤aa¡d1708¦al€am\000\r”ah¡d1708\000\r”",
+["43501"] = "¤aa¡d1708°al€am0ah¡d17080",
+["67749"] = "¤aa¡d1708“7al€am\000Hah¡d1708\000H",
+["g:1215:197"] = "¤aa¡d1705al€amÍe\000ah¡d1705Íe\000",
+["g:201942:343"] = "¤aa¡d1705al€ah¡d1705\000&\000 am\000&\000 ",
+["222421"] = "¤aa¡d1708\rîal€am\000Yyah¡d1708\000Yy",
+["193211"] = "¤aa¡d1708\000	+6al€am&¬ah¡d1708&¬",
+["72235"] = "¤aa¡d1708t¶al€am\nŒah¡d1708\nŒ",
+["g:224600:564"] = "¤aa¡d1705al€ah¡d1705\000ã`am\000ã`",
+["173057"] = "¤aa¡d1708\000v¥al€am\"Äah¡d1708\"Ä",
+["3864"] = "¤aa¡d1708 al€ama¨ah¡d1708a¨",
+["194572"] = "¤aa¡d1708!Åal€am?¬ah¡d1708?¬",
+["193961"] = "¤aa¡d1708×al€am@ah¡d1708@",
+["228403"] = "¤aa¡d1708’al€amíœah¡d1708íœ",
+["124108"] = "¤aa¡d1708Åal€am¸ah¡d1708¸",
+["152544"] = "¤aa¡d1708.èal€am!üah¡d1708!ü",
+["152541"] = "¤aa¡d1708\000qal€am<ah¡d1708<",
+["191474"] = "¤aa¡d1708I€al€am'ah¡d1708'",
+["10620"] = "¤aa¡d1708\000	ûÏal€am\000r´ah¡d1708\000r´",
+["222682"] = "¤aa¡d1708%±al€am\000Ğah¡d1708\000Ğ",
+["g:188707:322"] = "¤aa¡d1705al€am\000¡ ah¡d1705\000¡ ",
+["43571"] = "¤aa¡d1708;al€amÈah¡d1708È",
+["15379"] = "¤aa¡d1705al€am\000ÇĞah¡d1705\000ÇĞ",
+["g:217127:554"] = "¤aa¡d1705al€amßßˆah¡d1705ßßˆ",
+["173073"] = "¤aa¡d1708çal€am\000<à`ah¡d1708\000<à`",
+["g:15379:357"] = "¤aa¡d1705al€am\000ÇĞah¡d1705\000ÇĞ",
+["22446"] = "¤aa¡d1708al€amìah¡d1708ì",
+["24775"] = "¤aa¡d1705al€am\000 \000ah¡d1705\000 \000",
+["41510"] = "¤aa¡d17087Šal€am&¬ah¡d1708&¬",
+["210796"] = "¤aa¡d1708\000	ñCal€am›ah¡d1708›",
+["g:221795:564"] = "¤aa£d1707d17120d1708al¡d1708{T˜ah£d1707{ğØd1712!ê\\d1708{ÉÈam!ê\\",
+["19774"] = "¤aa¡d1708al€amJš0ah¡d1708Jš0",
+["144329"] = "¤aa¡d1708ëal€am\000<ºàah¡d1708\000<ºà",
+["17922"] = "¤aa¡d1705al€am\000\000\000 JHah¡d1705\000\000\000 JH",
+["194788"] = "¤aa¡d1708al€am\000\"àah¡d1708\000\"à",
+["201943"] = "¤aa¡d1705al€am\0002ÏĞah¡d1705\0002ÏĞ",
+["106602"] = "¤aa¡d1705al€am}s$ah¡d1705}s$",
+["1015"] = "¤aa¡d1708-al€amôah¡d1708ô",
+["g:224605:483"] = "¤aa¡d1705al€ah¡d1705\000”ŞŒam\000”ŞŒ",
+["127850"] = "¤aa¡d1708Eal€am\000,ah¡d1708\000,",
+["79010"] = "¤aa¡d17083Kal€amTah¡d1708T",
+["173085"] = "¤aa¡d1708`al€am\000	ah¡d1708\000	",
+["23571"] = "¤aa¡d1708Äal€am\000ƒ9\\ah¡d1708\000ƒ9\\",
+["53069"] = "¤aa¡d1708 /al€am„ah¡d1708„",
+["218337"] = "¤aa¡d1708\000Ãal€am\000	ah¡d1708\000	",
+["g:172253:233"] = "¤aa¡d1705al€am“‡\000ah¡d1705“‡\000",
+["191520"] = "¤aa¡d1708lal€amXah¡d1708X",
+["2604"] = "¤aa¡d1708\000°òal€amxah¡d1708x",
+["219496"] = "¤aa¡d1708al€am\000³èah¡d1708\000³è",
+["133593"] = "¤aa¡d1708al€amxah¡d1708x",
+["g:1793:285"] = "¤aa¡d1705al€am\000ªµôah¡d1705\000ªµô",
+["6197"] = "¤aa¡d1705al€am\000\000\000÷Aah¡d1705\000\000\000÷A",
+["194852"] = "¤aa¡d1708lal€am‡(ah¡d1708‡(",
+["g:221790:564"] = "¤aa£d17079d1712/d17088al¡d1708çÜamRù¬ah£d1707Ò<d1712Rù¬d1708]",
+["g:106309:207"] = "¤aa¡d1705al€amÖØah¡d1705ÖØ",
+["8154"] = "¤aa¡d1708aÀal€amah¡d1708",
+["g:172251:233"] = "¤aa¡d1705al€am“–<ah¡d1705“–<",
+["153629"] = "¤aa¡d1708al€am\000%b´ah¡d1708\000%b´",
+["55655"] = "¤aa¡d1705al€am\000³ ah¡d1705\000³ ",
+["179315"] = "¤aa¡d1708\0009\"al€am¼ah¡d1708¼",
+["82042"] = "¤aa¡d1705al€ah¡d1705\000S…@am\000S…@",
+["12655"] = "¤aa¡d17083(al€amˆ¸ah¡d1708ˆ¸",
+["8348"] = "¤aa¡d1705\nal€am\000„£Üah¡d1705\000„£Ü",
+["19233"] = "¤aa¡d1708al€am\000LK@ah¡d1708\000LK@",
+["124102"] = "¤aa¡d1708\000Úïal€am¦ah¡d1708¦",
+["108328"] = "¤aa¡d1708¯al€am ah¡d1708 ",
+["g:165518:266"] = "¤aa¡d1705al€am\000·8Lah¡d1705\000·8L",
+["220320"] = "¤aa¡d1705al€am\000°ah¡d1705\000°",
+["g:224607:564"] = "¤aa¡d1705\nal€am\0005Àah¡d1705\0005À",
+["52985"] = "¤aa¡d1708\000aIal€am\000zèah¡d1708\000zè",
+["106631"] = "¤aa¡d1705al€am-E«xah¡d1705-E«x",
+["194760"] = "¤aa¡d1708¢al€amœ@ah¡d1708œ@",
+["173170"] = "¤aa¡d1708al€amkah¡d1708k",
+["198245"] = "¤aa¡d1708al€am\000LK@ah¡d1708\000LK@",
+["222555"] = "¤aa¡d1708kñal€am\000:Pah¡d1708\000:P",
+["10152"] = "¤aa¡d1705al€am^Àah¡d1705^À",
+["15994"] = "¤aa¡d1708\000Ual€am\000	\000Lah¡d1708\000	\000L",
+["32597"] = "¤aa¡d1708	al€am½€ah¡d1708½€",
+["14606"] = "¤aa¡d1705al€am\000@ah¡d1705\000@",
+["3057"] = "¤aa¡d1705al€am\000˜’üah¡d1705\000˜’ü",
+["62019"] = "¤aa¡d1708al€amë¡”ah¡d1708ë¡”",
+["222661"] = "¤aa¡d1708 al€am\000\r@ah¡d1708\000\r@",
+["6399"] = "¤aa¡d1705al€am\000*¤ah¡d1705\000*¤",
+["g:204928:376"] = "¤aa¡d1705al€am\n.5tah¡d1705\n.5t",
+["4399"] = "¤aa¡d1708/òal€amlah¡d1708l",
+["127847"] = "¤aa¡d1708al€am\000pah¡d1708\000p",
+["43102"] = "¤aa¡d1708\"„al€am\000¥Pah¡d1708\000¥P",
+["222581"] = "¤aa¡d17088al€amö(¼ah¡d1708ö(¼",
+["197751"] = "¤aa¡d1708N?al€amÜah¡d1708Ü",
+["g:224607:558"] = "¤aa¡d1705#al€ah¡d1705\0002Z am\0002Z ",
+["44289"] = "¤aa¡d17087al€am\0000ah¡d1708\0000",
+["13510"] = "¤aa¡d1708‰al€am\0008RÀah¡d1708\0008RÀ",
+["43120"] = "¤aa¡d1708F™al€am\000-¬ah¡d1708\000-¬",
+["31894"] = "¤aa¡d1708şal€am\000.Àah¡d1708\000.À",
+["172935"] = "¤aa¡d1708\000I\nal€amĞah¡d1708Ğ",
+["124119"] = "¤aa¡d1708ü…al€am\"Äah¡d1708\"Ä",
+["190315"] = "¤aa¡d1708\000a­al€ama¨ah¡d1708a¨",
+["39527"] = "¤aa¡d1708¡al€am\000u`ah¡d1708\000u`",
+["31893"] = "¤aa¡d1708ral€am\000\\Äah¡d1708\000\\Ä",
+["213764"] = "¤aa¡d1708al€amõÖtah¡d1708õÖt",
+["112291"] = "¤aa¡d1708¤al€am\000\r» ah¡d1708\000\r» ",
+["221917"] = "¤aa¡d1708Cal€am\0008ah¡d1708\0008",
+["173086"] = "¤aa¡d1708™al€am\000&% ah¡d1708\000&% ",
+["212292"] = "¤aa¡d1708©al€am\000âah¡d1708\000â",
+["112292"] = "¤aa¡d1708al€am\000hìah¡d1708\000hì",
+["g:204414:519"] = "¤aa¡d1705al€am\000\000\000*Êğah¡d1705\000\000\000*Êğ",
+["168586"] = "¤aa¡d17082Õal€amixah¡d1708ix",
+["109155"] = "¤aa¡d1708Ûal€am\000Üah¡d1708\000Ü",
+["167738"] = "¤aa¡d1708\000Ü±al€amah¡d1708",
+["6419"] = "¤aa¡d1705al€am\0007è€ah¡d1705\0007è€",
+["9751"] = "¤aa¡d1705al€am=v@ah¡d1705=v@",
+["23785"] = "¤aa¡d1708gal€am\000=¡Xah¡d1708\000=¡X",
+["62017"] = "¤aa¡d1708al€am\000O€ah¡d1708\000O€",
+["62012"] = "¤aa¡d1708al€am\000&% ah¡d1708\000&% ",
+["g:165520:270"] = "¤aa¡d1705\nal€amÉ'@ah¡d1705É'@",
+["62009"] = "¤aa¡d1708/al€am\000%æ¼ah¡d1708\000%æ¼",
+["204464"] = "¤aa¡d1708™al€am\000°ah¡d1708\000°",
+["128737"] = "¤aa¡d1708al€am\000˜ƒ\\ah¡d1708\000˜ƒ\\",
+["7392"] = "¤aa¡d1708Oal€am\000€Xah¡d1708\000€X",
+["g:198262:346"] = "¤aa¡d1708al€am\000§Ø\\ah¡d1708\000§Ø\\",
+["192885"] = "¤aa¡d1708Gal€amÃPah¡d1708ÃP",
+["23446"] = "¤aa¡d1708I´al€am\000\\Ìah¡d1708\000\\Ì",
+["198262"] = "¤aa¡d1708al€am\000¦xÌah¡d1708\000¦xÌ",
+["222557"] = "¤aa¡d1708Âal€amGéPah¡d1708GéP",
+["20381"] = "¤aa¡d1708/al€am\000&%<ah¡d1708\000&%<",
+["222644"] = "¤aa¡d1708xal€amzjœah¡d1708zjœ",
+["204092"] = "¤aa¡d1708ãal€am\000[‹Œah¡d1708\000[‹Œ",
+["13465"] = "¤aa¡d1708&¼al€am\000nÌah¡d1708\000nÌ",
+["128730"] = "¤aa¡d1708al€am\000„ah¡d1708\000„",
+["128720"] = "¤aa¡d1708al€amNäah¡d1708Nä",
+["152548"] = "¤aa¡d17081Ğal€am’ah¡d1708’",
+["151718"] = "¤aa¡d1708\rªal€am\000\"Uah¡d1708\000\"U",
+["198620"] = "¤aa¡d1708Bal€am\000—àah¡d1708\000—à",
+["36149"] = "¤aa¡d1705al€am\000&-ah¡d1705\000&-",
+["23441"] = "¤aa¡d1708úal€amu”ah¡d1708u”",
+["2317"] = "¤aa¡d1705al€amPÌPah¡d1705PÌP",
+["15361"] = "¤aa¡d1705al€am\000…‰Œah¡d1705\000…‰Œ",
+["2678"] = "¤aa¡d1708\000‹íal€amdah¡d1708d",
+["36171"] = "¤aa¡d1705al€am\000&0ôah¡d1705\000&0ô",
+["227771"] = "¤aa¡d1708æal€am^óÀah¡d1708^óÀ",
+["31918"] = "¤aa¡d1708al€am\000V-Tah¡d1708\000V-T",
+["65893"] = "¤aa¡d1708–al€am«ğah¡d1708«ğ",
+["39151"] = "¤aa¡d1708’al€am\000Fìah¡d1708\000Fì",
+["53072"] = "¤aa¡d17084al€am¤ah¡d1708¤",
+["194850"] = "¤aa¡d1708Ial€amœ@ah¡d1708œ@",
+["74839"] = "¤aa¡d1708/Hal€am<ğah¡d1708<ğ",
+["169409"] = "¤aa¡d1705al€amA(ah¡d1705A(",
+["198219"] = "¤aa¡d1708³al€am\0008€ah¡d1708\0008€",
+["g:224638:460"] = "¤aa¡d1705al€am\000¡ÁÄah¡d1705\000¡ÁÄ",
+["194810"] = "¤aa¡d1708Dal€am\000‹Èah¡d1708\000‹È",
+["222633"] = "¤aa¡d1708Çal€am\000jò„ah¡d1708\000jò„",
+["37767"] = "¤aa¡d1705al€amgÁĞah¡d1705gÁĞ",
+["43123"] = "¤aa¡d1708ƒal€am\000–\\ah¡d1708\000–\\",
+["177843"] = "¤aa¡d1708Fal€am\000O3dah¡d1708\000O3d",
+["52982"] = "¤aa¡d1708'yal€amu0ah¡d1708u0",
+["225568"] = "¤aa¡d1708Nªal€am\000ßğah¡d1708\000ßğ",
+["194802"] = "¤aa¡d17085al€am\000Ğah¡d1708\000Ğ",
+["109119"] = "¤aa¡d1708ÕÊal€am:˜ah¡d1708:˜",
+["194966"] = "¤aa¡d1708ª±al€amlah¡d1708l",
+["g:106634:186"] = "¤aa¡d1705al€am\nFø„ah¡d1705\nFø„",
+["194795"] = "¤aa¡d1708§al€amé4ah¡d1708é4",
+["164389"] = "¤aa¡d1705al€am\000ÿ,ah¡d1705\000ÿ,",
+["94274"] = "¤aa¡d1705al€amò¼ôah¡d1705ò¼ô",
+["4341"] = "¤aa¡d1708XHal€am,ah¡d1708,",
+["g:224601:545"] = "¤aa¡d1705al€ah¡d1705\000=Ôam\000=Ô",
+["g:221797:544"] = "¤aa£d1707Od17124d1708Tal€ah£d1707\000*’pd1712\000=	\000d1708\000,am\000=	\000",
+["223705"] = "¤aa¡d1708al€ah¡d1708}x@am}x@",
+["g:151993:249"] = "¤aa¡d1705al€amÉ½¤ah¡d1705É½¤",
+["221922"] = "¤aa¡d1708$al€amæÁ`ah¡d1708æÁ`",
+["172052"] = "¤aa¡d1708û¢al€am¼ah¡d1708¼",
+["172089"] = "¤aa¡d1708\000a·al€am\rHah¡d1708\rH",
+["128735"] = "¤aa¡d1708al€am\000„ah¡d1708\000„",
+["168193"] = "¤aa¡d1708lal€am\000%Xah¡d1708\000%X",
+["3466"] = "¤aa¡d1708£al€amØah¡d1708Ø",
+["213760"] = "¤aa¡d1708Kal€amÈĞah¡d1708ÈĞ",
+["5466"] = "¤aa¡d1708:al€amWah¡d1708W",
+["15339"] = "¤aa¡d1705al€am\000€@lah¡d1705\000€@l",
+["208187"] = "¤aa¡d1708:al€am\000PLah¡d1708\000PL",
+["198175"] = "¤aa¡d1708şal€am\000O€ah¡d1708\000O€",
+["212298"] = "¤aa¡d1708\rOal€am\000Aœàah¡d1708\000Aœà",
+["112298"] = "¤aa¡d1708al€am-,ah¡d1708-,",
+["25675"] = "¤aa¡d1705al€amyŒah¡d1705yŒ",
+["198189"] = "¤aa¡d1708İal€am—ah¡d1708—",
+["8118"] = "¤aa¡d1705al€am\000ê˜ah¡d1705\000ê˜",
+["108341"] = "¤aa¡d1708Ìal€am%ah¡d1708%",
+["205170"] = "¤aa¡d1708Fal€am\000Lqìah¡d1708\000Lqì",
+["g:15305:357"] = "¤aa¡d1705al€am\0001Ftah¡d1705\0001Ft",
+["219890"] = "¤aa¡d1708¾al€am\000bkPah¡d1708\000bkP",
+["106729"] = "¤aa¡d1705al€am\000}Ç8ah¡d1705\000}Ç8",
+["192866"] = "¤aa¡d1708al€am'ah¡d1708'",
+["191873"] = "¤aa¡d1708al€am\000\n,ah¡d1708\000\n,",
+["221859"] = "¤aa¢d17080ïd1712­al¡d1708\000ª0ah¢d1708\000\r`d1712\000~ğam\000~ğ",
+["g:36169:186"] = "¤aa¡d1705al€amÄ˜ah¡d1705Ä˜",
+["194767"] = "¤aa¡d1708Şal€am\000)Äah¡d1708\000)Ä",
+["g:172254:233"] = "¤aa¡d1705al€am“‡\000ah¡d1705“‡\000",
+["154121"] = "¤aa¡d1708Åal€amŒ ah¡d1708Œ ",
+["g:204932:379"] = "¤aa¡d1705al€amæ²€ah¡d1705æ²€",
+["220138"] = "¤aa¡d1708WBal€am\000!tah¡d1708\000!t",
+["15564"] = "¤aa¡d1708øal€ah¡d1708€am€",
+["188015"] = "¤aa¡d1705al€am0ô\\ah¡d17050ô\\",
+["108309"] = "¤aa¡d1708Ial€amg ah¡d1708g ",
+["19271"] = "¤aa¡d1708ial€am\000ş„ah¡d1708\000ş„",
+["194580"] = "¤aa¡d1708Xal€am\000Iğah¡d1708\000Iğ",
+["55673"] = "¤aa¡d1705al€am\000(ã0ah¡d1705\000(ã0",
+["90720"] = "¤aa¡d1705al€am\000LSØah¡d1705\000LSØ",
+["108361"] = "¤aa¡d1708™al€am\000VÌah¡d1708\000VÌ",
+["128718"] = "¤aa¡d1708al€am\000—Ó0ah¡d1708\000—Ó0",
+["81976"] = "¤aa¡d1705al€am\000÷Äah¡d1705\000÷Ä",
+["47556"] = "¤aa¡d1708>al€amS4ah¡d1708S4",
+["192553"] = "¤aa¡d1708	£al€am6°ah¡d17086°",
+["227208"] = "¤aa£d1707/d1712d1708,al¡d1712\000däam\000däah£d1707\000‡Äd1712\000(4d1708\000‡Ä",
+["173101"] = "¤aa¡d1708‘al€am\000„€ah¡d1708\000„€",
+["15345"] = "¤aa¡d1705al€am\000£e°ah¡d1705\000£e°",
+["153606"] = "¤aa¡d1708al€am\000 ah¡d1708\000 ",
+["188707"] = "¤aa¡d1705al€am\000¡ ah¡d1705\000¡ ",
+["4721"] = "¤aa¡d1705al€am\000Ei$ah¡d1705\000Ei$",
+["222417"] = "¤aa¡d17086}al€am\000-ah¡d1708\000-",
+["6433"] = "¤aa¡d1705al€am\000@lah¡d1705\000@l",
+["g:90724:174"] = "¤aa¡d1705al€amûdah¡d1705ûd",
+["221754"] = "¤aa¡d1708\nêal€am\000˜“Äah¡d1708\000˜“Ä",
+["22790"] = "¤aa¡d1708Ñal€amRlah¡d1708Rl",
+["112302"] = "¤aa¡d1708Gal€am\000pah¡d1708\000p",
+["226032"] = "¤aa¡d1708Ÿal€am«?\000ah¡d1708«?\000",
+["193031"] = "¤aa¡d1708Fal€am\000‚ah¡d1708\000‚",
+["15992"] = "¤aa¡d1708al€am¸ah¡d1708¸",
+["224826"] = "¤aa¡d1708\000ì.al€amYØah¡d1708YØ",
+["44279"] = "¤aa¡d1708 al€am\000õ`ah¡d1708\000õ`",
+["221763"] = "¤aa¡d1708@,al€am\000zah¡d1708\000z",
+["25685"] = "¤aa¡d1705al€amá£\000ah¡d1705á£\000",
+["9061"] = "¤aa¡d1708Lal€am\000cÔah¡d1708\000cÔ",
+["194967"] = "¤aa¡d1708ĞEal€am°ah¡d1708°",
+["14579"] = "¤aa¡d1705al€am\000!Nah¡d1705\000!N",
+["198192"] = "¤aa¡d17087­al€am\000ÕTah¡d1708\000ÕT",
+["192897"] = "¤aa¡d1708éal€amÀah¡d1708À",
+["194794"] = "¤aa¡d1708al€am\000óah¡d1708\000ó",
+["44273"] = "¤aa¡d1708al€am\000€ah¡d1708\000€",
+["36135"] = "¤aa¡d1705al€am†á€ah¡d1705†á€",
+["183952"] = "¤aa¡d1708Cal€amtah¡d1708t",
+["22452"] = "¤aa¡d1708œfal€am\0008€ah¡d1708\0008€",
+["222511"] = "¤aa¡d1708™al€am\000	'Àah¡d1708\000	'À",
+["10405"] = "¤aa¡d1705al€am\000±hÌah¡d1705\000±hÌ",
+["79297"] = "¤aa¡d1708al€am\000Axah¡d1708\000Ax",
+["4666"] = "¤aa¡d1705al€am\n%G ah¡d1705\n%G ",
+["18562"] = "¤aa¡d1708¨al€am\000“àah¡d1708\000“à",
+["225566"] = "¤aa¡d1708\000ò‘al€am'ah¡d1708'",
+["222686"] = "¤aa¡d17084al€am\000Ğtah¡d1708\000Ğt",
+["198231"] = "¤aa¡d1708al€am'ah¡d1708'",
+["194863"] = "¤aa¡d1708(al€am\000óXah¡d1708\000óX",
+["97623"] = "¤aa¡d1708Øal€amüah¡d1708ü",
+["g:224600:561"] = "¤aa¡d1705al€ah¡d1705\000dpam\000dp",
+["g:224603:561"] = "¤aa¡d1705\ral€ah¡d1705\000&% am\000&% ",
+["5503"] = "¤aa¡d17085al€amˆah¡d1708ˆ",
+["121189"] = "¤aa¡d1705al€am\000i”èah¡d1705\000i”è",
+["79285"] = "¤aa¡d1708al€am\000LK@ah¡d1708\000LK@",
+["62781"] = "¤aa¡d17083al€am¤ah¡d1708¤",
+["g:221788:564"] = "¤aa£d1707\"d1712d1708\"al¡d1708¹½Œah£d1707º3 d1712\000Õw¨d1708ºam\000Õw¨",
+["106338"] = "¤aa¡d1705al€am¶°°ah¡d1705¶°°",
+["31917"] = "¤aa¡d1708al€amÉÃ€ah¡d1708ÉÃ€",
+["193935"] = "¤aa¡d1708–al€am\000+ñ8ah¡d1708\000+ñ8",
+["4054"] = "¤aa¡d1705al€am\000n0˜ah¡d1705\000n0˜",
+["198414"] = "¤aa¡d17084Ñal€am\0000 ah¡d1708\0000 ",
+["219894"] = "¤aa¡d1708Eal€am@Ghah¡d1708@Gh",
+["49908"] = "¤aa¡d1708öal€am\000Ôah¡d1708\000Ô",
+["119340"] = "¤aa¡d1705al€am>¬L<ah¡d1705>¬L<",
+["221919"] = "¤aa¡d1708tal€am+èÄah¡d1708+èÄ",
+["37771"] = "¤aa¡d1705al€am«?dah¡d1705«?d",
+["226024"] = "¤aa¡d1708Åal€amV´`ah¡d1708V´`",
+["130179"] = "¤aa¡d1708Gal€am\000\"àah¡d1708\000\"à",
+["222592"] = "¤aa¡d1708?al€am\0002ah¡d1708\0002",
+["212511"] = "¤aa¡d17089Øal€am\000Uìah¡d1708\000Uì",
+["15175"] = "¤aa¡d1705al€amy·Pah¡d1705y·P",
+["52555"] = "¤aa¡d1708\000Îpal€amœ@ah¡d1708œ@",
+["192833"] = "¤aa¡d1708ïal€am'ah¡d1708'",
+["223693"] = "¤aa¡d1708al€ah¡d1708}* am}* ",
+["164563"] = "¤aa¡d1705al€amNèah¡d1705Nè",
+["2233"] = "¤aa¡d1705al€amÉÁğah¡d1705ÉÁğ",
+["192856"] = "¤aa¡d1708al€am&Hah¡d1708&H",
+["221869"] = "¤aa¢d1712\rUd1708Jal€am\000\"£0ah¢d1712\000\"£0d1708\000 Œl",
+["173084"] = "¤aa¡d1708al€am\000\nÕah¡d1708\000\nÕ",
+["58086"] = "¤aa¡d1708šal€amIÔah¡d1708IÔ",
+["19276"] = "¤aa¡d1708*al€am\000/tpah¡d1708\000/tp",
+["191328"] = "¤aa¤d1707O@d1712Bd1705'(d1708JÙal€ah¤d1707”d1712Àd1705èd1708”amÀ",
+["46009"] = "¤aa¡d1705al€amÉ¦˜ah¡d1705É¦˜",
+["192896"] = "¤aa¡d17085al€am\rHah¡d1708\rH",
+["153611"] = "¤aa¡d1708al€am\000ıTah¡d1708\000ıT",
+["31910"] = "¤aa¡d1708áal€am\000	ëah¡d1708\000	ë",
+["191260"] = "¤aa¡d1708al€am\000;¼ah¡d1708\000;¼",
+["108344"] = "¤aa¡d17088al€am!üah¡d1708!ü",
+["g:229074:558"] = "¤aa¡d1705al€am¦Àah¡d1705¦À",
+["4603"] = "¤aa¡d1708$al€am\000Vhah¡d1708\000Vh",
+["8845"] = "¤aa¡d1708al€am\000ÏÈah¡d1708\000ÏÈ",
+["15430"] = "¤aa¡d1705al€amQàah¡d1705Qà",
+["124669"] = "¤aa¡d1708\000val€am\000•Tah¡d1708\000•T",
+["130245"] = "¤aa¡d1708èal€am\000„€ah¡d1708\000„€",
+["79298"] = "¤aa¡d1708al€am\000àHah¡d1708\000àH",
+["15182"] = "¤aa¡d1705al€am\000Âºdah¡d1705\000Âºd",
+["124106"] = "¤aa¡d1708eØal€am\000	]¨ah¡d1708\000	]¨",
+["210098"] = "¤aa¡d1705al€ah¡d1705vg\000amvg\000",
+["17012"] = "¤aa¡d1708›al€amàah¡d1708à",
+["4402"] = "¤aa¡d1708Ëal€am\000¡ ah¡d1708\000¡ ",
+["15370"] = "¤aa¡d1705al€am\000'ÌHah¡d1705\000'ÌH",
+["14594"] = "¤aa¡d1705al€am\000l@ah¡d1705\000l@",
+["193229"] = "¤aa¡d1708÷al€am\000EÀah¡d1708\000EÀ",
+["173037"] = "¤aa¡d1708(/al€am¼ah¡d1708¼",
+["74841"] = "¤aa¡d1708ğal€am	Äah¡d1708	Ä",
+["228930"] = "¤aa¡d1708\000Ùwal€am¤ah¡d1708¤",
+["79296"] = "¤aa¡d1708al€am\000-x ah¡d1708\000-x ",
+["158189"] = "¤aa¡d17089!al€amdah¡d1708d",
+["2605"] = "¤aa¡d1708\000°\ral€amôah¡d1708ô",
+["39350"] = "¤aa¡d1708$al€ambN¬ah¡d1708bN¬",
+["221799"] = "¤aa£d1707Pd1712Ad1708Kal€ah£d1707¦/€d1712}ìd1708¦/€am}ì",
+["39501"] = "¤aa¡d1708al€amğØìah¡d1708ğØì",
+["2770"] = "¤aa¡d1708Pral€am\000o0ah¡d1708\000o0",
+["168192"] = "¤aa¡d1708	Dal€am\0000ah¡d1708\0000",
+["228235"] = "¤aa¡d1708\000Ä2al€am\\”ah¡d1708\\”",
+["228236"] = "¤aa¡d1708\000dal€amšLah¡d1708šL",
+["g:224605:515"] = "¤aa¡d1705al€ah¡d1705\000‡¿,am\000‡¿,",
+["198202"] = "¤aa¡d1708Ral€am\000\rğah¡d1708\000\rğ",
+["g:86843:177"] = "¤aa¡d1705al€am:eàah¡d1705:eà",
+["765"] = "¤aa¡d1708\000M*al€am\000;ah¡d1708\000;",
+["13423"] = "¤aa¡d1708Îal€am—ôah¡d1708—ô",
+["219880"] = "¤aa¡d1708al€am\000TŒah¡d1708\000TŒ",
+["37703"] = "¤aa¡d1708$gal€am‚Üah¡d1708‚Ü",
+["193469"] = "¤aa¡d1708-al€am\000Çhah¡d1708\000Çh",
+["78884"] = "¤aa¡d1705al€amÉÕah¡d1705ÉÕ",
+["23424"] = "¤aa¡d1708MÕal€am\000ÿ¸ah¡d1708\000ÿ¸",
+["198997"] = "¤aa¡d1705al€amÔ]ah¡d1705Ô]",
+["213772"] = "¤aa¢d1708sd1712¤al¡d1708SÀah¢d1708bZ\000d1712\"e¼am\"e¼",
+["224607"] = "¤aa¡d1705Lal¡d1705\000-¦¸ah¡d1705\0002Z am\000-¦¸",
+["112273"] = "¤aa¡d1708al€am\000Ùhah¡d1708\000Ùh",
+["212273"] = "¤aa¡d1708ãal€am\000C3 ah¡d1708\000C3 ",
+["124105"] = "¤aa¡d1708Ê¬al€am\000™Äah¡d1708\000™Ä",
+["19272"] = "¤aa¡d1708\nal€am\000¡Ìah¡d1708\000¡Ì",
+["6291"] = "¤aa¡d1708~Ëal€am¼ah¡d1708¼",
+["g:224606:532"] = "¤aa¡d1705al€ah¡d1705\000]pam\000]p",
+["219471"] = "¤aa¡d17055al€am\000‚¸ah¡d1705\000‚¸",
+["106537"] = "¤aa¡d1705al€amÌah¡d1705Ì",
+["197764"] = "¤aa¡d1708füal€am„ah¡d1708„",
+["g:36152:344"] = "¤aa¡d1705al€am\000PoÌah¡d1705\000PoÌ",
+["71810"] = "¤aa¡d1708Çal€am\000Oah¡d1708\000O",
+["168189"] = "¤aa¡d1708al€am\000½ah¡d1708\000½",
+["g:219480:551"] = "¤aa¡d1705al€amtìÀah¡d1705tìÀ",
+["10106"] = "¤aa¡d1705al¡d1705\000 Œah¡d1705\000AË\\am\000 Œ",
+["19767"] = "¤aa¡d1708šal€am\000\r» ah¡d1708\000\r» ",
+["191333"] = "¤aa¡d1708¿al€amPah¡d1708P",
+["197748"] = "¤aa¡d17080Üal€am,ah¡d1708,",
+["44275"] = "¤aa¡d1708al€am\000JÄ ah¡d1708\000JÄ ",
+["2142"] = "¤aa¡d1705al€amWï¨ah¡d1705Wï¨",
+["g:221788:557"] = "¤aa£d1707d1712d1708al€ah£d1707‰¶<d1712\000´ôd1708‰¶<am\000´ô",
+["3712"] = "¤aa¡d1708m«al€amEìah¡d1708Eì",
+["61992"] = "¤aa¡d1708al€am\000q–èah¡d1708\000q–è",
+["g:219472:524"] = "¤aa¡d1705al€am1-\000ah¡d17051-\000",
+["34057"] = "¤aa¡d1708v…al€amYtah¡d1708Yt",
+["208212"] = "¤aa¡d1708al€am4¼ah¡d17084¼",
+["74249"] = "¤aa¡d1708\000ÿ‡al€amèah¡d1708è",
+["191498"] = "¤aa¡d1708–Ğal€am.àah¡d1708.à",
+["206433"] = "¤aa¡d1705al€am½aüah¡d1705½aü",
+["191330"] = "¤aa¡d1708Ual€am\000‘ôah¡d1708\000‘ô",
+["12361"] = "¤aa¡d1708'al€am¤ah¡d1708¤",
+["g:172250:200"] = "¤aa¡d1705al€am£hah¡d1705£h",
+["223696"] = "¤aa¡d1708al€ah¡d1708‰Îtam‰Ît",
+["192872"] = "¤aa¡d1708\000˜eal€amah¡d1708",
+["74852"] = "¤aa¡d1708±al€amˆah¡d1708ˆ",
+["128016"] = "¤aa¡d1708al€amŸvÀah¡d1708ŸvÀ",
+["222805"] = "¤aa¡d1708\000íRal€am\000Ğah¡d1708\000Ğ",
+["133589"] = "¤aa¡d1708?al€am”ah¡d1708”",
+["124121"] = "¤aa¡d1708\000\n $al€amdah¡d1708d",
+["154819"] = "¤aa¡d1705al€am\000§ïhah¡d1705\000§ïh",
+["24805"] = "¤aa¡d1705al€am\000*Èah¡d1705\000*È",
+["8167"] = "¤aa¡d1708al€amË ah¡d1708Ë ",
+["222678"] = "¤aa¡d1708Ôal€am\000Øah¡d1708\000Ø",
+["151567"] = "¤aa¡d1708‡\nal€amah¡d1708",
+["194768"] = "¤aa¡d1708al€am\000E\\ah¡d1708\000E\\",
+["3967"] = "¤aa¡d1705al€am\000(@ah¡d1705\000(@",
+["192860"] = "¤aa¡d1708!al€amÜah¡d1708Ü",
+["g:106667:186"] = "¤aa¡d1705al€am×äah¡d1705×ä",
+["44732"] = "¤aa¡d1705al€am\000˜•Tah¡d1705\000˜•T",
+["31912"] = "¤aa¡d1708Yal€am\000†<ah¡d1708\000†<",
+["201404"] = "¤aa¡d1708&ˆal€am\0003àÜah¡d1708\0003àÜ",
+["g:144405:243"] = "¤aa¡d1705al€amÍe\000ah¡d1705Íe\000",
+["71640"] = "¤aa¡d1705al€am\000ReÀah¡d1705\000ReÀ",
+["221910"] = "¤aa¡d1708al€amÜº,ah¡d1708Üº,",
+["111659"] = "¤aa¡d1708dal€am˜ah¡d1708˜",
+["25650"] = "¤aa¡d1708Yal€ah¡d1708!˜am!˜",
+["2473"] = "¤aa¡d1705al€am\000”sèah¡d1705\000”sè",
+["173093"] = "¤aa¡d1708¢al€am\000:Kpah¡d1708\000:Kp",
+["193962"] = "¤aa¡d1708Ial€am\000€ah¡d1708\000€",
+["113262"] = "¤aa¡d1708¢‘al€amah¡d1708",
+["124277"] = "¤aa¡d1705al€ah¡d1705w5“œamw5“œ",
+["193929"] = "¤aa¡d1708	Íal€am\000´ah¡d1708\000´",
+["19279"] = "¤aa¡d1708al€am\000° ah¡d1708\000° ",
+["224638"] = "¤aa¡d1705Gal€ah¡d1705\000_(am\000_(",
+["g:193386:319"] = "¤aa¡d1705al€am\000LK@ah¡d1705\000LK@",
+["163942"] = "¤aa¡d1705al€am,ñË˜ah¡d1705,ñË˜",
+["191326"] = "¤aa¡d17082al€amÃPah¡d1708ÃP",
+["152509"] = "¤aa¡d1708\000eµal€ampah¡d1708p",
+["173099"] = "¤aa¡d1708al€am\000;[Pah¡d1708\000;[P",
+["192849"] = "¤aa¡d170803al€am!üah¡d1708!ü",
+["41805"] = "¤aa¡d1708€al€am\000…tah¡d1708\000…t",
+["71805"] = "¤aa¡d1708`al€am\000‰-0ah¡d1708\000‰-0",
+["168646"] = "¤aa¡d1708ical€am'ah¡d1708'",
+["76734"] = "¤aa¡d1708%al€amê`ah¡d1708ê`",
+["228231"] = "¤aa¡d1708\000‘êal€am\000·ôah¡d1708\000·ô",
+["190316"] = "¤aa¡d1708G¨al€am\000Ş ah¡d1708\000Ş ",
+["164566"] = "¤aa¡d1705al€amœ¾‹´ah¡d1705œ¾‹´",
+["55648"] = "¤aa¡d1705al€am\000ã`ah¡d1705\000ã`",
+["136654"] = "¤aa¡d1708Nal€am ah¡d1708 ",
+["112177"] = "¤aa¡d1708¤al€am\000	#ah¡d1708\000	#",
+["198184"] = "¤aa¡d1708jÏal€ah¡d1708\000ûlam\000ûl",
+["109992"] = "¤aa¡d1708al€ampah¡d1708p",
+["191322"] = "¤aa¡d1708mal€am\000Á8ah¡d1708\000Á8",
+["112155"] = "¤aa¡d1708]al€am\000AÜah¡d1708\000AÜ",
+["193926"] = "¤aa¡d1708 al€am\000.´ah¡d1708\000.´",
+["11325"] = "¤aa¡d1708al€amú\000ah¡d1708ú\000",
+["210938"] = "¤aa¡d1708ÆÕal€am\000ölah¡d1708\000öl",
+["g:224604:561"] = "¤aa¡d1705al€ah¡d1705\0005Äam\0005Ä",
+["213611"] = "¤aa¢d1712\000 d1708\000Êal¡d1712\000¨°ah¢d1712\000JÌd1708\000Æ<am\000¨°",
+["g:188708:322"] = "¤aa¡d1705al€am\000Ğah¡d1705\000Ğ",
+["62003"] = "¤aa¡d1708	al€am\000Oah¡d1708\000O",
+["11370"] = "¤aa¡d1708>œal€am\000Xah¡d1708\000X",
+["213220"] = "¤aa¡d1708\000\\Nal€am\000\nø˜ah¡d1708\000\nø˜",
+["198308"] = "¤aa¡d1708;al€am.|ah¡d1708.|",
+["173140"] = "¤aa¡d1708al€am\000Èíah¡d1708\000Èí",
+["121078"] = "¤aa¡d1705al€am_ah¡d1705_",
+["71809"] = "¤aa¡d1708mal€am\000rdah¡d1708\000rd",
+["213750"] = "¤aa¡d1708/	al€am\000y”ah¡d1708\000y”",
+["190452"] = "¤aa¡d1708L3al€amœ@ah¡d1708œ@",
+["210456"] = "¤aa¡d1708÷al€am\000D“Üah¡d1708\000D“Ü",
+["12202"] = "¤aa¡d1708al€amôah¡d1708ô",
+["191331"] = "¤aa¡d1708fal€am\0008€ah¡d1708\0008€",
+["39349"] = "¤aa¡d1708al€am\0004¸ah¡d1708\0004¸",
+["55666"] = "¤aa¡d1705al€am\0009x€ah¡d1705\0009x€",
+["g:14589:357"] = "¤aa¡d1705al€am\0001@ah¡d1705\0001@",
+["36908"] = "¤aa¡d1708êal€amæxah¡d1708æx",
+["g:124252:215"] = "¤aa¡d1705al€am\000·Øah¡d1705\000·Ø",
+["19726"] = "¤aa¡d1708al€amkÉah¡d1708kÉ",
+["193030"] = "¤aa¡d1708«al€am\000Üah¡d1708\000Ü",
+["6517"] = "¤aa¡d1705al€am\000Lnhah¡d1705\000Lnh",
+["164447"] = "¤aa¡d1705al€amëÊ4ah¡d1705ëÊ4",
+["g:172314:190"] = "¤aa¡d1705al€am]J€ah¡d1705]J€",
+["g:106535:296"] = "¤aa¡d1705al€am” \000ah¡d1705” \000",
+["108332"] = "¤aa¡d1708ˆal€amÄah¡d1708Ä",
+["198422"] = "¤aa¡d1708úal€amhah¡d1708h",
+["128722"] = "¤aa¡d1708al€am\000AÜah¡d1708\000AÜ",
+["g:224632:538"] = "¤aa¡d1705al€am\000&% ah¡d1705\000&% ",
+["198256"] = "¤aa¡d17083al€am:4ah¡d1708:4",
+["205173"] = "¤aa¡d1708al€am\000“¼ah¡d1708\000“¼",
+["197745"] = "¤aa¡d1708\000À$al€amah¡d1708",
+["223698"] = "¤aa¡d1708æal€ah¡d1708]Jäam]Jä",
+["191465"] = "¤aa¡d1708\000F}al€amÜah¡d1708Ü",
+["52325"] = "¤aa¡d1708ÌÈal€am\000pah¡d1708\000p",
+["173060"] = "¤aa¡d1708<al€am)Ìah¡d1708)Ì",
+["90724"] = "¤aa¡d1705al€amûdah¡d1705ûd",
+["159168"] = "¤aa¡d1705al€am\000'„hah¡d1705\000'„h",
+["198397"] = "¤aa¡d1708	al€amÃPah¡d1708ÃP",
+["193554"] = "¤aa¡d1708Œal€am\000lah¡d1708\000l",
+["6362"] = "¤aa¡d1708/al€amôah¡d1708ô",
+["127712"] = "¤aa¡d1708al€amw5º¬ah¡d1708w5º¬",
+["19273"] = "¤aa¡d1708al€am\000`¨ah¡d1708\000`¨",
+["3857"] = "¤aa¡d1708hÿal€am„ah¡d1708„",
+["31909"] = "¤aa¡d1708al€am\000# øah¡d1708\000# ø",
+["219901"] = "¤aa¡d1708+al€am\000¼Pah¡d1708\000¼P",
+["158187"] = "¤aa¡d1708p˜al€amĞah¡d1708Ğ",
+["173034"] = "¤aa¡d1708B³al€am¼ah¡d1708¼",
+["19259"] = "¤aa¡d1708al€am\000&šlah¡d1708\000&šl",
+["62782"] = "¤aa¡d1708\ral€am,ah¡d1708,",
+["222674"] = "¤aa¡d1708©al€am\000ûlah¡d1708\000ûl",
+["224601"] = "¤aa¡d1705/al¡d1705\000%şam\000%şah¡d1705\000-Ÿ°",
+["12799"] = "¤aa¡d1708/al€am@ah¡d1708@",
+["222609"] = "¤aa¡d1708*—al€am\000täah¡d1708\000tä",
+["36930"] = "¤aa¡d1708$al€am\000tah¡d1708\000t",
+["158887"] = "¤aa¡d1708al€amŸG4ah¡d1708ŸG4",
+["8172"] = "¤aa¡d1708/al€am\000sah¡d1708\000s",
+["g:201944:343"] = "¤aa¡d1705al€am\000_ğah¡d1705\000_ğ",
+["3173"] = "¤aa¡d1708al€am¤ah¡d1708¤",
+["8153"] = "¤aa¡d17082al€am\0009gPah¡d1708\0009gP",
+["191334"] = "¤aa¡d1708Yal€am ah¡d1708 ",
+["52191"] = "¤aa¡d1708åal€am\000p8ah¡d1708\000p8",
+["198257"] = "¤aa¡d1708#al€am\000–Öah¡d1708\000–Ö",
+["g:224603:532"] = "¤aa¡d1705al€ah¡d1705$„am$„",
+["g:220317:362"] = "¤aa¡d1705al€am\000¿ ah¡d1705\000¿ ",
+["124109"] = "¤aa¡d1708W.al€amÜah¡d1708Ü",
+["25687"] = "¤aa¡d1705al€am\r~lah¡d1705\r~l",
+["36094"] = "¤aa¡d1705al€am$Ãlah¡d1705$Ãl",
+["192887"] = "¤aa¡d1708­al€am\000\r@ah¡d1708\000\r@",
+["152545"] = "¤aa¡d1708Õal€amLah¡d1708L",
+["210802"] = "¤aa¡d1708\000¾ial€am\000+xah¡d1708\000+x",
+["205172"] = "¤aa¡d1708al€am\000$Ÿ\000ah¡d1708\000$Ÿ\000",
+["222660"] = "¤aa¡d1708¢al€am\000‚pah¡d1708\000‚p",
+["191256"] = "¤aa¡d1708\"al€amÂˆah¡d1708Âˆ",
+["112297"] = "¤aa¡d1708(al€am\000nÌah¡d1708\000nÌ",
+["219505"] = "¤aa¡d1708íal€am\000’´ah¡d1708\000’´",
+["36162"] = "¤aa¡d1705al€amn6\000ah¡d1705n6\000",
+["108439"] = "¤aa¡d1708	al€am\000$wğah¡d1708\000$wğ",
+["199052"] = "¤aa¡d1708çal€am›xah¡d1708›x",
+["108306"] = "¤aa¡d1708›al€am$ah¡d1708$",
+["g:229072:558"] = "¤aa¡d1705al€ah¡d1705úğ€amúğ€",
+["226026"] = "¤aa¡d1708#al€am\000˜½,ah¡d1708\000˜½,",
+["g:172256:233"] = "¤aa¡d1705al€am“¤ah¡d1705“¤",
+["g:219480:545"] = "¤aa¡d1705al€am\0004œah¡d1705\0004œ",
+["222423"] = "¤aa¡d1708ªal€am0@ah¡d17080@",
+["44501"] = "¤aa¡d1708al€am\000äàøah¡d1708\000äàø",
+["46379"] = "¤aa¡d1708 al€amäah¡d1708ä",
+["108364"] = "¤aa¡d1708al€am\0004œah¡d1708\0004œ",
+["192845"] = "¤aa¡d1708SOal€amah¡d1708",
+["153614"] = "¤aa¡d1708al€am\000'øah¡d1708\000'ø",
+["g:31184:236"] = "¤aa¡d1705al€am5lah¡d17055l",
+["55680"] = "¤aa¡d1705al€am\000Oah¡d1705\000O",
+["14687"] = "¤aa¡d1705al€am\000cHah¡d1705\000cH",
+["15417"] = "¤aa¡d1708(Ùal€am°ah¡d1708°",
+["g:224632:558"] = "¤aa¡d1705-al€ah¡d1705\000&% am\000&% ",
+["24720"] = "¤aa¡d1705al€am\000¤0ah¡d1705\000¤0",
+["222516"] = "¤aa¡d17082al€am?0ah¡d1708?0",
+["36933"] = "¤aa¡d1708öal€am—ôah¡d1708—ô",
+["160128"] = "¤aa¡d1705al€am\000°©dah¡d1705\000°©d",
+["79303"] = "¤aa¡d1708	al€am\000Sì`ah¡d1708\000Sì`",
+["183010"] = "¤aa¡d1705al€am“ü@ah¡d1705“ü@",
+["219881"] = "¤aa¡d1708al€am\000PÊah¡d1708\000PÊ",
+["2278"] = "¤aa¡d1705al€am\000v6ah¡d1705\000v6",
+["210806"] = "¤aa¡d1708\000‘>al¡d1708\000ÕÈam\000ÕÈah¡d1708\000ßŒ",
+["g:219478:548"] = "¤aa¡d1705al€am\000\r@ah¡d1705\000\r@",
+["g:224114:550"] = "¤aa£d1707d1712d1708al€am\000˜–€ah£d1707\000Æ]@d1712\000˜–€d1708Éœp",
+["173161"] = "¤aa¡d1708al€am\000/$ah¡d1708\000/$",
+["192883"] = "¤aa¡d1708œal€am\000† ah¡d1708\000† ",
+["36157"] = "¤aa¡d1705al€am@o@ah¡d1705@o@",
+["g:165520:266"] = "¤aa¡d1705al€amé2`ah¡d1705é2`",
+["78266"] = "¤aa¡d1705al€am'\n[ah¡d1705'\n[",
+["29503"] = "¤aa¡d1705al€am0ÿ´ah¡d17050ÿ´",
+["g:229077:564"] = "¤aa¡d1705al€amÀah¡d1705À",
+["79101"] = "¤aa¡d1708+al€amŒ ah¡d1708Œ ",
+["g:217132:548"] = "¤aa¡d1705al€amI€ah¡d1705I€",
+["191462"] = "¤aa¡d1708\000²6al€am„ah¡d1708„",
+["3369"] = "¤aa¡d17086al€am\000ah¡d1708\000",
+["194570"] = "¤aa¡d1708Áal€am¯dah¡d1708¯d",
+["111675"] = "¤aa¡d1708o¦al€amˆah¡d1708ˆ",
+["31908"] = "¤aa¡d1708al€am\000rpàah¡d1708\000rpà",
+["31191"] = "¤aa¡d1705al€am‚Xah¡d1705‚X",
+["44155"] = "¤aa¡d1708&al€amthah¡d1708th",
+["219887"] = "¤aa¡d1708al€am\000Sô”ah¡d1708\000Sô”",
+["36978"] = "¤aa¡d1705al€am\000Îº¨ah¡d1705\000Îº¨",
+["183951"] = "¤aa¡d1708\râal€amnğah¡d1708nğ",
+["221795"] = "¤aa£d1707Td1712=d1708Xal€ah£d1707\000äá\\d1712\000ûÅ d1708\000ÕÆ,am\000ûÅ ",
+["22853"] = "¤aa¡d1708+al€am\000+€ah¡d1708\000+€",
+["213776"] = "¤aa¡d1708Sal€amHÊDah¡d1708HÊD",
+["21884"] = "¤aa¡d1708­al€am\00026°ah¡d1708\00026°",
+["g:172321:190"] = "¤aa¡d1705al€amj“Î°ah¡d1705j“Î°",
+["22202"] = "¤aa¡d1708al€am*0ah¡d1708*0",
+["60202"] = "¤aa¡d1705al€am\000ådah¡d1705\000åd",
+["205012"] = "¤aa¡d1708Ral€am\000j\\ah¡d1708\000j\\",
+["g:165520:264"] = "¤aa¡d1705al€amé2`ah¡d1705é2`",
+["82097"] = "¤aa¡d1705al€am“ˆôah¡d1705“ˆô",
+["10940"] = "¤aa¡d1708\000éBal€am„ah¡d1708„",
+["106472"] = "¤aa¡d1705al€ame÷¨ah¡d1705e÷¨",
+["221926"] = "¤aa¡d17081al€am\000 Àah¡d1708\000 À",
+["193468"] = "¤aa¡d1708jal€am\000\r@ah¡d1708\000\r@",
+["23426"] = "¤aa¡d1708al€am\0008u ah¡d1708\0008u ",
+["212274"] = "¤aa¡d1708©al€amêL¼ah¡d1708êL¼",
+["112274"] = "¤aa¡d1708Ral€am\000\r» ah¡d1708\000\r» ",
+["2838"] = "¤aa¡d1708\0000mal€am	`ah¡d1708	`",
+["226027"] = "¤aa¡d1708>al€amõá\000ah¡d1708õá\000",
+["43122"] = "¤aa¡d1708J¤al€am\0006(ah¡d1708\0006(",
+["3357"] = "¤aa¡d1708ªUal€am\000^Èah¡d1708\000^È",
+["15185"] = "¤aa¡d1705al€amRqHah¡d1705RqH",
+["68750"] = "¤aa¡d1705al€am\000ÇÌah¡d1705\000ÇÌ",
+["15435"] = "¤aa¡d1705al€amÙìah¡d1705Ùì",
+["106499"] = "¤aa¡d1705al€amìÌ”ah¡d1705ìÌ”",
+["2469"] = "¤aa¡d1705al€am\000•$Üah¡d1705\000•$Ü",
+["5469"] = "¤aa¡d1708[al€am ah¡d1708 ",
+["g:193485:339"] = "¤aa¡d1708al€am\n}Œ\000ah¡d1708\n}Œ\000",
+["g:198243:332"] = "¤aa¡d1708al€am\000—„¬ah¡d1708\000—„¬",
+["171840"] = "¤aa¡d1708\000äal€am˜ah¡d1708˜",
+["163782"] = "¤aa¡d1708ûal€amF´ah¡d1708F´",
+["213753"] = "¤aa¡d1708Õal€am\000r‚ah¡d1708\000r‚",
+["15120"] = "¤aa¡d1705al€amˆB¼ah¡d1705ˆB¼",
+["94071"] = "¤aa¡d1705al€amJxüah¡d1705Jxü",
+["52979"] = "¤aa¡d1708zàal€amœ@ah¡d1708œ@",
+["52986"] = "¤aa¡d1708qˆal€am\000˜ah¡d1708\000˜",
+["52186"] = "¤aa¡d1708_Âal€am\000“àah¡d1708\000“à",
+["15311"] = "¤aa¡d1705al€am154ah¡d1705154",
+["52720"] = "¤aa¡d1708al€am\000qˆah¡d1708\000qˆ",
+["55638"] = "¤aa¡d1705al€am\000o¼°ah¡d1705\000o¼°",
+["69877"] = "¤aa¡d1705al€am\000‹q¨ah¡d1705\000‹q¨",
+["173104"] = "¤aa¡d1708Hal€am\000:Èah¡d1708\000:È",
+["7478"] = "¤aa¡d1705al€amF¸ah¡d1705F¸",
+["191318"] = "¤aa¡d1708çal€am0ah¡d17080",
+["19269"] = "¤aa¡d1708al€am\0003$ah¡d1708\0003$",
+["6470"] = "¤aa¡d1708\rşal€am4ah¡d17084",
+["124103"] = "¤aa¡d1708oÜal€am¤ah¡d1708¤",
+["22794"] = "¤aa¡d1708\\al€am\0008€ah¡d1708\0008€",
+["219476"] = "¤aa¡d1705eal€am\000ùah¡d1705\000ù",
+["24783"] = "¤aa¡d1705al€am\000öê(ah¡d1705\000öê(",
+["112272"] = "¤aa¡d1708al€am”pah¡d1708”p",
+["g:221797:557"] = "¤aa£d1707d1712d1708al€ah£d1707½û@d1712\000äáÀd1708½û@am\000äáÀ",
+["62013"] = "¤aa¡d1708al€am\000	'\\ah¡d1708\000	'\\",
+["212272"] = "¤aa¡d1708al€am\000v@ah¡d1708\000v@",
+["3969"] = "¤aa¡d1705al€am\0003Ê˜ah¡d1705\0003Ê˜",
+["152510"] = "¤aa¡d1708\000˜ıal€amÀøah¡d1708Àø",
+["213761"] = "¤aa¡d1708bal€am÷f´ah¡d1708÷f´",
+["221928"] = "¤aa¡d17084al€am÷kÌah¡d1708÷kÌ",
+["79287"] = "¤aa¡d1708al€am\000˜†ah¡d1708\000˜†",
+["g:69877:174"] = "¤aa¡d1705al€am\000‹q¨ah¡d1705\000‹q¨",
+["53071"] = "¤aa¡d17087Ãal€amah¡d1708",
+["31906"] = "¤aa¡d1708al€amê`ah¡d1708ê`",
+["210810"] = "¤aa¡d1708@4al€am\000)ãpah¡d1708\000)ãp",
+["10285"] = "¤aa¡d17081¿al€am ah¡d1708 ",
+["138967"] = "¤aa¡d1708ïal€amÈah¡d1708È",
+["222585"] = "¤aa¡d1708\nal€am\000°ah¡d1708\000°",
+["220134"] = "¤aa¡d1708N˜al€am\000ùTah¡d1708\000ùT",
+["2264"] = "¤aa¡d1705al€am\n1²ah¡d1705\n1²",
+["13463"] = "¤aa¡d1708cal€am\000xah¡d1708\000x",
+["192870"] = "¤aa¡d1708\n1al€am\000i¸ah¡d1708\000i¸",
+["15416"] = "¤aa¡d1708'üal€am¾ ah¡d1708¾ ",
+["43592"] = "¤aa¡d1705al€amÌÊÔah¡d1705ÌÊÔ",
+["106504"] = "¤aa¡d1705al€am¨Uah¡d1705¨U",
+["g:219479:551"] = "¤aa¡d1705	al€am\000h$ah¡d1705\000h$",
+["194542"] = "¤aa¡d1708al€am\0001—Pah¡d1708\0001—P",
+["g:201601:296"] = "¤aa¡d1708\nal€am\000LK@ah¡d1708\000LK@",
+["198236"] = "¤aa¡d17085al€amnğah¡d1708nğ",
+["210800"] = "¤aa¡d1708¦xal¡d1708\000\nÎham\000\nÎhah¡d1708\000Nˆ",
+["127759"] = "¤aa¡d1708ÄUal€am”ah¡d1708”",
+["194855"] = "¤aa¡d17083al€am\0008€ah¡d1708\0008€",
+["785"] = "¤aa¡d1708\000E¹al€amú\000ah¡d1708ú\000",
+["222629"] = "¤aa¡d1708Âal€am\000j<ah¡d1708\000j<",
+["108362"] = "¤aa¡d1708cal€am\000E¤ah¡d1708\000E¤",
+["193243"] = "¤aa¡d1708&al€am¿ah¡d1708¿",
+["221797"] = "¤aa£d1707‘d1712d1708—al€ah£d1707\000*’pd1712\000=	\000d1708\000,am\000=	\000",
+["53063"] = "¤aa¡d1708@al€amèah¡d1708è",
+["112183"] = "¤aa¡d1708al€amõ¹ğah¡d1708õ¹ğ",
+["221866"] = "¤aa¡d1708™al€ah¡d1708‘ãüam‘ãü",
+["27435"] = "¤aa¡d1708­al€amxah¡d1708x",
+["187823"] = "¤aa¡d1708\nal€am\000Ğah¡d1708\000Ğ",
+["173056"] = "¤aa¡d1708Eial€am\000 ah¡d1708\000 ",
+["g:224603:545"] = "¤aa¡d1705al€ah¡d1705\0007±Ğam\0007±Ğ",
+["79313"] = "¤aa¡d1708al€am\000˜«üah¡d1708\000˜«ü",
+["153610"] = "¤aa¡d1708al€am\000\rm€ah¡d1708\000\rm€",
+["24788"] = "¤aa¡d1705al€am\000K7xah¡d1705\000K7x",
+["37156"] = "¤aa¡d1708Xal€am›xah¡d1708›x",
+["194796"] = "¤aa¡d17087al€am\000ĞØah¡d1708\000ĞØ",
+["210932"] = "¤aa£d1707\000¯¸d1712\000qd1708\000Åäal¢d1712\000Â\\d1708\000{pah£d1707\000™ d1712\000~d1708\000¥¼am\0006`",
+["128732"] = "¤aa¡d1708al€am\000óP¬ah¡d1708\000óP¬",
+["7406"] = "¤aa¡d1705al€am\000+\\dah¡d1705\000+\\d",
+["62780"] = "¤aa¡d1708›al€amèah¡d1708è",
+["24710"] = "¤aa¡d1705al€am\r>Üğah¡d1705\r>Üğ",
+["g:204415:506"] = "¤aa¡d1705al€ah¡d1705ğğamğğ",
+["61991"] = "¤aa¡d1708al€am\000,?¼ah¡d1708\000,?¼",
+["204933"] = "¤aa¡d1705al€ah¡d1705•#,am•#,",
+["8173"] = "¤aa¡d1708†al€ah¡d1708u0amu0",
+["183950"] = "¤aa¡d1708dal€amo¸ah¡d1708o¸",
+["197735"] = "¤aa¡d1708şal€am\000I Pah¡d1708\000I P",
+["13926"] = "¤aa¡d1708şal€am\000Õ¼ah¡d1708\000Õ¼",
+["221909"] = "¤aa¡d17082al€amby@ah¡d1708by@",
+["62016"] = "¤aa¡d1708al€am\000Èàah¡d1708\000Èà",
+["g:121188:214"] = "¤aa¡d1705al€amk Œah¡d1705k Œ",
+["222579"] = "¤aa¡d1708[al€am\000@Ùah¡d1708\000@Ù",
+["4364"] = "¤aa¡d1708Gal€am ah¡d1708 ",
+["g:224601:564"] = "¤aa¡d1705al€ah¡d1705\000-ÆÀam\000-ÆÀ",
+["g:219477:558"] = "¤aa¡d1705al€am\000˜–ah¡d1705\000˜–",
+["55665"] = "¤aa¡d1705al€am\000]†øah¡d1705\000]†ø",
+["180057"] = "¤aa¡d17084al€am\000|ah¡d1708\000|",
+["197721"] = "¤aa¡d1708âal€am\000áäah¡d1708\000áä",
+["33823"] = "¤aa¡d1708œal€am\000Axah¡d1708\000Ax",
+["31883"] = "¤aa¡d1708jal€am\000	ËĞah¡d1708\000	ËĞ",
+["44261"] = "¤aa¡d1708al€am\000§ØÀah¡d1708\000§ØÀ",
+["55678"] = "¤aa¡d1705al€am/ƒÀah¡d1705/ƒÀ",
+["36144"] = "¤aa¡d1705al€amÇ|ah¡d1705Ç|",
+["221856"] = "¤aa¢d17124ød1708al€ah¢d1712\000\rğd1708\000ô(am\000\rğ",
+["g:121078:214"] = "¤aa¡d1705al€am_ah¡d1705_",
+["219864"] = "¤aa¡d1708-al€am\000‰SÜah¡d1708\000‰SÜ",
+["112290"] = "¤aa¡d1708al€am\000\r» ah¡d1708\000\r» ",
+["158188"] = "¤aa¡d1708…Šal€amˆah¡d1708ˆ",
+["4306"] = "¤aa¡d1708\000‘al€amèah¡d1708è",
+["79302"] = "¤aa¡d1708	al€am\000Zàah¡d1708\000Zà",
+["153704"] = "¤aa¡d1708Şal€ama¨ah¡d1708a¨",
+["2841"] = "¤aa¡d1708\000Iàal€am\000† ah¡d1708\000† ",
+["22866"] = "¤aa¡d1708ual€am\000@ˆah¡d1708\000@ˆ",
+["111245"] = "¤aa¡d1708\"Kal€am\000!Øah¡d1708\000!Ø",
+["152631"] = "¤aa¡d1708M}al€am¼ah¡d1708¼",
+["55646"] = "¤aa¡d1705al€am\000?{ah¡d1705\000?{",
+["222676"] = "¤aa¡d1708al€am\000Û¤ah¡d1708\000Û¤",
+["222584"] = "¤aa¡d1708œal€am\n2\\ah¡d1708\n2\\",
+["164432"] = "¤aa¡d1705al€amŸˆ@ah¡d1705Ÿˆ@",
+["108337"] = "¤aa¡d1708c–al€am\000†<ah¡d1708\000†<",
+["2961"] = "¤aa¡d1705al€am¼lah¡d1705¼l",
+["193216"] = "¤aa¡d1708Äal€am]Àah¡d1708]À",
+["7387"] = "¤aa¡d1705al€amÔ¬xah¡d1705Ô¬x",
+["4387"] = "¤aa¡d1708Óal€am\0003$ah¡d1708\0003$",
+["15122"] = "¤aa¡d1705al€am\000ÛE4ah¡d1705\000ÛE4",
+["39774"] = "¤aa¡d1708·‰al€am\000Äah¡d1708\000Ä",
+["76085"] = "¤aa¡d1708;al€am'ah¡d1708'",
+["191521"] = "¤aa¡d1708AÒal€amˆah¡d1708ˆ",
+["79299"] = "¤aa¡d1708al€am\0001³ah¡d1708\0001³",
+["220142"] = "¤aa¡d1708@Ëal€am\000€Xah¡d1708\000€X",
+["14678"] = "¤aa¡d1705al€am?dÈah¡d1705?dÈ",
+["15144"] = "¤aa¡d1705al€am\000$â0ah¡d1705\000$â0",
+["22450"] = "¤aa¡d1708tal€amIpah¡d1708Ip",
+["108391"] = "¤aa¡d1708Œal€am\000Zah¡d1708\000Z",
+["192871"] = "¤aa¡d1708”al€am\000‚pah¡d1708\000‚p",
+["7408"] = "¤aa¡d1705al€am\000œš<ah¡d1705\000œš<",
+["222790"] = "¤aa¡d1708\000È6al€am©ˆah¡d1708©ˆ",
+["109136"] = "¤aa¡d1708Jal€am,ah¡d1708,",
+["61989"] = "¤aa¡d1708al€am\000âüah¡d1708\000âü",
+["200571"] = "¤aa¡d1708*al€am\000† ah¡d1708\000† ",
+["168188"] = "¤aa¡d1708Àal€am\000ÔÀah¡d1708\000ÔÀ",
+["164547"] = "¤aa¡d1705al€am\r\r”ìah¡d1705\r\r”ì",
+["79295"] = "¤aa¡d1708al€am\000ºxah¡d1708\000ºx",
+["52977"] = "¤aa¡d1708\r(al€amœ@ah¡d1708œ@",
+["g:220319:362"] = "¤aa¡d1705al€am\000c¸ah¡d1705\000c¸",
+["1787"] = "¤aa¡d1705al€ah¡d1705\000a±`am\000a±`",
+["97512"] = "¤aa¡d1708\r?al€amQ¤ah¡d1708Q¤",
+["190627"] = "¤aa¡d1705al€am&%xğah¡d1705&%xğ",
+["7440"] = "¤aa¡d1705al€am\000\n®`ah¡d1705\000\n®`",
+["213762"] = "¤aa¡d1708Zal€am\000jÏÀah¡d1708\000jÏÀ",
+["1206"] = "¤aa¡d1708Lal€amÃPah¡d1708ÃP",
+["193262"] = "¤aa¡d1708Âal€amèah¡d1708è",
+["g:106602:186"] = "¤aa¡d1705al€am}s$ah¡d1705}s$",
+["4255"] = "¤aa¡d1705al€amWY$ah¡d1705WY$",
+["2842"] = "¤aa¡d1708İal€am\000q\000ah¡d1708\000q\000",
+["112286"] = "¤aa¡d1708ªal€am\000Iğah¡d1708\000Iğ",
+["16830"] = "¤aa¡d1705al€am\0006Îah¡d1705\0006Î",
+["210808"] = "¤aa¡d1708\000ßûal€am\000¸˜ah¡d1708\000¸˜",
+["76086"] = "¤aa¡d1708Õal€amLah¡d1708L",
+["g:146669:251"] = "¤aa¡d1705al€am>•º€ah¡d1705>•º€",
+["9834"] = "¤aa¡d1705al¡d1705\000 T$ah¡d1705z_¬am\000 T$",
+["198174"] = "¤aa¡d1708*al€am\000“àah¡d1708\000“à",
+["121133"] = "¤aa¡d1705al€am\000˜–€ah¡d1705\000˜–€",
+["187702"] = "¤aa¡d1708¢Æal€am#(ah¡d1708#(",
+["24706"] = "¤aa¡d1705al€amÜ©dah¡d1705Ü©d",
+["8255"] = "¤aa¡d1705al€am\000©$ah¡d1705\000©$",
+["225876"] = "¤aa¡d1708al€am\000˜HÄah¡d1708\000˜HÄ",
+["198255"] = "¤aa¡d1708»al€am\000äº°ah¡d1708\000äº°",
+["173173"] = "¤aa¡d1708`al€am‘Pah¡d1708‘P",
+["127715"] = "¤aa¡d1708al€amw5•ah¡d1708w5•",
+["2673"] = "¤aa¡d1708Cal€amN ah¡d1708N ",
+["198233"] = "¤aa¡d1708¯al€am2\000ah¡d17082\000",
+["147424"] = "¤aa¡d1705al¡d1705ÉÃ€ah¡d170598!àamÉÃ€",
+["g:224604:460"] = "¤aa¡d1705al€ah¡d1705\0008 àam\0008 à",
+["769"] = "¤aa¡d1708.]al€am¸ah¡d1708¸",
+["g:224606:408"] = "¤aa¡d1705al€am\000]pah¡d1705\000]p",
+["164554"] = "¤aa¡d1705al€am1ğah¡d17051ğ",
+["222580"] = "¤aa¡d1708¼al€am\000z\000ah¡d1708\000z\000",
+["217156"] = "¤aa¡d1705al€amëšğah¡d1705ëšğ",
+["219948"] = "¤aa¡d1708\000¶jal€am\000$9ah¡d1708\000$9",
+["173109"] = "¤aa¡d17087al€amtah¡d1708t",
+["79246"] = "¤aa¡d1708	al€am\000\000\000–F¼ah¡d1708\000\000\000–F¼",
+["4340"] = "¤aa¡d1708Ôal€am¼ah¡d1708¼",
+["171841"] = "¤aa¡d1708›0al€amah¡d1708",
+["45237"] = "¤aa¡d1705al€ah¡d1705\000QŞ4am\000QŞ4",
+["g:124277:215"] = "¤aa¡d1705al€amw5“œah¡d1705w5“œ",
+["g:219476:548"] = "¤aa¡d1705)al€am\000\n`@ah¡d1705\000\n`@",
+["g:224638:515"] = "¤aa¡d1705al€am\000D¾ah¡d1705\000D¾",
+["112276"] = "¤aa¡d1708al€amˆTah¡d1708ˆT",
+["6147"] = "¤aa¡d1705al€am	Ãxah¡d1705	Ãx",
+["2467"] = "¤aa¡d1705al€am\000Øø$ah¡d1705\000Øø$",
+["173035"] = "¤aa¡d1708áal€am¼ah¡d1708¼",
+["44274"] = "¤aa¡d1708al€am\000˜lah¡d1708\000˜l",
+["153702"] = "¤aa¡d1708Èal€am”ah¡d1708”",
+["213767"] = "¤aa¡d1708\ral€amõá\000ah¡d1708õá\000",
+["34052"] = "¤aa¡d1708÷sal€am4¼ah¡d17084¼",
+["160709"] = "¤aa¡d1708IÄal€amÌah¡d1708Ì",
+["128734"] = "¤aa¡d1708al€am1+Ôah¡d17081+Ô",
+["228404"] = "¤aa¡d1708Îal€am\000Õdah¡d1708\000Õd",
+["23436"] = "¤aa¡d1708Dal€am\000mdah¡d1708\000md",
+["164391"] = "¤aa¡d1705al€amŸlèah¡d1705Ÿlè",
+["79305"] = "¤aa¡d1708al€am}ìah¡d1708}ì",
+["g:224632:483"] = "¤aa¡d1705al€am\000&% ah¡d1705\000&% ",
+["53068"] = "¤aa¡d1708al€amXHah¡d1708XH",
+["15053"] = "¤aa¡d1705al€am`ÿtah¡d1705`ÿt",
+["114056"] = "¤aa¡d1708al€amÔah¡d1708Ô",
+["4234"] = "¤aa¡d1708\000&‘al€amÒğah¡d1708Òğ",
+["220145"] = "¤aa¡d1708#˜al€am\000\nµhah¡d1708\000\nµh",
+["62008"] = "¤aa¡d1708al€am\000O€ah¡d1708\000O€",
+["212676"] = "¤aa¡d1708nal€am\000ô#œah¡d1708\000ô#œ",
+["16828"] = "¤aa¡d1705al€am\000Ñ@ah¡d1705\000Ñ@",
+["24695"] = "¤aa¡d1705al€am„TÔah¡d1705„TÔ",
+["7480"] = "¤aa¡d1705al€am\000Q¬˜ah¡d1705\000Q¬˜",
+["109160"] = "¤aa¡d1708Kal€am\000† ah¡d1708\000† ",
+["133607"] = "¤aa¡d1708+Şal€am,ah¡d1708,",
+["25669"] = "¤aa¡d1705al€am\000Ñ[´ah¡d1705\000Ñ[´",
+["22854"] = "¤aa¡d1708al€am\000\r(Àah¡d1708\000\r(À",
+["219898"] = "¤aa¡d1708íal€am\000C `ah¡d1708\000C `",
+["222630"] = "¤aa¡d1708val€am`Î°ah¡d1708`Î°",
+["197754"] = "¤aa¡d1708\000¥al€amah¡d1708",
+["3055"] = "¤aa¡d1705al€am/|ah¡d1705/|",
+["193053"] = "¤aa¡d1708¦al€am,ah¡d1708,",
+["36174"] = "¤aa¡d1705al€am\000\"Ø´ah¡d1705\000\"Ø´",
+["106735"] = "¤aa¡d1705al€am\000«©Pah¡d1705\000«©P",
+["198217"] = "¤aa¡d1708‹al€am!4ah¡d1708!4",
+["15407"] = "¤aa¡d1708hal€am\000eĞah¡d1708\000eĞ",
+["147038"] = "¤aa¡d1705\nal¡d1705úğ€ah¡d1705w5“œamúğ€",
+["106568"] = "¤aa¡d1705al€amÍ3Tah¡d1705Í3T",
+["219903"] = "¤aa¡d1708al€am\000ì‚ah¡d1708\000ì‚",
+["154122"] = "¤aa¡d1708«al€am›Üah¡d1708›Ü",
+["g:160134:242"] = "¤aa¡d1705al€am\000‰Š(ah¡d1705\000‰Š(",
+["130183"] = "¤aa¡d1708Ôal€am›xah¡d1708›x",
+["7909"] = "¤aa¡d1708al€am$¸ah¡d1708$¸",
+["g:106631:186"] = "¤aa¡d1705al€am-E«xah¡d1705-E«x",
+["113111"] = "¤aa¡d1708aøal€amˆah¡d1708ˆ",
+["79283"] = "¤aa¡d1708al€am\000$Ÿ\000ah¡d1708\000$Ÿ\000",
+["55642"] = "¤aa¡d1705al€am\000ş€¼ah¡d1705\000ş€¼",
+["4461"] = "¤aa¡d1708úal€am\000¾¼ah¡d1708\000¾¼",
+["2373"] = "¤aa¡d1705al€amB‰xah¡d1705B‰x",
+["169410"] = "¤aa¡d1705al€am‘àah¡d1705‘à",
+["190313"] = "¤aa¡d1708\000`÷al€am›Üah¡d1708›Ü",
+["222589"] = "¤aa¡d1708›al€am\000Å™ğah¡d1708\000Å™ğ",
+["193230"] = "¤aa¡d1708Gal€am\000^€ah¡d1708\000^€",
+["190314"] = "¤aa¡d1708\000— al€am\000V°ah¡d1708\000V°",
+["201941"] = "¤aa¡d1705al€ah¡d1705\000&'0am\000&'0",
+["19280"] = "¤aa¡d1708Dal€am\000Ÿôah¡d1708\000Ÿô",
+["31900"] = "¤aa¡d1708\ral€am\000rpàah¡d1708\000rpà",
+["14669"] = "¤aa¡d1705al€am\000¿‹Œah¡d1705\000¿‹Œ",
+["g:224607:483"] = "¤aa¡d1705al€ah¡d17051-\000am1-\000",
+["g:198245:346"] = "¤aa¡d1708al€am\000LK@ah¡d1708\000LK@",
+["193254"] = "¤aa¡d1708pal€amthah¡d1708th",
+["191514"] = "¤aa¡d1708al€amê;`ah¡d1708ê;`",
+["108330"] = "¤aa¡d1708„al€amdah¡d1708d",
+["190320"] = "¤aa¡d1708\000	°œal€am\000†<ah¡d1708\000†<",
+["g:106568:186"] = "¤aa¡d1705al€amÍ3Tah¡d1705Í3T",
+["106502"] = "¤aa¡d1705al€am=ÀLah¡d1705=ÀL",
+["193251"] = "¤aa¡d1708\000y\ral€am\000sah¡d1708\000s",
+["46376"] = "¤aa¡d1708\nal€am\000† ah¡d1708\000† ",
+["112294"] = "¤aa¡d1708al€am\000pah¡d1708\000p",
+["228368"] = "¤aa¡d1708zal€am\000	'\\ah¡d1708\000	'\\",
+["213613"] = "¤aa¡d1708\000X	al€am\000¨Üah¡d1708\000¨Ü",
+["25649"] = "¤aa¡d1708Wal€am&¬ah¡d1708&¬",
+["114836"] = "¤aa¡d1708Ëal€am¸ah¡d1708¸",
+["154990"] = "¤aa¡d1708al€am\000!‘Àah¡d1708\000!‘À",
+["228405"] = "¤aa¡d1708‘al€am\000+ìah¡d1708\000+ì",
+["33824"] = "¤aa¡d1708–al€am\000?èah¡d1708\000?è",
+["35794"] = "¤aa¡d1708âal€amN ah¡d1708N ",
+["69798"] = "¤aa¡d1705al€am!¯`ah¡d1705!¯`",
+["213757"] = "¤aa¡d1708yal€am\000Qpah¡d1708\000Qp",
+["22451"] = "¤aa¡d1708\nšal€am\000Empah¡d1708\000Emp",
+["g:210093:424"] = "¤aa¡d1705al€ah¡d1705×\\€am×\\€",
+["198191"] = "¤aa¡d17088!al€am\000~lah¡d1708\000~l",
+["23824"] = "¤aa¡d1705al€am\000\000\000¯b€ah¡d1705\000\000\000¯b€",
+["44287"] = "¤aa¡d1708Bal€am\000-Å”ah¡d1708\000-Å”",
+["194578"] = "¤aa¡d1708	šal€am\000Iğah¡d1708\000Iğ",
+["212315"] = "¤aa¡d1708al€am\000(äÀah¡d1708\000(äÀ",
+["121074"] = "¤aa¡d1705al€am–gTah¡d1705–gT",
+["2474"] = "¤aa¡d1705al€am\000Ûàah¡d1705\000Ûà",
+["3020"] = "¤aa¡d1705al€am\0005‚ah¡d1705\0005‚",
+["136638"] = "¤aa¡d1708ÿal€am\\0ah¡d1708\\0",
+["g:190626:278"] = "¤aa¡d1705al€am\000\000\0000\000ah¡d1705\000\000\0000\000",
+["61990"] = "¤aa¡d1708al€am\000$8ah¡d1708\000$8",
+["5467"] = "¤aa¡d1708Ñal€amäah¡d1708ä",
+["74843"] = "¤aa¡d1708Ê@al€amRah¡d1708R",
+["6467"] = "¤aa¡d1705al€amà°Ìah¡d1705à°Ì",
+["222514"] = "¤aa¡d1708'al€am\000apah¡d1708\000ap",
+["g:121244:214"] = "¤aa¡d1705al€am\000˜ˆpah¡d1705\000˜ˆp",
+["52178"] = "¤aa¡d1708Eùal€am\000ah¡d1708\000",
+["171315"] = "¤aa¡d1708o÷al€amÃPah¡d1708ÃP",
+["g:221799:564"] = "¤aa£d1707Cd1712.d1708=al¡d1708<àah£d1707<ñ@d1712CÕ€d1708<|amCÕ€",
+["106597"] = "¤aa¡d1705al€am\ru„Xah¡d1705\ru„X",
+["223702"] = "¤aa¡d1708¿al€ah¡d1708ÉèœamÉèœ",
+["33568"] = "¤aa¡d1708¢ial€am›ah¡d1708›",
+["225911"] = "¤aa¡d1708\000E‹al€amy|ah¡d1708y|",
+["g:106533:186"] = "¤aa¡d1705al€am@4ah¡d1705@4",
+["212314"] = "¤aa¡d1708$9al€am\000„$ah¡d1708\000„$",
+["4655"] = "¤aa¡d1708@al€am\000,@ ah¡d1708\000,@ ",
+["41814"] = "¤aa¡d1708!al€am\000\"|ah¡d1708\000\"|",
+["172937"] = "¤aa¡d1708˜pal€am\000	:äah¡d1708\000	:ä",
+["62778"] = "¤aa¡d1708ıal€am%äah¡d1708%ä",
+["212307"] = "¤aa¡d1708’al€amÃ¾|ah¡d1708Ã¾|",
+["69237"] = "¤aa¡d1708Yal€am	`ah¡d1708	`",
+["44286"] = "¤aa¡d17080al€am\000? ah¡d1708\000? ",
+["36783"] = "¤aa¡d1708¿al€am\000¨ah¡d1708\000¨",
+["15012"] = "¤aa¡d1705al€am\000DÏ ah¡d1705\000DÏ ",
+["133591"] = "¤aa¡d1708	´al€am:˜ah¡d1708:˜",
+["187812"] = "¤aa¡d1708al€am\000€ah¡d1708\000€",
+["106309"] = "¤aa¡d1705al€amÖØah¡d1705ÖØ",
+["53064"] = "¤aa¡d1708»al€am ah¡d1708 ",
+["79869"] = "¤aa¡d1708Wal€am\0005f´ah¡d1708\0005f´",
+["76132"] = "¤aa¡d1708;al€am\000±Pah¡d1708\000±P",
+["83064"] = "¤aa¡d1708al€am\000\r»<ah¡d1708\000\r»<",
+["112288"] = "¤aa¡d1708al€am\000­Lah¡d1708\000­L",
+["44265"] = "¤aa¡d1708&al€am\000Oah¡d1708\000O",
+["128887"] = "¤aa¡d1705al€amÛì<ah¡d1705Ûì<",
+["g:221799:538"] = "¤aa£d1707d1712d1708al€ah£d1707\niĞd1712}ìd1708\niĞam}ì",
+["168191"] = "¤aa¡d1708âal€am\000ah¡d1708\000",
+["198220"] = "¤aa¡d1708al€am\000h ah¡d1708\000h ",
+["40084"] = "¤aa¡d1708al€am¿ ğ˜ah¡d1708¿ ğ˜",
+["166835"] = "¤aa¡d1705al€am\000Õ³ah¡d1705\000Õ³",
+["7081"] = "¤aa¡d1708\nal€am\000\r» ah¡d1708\000\r» ",
+["1809"] = "¤aa¡d1705al€am\0005q¤ah¡d1705\0005q¤",
+["3860"] = "¤aa¡d1708>yal€am\000?Àah¡d1708\000?À",
+["128723"] = "¤aa¡d1708al€am\000˜xah¡d1708\000˜x",
+["213197"] = "¤aa¡d1708´ñal€am\000(ah¡d1708\000(",
+["10070"] = "¤aa¡d1705al€am\000YºPah¡d1705\000YºP",
+["g:224607:506"] = "¤aa¡d1705al€ah¡d1705\000-¦¸am\000-¦¸",
+["198992"] = "¤aa¡d1705al€am”üah¡d1705”ü",
+["g:224602:515"] = "¤aa¡d1705al€ah¡d1705\000-ÏXam\000-ÏX",
+["22851"] = "¤aa¡d1708ñal€amÜPah¡d1708ÜP",
+["124118"] = "¤aa¡d1708\000ï^al€am#Œah¡d1708#Œ",
+["41803"] = "¤aa¡d1708\n¼al€amcœah¡d1708cœ",
+["52190"] = "¤aa¡d1708Ìal€am\000ñXah¡d1708\000ñX",
+["3973"] = "¤aa¡d1705al€am\000E;ah¡d1705\000E;",
+["27674"] = "¤aa¡d1708al€am¼ah¡d1708¼",
+["154899"] = "¤aa¡d1708Èâal€am¼ah¡d1708¼",
+["112181"] = "¤aa¡d1708'al€am\000¡èah¡d1708\000¡è",
+["108325"] = "¤aa¡d1708Æal€amÜah¡d1708Ü",
+["128015"] = "¤aa¡d1708al€am\000\000\000Øj´ah¡d1708\000\000\000Øj´",
+["55692"] = "¤aa¡d1705al€am\000\"Uah¡d1705\000\"U",
+["212301"] = "¤aa¡d1708yal€amu‰\000ah¡d1708u‰\000",
+["37140"] = "¤aa¡d1708¡al€am\000Ïìah¡d1708\000Ïì",
+["74853"] = "¤aa¡d1708úal€am\000ıàah¡d1708\000ıà",
+["g:221790:538"] = "¤aa£d1707d1712d1708al€am^ ah£d1707½û@d1712^ d1708½û@",
+["7069"] = "¤aa¡d1708Ôal€am\000	üah¡d1708\000	ü",
+["2465"] = "¤aa¡d1705al€am\000²n ah¡d1705\000²n ",
+["43007"] = "¤aa¡d1708\000f˜al€am”ah¡d1708”",
+["223701"] = "¤aa¡d1708{al€ah¡d1708*–àam*–à",
+["222673"] = "¤aa¡d1708„al€am\000œah¡d1708\000œ",
+["164564"] = "¤aa¡d1705al€amë Ìah¡d1705ë Ì",
+["152413"] = "¤aa¡d1705al€am\rWHah¡d1705\rWH",
+["222668"] = "¤aa¡d1708\n;al€am\000‘lah¡d1708\000‘l",
+["8170"] = "¤aa¡d17089Õal€amÁ\\ah¡d1708Á\\",
+["192835"] = "¤aa¡d17087al€amœ@ah¡d1708œ@",
+["221916"] = "¤aa¡d1708xal€amC²¼ah¡d1708C²¼",
+["151722"] = "¤aa¡d1708	lal€am\000¨ğah¡d1708\000¨ğ",
+["198994"] = "¤aa¡d1705al€amà» ah¡d1705à» ",
+["g:225643:518"] = "¤aa¡d1705al€am\000Lq$ah¡d1705\000Lq$",
+["7078"] = "¤aa¡d1708©5al€am%äah¡d1708%ä",
+["225643"] = "¤aa¡d1705al€am\000ƒTah¡d1705\000ƒT",
+["124101"] = "¤aa¡d1708láal€am›Üah¡d1708›Ü",
+["3821"] = "¤aa¡d1708(al€am\000\"|ah¡d1708\000\"|",
+["187700"] = "¤aa¡d1708hÿal€ameah¡d1708e",
+["82257"] = "¤aa¡d1705al€am\000p,ah¡d1705\000p,",
+["201399"] = "¤aa¡d1708\rQal€amL,ah¡d1708L,",
+["53039"] = "¤aa¡d1708ral€am\000(oah¡d1708\000(o",
+["210673"] = "¤aa¡d1708*al€am\000Zàah¡d1708\000Zà",
+["2674"] = "¤aa¡d1708Oal€am‡Œah¡d1708‡Œ",
+["112282"] = "¤aa¡d1708al€am\000/tpah¡d1708\000/tp",
+["61979"] = "¤aa¡d1708	îal€am\000ûĞah¡d1708\000ûĞ",
+["44154"] = "¤aa¡d1708al€am\000.˜ah¡d1708\000.˜",
+["g:224602:434"] = "¤aa¡d1705al€ah¡d1705\000-ÏXam\000-ÏX",
+["222615"] = "¤aa¡d1708Õal€am\000*Ç,ah¡d1708\000*Ç,",
+["g:198243:326"] = "¤aa¡d1708	al€am\000—ùÜah¡d1708\000—ùÜ",
+["74834"] = "¤aa¡d1708Òal€amYØah¡d1708YØ",
+["227773"] = "¤aa¡d1708˜al€am\rï\000ah¡d1708\rï\000",
+["8169"] = "¤aa¡d1708Nal€am'ah¡d1708'",
+["g:172257:200"] = "¤aa¡d1705al€am\000¤!øah¡d1705\000¤!ø",
+["228234"] = "¤aa¡d1708\000Sal€amê`ah¡d1708ê`",
+["85583"] = "¤aa¡d1708	al€amò0ah¡d1708ò0",
+["40079"] = "¤aa¡d1708;al€am:˜ah¡d1708:˜",
+["g:224638:483"] = "¤aa¡d1705al€am\000Ì[ ah¡d1705\000Ì[ ",
+["7281"] = "¤aa¡d1705al€am\000#4ah¡d1705\000#4",
+["121"] = "¤aa¡d1705al€amI‘8ah¡d1705I‘8",
+["7070"] = "¤aa¡d1708W¬al€amah¡d1708",
+["108335"] = "¤aa¡d1708lal€amOLah¡d1708OL",
+["23782"] = "¤aa¡d1708èal€am\000<P ah¡d1708\000<P ",
+["10648"] = "¤aa¡d1708 al€amFZøah¡d1708FZø",
+["192884"] = "¤aa¡d1708[al€am\0008€ah¡d1708\0008€",
+["212282"] = "¤aa¡d1708„al€am\000zœah¡d1708\000zœ",
+["821"] = "¤aa¡d1705al€amƒ=ôah¡d1705ƒ=ô",
+["192095"] = "¤aa¡d1708{Bal€am4Xah¡d17084X",
+["212270"] = "¤aa¡d1708\nNal€am\000[yøah¡d1708\000[yø",
+["g:106701:186"] = "¤aa¡d1705al€am\000²¾˜ah¡d1705\000²¾˜",
+["154125"] = "¤aa¡d1708@al€am”pah¡d1708”p",
+["210935"] = "¤aa£d1707\000Od1712\000¤Ïd1708\000d‚al¢d1708\000£\\d1712\000ham\000/Xah£d1707\000t˜d1712\000/Xd1708\000d",
+["113263"] = "¤aa¡d1708\000Å€al€amüah¡d1708ü",
+["68047"] = "¤aa¡d1708Šal€am\000İĞah¡d1708\000İĞ",
+["36920"] = "¤aa¡d1708ßal€am™èah¡d1708™è",
+["g:201941:343"] = "¤aa¡d1705al€ah¡d1705\000&'0am\000&'0",
+["164552"] = "¤aa¡d1705al€amPah¡d1705P",
+["158886"] = "¤aa¡d1708al€am4ah¡d17084",
+["200007"] = "¤aa¡d1708_al€ah¡d1708\000=Tam\000=T",
+["106634"] = "¤aa¡d1705al€am\nFø„ah¡d1705\nFø„",
+["2141"] = "¤aa¡d1705al€am\000÷yèah¡d1705\000÷yè",
+["124252"] = "¤aa¡d1705al€am\000·Øah¡d1705\000·Ø",
+["12204"] = "¤aa¡d1708Ñal€amèah¡d1708è",
+["g:221790:557"] = "¤aa£d1707d1712d1708	al¡d1708\000Æ\\ÜamKv ah£d1707Éu`d1712Kv d1708Éu`",
+["g:151993:247"] = "¤aa¡d1705al€amÉ½¤ah¡d1705É½¤",
+["222801"] = "¤aa¡d1708\nal€am\000@ÿØah¡d1708\000@ÿØ",
+["31079"] = "¤aa¡d1708Ğal€am\000€ah¡d1708\000€",
+["217131"] = "¤aa¡d1705al€amõ¹ğah¡d1705õ¹ğ",
+["229074"] = "¤aa¡d1705al€am¦Àah¡d1705¦À",
+["55674"] = "¤aa¡d1705al€am\000ªlah¡d1705\000ªl",
+["g:224606:483"] = "¤aa¡d1705al€ah¡d1705\000Çôam\000Çô",
+["111651"] = "¤aa¡d1708val€amlah¡d1708l",
+["25674"] = "¤aa¡d1705al€am\000¥!Ôah¡d1705\000¥!Ô",
+["224602"] = "¤aa¡d1705[al€am\000&.8ah¡d1705\000&.8",
+["44268"] = "¤aa¡d1708al€am\0005gàah¡d1708\0005gà",
+["g:221792:564"] = "¤aa£d1707d1712+d1708al€am\000Æ]@ah£d1707O±€d1712\000Æ]@d1708O±€",
+["2370"] = "¤aa¡d1705al€amí_èah¡d1705í_è",
+["2087"] = "¤aa¡d1705al€am~ ah¡d1705~ ",
+["7974"] = "¤aa¡d1708É¯al€am,ah¡d1708,",
+["14344"] = "¤aa¡d1708\000=Lal€amàah¡d1708à",
+["27669"] = "¤aa¡d1708	Qal€amN ah¡d1708N ",
+["112280"] = "¤aa¡d1708Kal€am1-\000ah¡d17081-\000",
+["210221"] = "¤aa¡d1708äšal€am\000FÈah¡d1708\000FÈ",
+["106668"] = "¤aa¡d1705al€am‹(¿(ah¡d1705‹(¿(",
+["12208"] = "¤aa¡d1708¥öal€am,ah¡d1708,",
+["g:221795:544"] = "¤aa£d1707%d1712d1708$al€ah£d1707\000äá\\d1712€d1708\000ÕÆ,am€",
+["192836"] = "¤aa¡d1708=†al€amcœah¡d1708cœ",
+["111658"] = "¤aa¡d1708¨al€am„ah¡d1708„",
+["212280"] = "¤aa¡d1708Qal€am“†œah¡d1708“†œ",
+["198176"] = "¤aa¡d1708Qal€am¯Èah¡d1708¯È",
+["35128"] = "¤aa¡d1708,al€am\000ô2tah¡d1708\000ô2t",
+["222677"] = "¤aa¡d1708@al€am\000R\000ah¡d1708\000R\000",
+["128886"] = "¤aa¡d1705al€am\rè¼ah¡d1705\rè¼",
+["7072"] = "¤aa¡d1708Àal€am\000-*€ah¡d1708\000-*€",
+["172251"] = "¤aa¡d1705al€am“–<ah¡d1705“–<",
+["g:224603:525"] = "¤aa¡d1705al€ah¡d1705\000!èxam\000!èx",
+["224800"] = "¤aa¡d17083al€am\000Å°ah¡d1708\000Å°",
+["171828"] = "¤aa¡d1708yOal€ah¡d1708\000† am\000† ",
+["192840"] = "¤aa¡d1708al€am\000…Øah¡d1708\000…Ø",
+["52303"] = "¤aa¡d1708al€am\000-ŸLah¡d1708\000-ŸL",
+["200061"] = "¤aa¡d17086hal€amÜah¡d1708Ü",
+["36165"] = "¤aa¡d1705al€am„DÀah¡d1705„DÀ",
+["3974"] = "¤aa¡d1705al€am\000ú)Ìah¡d1705\000ú)Ì",
+["141408"] = "¤aa¡d1705al€am'dah¡d1705'd",
+["212668"] = "¤aa¡d1708\000Û¥al€am\000 Èah¡d1708\000 È",
+["39340"] = "¤aa¡d1708¾al€am\000Åüah¡d1708\000Åü",
+["172936"] = "¤aa¡d1708[al€am\000¡ ah¡d1708\000¡ ",
+["85506"] = "¤aa¡d1708ìal€am¼ah¡d1708¼",
+["54849"] = "¤aa¡d1708»al€am\000f¬ah¡d1708\000f¬",
+["193258"] = "¤aa¡d1708\000Å[al€am¼ah¡d1708¼",
+["106286"] = "¤aa¡d1705al€am\000—Ÿ ah¡d1705\000—Ÿ ",
+["g:15389:357"] = "¤aa¡d1705al€am\000ŞÜah¡d1705\000ŞÜ",
+["15344"] = "¤aa¡d1705al€am\000xhah¡d1705\000xh",
+["219495"] = "¤aa¡d1708al€am\000)2àah¡d1708\000)2à",
+["193242"] = "¤aa¡d1708·al€amÂìah¡d1708Âì",
+["221925"] = "¤aa¡d1708al€amLT´ah¡d1708LT´",
+["108354"] = "¤aa¡d1708mal€am\000ìah¡d1708\000ì",
+["79288"] = "¤aa¡d1708al€am\000r“@ah¡d1708\000r“@",
+["159200"] = "¤aa¡d1705al€am3ù¼ah¡d17053ù¼",
+["109138"] = "¤aa¡d1708\000al€am„ah¡d1708„",
+["10561"] = "¤aa¡d1708’al€am\000Œah¡d1708\000Œ",
+["198185"] = "¤aa¡d1708\000G/al€ah¡d1708\000lØam\000lØ",
+["g:82094:186"] = "¤aa¡d1705al€am±Pèah¡d1705±Pè",
+["74854"] = "¤aa¡d1708\nÜal€am#(ah¡d1708#(",
+["108355"] = "¤aa¡d1708±al€am\000b°ah¡d1708\000b°",
+["151565"] = "¤aa¡d1708¶Ÿal€amëğah¡d1708ëğ",
+["109152"] = "¤aa¡d1708ˆal€am\0008€ah¡d1708\0008€",
+["72237"] = "¤aa¡d1708	al€am\n(ah¡d1708\n(",
+["12809"] = "¤aa¡d1708Ÿal€am\000x¬ah¡d1708\000x¬",
+["g:221797:550"] = "¤aa£d1707d1712	d1708al€ah£d1707\000*’pd1712\000=	\000d1708\0006íTam\000=	\000",
+["61995"] = "¤aa¡d1708%al€am\000DÎah¡d1708\000DÎ",
+["5966"] = "¤aa¡d1705al€am\000l¼ah¡d1705\000l¼",
+["9855"] = "¤aa¡d1705al€am\000–â,ah¡d1705\000–â,",
+["31903"] = "¤aa¡d1708'al€am\000	&”ah¡d1708\000	&”",
+["164559"] = "¤aa¡d1705al€amõ’àah¡d1705õ’à",
+["108356"] = "¤aa¡d1708Şal€am\000‚¸ah¡d1708\000‚¸",
+["6308"] = "¤aa¡d1708Óal€amÜah¡d1708Ü",
+["221911"] = "¤aa¡d1708al€am\000şah¡d1708\000ş",
+["g:198204:326"] = "¤aa¡d1708al€am\n|`ah¡d1708\n|`",
+["1529"] = "¤aa¡d1708$al€amrah¡d1708r",
+["g:204415:480"] = "¤aa¡d1705al€ah¡d1705\000\000\000\\am\000\000\000\\",
+["7966"] = "¤aa¡d1708÷al€am˜Xah¡d1708˜X",
+["2934"] = "¤aa¡d1708¤al€am'ah¡d1708'",
+["41810"] = "¤aa¡d1708j“al€am\\ah¡d1708\\",
+["199056"] = "¤aa¡d1708ïal€am\000\nah¡d1708\000\n",
+["g:224600:545"] = "¤aa¡d1705al€ah¡d1705\000)XÄam\000)XÄ",
+["36152"] = "¤aa¡d1705al€am\000PoÌah¡d1705\000PoÌ",
+["97619"] = "¤aa¡d1708\r%al€am\rHah¡d1708\rH",
+["198261"] = "¤aa¡d1708(al€am\000ÇÌah¡d1708\000ÇÌ",
+["62135"] = "¤aa¡d1705al€am\000\r@”ah¡d1705\000\r@”",
+["23781"] = "¤aa¡d17080šal€am\000~Ğah¡d1708\000~Ğ",
+["18506"] = "¤aa¡d1705al€am2$ù<ah¡d17052$ù<",
+["22785"] = "¤aa¡d1708‘al€am¤tah¡d1708¤t",
+["128744"] = "¤aa¡d1708al€amKHah¡d1708KH",
+["194858"] = "¤aa¡d1708Nal€amu0ah¡d1708u0",
+["172254"] = "¤aa¡d1705\nal€am\000\"âxah¡d1705\000\"âx",
+["220319"] = "¤aa¡d1705al€am\000c¸ah¡d1705\000c¸",
+["3172"] = "¤aa¡d1708al€am\000P‹ìah¡d1708\000P‹ì",
+["g:172256:262"] = "¤aa¡d1705al€amõá\000ah¡d1705õá\000",
+["12360"] = "¤aa¡d17089al€am\000ìah¡d1708\000ì",
+["222869"] = "¤aa¡d1708 al€am\000Pdah¡d1708\000Pd",
+["204931"] = "¤aa¡d1705al€ah¡d1705\n!ş€am\n!ş€",
+["128729"] = "¤aa¡d1708al€am\000LJxah¡d1708\000LJx",
+["52338"] = "¤aa¡d1708al€am}‹Èah¡d1708}‹È",
+["19274"] = "¤aa¡d1708\nal€am\000I}¬ah¡d1708\000I}¬",
+["212514"] = "¤aa¡d1708I6al€am\000_jah¡d1708\000_j",
+["213755"] = "¤aa¡d1708Íal€am\000 =ah¡d1708\000 =",
+["2665"] = "¤aa¡d1708\n’al€am9ah¡d17089",
+["71807"] = "¤aa¡d1708Îal€am\000ã`ah¡d1708\000ã`",
+["41807"] = "¤aa¡d1708Jval€am\000Aah¡d1708\000A",
+["130174"] = "¤aa¡d1708^al€am\000¿ ah¡d1708\000¿ ",
+["12810"] = "¤aa¡d1708µal€am\000™Pah¡d1708\000™P",
+["3818"] = "¤aa¡d1708GCal€am\000Bèah¡d1708\000Bè",
+["198993"] = "¤aa¡d1705al€am\000u7Ğah¡d1705\000u7Ğ",
+["4795"] = "¤aa¡d1705al€am®Œah¡d1705®Œ",
+["194811"] = "¤aa¡d1708*al€am\000±üah¡d1708\000±ü",
+["17011"] = "¤aa¡d1708al€amäah¡d1708ä",
+["164429"] = "¤aa¡d1705al€am!ˆèah¡d1705!ˆè",
+["191358"] = "¤aa¡d1708al€ama¨ah¡d1708a¨",
+["228956"] = "¤aa¢d1712$d1708£ñal¡d1708\000…ah¢d1712\000`¼d1708\000…tam\000`¼",
+["3820"] = "¤aa¡d1708^al€am² ah¡d1708² ",
+["31911"] = "¤aa¡d1708Lal€am\000%\\ah¡d1708\000%\\",
+["82043"] = "¤aa¡d1705al€am\000ÿÆèah¡d1705\000ÿÆè",
+["206436"] = "¤aa¡d1705al€amy´ah¡d1705y´",
+["79011"] = "¤aa¡d1708%‡al€am\nŒah¡d1708\nŒ",
+["222634"] = "¤aa¡d1708Æal€amÉÃ€ah¡d1708ÉÃ€",
+["152579"] = "¤aa¡d1708±	al€améüah¡d1708éü",
+["172934"] = "¤aa¡d1708íSal€ah¡d1708\000ª,am\000ª,",
+["36133"] = "¤aa¡d1705al€am.9·¤ah¡d1705.9·¤",
+["15140"] = "¤aa¡d1705al€am\000•|\\ah¡d1705\000•|\\",
+["222620"] = "¤aa¡d1708LFal€am\000ˆ ah¡d1708\000ˆ ",
+["2319"] = "¤aa¡d1708\000ã¨al€ama¨ah¡d1708a¨",
+["76133"] = "¤aa¡d1708ˆal€am›Üah¡d1708›Ü",
+["222884"] = "¤aa¡d1708µal€am\000„€ah¡d1708\000„€",
+["62015"] = "¤aa¡d1708al€am\000O€ah¡d1708\000O€",
+["191349"] = "¤aa¡d1708‰al€am\000¬ah¡d1708\000¬",
+["213756"] = "¤aa¡d1708‰aal€am\000£8ah¡d1708\000£8",
+["225670"] = "¤aa¡d1708/.al¡d1708\000\r» am\000\r» ah¡d1708\000}`",
+["212281"] = "¤aa¡d1708(\ral€am\000#`ah¡d1708\000#`",
+["5108"] = "¤aa¡d1705al€am\000`@ah¡d1705\000`@",
+["200580"] = "¤aa¡d1708|al€am\000i¸ah¡d1708\000i¸",
+["76142"] = "¤aa¡d1708al€am\000IŒah¡d1708\000IŒ",
+["18344"] = "¤aa¡d1705al€am$œ_¼ah¡d1705$œ_¼",
+["53038"] = "¤aa¡d1708.Dal€am\000°Hah¡d1708\000°H",
+["191332"] = "¤aa¡d1708al€am\000Pah¡d1708\000P",
+["36142"] = "¤aa¡d1705al€am	¼\\ah¡d1705	¼\\",
+["176965"] = "¤aa¡d1705al€amI³Øah¡d1705I³Ø",
+["116654"] = "¤aa¡d1708al€am,ah¡d1708,",
+["g:172317:190"] = "¤aa¡d1705al€amRêah¡d1705Rê",
+["36114"] = "¤aa¡d1705al€amh‚[<ah¡d1705h‚[<",
+["64394"] = "¤aa¡d1708$al€am\000Çhah¡d1708\000Çh",
+["188018"] = "¤aa¡d1705al€amvŞœah¡d1705vŞœ",
+["2372"] = "¤aa¡d1705al€amt½Ğah¡d1705t½Ğ",
+["39334"] = "¤aa¡d1708‰al€am\000*ah¡d1708\000*",
+["222687"] = "¤aa¡d1708Dal€am\000† ah¡d1708\000† ",
+["14675"] = "¤aa¡d1705al€am\000ö\rah¡d1705\000ö\r",
+["212508"] = "¤aa¡d1708Jœal€am\000‰`ah¡d1708\000‰`",
+["21886"] = "¤aa¡d1708¥al€am\000Ñ@ah¡d1708\000Ñ@",
+["31886"] = "¤aa¡d17086al€am\0004œah¡d1708\0004œ",
+["13760"] = "¤aa¡d1708·al€am\000nhah¡d1708\000nh",
+["4738"] = "¤aa¡d1705al€am\000-`ah¡d1705\000-`",
+["g:219472:515"] = "¤aa¡d1705al€am\000Ì`ah¡d1705\000Ì`",
+["154123"] = "¤aa¡d1708°al€am\000…ah¡d1708\000…",
+["3372"] = "¤aa¡d1708al€am^›dah¡d1708^›d",
+["163203"] = "¤aa¡d1708al€am\000V]`ah¡d1708\000V]`",
+["220316"] = "¤aa¡d1705	al€am\000<lah¡d1705\000<l",
+["194815"] = "¤aa¡d1708‚al€amÃPah¡d1708ÃP",
+["111670"] = "¤aa¡d1708·¼al€amah¡d1708",
+["g:219480:558"] = "¤aa¡d1705al€amõ¹Œah¡d1705õ¹Œ",
+["31898"] = "¤aa¡d1708çal€am\000ô€ah¡d1708\000ô€",
+["153701"] = "¤aa¡d1708al€ambah¡d1708b",
+["124104"] = "¤aa¡d1708\000FÅal€am§”ah¡d1708§”",
+["191475"] = "¤aa¡d1708HYal€am'ah¡d1708'",
+["41593"] = "¤aa¡d1708	lal€am\000Á(ah¡d1708\000Á(",
+["121244"] = "¤aa¡d1705al€am\000˜ˆpah¡d1705\000˜ˆp",
+["36927"] = "¤aa¡d1708(al€am\000’tah¡d1708\000’t",
+["g:152087:247"] = "¤aa¡d1705al€am\000äáÀah¡d1705\000äáÀ",
+["6554"] = "¤aa¡d1705al€am\000/ ah¡d1705\000/ ",
+["56850"] = "¤aa¡d1708\000al€am\000ğah¡d1708\000ğ",
+["171831"] = "¤aa¡d1708R3al€amixah¡d1708ix",
+["18251"] = "¤aa¡d1708õal€ah¡d1708\000¾Xam\000¾X",
+["44264"] = "¤aa¡d1708@al€am\000¾hah¡d1708\000¾h",
+["177842"] = "¤aa¡d1708al€am\000*@ah¡d1708\000*@",
+["200579"] = "¤aa¡d1708ğal€am\000	œğah¡d1708\000	œğ",
+["4339"] = "¤aa¡d1708\000Yal€amˆah¡d1708ˆ",
+["36921"] = "¤aa¡d1708al€am‡(ah¡d1708‡(",
+["g:10106:357"] = "¤aa¡d1705al€am\000 Œah¡d1705\000 Œ",
+["194871"] = "¤aa¡d1708.al€am\000Ãôah¡d1708\000Ãô",
+["108327"] = "¤aa¡d1708	Qal€amLôah¡d1708Lô",
+["173072"] = "¤aa¡d1708al€am\000Hah¡d1708\000H",
+["194829"] = "¤aa¡d1708Sal€am\000p8ah¡d1708\000p8",
+["31670"] = "¤aa¡d1708\rĞal€amlah¡d1708l",
+["152546"] = "¤aa¡d1708\"Fal€amah¡d1708",
+["127730"] = "¤aa¡d1708al€amw5•ah¡d1708w5•",
+["109585"] = "¤aa¡d1708şal€am`ah¡d1708`",
+["128713"] = "¤aa¡d1708al€am1-\000ah¡d17081-\000",
+["10939"] = "¤aa¡d1708\000îQal€am#(ah¡d1708#(",
+["13758"] = "¤aa¡d1708	Šal€amTah¡d1708T",
+["23758"] = "¤aa¡d1705al€am1.,ah¡d17051.,",
+["128719"] = "¤aa¡d1708al€amÚ»¤ah¡d1708Ú»¤",
+["g:224605:525"] = "¤aa¡d1705al€ah¡d1705\000}tam\000}t",
+["g:224600:515"] = "¤aa¡d1705al€ah¡d1705\000-ÆÀam\000-ÆÀ",
+["74848"] = "¤aa¡d1708Éâal€am:4ah¡d1708:4",
+["g:225643:524"] = "¤aa¡d1705al€am\000˜©@ah¡d1705\000˜©@",
+["227769"] = "¤aa¡d1708\000V›al€amÔ€ah¡d1708Ô€",
+["76061"] = "¤aa¡d1708Îial€am\000	\000°ah¡d1708\000	\000°",
+["43103"] = "¤aa¡d1708	¦al€am\000ğah¡d1708\000ğ",
+["15149"] = "¤aa¡d1705al€amIí¸ah¡d1705Ií¸",
+["76138"] = "¤aa¡d1708fal€am\000èah¡d1708\000è",
+["19265"] = "¤aa¡d1708al€am\000\n¬Ğah¡d1708\000\n¬Ğ",
+["222795"] = "¤aa¡d1708\000t„al€am¤ah¡d1708¤",
+["g:219476:551"] = "¤aa¡d1705*al€am\000ùah¡d1705\000ù",
+["72103"] = "¤aa¡d1708#al€am\000*Lah¡d1708\000*L",
+["153632"] = "¤aa¡d1708\ral€am\000xÌah¡d1708\000xÌ",
+["108324"] = "¤aa¡d1708\"Áal€am”ah¡d1708”",
+["193552"] = "¤aa¡d17083al€am\000JÜah¡d1708\000JÜ",
+["g:210098:421"] = "¤aa¡d1705al€ah¡d1705vg\000amvg\000",
+["15069"] = "¤aa¡d1705al€amß€ah¡d1705ß€",
+["191338"] = "¤aa¡d1708al€am\000Ûœah¡d1708\000Ûœ",
+["8365"] = "¤aa¡d1708ïal€am˜ah¡d1708˜",
+["g:147038:247"] = "¤aa¡d1705al€am~VTah¡d1705~VT",
+["22573"] = "¤aa¡d1708ß~al€am!4ah¡d1708!4",
+["222533"] = "¤aa¡d1708.&al€am\000ù¸ah¡d1708\000ù¸",
+["171289"] = "¤aa¡d17082ñal€am&¬ah¡d1708&¬",
+["128890"] = "¤aa¡d1705	al€am\000‰”ah¡d1705\000‰”",
+["15439"] = "¤aa¡d1705al€am\000\rah¡d1705\000\r",
+["15016"] = "¤aa¡d1705al€amO^°ah¡d1705O^°",
+["112185"] = "¤aa¡d1708al€am1OÄah¡d17081OÄ",
+["g:219864:538"] = "¤aa¡d1708al€am½û@ah¡d1708½û@",
+["109148"] = "¤aa¡d1708ual€amtÌah¡d1708tÌ",
+["g:224604:515"] = "¤aa¡d1705al€ah¡d1705\0008 àam\0008 à",
+["81975"] = "¤aa¡d1705al€am\0006L\000ah¡d1705\0006L\000",
+["31913"] = "¤aa¡d1708	al€amğÑ€ah¡d1708ğÑ€",
+["45141"] = "¤aa¡d1705al€am¨€ah¡d1705¨€",
+["5500"] = "¤aa¡d1708ùal€am\000€ah¡d1708\000€",
+["108340"] = "¤aa¡d1708¿al€amN„ah¡d1708N„",
+["31892"] = "¤aa¡d1708ãal€am\000zah¡d1708\000z",
+["g:224601:515"] = "¤aa¡d1705al€ah¡d1705\000-ÆÀam\000-ÆÀ",
+["6358"] = "¤aa¡d1708_2al€am/¨ah¡d1708/¨",
+["g:224605:532"] = "¤aa¡d1705al€ah¡d1705\000-Ê¨am\000-Ê¨",
+["177062"] = "¤aa¡d1708*\nal€am\000s|ah¡d1708\000s|",
+["g:67135:168"] = "¤aa¡d1705al€amÂuÈah¡d1705ÂuÈ",
+["200576"] = "¤aa¡d1708al€am\0003lah¡d1708\0003l",
+["108301"] = "¤aa¡d1708\r‘al€amHDah¡d1708HD",
+["222672"] = "¤aa¡d1708\roal€am\000“|ah¡d1708\000“|",
+["24479"] = "¤aa¡d1708al€am\000d”ah¡d1708\000d”",
+["109123"] = "¤aa¡d1708Ûal€amWäah¡d1708Wä",
+["4625"] = "¤aa¡d1708áal€am\000|(ah¡d1708\000|(",
+["6139"] = "¤aa¡d1705al€amíÈìah¡d1705íÈì",
+["112300"] = "¤aa¡d1708Yal€am\000Á0ah¡d1708\000Á0",
+["106667"] = "¤aa¡d1705al€am×äah¡d1705×ä",
+["g:221786:544"] = "¤aa£d1707d1712d1708\ral€am\000§Ø\\ah£d17071-\000d1712\000§Ø\\d17081-\000",
+["111557"] = "¤aa¡d1708\000+óal€amôah¡d1708ô",
+["118890"] = "¤aa¡d1705al€amÍLah¡d1705ÍL",
+["222664"] = "¤aa¡d1708\råal€am\000Iğah¡d1708\000Iğ",
+["130904"] = "¤aa¡d1708^al€amÃPah¡d1708ÃP",
+["222798"] = "¤aa¡d1708	Àal€am\000iVah¡d1708\000iV",
+["153050"] = "¤aa¡d1708\000µal€amèah¡d1708è",
+["15150"] = "¤aa¡d1705al€am\000J'üah¡d1705\000J'ü",
+["223699"] = "¤aa¡d1708bal€ah¡d1708(Èam(È",
+["180060"] = "¤aa¡d1708ual€am\000¡ ah¡d1708\000¡ ",
+["g:221799:550"] = "¤aa¢d1707d1708al€ah¢d1707ã8d1708ã8amã8",
+["168185"] = "¤aa¡d1708\000›mal€amS˜ah¡d1708S˜",
+["44260"] = "¤aa¡d1708)al€am\0009´ah¡d1708\0009´",
+["192843"] = "¤aa¡d1708­al€am&Hah¡d1708&H",
+["6303"] = "¤aa¡d1708ÿal€amÈah¡d1708È",
+["24272"] = "¤aa¡d1708)al€am\0009ûÀah¡d1708\0009ûÀ",
+["76141"] = "¤aa¡d1708»al€am4ah¡d17084",
+["44272"] = "¤aa¡d1708\nal€am\000‘Œah¡d1708\000‘Œ",
+["27671"] = "¤aa¡d1708òal€amN ah¡d1708N ",
+["198395"] = "¤aa¡d1708Ëal€amDah¡d1708D",
+["g:219479:558"] = "¤aa¡d1705al€am\000˜½,ah¡d1705\000˜½,",
+["74861"] = "¤aa¡d1708Gal€amN ah¡d1708N ",
+["222593"] = "¤aa¡d1708%al€amë9ah¡d1708ë9",
+["52196"] = "¤aa¡d1708•al€am\0006aàah¡d1708\0006aà",
+["g:198243:339"] = "¤aa¡d1708al€am\n}Œ\000ah¡d1708\n}Œ\000",
+["210799"] = "¤aa¡d1708Ä½al¡d1708\000Tam\000Tah¡d1708\000h ",
+["12223"] = "¤aa¡d1708±al€am\n(ah¡d1708\n(",
+["g:221788:538"] = "¤aa£d1707d1712d1708al€ah£d1707®¦Ğd1712\000‰5dd1708®¦Ğam\000‰5d",
+["36150"] = "¤aa¡d1705al€am\000-\\ah¡d1705\000-\\",
+["212667"] = "¤aa¡d1708\000üÜal€am\000æTah¡d1708\000æT",
+["191522"] = "¤aa¡d1708ıal€am'ah¡d1708'",
+["71025"] = "¤aa¡d1705al€am™Eah¡d1705™E",
+["14573"] = "¤aa¡d1705al€am‡@ah¡d1705‡@",
+["193939"] = "¤aa¡d1708—al€am\0006ìŒah¡d1708\0006ìŒ",
+["212664"] = "¤aa¡d1708\0007“al€am\000­°ah¡d1708\000­°",
+["198186"] = "¤aa¡d1708?al€ah¡d1708\000Vham\000Vh",
+["160710"] = "¤aa¡d1708 al€am¼ah¡d1708¼",
+["41594"] = "¤aa¡d1708oal€am\000,ah¡d1708\000,",
+["24476"] = "¤aa¡d1708,al€amÜah¡d1708Ü",
+["152576"] = "¤aa¡d1708\000ï›al€amXah¡d1708X",
+["74247"] = "¤aa¡d1708^!al€am%äah¡d1708%ä",
+["133592"] = "¤aa¡d1708\rAal€amTah¡d1708T",
+["g:224604:408"] = "¤aa¡d1705al€am\0008 àah¡d1705\0008 à",
+["94044"] = "¤aa¡d1705al€am0Mah¡d17050M",
+["61996"] = "¤aa¡d1708\ral€am\000&Gœah¡d1708\000&Gœ",
+["g:224607:561"] = "¤aa¡d1705al€am\0002Z ah¡d1705\0002Z ",
+["199965"] = "¤aa¡d1708al€ah¡d1708*}am*}",
+["62002"] = "¤aa¡d1708al€am\000“àah¡d1708\000“à",
+["112179"] = "¤aa¡d1708#al€am1Œah¡d17081Œ",
+["173036"] = "¤aa¡d1708\000ŠÆal€am?Hah¡d1708?H",
+["192852"] = "¤aa¡d1708íal€am&Hah¡d1708&H",
+["192899"] = "¤aa¡d1708Fal€amu0ah¡d1708u0",
+["g:221786:557"] = "¤aa£d1707d1712	d1708al¡d17081ğam\000˜–€ah£d1707mçàd1712\000˜–€d1708mçà",
+["193360"] = "¤aa¡d1708Óal€am\000•øah¡d1708\000•ø",
+["1215"] = "¤aa¡d1705al€amÍe\000ah¡d1705Íe\000",
+["6525"] = "¤aa¡d1705al€am	İ (ah¡d1705	İ (",
+["10505"] = "¤aa¡d1708	Mal€am\0005Xah¡d1708\0005X",
+["152506"] = "¤aa¡d1708\0003Œal€am@ah¡d1708@",
+["219882"] = "¤aa¡d1708	al€am^y|ah¡d1708^y|",
+["136636"] = "¤aa¡d1708¥al€am9Ğah¡d17089Ğ",
+["212283"] = "¤aa¡d1708¬al€am&Pah¡d1708&P",
+["189541"] = "¤aa¡d1708…al€am\0004Pah¡d1708\0004P",
+["219470"] = "¤aa¡d1705al€am\000 ah¡d1705\000 ",
+["124440"] = "¤aa¡d1708\000òal€amÔah¡d1708Ô",
+["44278"] = "¤aa¡d1708Hal€am\000i8ah¡d1708\000i8",
+["8258"] = "¤aa¡d1705al€am\000ƒğ,ah¡d1705\000ƒğ,",
+["34056"] = "¤aa¡d1708Y%al€amÜah¡d1708Ü",
+["36158"] = "¤aa¡d1705al€amÿ+`ah¡d1705ÿ+`",
+["11184"] = "¤aa¡d1707-al€amBah¡d1707B",
+["1799"] = "¤aa¡d1705al€amAôah¡d1705Aô",
+["194816"] = "¤aa¡d1708Val€am\000~Ğah¡d1708\000~Ğ",
+["221913"] = "¤aa¡d1708oal€amOš¸ah¡d1708Oš¸",
+["191460"] = "¤aa¡d1708‰Íal€amôah¡d1708ô",
+["g:224638:506"] = "¤aa¡d1705al€am\000ª‡Üah¡d1705\000ª‡Ü",
+["21845"] = "¤aa¡d1708al€am\000!0ah¡d1708\000!0",
+["221921"] = "¤aa¡d1708¢al€am\000=	\000ah¡d1708\000=	\000",
+["g:224602:408"] = "¤aa¡d1705al€am\000-ÏXah¡d1705\000-ÏX",
+["30737"] = "¤aa¡d1705al€amï6ğah¡d1705ï6ğ",
+["222591"] = "¤aa¡d1708\n'al€am\0001üah¡d1708\0001ü",
+["19943"] = "¤aa¡d1708èal€am\0000ah¡d1708\0000",
+["124115"] = "¤aa¡d1708\000v+al€ama¨ah¡d1708a¨",
+["189542"] = "¤aa¡d1708al€am\000ÔÀah¡d1708\000ÔÀ",
+["168663"] = "¤aa¡d1708ûÈal€am}\000ah¡d1708}\000",
+["24752"] = "¤aa¡d1705al€am\000^2Øah¡d1705\000^2Ø",
+["220322"] = "¤aa¡d1705al€am\000àøah¡d1705\000àø",
+["229072"] = "¤aa¡d1705al€ah¡d1705úğ€amúğ€",
+["17203"] = "¤aa¡d1708Val€am\000èah¡d1708\000è",
+["108348"] = "¤aa¡d1708al€am\"`ah¡d1708\"`",
+["193932"] = "¤aa¡d1708'al€am\000lğ¬ah¡d1708\000lğ¬",
+["220149"] = "¤aa¡d1708)cal€am\000Xah¡d1708\000X",
+["192880"] = "¤aa¡d1708\000‹\\al€am°ah¡d1708°",
+["89639"] = "¤aa¡d17086Èal€am!4ah¡d1708!4",
+["152640"] = "¤aa¡d1708-al€am\000Ğah¡d1708\000Ğ",
+["152087"] = "¤aa¡d1705al¡d1705\000äáÀah¡d17053Û%€am\000äáÀ",
+["193223"] = "¤aa¡d1708\000J„al€amiÜah¡d1708iÜ",
+["212269"] = "¤aa¡d1708al€am\000ªÈah¡d1708\000ªÈ",
+["76130"] = "¤aa¡d1708Úal€am+\\ah¡d1708+\\",
+["194797"] = "¤aa¡d1708_al€am\000¥4ah¡d1708\000¥4",
+["43116"] = "¤aa¡d1708B×al€am\000ôÈah¡d1708\000ôÈ",
+["187704"] = "¤aa¡d1708Åal€am¼ah¡d1708¼",
+["210804"] = "¤aa¡d17087Hal€am\000zDah¡d1708\000zD",
+["g:147424:241"] = "¤aa¡d1705al€amÉÃ€ah¡d1705ÉÃ€",
+["210930"] = "¤aa£d1707\000\nod1712\0009td1708\000.bal£d1707\0000 d1712\0004Pd1708\000/àah£d1707\0009d1712\000h<d1708\000/¼am\000óp",
+["222667"] = "¤aa¡d1708Mal€am\000ÔÀah¡d1708\000ÔÀ",
+["106332"] = "¤aa¡d1705al€amïé ah¡d1705ïé ",
+["222688"] = "¤aa¡d1708éal€am\000Ú8ah¡d1708\000Ú8",
+["198995"] = "¤aa¡d1705al€am·5Äah¡d1705·5Ä",
+["34664"] = "¤aa¡d1708al€amh°ah¡d1708h°",
+["g:198997:357"] = "¤aa¡d1705al€amÔ]ah¡d1705Ô]",
+["74857"] = "¤aa¡d1708	dal€ama¨ah¡d1708a¨",
+["168653"] = "¤aa¡d1708Kal€am\000Ş€ah¡d1708\000Ş€",
+["g:106735:186"] = "¤aa¡d1705al€am\000«©Pah¡d1705\000«©P",
+["80433"] = "¤aa¡d1708fal€am3ôah¡d17083ô",
+["g:165520:268"] = "¤aa¡d1705al€amÉ'@ah¡d1705É'@",
+["21278"] = "¤aa¡d1705al€am5R€ah¡d17055R€",
+["65892"] = "¤aa¡d1708&al€am¥Øah¡d1708¥Ø",
+["169697"] = "¤aa¡d1708al€amw5”dah¡d1708w5”d",
+["198188"] = "¤aa¡d1708Sal€ah¡d1708\000Vham\000Vh",
+["85559"] = "¤aa¡d1708Kal€ah¡d1708˜am˜",
+["16203"] = "¤aa¡d1708Ëˆal€am\000¬èah¡d1708\000¬è",
+["g:224605:545"] = "¤aa¡d1705al€ah¡d1705\0007´am\0007´",
+["152639"] = "¤aa¡d1708¬al€amê`ah¡d1708ê`",
+["222640"] = "¤aa¡d1708Eal€amúğ€ah¡d1708úğ€",
+["2144"] = "¤aa¡d1705al€amB¯Ğah¡d1705B¯Ğ",
+["219888"] = "¤aa¡d1708šal€am\000ôÌah¡d1708\000ôÌ",
+["171278"] = "¤aa¡d1708al€am\000İlah¡d1708\000İl",
+["152577"] = "¤aa¡d1708\000ƒâal€am%äah¡d1708%ä",
+["27422"] = "¤aa¡d1708Ual€am¤ah¡d1708¤",
+["200049"] = "¤aa¡d1708èal€ah¡d17081-\000am1-\000",
+["g:210109:424"] = "¤aa¡d1705al€am×\\€ah¡d1705×\\€",
+["222424"] = "¤aa¡d1708Üal€amZÚah¡d1708ZÚ",
+["43126"] = "¤aa¡d1708\000R$al€am\000€ah¡d1708\000€",
+["72234"] = "¤aa¡d1708al€amxah¡d1708x",
+["210803"] = "¤aa¡d1708\000ª1al€am\000º(ah¡d1708\000º(",
+["128889"] = "¤aa¡d1705al€am¸Œ ah¡d1705¸Œ ",
+["106670"] = "¤aa¡d1705al€amtf›Àah¡d1705tf›À",
+["220317"] = "¤aa¡d1705al€am\000¿ ah¡d1705\000¿ ",
+["52328"] = "¤aa¡d1708Bal€am\000œ8ah¡d1708\000œ8",
+["113264"] = "¤aa¡d1708yéal€amah¡d1708",
+["22575"] = "¤aa¡d1708Ş	al€am\000UÌah¡d1708\000UÌ",
+["227774"] = "¤aa¡d1708al€am\000\000\000qœah¡d1708\000\000\000qœ",
+["219504"] = "¤aa¡d1708`al€am\0006Œah¡d1708\0006Œ",
+["193213"] = "¤aa¡d1708\000i)al€am@ah¡d1708@",
+["61978"] = "¤aa¡d1708w™al€am\000©€ah¡d1708\000©€",
+["23079"] = "¤aa¡d1708al€am;`ah¡d1708;`",
+["19264"] = "¤aa¡d1708al€am\000)õhah¡d1708\000)õh",
+["128731"] = "¤aa¡d1708al€am\000B@ah¡d1708\000B@",
+["193923"] = "¤aa¡d1708\000 'al€am.ah¡d1708.",
+["220147"] = "¤aa¡d1708al€am\000<6tah¡d1708\000<6t",
+["62006"] = "¤aa¡d1708al€am\000ah¡d1708\000",
+["12184"] = "¤aa¡d1708êal€amÈah¡d1708È",
+["172257"] = "¤aa¡d1705al€ah¡d1705\000¤!øam\000¤!ø",
+["78882"] = "¤aa¡d1705al€am/nah¡d1705/n",
+["173082"] = "¤aa¡d1708al€am\000!‘Àah¡d1708\000!‘À",
+["4235"] = "¤aa¡d1708dàal€am\000¶Àah¡d1708\000¶À",
+["94270"] = "¤aa¡d1705al€am\000à&Ğah¡d1705\000à&Ğ",
+["35624"] = "¤aa¡d1708}al€amW€ah¡d1708W€",
+["15195"] = "¤aa¡d1705al€am\000‘Øah¡d1705\000‘Ø",
+["8165"] = "¤aa¡d1708'`al€am\000Ğah¡d1708\000Ğ",
+["109991"] = "¤aa¡d1708eal€amÀah¡d1708À",
+["190322"] = "¤aa¡d1708\000al€amÃPah¡d1708ÃP",
+["193253"] = "¤aa¡d1708\000\\Âal€am0ah¡d17080",
+["224764"] = "¤aa¡d1708\000´]al€amèah¡d1708è",
+["222499"] = "¤aa¡d1708Y‰al€amZ ah¡d1708Z ",
+["168662"] = "¤aa¡d1708$\"al€am_Pah¡d1708_P",
+["14670"] = "¤aa¡d1705al€am1# ah¡d17051# ",
+["44270"] = "¤aa¡d1708al€am\000„€ah¡d1708\000„€",
+["39339"] = "¤aa¡d1708:al€am\000i0ah¡d1708\000i0",
+["224832"] = "¤aa¡d1708Å-al€am\000Kah¡d1708\000K",
+["27439"] = "¤aa¡d1708Aal€am4ah¡d17084",
+["191513"] = "¤aa¡d1708al€amˆah¡d1708ˆ",
+["g:121352:179"] = "¤aa¡d1705al€am\000'ßlah¡d1705\000'ßl",
+["168487"] = "¤aa¡d1708\000:val€amŸÄah¡d1708ŸÄ",
+["13759"] = "¤aa¡d1708	Ral€am\000o0ah¡d1708\000o0",
+["31184"] = "¤aa¡d1705al€am5lah¡d17055l",
+["2318"] = "¤aa¡d1708\000	Ãal€am*øah¡d1708*ø",
+["198196"] = "¤aa¡d1708al€am\000!Ö€ah¡d1708\000!Ö€",
+["129100"] = "¤aa¡d1708=Ùal€am	`ah¡d1708	`",
+["162515"] = "¤aa¡d1708Fal€amüah¡d1708ü",
+["198260"] = "¤aa¡d1708!al€amklah¡d1708kl",
+["g:152413:249"] = "¤aa¡d1705al€amYh/\000ah¡d1705Yh/\000",
+["4265"] = "¤aa¡d1708,al€ah¡d1708¼am¼",
+["199059"] = "¤aa¡d1708Fal€am'ah¡d1708'",
+["g:219476:554"] = "¤aa¡d1705al€am\000Ìah¡d1705\000Ì",
+["31888"] = "¤aa¡d1708al€am\000yèah¡d1708\000yè",
+["153706"] = "¤aa¡d1708üal€amÔäah¡d1708Ôä",
+["79294"] = "¤aa¡d1708al€am\000hhah¡d1708\000hh",
+["228921"] = "¤aa¡d1708/Õal€am\000Üah¡d1708\000Ü",
+["222679"] = "¤aa¡d1708\r~al€am\000ùTah¡d1708\000ùT",
+["22861"] = "¤aa¡d1708§al€am\000÷ ah¡d1708\000÷ ",
+["200006"] = "¤aa¡d1708¦al€ah¡d1708\000Àam\000À",
+["74856"] = "¤aa¡d1708Øal€am‡Œah¡d1708‡Œ",
+["112184"] = "¤aa¡d1708#al€am¹ğah¡d1708¹ğ",
+["67348"] = "¤aa¡d1708bal€am\000/$ah¡d1708\000/$",
+["52182"] = "¤aa¡d1708 Ôal€améüah¡d1708éü",
+["g:217127:551"] = "¤aa¡d1705al€am“”Hah¡d1705“”H",
+["15075"] = "¤aa¡d1705al€amÃ/ah¡d1705Ã/",
+["129289"] = "¤aa¡d1708Gal€am\000@Ùôah¡d1708\000@Ùô",
+["3478"] = "¤aa¡d1708ôal€am˜ah¡d1708˜",
+["33567"] = "¤aa¡d1708íal€am\"Äah¡d1708\"Ä",
+["111674"] = "¤aa¡d1708n;al€amˆah¡d1708ˆ",
+["76084"] = "¤aa¡d1708?al€am\0004˜ah¡d1708\0004˜",
+["38426"] = "¤aa¡d1708cal€am*0ah¡d1708*0",
+["220321"] = "¤aa¡d1705al€am\000'\nìah¡d1705\000'\nì",
+["168412"] = "¤aa¡d1708Åal€ah¡d1708\000°am\000°",
+["19262"] = "¤aa¡d1708al€amòÎìah¡d1708òÎì",
+["213759"] = "¤aa¡d1708,al€amÉ›¨ah¡d1708É›¨",
+["94289"] = "¤aa¡d1708K¢al€am\000‚¸ah¡d1708\000‚¸",
+["228401"] = "¤aa¡d1708…al€am\000íÄah¡d1708\000íÄ",
+["193924"] = "¤aa¡d1708\000r al€am.àah¡d1708.à",
+["7479"] = "¤aa¡d1705al€am\0002·4ah¡d1705\0002·4",
+["213610"] = "¤aa¢d1707\000	êœd1708\000\n1åal¡d1708Âˆah¢d1707\000€d1708\000pamèl",
+["36913"] = "¤aa¡d1708&¶al€am\000Î8ah¡d1708\000Î8",
+["221939"] = "¤aa¡d1708xal€ah¡d1708\000tÈam\000tÈ",
+["53066"] = "¤aa¡d1708S†al€amüah¡d1708ü",
+["222639"] = "¤aa¡d17089al€am\000j§èah¡d1708\000j§è",
+["g:71025:181"] = "¤aa¡d1705al€am™Eah¡d1705™E",
+["128716"] = "¤aa¡d1708al€am\000B@ah¡d1708\000B@",
+["2320"] = "¤aa¡d1708\00004&al€amèah¡d1708è",
+["198418"] = "¤aa¡d1708MDal€am	Äah¡d1708	Ä",
+["158205"] = "¤aa¡d1708 Šal€am,ah¡d1708,",
+["13888"] = "¤aa¡d1708ºal€am\000E\\ah¡d1708\000E\\",
+["52340"] = "¤aa¡d17086al€amİah¡d1708İ",
+["41595"] = "¤aa¡d1708›al€am\000»Hah¡d1708\000»H",
+["62007"] = "¤aa¡d1708al€am\000† ah¡d1708\000† ",
+["74863"] = "¤aa¡d1708°al€amUğah¡d1708Uğ",
+["133680"] = "¤aa¡d1708’2al€am5 ah¡d17085 ",
+["213768"] = "¤aa¡d1708Ral€amÉÚ(ah¡d1708ÉÚ(",
+["774"] = "¤aa¡d1708¨4al€am'ah¡d1708'",
+["108304"] = "¤aa¡d1708·al€am\000€ah¡d1708\000€",
+["220144"] = "¤aa¡d1708;çal€am\000llah¡d1708\000ll",
+["1468"] = "¤aa¡d1708Aval€am,ah¡d1708,",
+["23425"] = "¤aa¡d1708(“al€am\000%\\ah¡d1708\000%\\",
+["79304"] = "¤aa¡d1708al€am\000-ÆÀah¡d1708\000-ÆÀ",
+["108350"] = "¤aa¡d1708al€am\000GHah¡d1708\000GH",
+["5468"] = "¤aa¡d1708Gal€am\000-ÆÀah¡d1708\000-ÆÀ",
+["2468"] = "¤aa¡d1705al€am\000š\räah¡d1705\000š\rä",
+["9420"] = "¤aa¡d1705al€am\000ºìah¡d1705\000ºì",
+["g:106699:186"] = "¤aa¡d1705al€am;„Dah¡d1705;„D",
+["36903"] = "¤aa¡d1708J al€am\000SØah¡d1708\000SØ",
+["222800"] = "¤aa¡d1708\nal€am\000×éah¡d1708\000×é",
+["g:160128:242"] = "¤aa¡d1705al€am\000°©dah¡d1705\000°©d",
+["43145"] = "¤aa¡d1708	al€am1´ah¡d17081´",
+["20963"] = "¤aa¡d1708al€am\000„xah¡d1708\000„x",
+["62005"] = "¤aa¡d1708al€am\000LJÜah¡d1708\000LJÜ",
+["219892"] = "¤aa¡d1708@al€am\000JÄ ah¡d1708\000JÄ ",
+["10558"] = "¤aa¡d1708¬9al€am\000Eäah¡d1708\000Eä",
+["21752"] = "¤aa¡d1708<Ãal€am\000ah¡d1708\000",
+["36155"] = "¤aa¡d1705al€amf@ah¡d1705f@",
+["128014"] = "¤aa¡d1708al€amÎxËØah¡d1708ÎxËØ",
+["193933"] = "¤aa¡d1708'al€am\000×|ah¡d1708\000×|",
+["16006"] = "¤aa¡d1708·al€am\000(oah¡d1708\000(o",
+["19278"] = "¤aa¡d17084al€am\000¼a\000ah¡d1708\000¼a\000",
+["19235"] = "¤aa¡d1708+al€amM¼ah¡d1708M¼",
+["153609"] = "¤aa¡d1708\nal€am\000CŸTah¡d1708\000CŸT",
+["6420"] = "¤aa¡d1705al€am\000`$ah¡d1705\000`$",
+["198412"] = "¤aa¡d17088`al€amˆah¡d1708ˆ",
+["2447"] = "¤aa¡d1708\000'1al€am\000ah¡d1708\000",
+["164562"] = "¤aa¡d1705al€amß»4ah¡d1705ß»4",
+["52984"] = "¤aa¡d17086¸al€amu0ah¡d1708u0",
+["219479"] = "¤aa¡d1705al€am\000Éœah¡d1705\000Éœ",
+["37890"] = "¤aa¡d1705al€am\000LK@ah¡d1705\000LK@",
+["210939"] = "¤aa¢d17088¦d17129˜al¡d1708¸¬€ah¢d1708È&8d1712ÔJĞamÔJĞ",
+["844"] = "¤aa¡d1705al€am\000Æ=œah¡d1705\000Æ=œ",
+["79307"] = "¤aa¡d1708al€am\000’…`ah¡d1708\000’…`",
+["32601"] = "¤aa¡d1708,al€am\000~ğah¡d1708\000~ğ",
+["193245"] = "¤aa¡d1708Jal€am\0008€ah¡d1708\0008€",
+["g:121242:214"] = "¤aa¡d1705al€am\000CÛàah¡d1705\000CÛà",
+["15066"] = "¤aa¡d1705al€amæÀah¡d1705æÀ",
+["190535"] = "¤aa¡d1708%al€am\000„@ah¡d1708\000„@",
+["222684"] = "¤aa¡d1708 al€am\000Ô\\ah¡d1708\000Ô\\",
+["43124"] = "¤aa¡d1708ÅÆal€am×<ah¡d1708×<",
+["180058"] = "¤aa¡d1708al€amÃPah¡d1708ÃP",
+["4389"] = "¤aa¡d1708\"al€am\000	Ñ¬ah¡d1708\000	Ñ¬",
+["37587"] = "¤aa¡d1705al€am5¤ãìah¡d17055¤ãì",
+["109125"] = "¤aa¡d1708¯7al€am5„ah¡d17085„",
+["174353"] = "¤aa¡d1708\000ËEal€amÈah¡d1708È",
+["31905"] = "¤aa¡d1708Šal€am\000	ah¡d1708\000	",
+["124116"] = "¤aa¡d1708al€am\0004Ìah¡d1708\0004Ì",
+["217132"] = "¤aa¡d1705al€amI€ah¡d1705I€",
+["222886"] = "¤aa¡d1708´al€am\000	Dah¡d1708\000	D",
+["221788"] = "¤aa£d17078d1712\"d17088al€ah£d17071Œd1712\000‰5dd17081Œam\000‰5d",
+["39526"] = "¤aa¡d1708!al€am\000@¤ah¡d1708\000@¤",
+["112301"] = "¤aa¡d1708\"al€am\000jÀah¡d1708\000jÀ",
+["79868"] = "¤aa¡d1708¼al€am\0003º0ah¡d1708\0003º0",
+["192877"] = "¤aa¡d1708pal€am'ah¡d1708'",
+["153630"] = "¤aa¡d1708al€am\000Ohah¡d1708\000Oh",
+["194869"] = "¤aa¡d17080al€am\000âüah¡d1708\000âü",
+["213398"] = "¤aa¡d1708¶!al€am\000æ”ah¡d1708\000æ”",
+["197720"] = "¤aa¡d1708;al€am\000—Á8ah¡d1708\000—Á8",
+["24478"] = "¤aa¡d1708~al€am‰äah¡d1708‰ä",
+["213766"] = "¤aa¡d1708«al€am\000<àÄah¡d1708\000<àÄ",
+["37704"] = "¤aa¡d1708Val€am¹Œah¡d1708¹Œ",
+["9947"] = "¤aa¡d1705al€am\000J+äah¡d1705\000J+ä",
+["153604"] = "¤aa¡d1708al€am\000 ˆah¡d1708\000 ˆ",
+["23783"] = "¤aa¡d1708½al€am\000“àah¡d1708\000“à",
+["6268"] = "¤aa¡d1705al€am\000 ¼ah¡d1705\000 ¼",
+["128304"] = "¤aa¡d1708 Yal€amC”ah¡d1708C”",
+["160134"] = "¤aa¡d1705al€am\000‰Š(ah¡d1705\000‰Š(",
+["10222"] = "¤aa¡d1705al€am\000HThah¡d1705\000HTh",
+["190537"] = "¤aa¡d1708˜al€am\000&:¸ah¡d1708\000&:¸",
+["183953"] = "¤aa¡d1708¢al€am\000èHah¡d1708\000èH",
+["194804"] = "¤aa¡d1708)al€am\000Ğah¡d1708\000Ğ",
+["15056"] = "¤aa¡d1705al€am;’³°ah¡d1705;’³°",
+["219952"] = "¤aa¡d1708¬6al€am\000\n†ìah¡d1708\000\n†ì",
+["108299"] = "¤aa¡d1708–al€am\000£ˆah¡d1708\000£ˆ",
+["31895"] = "¤aa¡d1708	al€am\000¼a\000ah¡d1708\000¼a\000",
+["154164"] = "¤aa¡d1708\000dÆal€amtah¡d1708t",
+["g:7408:320"] = "¤aa¡d1705al€am\000œš<ah¡d1705\000œš<",
+["109128"] = "¤aa¡d1708o al€am6°ah¡d17086°",
+["g:172255:233"] = "¤aa¡d1705al€am“£„ah¡d1705“£„",
+["52194"] = "¤aa¡d1708?al€am\000g ah¡d1708\000g ",
+["201944"] = "¤aa¡d1705al€am\000_ğah¡d1705\000_ğ",
+["205411"] = "¤aa¡d1708Qal€amMXah¡d1708MX",
+["23055"] = "¤aa¡d1708al€amYh.œah¡d1708Yh.œ",
+["111595"] = "¤aa¡d1708qal€am%ah¡d1708%",
+["74866"] = "¤aa¡d1708&Kal€am<Œah¡d1708<Œ",
+["208188"] = "¤aa¡d1708al€amÜ´ah¡d1708Ü´",
+["192894"] = "¤aa¡d1708Tal€am	Äah¡d1708	Ä",
+["211806"] = "¤aa¡d1708\000]tal€am_Pah¡d1708_P",
+["845"] = "¤aa¡d1705al€am\000‚Œ´ah¡d1705\000‚Œ´",
+["5739"] = "¤aa¡d1705al€am\000jÂÜah¡d1705\000jÂÜ",
+["224802"] = "¤aa¡d1708lal€am\000?\000ah¡d1708\000?\000",
+["127848"] = "¤aa¡d1708äal€am\000#ah¡d1708\000#",
+["55679"] = "¤aa¡d1705al€am\000Lqˆah¡d1705\000Lqˆ",
+["g:224604:564"] = "¤aa¡d1705al€ah¡d1705\000‰T@am\000‰T@",
+["164431"] = "¤aa¡d1705al€amXÏ˜€ah¡d1705XÏ˜€",
+["205171"] = "¤aa¡d1708al€am}ìah¡d1708}ì",
+["192857"] = "¤aa¡d1708al€am'ah¡d1708'",
+["129034"] = "¤aa¡d1708Âøal€am\000Ğah¡d1708\000Ğ",
+["35623"] = "¤aa¡d1708Tal€am\000€<ah¡d1708\000€<",
+["192847"] = "¤aa¡d1708˜al€amLah¡d1708L",
+["74662"] = "¤aa¡d1708Àal€am\000 ¼ah¡d1708\000 ¼",
+["194573"] = "¤aa¡d1708cal€am ah¡d1708 ",
+["g:165518:270"] = "¤aa¡d1705al€am\000LZah¡d1705\000LZ",
+["193227"] = "¤aa¡d1708al€am\000ôah¡d1708\000ô",
+["124112"] = "¤aa¡d1708)_al€amhah¡d1708h",
+["192846"] = "¤aa¡d1708Val€am'ah¡d1708'",
+["206434"] = "¤aa¡d1705al€amå>ah¡d1705å>",
+["76135"] = "¤aa¡d1708æal€am9lah¡d17089l",
+["152507"] = "¤aa¡d1708\000bcal€am!4ah¡d1708!4",
+["225567"] = "¤aa¡d1708\000ùKal€am)Ìah¡d1708)Ì",
+["g:172320:190"] = "¤aa¡d1705al€am\r(pah¡d1705\r(p",
+["4289"] = "¤aa¡d1708iïal€amÈah¡d1708È",
+["113355"] = "¤aa¡d1708\000	©al€amŸÄah¡d1708ŸÄ",
+["37145"] = "¤aa¡d1708al€amÃ´ah¡d1708Ã´",
+["34055"] = "¤aa¡d1708…ñal€am@ah¡d1708@",
+["36916"] = "¤aa¡d1708/al€am\000 „ah¡d1708\000 „",
+["224606"] = "¤aa¡d1705Ral¡d1705\000q°am\000q°ah¡d1705\000ÖĞ",
+["218336"] = "¤aa¡d1708\0001£al€amJœah¡d1708Jœ",
+["8839"] = "¤aa¡d1708\nal€am˜Xah¡d1708˜X",
+["27425"] = "¤aa¡d1708val€amüah¡d1708ü",
+["44156"] = "¤aa¡d1708-al€am\000ah¡d1708\000",
+["37921"] = "¤aa¡d1708	Çal€am0ah¡d17080",
+["128880"] = "¤aa¡d1705al€amb_ah¡d1705b_",
+["180055"] = "¤aa¡d1708Ïal€am'ah¡d1708'",
+["31884"] = "¤aa¡d1708ıal€am\000 ah¡d1708\000 ",
+["g:147038:241"] = "¤aa¡d1705al€amúğ€ah¡d1705úğ€",
+["193252"] = "¤aa¡d1708ÑSal€amah¡d1708",
+["25707"] = "¤aa¡d1708+al€am\000mah¡d1708\000m",
+["15304"] = "¤aa¡d1705al€amh•`ah¡d1705h•`",
+["818"] = "¤aa¡d1708Nîal€amaDah¡d1708aD",
+["199060"] = "¤aa¡d1708al€améüah¡d1708éü",
+["212316"] = "¤aa¡d1708al€am1Rah¡d17081R",
+["25868"] = "¤aa¡d17084al€am\000Õxpah¡d1708\000Õxp",
+["41163"] = "¤aa¡d1708ÿal€am\0009àah¡d1708\0009à",
+["194124"] = "¤aa¡d1708+ôal€amÛìah¡d1708Ûì",
+["128728"] = "¤aa¡d1708al€am\000yêğah¡d1708\000yêğ",
+["222611"] = "¤aa¡d1708al€amf@ah¡d1708f@",
+["79292"] = "¤aa¡d1708al€am\000è|ah¡d1708\000è|",
+["128013"] = "¤aa¡d1708al€amJ~ah¡d1708J~",
+["36934"] = "¤aa¡d1708Ral€am\000#Ìah¡d1708\000#Ì",
+["22788"] = "¤aa¡d17081al€am\000ûĞah¡d1708\000ûĞ",
+["6524"] = "¤aa¡d1705al€am™ç<ah¡d1705™ç<",
+["g:198245:326"] = "¤aa¡d1708al€am¡ \000ah¡d1708¡ \000",
+["198190"] = "¤aa¡d1708al€amÄah¡d1708Ä",
+["10286"] = "¤aa¡d1708ÉÃal€amah¡d1708",
+["173090"] = "¤aa¡d1708ral€am\000& Œah¡d1708\000& Œ",
+["219902"] = "¤aa¡d1708Tal€am\0005g|ah¡d1708\0005g|",
+["52983"] = "¤aa¡d1708ÿal€amtÌah¡d1708tÌ",
+["g:172255:200"] = "¤aa¡d1705al€amƒÅˆah¡d1705ƒÅˆ",
+["204996"] = "¤aa¡d1708Çal€am\000ƒah¡d1708\000ƒ",
+["108365"] = "¤aa¡d1708Îal€am\000‘lah¡d1708\000‘l",
+["7971"] = "¤aa¡d1708Cal€am\000pah¡d1708\000p",
+["15156"] = "¤aa¡d1705al€amf@ah¡d1705f@",
+["74840"] = "¤aa¡d1708Éúal€am>€ah¡d1708>€",
+["194541"] = "¤aa¡d1708%al€am\000ltah¡d1708\000lt",
+["38375"] = "¤aa¡d1708al€ah¡d1708LamL",
+["199962"] = "¤aa¡d1708al€ah¡d1708\000¡ am\000¡ ",
+["193238"] = "¤aa¡d17084al€am\000[€ah¡d1708\000[€",
+["221864"] = "¤aa¡d1708Îal€am\000¦dah¡d1708\000¦d",
+["21881"] = "¤aa¡d1708'pal€amèah¡d1708è",
+["g:204931:418"] = "¤aa¡d1705al€ah¡d1705\n!ş€am\n!ş€",
+["67335"] = "¤aa¡d1708kal€am\000$øah¡d1708\000$ø",
+["222663"] = "¤aa¡d1708üal€am\0008œah¡d1708\0008œ",
+["72092"] = "¤aa¡d1708\000b«al€amTÄah¡d1708TÄ",
+["193963"] = "¤aa¡d1708]al€amJ8ah¡d1708J8",
+["18335"] = "¤aa¡d1708Qal€am\000\"T¬ah¡d1708\000\"T¬",
+["16204"] = "¤aa¡d1708tDal€amah¡d1708",
+["7528"] = "¤aa¡d1705al€am\000M„ah¡d1705\000M„",
+["171290"] = "¤aa¡d1708?`al€am8@ah¡d17088@",
+["219478"] = "¤aa¡d1705al€am\000\r@ah¡d1705\000\r@",
+["59455"] = "¤aa¡d1705al€am¸Éah¡d1705¸É",
+["22456"] = "¤aa¡d170858al€am\000¨ah¡d1708\000¨",
+["221860"] = "¤aa¢d1708*Nd1712!al¡d1708\000ĞÜah¢d1708\000\rFpd1712\000\rö8am\000\rö8",
+["106698"] = "¤aa¡d1705al€amf@ah¡d1705f@",
+["15083"] = "¤aa¡d1705al€am\000‚}xah¡d1705\000‚}x",
+["44263"] = "¤aa¡d1708#al€am\000ÇÌah¡d1708\000ÇÌ",
+["151564"] = "¤aa¡d1708\000ı´al€amC”ah¡d1708C”",
+["24715"] = "¤aa¡d1705al€am\000&#Hah¡d1705\000&#H",
+["152877"] = "¤aa¡d1708\000åyal€amä„ah¡d1708ä„",
+["g:204415:493"] = "¤aa¡d1705al€ah¡d1705;šÊ\000am;šÊ\000",
+["193931"] = "¤aa¡d1708=Ral€am\000ah¡d1708\000",
+["g:188018:229"] = "¤aa¡d1705al€amvŞœah¡d1705vŞœ",
+["198253"] = "¤aa¡d1708!al€am}ˆah¡d1708}ˆ",
+["21153"] = "¤aa¡d1708'al€am'ah¡d1708'",
+["15425"] = "¤aa¡d1705al€am}xah¡d1705}x",
+["15415"] = "¤aa¡d1708al€am\000LK@ah¡d1708\000LK@",
+["210797"] = "¤aa¡d1708\000tòal€am\000Ípah¡d1708\000Íp",
+["10498"] = "¤aa¡d1708\nal€am\000¡ ah¡d1708\000¡ ",
+["158186"] = "¤aa¡d1708Øal€am ah¡d1708 ",
+["194862"] = "¤aa¡d1708¶al€am\000!W(ah¡d1708\000!W(",
+["198431"] = "¤aa¡d17082al€amT`ah¡d1708T`",
+["192834"] = "¤aa¡d1708ºal€amN ah¡d1708N ",
+["52188"] = "¤aa¡d1708Ïal€am\000EÀah¡d1708\000EÀ",
+["72163"] = "¤aa¡d1708Ïal€am\000E\\ah¡d1708\000E\\",
+["173098"] = "¤aa¡d1708.al€am\0000ah¡d1708\0000",
+["222610"] = "¤aa¡d1708=Ûal€am\000O€ah¡d1708\000O€",
+["193940"] = "¤aa¡d1708qal€am\0008Y\000ah¡d1708\0008Y\000",
+["16202"] = "¤aa¡d1708Eal€amGàah¡d1708Gà",
+["222582"] = "¤aa¡d1708²al€am\000?Bˆah¡d1708\000?Bˆ",
+["42253"] = "¤aa¡d1708!al€am'Øah¡d1708'Ø",
+["109626"] = "¤aa¡d1708wal€am#(ah¡d1708#(",
+["221914"] = "¤aa¡d1708Õal€am\000Xìah¡d1708\000Xì",
+["31904"] = "¤aa¡d1708al€am\000˜–€ah¡d1708\000˜–€",
+["124436"] = "¤aa¡d1708,al€am6Lah¡d17086L",
+["8925"] = "¤aa¡d1708al€am\000\r» ah¡d1708\000\r» ",
+["222618"] = "¤aa¡d1708äal€am\000ê|ah¡d1708\000ê|",
+["205413"] = "¤aa¡d1708/al€am@o@ah¡d1708@o@",
+["164388"] = "¤aa¡d1705al€amğÖøah¡d1705ğÖø",
+["19234"] = "¤aa¡d17083al€am}dah¡d1708}d",
+["g:221797:564"] = "¤aa£d1707d1712Gd1708al€ah£d1707>Æ\000d1712–0d1708O 0am–0",
+["9752"] = "¤aa¡d1705al€am*jìah¡d1705*jì",
+["106342"] = "¤aa¡d1705al€am\0003“èah¡d1705\0003“è",
+["41511"] = "¤aa¡d1708\n2al€amSüah¡d1708Sü",
+["124120"] = "¤aa¡d1708\000ŒĞal€am,ah¡d1708,",
+["30730"] = "¤aa¡d1705al€amúä\000ah¡d1705úä\000",
+["31889"] = "¤aa¡d1708al€am\n	Ìah¡d1708\n	Ì",
+["17056"] = "¤aa¡d1708\000¤nal€amdah¡d1708d",
+["35285"] = "¤aa¡d1708*al€am\000–ah¡d1708\000–",
+["g:221792:550"] = "¤aa£d1707d1712d1708\ral¡d1708\000 7 am\000˜–€ah£d1707\000§ØÀd1712\000˜–€d1708\000§ØÀ",
+["172096"] = "¤aa¡d1708\000½‚al€amÀ0ah¡d1708À0",
+["222796"] = "¤aa¡d1708\000_Cal€am\000ôah¡d1708\000ô",
+["4377"] = "¤aa¡d1708®al€amÙ”ah¡d1708Ù”",
+["213763"] = "¤aa¡d1708–al€am\000˜oah¡d1708\000˜o",
+["127732"] = "¤aa¡d1708al€amw5•ah¡d1708w5•",
+["166814"] = "¤aa¡d1705al€amSXah¡d1705SX",
+["3731"] = "¤aa¡d1708\rGal€am\000\r@ah¡d1708\000\r@",
+["198417"] = "¤aa¡d1708‚al€am\000İlah¡d1708\000İl",
+["24778"] = "¤aa¡d1705al€am\000\"Uah¡d1705\000\"U",
+["154989"] = "¤aa¡d1708Øal€am\000Oah¡d1708\000O",
+["25354"] = "¤aa¡d1705al€am\000/¿pah¡d1705\000/¿p",
+["82441"] = "¤aa¡d1708&±al€am&¬ah¡d1708&¬",
+["108307"] = "¤aa¡d1708½al€am\000+œah¡d1708\000+œ",
+["160400"] = "¤aa¡d1708@•al€am$ah¡d1708$",
+["85584"] = "¤aa¡d1708<al€amFPah¡d1708FP",
+["g:224607:545"] = "¤aa¡d1705al€ah¡d1705\0000°am\0000°",
+["32596"] = "¤aa¡d1708al€am\000˜–€ah¡d1708\000˜–€",
+["221912"] = "¤aa¡d1708êal€am\000!øah¡d1708\000!ø",
+["124111"] = "¤aa¡d1708-al€am	Äah¡d1708	Ä",
+["36901"] = "¤aa¡d1708M2al€amLah¡d1708L",
+["43105"] = "¤aa¡d1708al€am\000 ¬ah¡d1708\000 ¬",
+["g:224606:564"] = "¤aa¡d1705\ral€ah¡d1705\000Á0am\000Á0",
+["g:59467:177"] = "¤aa¡d1705al€am~ò$ah¡d1705~ò$",
+["153631"] = "¤aa¡d1708\nal€am\0009†ah¡d1708\0009†",
+["8831"] = "¤aa¡d1708¤al€am\000\n­üah¡d1708\000\n­ü",
+["210801"] = "¤aa¡d1708S(al€am\0008\\ah¡d1708\0008\\",
+["11186"] = "¤aa¡d1707ïal€am0Ôah¡d17070Ô",
+["41806"] = "¤aa¡d1708Mal€amäah¡d1708ä",
+["171830"] = "¤aa¡d1708Ì}al€am¯Èah¡d1708¯È",
+["g:106597:186"] = "¤aa¡d1705al€am\ru„Xah¡d1705\ru„X",
+["222737"] = "¤aa¡d1708\000…al€am\000ßhah¡d1708\000ßh",
+["198309"] = "¤aa¡d1708al€am'ah¡d1708'",
+["109143"] = "¤aa¡d1708ñïal€amah¡d1708",
+["15191"] = "¤aa¡d1705al€am¿\\Œah¡d1705¿\\Œ",
+["2325"] = "¤aa¡d1708'àal€am\000†<ah¡d1708\000†<",
+["213775"] = "¤aa¡d17082al€am®~0ah¡d1708®~0",
+["222701"] = "¤aa¡d1708\000š®al€am„ah¡d1708„",
+["192868"] = "¤aa¡d1708?˜al€amXah¡d1708X",
+["219884"] = "¤aa¡d1708?íal€am\000JÔ¤ah¡d1708\000JÔ¤",
+["173075"] = "¤aa¡d1708™al€am\000HS ah¡d1708\000HS ",
+["g:219478:558"] = "¤aa¡d1705al€amõ¹ğah¡d1705õ¹ğ",
+["177841"] = "¤aa¡d1708?al€am\000)/Àah¡d1708\000)/À",
+["106439"] = "¤aa¡d1705al€amÈphah¡d1705Èph",
+["108351"] = "¤aa¡d1708;al€am\000\"THah¡d1708\000\"TH",
+["190626"] = "¤aa¡d1705al€am\000\000\0000\000ah¡d1705\000\000\0000\000",
+["173089"] = "¤aa¡d1708(al€am\000ê¼ah¡d1708\000ê¼",
+["109693"] = "¤aa¡d1708\000Öoal€amXah¡d1708X",
+["168654"] = "¤aa¡d1708gal€am\000Úüah¡d1708\000Úü",
+["222881"] = "¤aa¡d1708eal€am\000(pah¡d1708\000(p",
+["198194"] = "¤aa¡d1708\000|äal€am\000Ù<ah¡d1708\000Ù<",
+["71806"] = "¤aa¡d1708Tal€am\000—Xah¡d1708\000—X",
+["192859"] = "¤aa¡d1708µal€am8@ah¡d17088@",
+["112180"] = "¤aa¡d1708!al€am\000ã\\ah¡d1708\000ã\\",
+["21024"] = "¤aa¡d1708¨al€am'ah¡d1708'",
+["58480"] = "¤aa¡d1708?al€am\0008Nah¡d1708\0008N",
+["g:224605:538"] = "¤aa¡d1705al€ah¡d1705\000-¼4am\000-¼4",
+["164430"] = "¤aa¡d1705al€am²èah¡d1705²è",
+["2836"] = "¤aa¡d1708al€am„ah¡d1708„",
+["152876"] = "¤aa¡d1708\000eòal€amN ah¡d1708N ",
+["g:219864:544"] = "¤aa¡d1708al€am\000‰SÜah¡d1708\000‰SÜ",
+["g:229073:558"] = "¤aa¡d1705al€am¯$ah¡d1705¯$",
+["198243"] = "¤aa¡d1708al€am\000—„¬ah¡d1708\000—„¬",
+["4063"] = "¤aa¡d1705al€am\000+ôah¡d1705\000+ô",
+["191468"] = "¤aa¡d1708¢Úal€amah¡d1708",
+["72162"] = "¤aa¡d1708·al€am ah¡d1708 ",
+["222654"] = "¤aa¡d1708èal€am\000§Œah¡d1708\000§Œ",
+["198200"] = "¤aa¡d1708al€am\0005gàah¡d1708\0005gà",
+["111650"] = "¤aa¡d1708	fal€am	Äah¡d1708	Ä",
+["172056"] = "¤aa¡d1708))al€amxah¡d1708x",
+["32480"] = "¤aa¡d1705al€am[•0ah¡d1705[•0",
+["102542"] = "¤aa¡d1708ual€am\000 Èah¡d1708\000 È",
+["223703"] = "¤aa¡d1708öal€ah¡d1708S\\amS\\",
+["128739"] = "¤aa¡d1708al€amëšğah¡d1708ëšğ",
+["8836"] = "¤aa¡d1708Úal€am\000<áğah¡d1708\000<áğ",
+["204909"] = "¤aa¡d1708al€am\000ó½Dah¡d1708\000ó½D",
+["111667"] = "¤aa¡d1708®al€amdah¡d1708d",
+["197765"] = "¤aa¡d1708al€am¼ah¡d1708¼",
+["194574"] = "¤aa¡d1708Óal€am\000Iğah¡d1708\000Iğ",
+["129287"] = "¤aa¡d1708Kal€am\000âüah¡d1708\000âü",
+["78267"] = "¤aa¡d1705al€am\rÂşTah¡d1705\rÂşT",
+["193244"] = "¤aa¡d1708›al€am\000—Ğah¡d1708\000—Ğ",
+["8263"] = "¤aa¡d1705al€am\000¾lah¡d1705\000¾l",
+["23077"] = "¤aa¡d1708\"^al€am&Hah¡d1708&H",
+["62018"] = "¤aa¡d1708al€am\000O€ah¡d1708\000O€",
+["867"] = "¤aa¡d1705al€amëÀÔah¡d1705ëÀÔ",
+["194790"] = "¤aa¡d1708¨al€am\000È8ah¡d1708\000È8",
+["192096"] = "¤aa¡d1708\000—Õal€am,ìah¡d1708,ì",
+["154120"] = "¤aa¡d1708[al€am\0008ah¡d1708\0008",
+["172318"] = "¤aa¡d1705al€am]J€ah¡d1705]J€",
+["222791"] = "¤aa¡d1708Ëüal€am\000¦`ah¡d1708\000¦`",
+["20424"] = "¤aa¡d1708¦al€am\000ú@ah¡d1708\000ú@",
+["222588"] = "¤aa¡d1708£al€am\000×ah¡d1708\000×",
+["55637"] = "¤aa¡d1705al€am\000*4Lah¡d1705\000*4L",
+["226022"] = "¤aa¡d1708¦al€am\000‰zìah¡d1708\000‰zì",
+["163569"] = "¤aa¡d1708\000SŠal€amah¡d1708",
+["g:60202:179"] = "¤aa¡d1705al€am1*Dah¡d17051*D",
+["62323"] = "¤aa¡d1708al€am\0008ah¡d1708\0008",
+["65365"] = "¤aa¡d1708lal€am\000\ráèah¡d1708\000\ráè",
+["44285"] = "¤aa¡d1708al€am\000&%<ah¡d1708\000&%<",
+["22576"] = "¤aa¡d17083¶al€am\000^dah¡d1708\000^d",
+["g:184789:190"] = "¤aa¡d1705al€amúİÀah¡d1705úİÀ",
+["189543"] = "¤aa¡d1708íal€am\000?ah¡d1708\000?",
+["18631"] = "¤aa¡d1708al€am\000Gxah¡d1708\000Gx",
+["22682"] = "¤aa¡d17082al€am\000Ñ,ah¡d1708\000Ñ,",
+["190533"] = "¤aa¡d1708>al€am\000v(ah¡d1708\000v(",
+["179314"] = "¤aa¡d1708Âal€am”ah¡d1708”",
+["187701"] = "¤aa¡d1708~al€amtah¡d1708t",
+["72093"] = "¤aa¡d1708\000al€am0Ôah¡d17080Ô",
+["g:159206:296"] = "¤aa¡d1705al€am\r>àtah¡d1705\r>àt",
+["g:204414:480"] = "¤aa¡d1705al€am\"òB”ah¡d1705\"òB”",
+["55684"] = "¤aa¡d1705al€am\000÷hah¡d1705\000÷h",
+["72988"] = "¤aa¡d1708œ\ral€am¤ah¡d1708¤",
+["39686"] = "¤aa¡d1708al€amYh/\000ah¡d1708Yh/\000",
+["193941"] = "¤aa¡d1708Aal€amoTah¡d1708oT",
+["7531"] = "¤aa¡d1705al€am\000O!Ğah¡d1705\000O!Ğ",
+["4305"] = "¤aa¡d1708€sal€am\"Äah¡d1708\"Ä",
+["194756"] = "¤aa¡d1708^al€am\000%×€ah¡d1708\000%×€",
+["15121"] = "¤aa¡d1705al¡d1705á¶$ah¡d1705á¶ˆamá¶$",
+["13113"] = "¤aa¡d1705al€am\000ŠØah¡d1705\000ŠØ",
+["g:121239:214"] = "¤aa¡d1705al€am\000®œah¡d1705\000®œ",
+["190321"] = "¤aa¡d1708”Mal€am\000J ah¡d1708\000J ",
+["222422"] = "¤aa¡d1708Öal€amº@ah¡d1708º@",
+["24716"] = "¤aa¡d1705al€am\000™öØah¡d1705\000™öØ",
+["g:152087:245"] = "¤aa¡d1705al€amuR@ah¡d1705uR@",
+["15414"] = "¤aa¡d1708Cal€am\000\r@ah¡d1708\000\r@",
+["173058"] = "¤aa¡d1708Qfal€am\000ïHah¡d1708\000ïH",
+["62783"] = "¤aa¡d1708al€amah¡d1708",
+["g:224601:561"] = "¤aa¡d1705al€ah¡d1705\000-ÆÀam\000-ÆÀ",
+["9777"] = "¤aa¡d1705al€am	N°Àah¡d1705	N°À",
+["44282"] = "¤aa¡d1708/al€am\000p”ah¡d1708\000p”",
+["108996"] = "¤aa¡d1708\000‘Íal€am@ah¡d1708@",
+["212665"] = "¤aa¡d1708\0002al€am\000˜ah¡d1708\000˜",
+["34736"] = "¤aa¡d1708ÿal€am\\ah¡d1708\\",
+["162517"] = "¤aa¡d17084al€am\000ftah¡d1708\000ft",
+["153627"] = "¤aa¡d1708al€am\000X4ah¡d1708\000X4",
+["113261"] = "¤aa¡d1708nóal€am„ah¡d1708„",
+["212564"] = "¤aa¡d1708'al€am\000Ôàah¡d1708\000Ôà",
+["115504"] = "¤aa¢d1707Ë’d1708ÆYal€ah¢d1707d1708\nğam\nğ",
+["222587"] = "¤aa¡d1708mal€amö ah¡d1708ö ",
+["222657"] = "¤aa¡d1708¨al€am\000÷èah¡d1708\000÷è",
+["221938"] = "¤aa¡d1708Eal€ah¡d1708\000Ëtam\000Ët",
+["g:219480:548"] = "¤aa¡d1705al€am\0005\000ah¡d1705\0005\000",
+["190331"] = "¤aa¡d1708º$al€am\000ÏÈah¡d1708\000ÏÈ",
+["193247"] = "¤aa¡d1708al€am\0004Pah¡d1708\0004P",
+["212305"] = "¤aa¡d1708al€am\000ï´ah¡d1708\000ï´",
+["208420"] = "¤aa¡d1705al€ah¡d1705\000\000\0000\000am\000\000\0000\000",
+["4236"] = "¤aa¡d17082al€am\000ôğah¡d1708\000ôğ",
+["192865"] = "¤aa¡d1708Zal€amah¡d1708",
+["2324"] = "¤aa¡d1708\000œ al€amÈah¡d1708È",
+["221942"] = "¤aa¡d1708Âal€ah¡d1708\000m¾ìam\000m¾ì",
+["204928"] = "¤aa¡d1705al€am\n.5tah¡d1705\n.5t",
+["212278"] = "¤aa¡d1708al€am\0008´ah¡d1708\0008´",
+["43121"] = "¤aa¡d1708‰al€amu0ah¡d1708u0",
+["6471"] = "¤aa¡d1708*al€am8@ah¡d17088@",
+["109129"] = "¤aa¡d1708Ôal€am5 ah¡d17085 ",
+["13468"] = "¤aa¡d1708.al€am\000s40ah¡d1708\000s40",
+["210807"] = "¤aa¡d1708¥al€am\000àah¡d1708\000à",
+["g:220322:362"] = "¤aa¡d1705al€am\000àøah¡d1705\000àø",
+["52179"] = "¤aa¡d17087zal€am\000_,ah¡d1708\000_,",
+["g:15012:357"] = "¤aa¡d1705al€am\000DÏ ah¡d1705\000DÏ ",
+["109140"] = "¤aa¡d1708\000šjal€amĞah¡d1708Ğ",
+["36922"] = "¤aa¡d1708Tal€am\000Ğ,ah¡d1708\000Ğ,",
+["109144"] = "¤aa¡d1708\000gÈal€am¼ah¡d1708¼",
+["154898"] = "¤aa¡d1708h@al€am¼ah¡d1708¼",
+["5471"] = "¤aa¡d1708’al€amôah¡d1708ô",
+["2471"] = "¤aa¡d1705al€am\000¤_Lah¡d1705\000¤_L",
+["19260"] = "¤aa¡d1708al€am\000xah¡d1708\000x",
+["g:220315:362"] = "¤aa¡d1705al€am\000“àah¡d1705\000“à",
+["194856"] = "¤aa¡d1708‚al€am‡Œah¡d1708‡Œ",
+["204930"] = "¤aa¡d1705al€amÑnhah¡d1705Ñnh",
+["168417"] = "¤aa¡d1708al€ah¡d1708\000ÕŸ€am\000ÕŸ€",
+["8171"] = "¤aa¡d1708€|al€am'ah¡d1708'",
+["220141"] = "¤aa¡d1708B†al€am\000YHah¡d1708\000YH",
+["44288"] = "¤aa¡d1708Aal€am\000#Ù¼ah¡d1708\000#Ù¼",
+["37143"] = "¤aa¡d1708Dal€am§0ah¡d1708§0",
+["5784"] = "¤aa¡d1708Ióal€am„ah¡d1708„",
+["212312"] = "¤aa¡d1708	Zal€am\000 x€ah¡d1708\000 x€",
+["2592"] = "¤aa¡d1708\000ø?al€am¼ah¡d1708¼",
+["52718"] = "¤aa¡d1708,al€amÖah¡d1708Ö",
+["151579"] = "¤aa¡d17082hal€am\000\\ah¡d1708\000\\",
+["173162"] = "¤aa¡d17085al€am\000\r(ah¡d1708\000\r(",
+["79286"] = "¤aa¡d1708al€am\0000ah¡d1708\0000",
+["g:9382:247"] = "¤aa¡d1705al€am9Ş\000ah¡d17059Ş\000",
+["200074"] = "¤aa¡d1708p\000al€am\rHah¡d1708\rH",
+["56477"] = "¤aa¡d1708áal€ah¡d1708am",
+["108297"] = "¤aa¡d1708Fal€am:˜ah¡d1708:˜",
+["44500"] = "¤aa¡d1708±al€am\000ô$\000ah¡d1708\000ô$\000",
+["109137"] = "¤aa¡d1708\000ñ!al€am¼ah¡d1708¼",
+["g:221799:544"] = "¤aa£d1707d1712\rd1708al€ah£d1707=ád1712‰·¼d1708=áam‰·¼",
+["194970"] = "¤aa¡d1708\000Äöal€am$Tah¡d1708$T",
+["g:221795:550"] = "¤aa£d1707d1712d1708al¡d1708\000ä“ ah£d1707\000äá\\d1712\000ûÅ d1708\000äá\\am\000ûÅ ",
+["201402"] = "¤aa¡d1708al€amRĞah¡d1708RĞ",
+["14562"] = "¤aa¡d1705al€am© ah¡d1705© ",
+["36077"] = "¤aa¡d1705al€am{rŒah¡d1705{rŒ",
+["12365"] = "¤aa¡d1708\000MÜal€am,ah¡d1708,",
+["g:198204:346"] = "¤aa¡d1708al€am&ah¡d1708&",
+["4337"] = "¤aa¡d1708 gal€am$ah¡d1708$",
+["192876"] = "¤aa¡d1708pal€amL,ah¡d1708L,",
+["190395"] = "¤aa¤d1705Cd1712˜°d1707\000fd1708\000—Óal£d1705'd1712\000<hd1708,ìam\000<hah¤d17056°d1712\000@Pd1707\000; d1708\000_,",
+["192838"] = "¤aa¡d1708!“al€amÀah¡d1708À",
+["153620"] = "¤aa¡d1708*al€am\000>Àah¡d1708\000>À",
+["171441"] = "¤aa¡d1708ual€am+\\ah¡d1708+\\",
+["124442"] = "¤aa¡d1708É^al€am\000*pah¡d1708\000*p",
+["193210"] = "¤aa¡d1708\000!al€amˆah¡d1708ˆ",
+["62779"] = "¤aa¡d17080!al€amèah¡d1708è",
+["35562"] = "¤aa¡d1708ial€amË ah¡d1708Ë ",
+["3890"] = "¤aa¡d1705al€am\000ãLHah¡d1705\000ãLH",
+["61997"] = "¤aa¡d1708al€am\000„ah¡d1708\000„",
+["4371"] = "¤aa¡d1708B)al€am\000Iğah¡d1708\000Iğ",
+["193250"] = "¤aa¡d1708 al€am\000&% ah¡d1708\000&% ",
+["121188"] = "¤aa¡d1705al€amk Œah¡d1705k Œ",
+["22574"] = "¤aa¡d17089al€am\000÷ ah¡d1708\000÷ ",
+["152512"] = "¤aa¡d1708\000[·al€am§”ah¡d1708§”",
+["224804"] = "¤aa¡d1708Pâal€am\000­°ah¡d1708\000­°",
+["222665"] = "¤aa¡d1708¹al€am\000‘lah¡d1708\000‘l",
+["44290"] = "¤aa¡d17082al€am\0000Óœah¡d1708\0000Óœ",
+["814"] = "¤aa¡d17082al€amôah¡d1708ô",
+["173077"] = "¤aa¡d1708\\al€am\000LILah¡d1708\000LIL",
+["152505"] = "¤aa¡d1708\000U)al€am@ah¡d1708@",
+["21877"] = "¤aa¡d1708\000x.al€am ah¡d1708 ",
+["191327"] = "¤aa¡d1708Aal€am€èah¡d1708€è",
+["g:224602:532"] = "¤aa¡d1705al€ah¡d1705\0005gàam\0005gà",
+["79291"] = "¤aa¡d1708al€am\000—–¤ah¡d1708\000—–¤",
+["6371"] = "¤aa¡d1708al€am\000tah¡d1708\000t",
+["130181"] = "¤aa¡d1708^al€am\000nah¡d1708\000n",
+["24694"] = "¤aa¡d1705al€amnèah¡d1705nè",
+["102218"] = "¤aa¡d1708	al€am\000<ah¡d1708\000<",
+["43646"] = "¤aa¡d1708wal€amah¡d1708",
+["32600"] = "¤aa¡d1708	al€amM	lah¡d1708M	l",
+["13466"] = "¤aa¡d1708§al€am\0008€ah¡d1708\0008€",
+["72094"] = "¤aa¡d1708 ~al€am\000™`ah¡d1708\000™`",
+["82094"] = "¤aa¡d1705al€ah¡d1705\000÷Äam\000÷Ä",
+["38557"] = "¤aa¡d1708|al€am4¼ah¡d17084¼",
+["74859"] = "¤aa¡d1708Ôal€amK\000ah¡d1708K\000",
+["159959"] = "¤aa¡d1708@‚al€amah¡d1708",
+["173110"] = "¤aa¡d1708Ùal€amixah¡d1708ix",
+["43647"] = "¤aa¡d1708àal€am\000†<ah¡d1708\000†<",
+["g:224603:558"] = "¤aa¡d1705al€am\000&% ah¡d1705\000&% ",
+["21844"] = "¤aa¡d1708°al€am\000!´ah¡d1708\000!´",
+["221870"] = "¤aa¢d1712¸d1708Yal€am\000‰pah¢d1712\000‰pd1708\000·ø",
+["3685"] = "¤aa¡d1708Wpal€am¤ah¡d1708¤",
+["127681"] = "¤aa¡d1708Y¦al€amBÌah¡d1708BÌ",
+["g:198245:339"] = "¤aa¡d1708al€am\n}Œ\000ah¡d1708\n}Œ\000",
+["222802"] = "¤aa¡d1708#al€am\000AuĞah¡d1708\000AuĞ",
+["4375"] = "¤aa¡d1708.¼al€am\0001Œah¡d1708\0001Œ",
+["197755"] = "¤aa¡d1708a®al€am,ah¡d1708,",
+["19236"] = "¤aa¡d1708Wal€am\000åah¡d1708\000å",
+["40195"] = "¤aa¡d1708(.al€amˆ¸ah¡d1708ˆ¸",
+["221927"] = "¤aa¡d1708ªal€am\000˜ah¡d1708\000˜",
+["190329"] = "¤aa¡d1708f¤al€am\000Yah¡d1708\000Y",
+["3022"] = "¤aa¡d1705al€amu[¸ah¡d1705u[¸",
+["173171"] = "¤aa¡d1708Ğal€ambah¡d1708b",
+["123918"] = "¤aa¡d1708\000Ñ~al€amÀ”ah¡d1708À”",
+["2371"] = "¤aa¡d1705al€am²\r”ah¡d1705²\r”",
+["222669"] = "¤aa¡d1708\n‚al€am\000Kah¡d1708\000K",
+["15139"] = "¤aa¡d1705al€am\000ûÅ ah¡d1705\000ûÅ ",
+["222670"] = "¤aa¡d1708al€am\000Güah¡d1708\000Gü",
+["175788"] = "¤aa¡d1708\000•˜al€amJœah¡d1708Jœ",
+["14342"] = "¤aa¡d1708al€am\000'«xah¡d1708\000'«x",
+["29547"] = "¤aa¡d1708şal€am\000\ruPah¡d1708\000\ruP",
+["212669"] = "¤aa¡d1708\000¾¿al€am\000ÄØah¡d1708\000ÄØ",
+["172315"] = "¤aa¡d1705al€am»ø ah¡d1705»ø ",
+["68757"] = "¤aa¡d1705al€am\000&Œ\\ah¡d1705\000&Œ\\",
+["153051"] = "¤aa¡d1708\000™™al€amôah¡d1708ô",
+["221936"] = "¤aa¡d1708Xal€ah¡d1708}wÜam}wÜ",
+["g:14560:320"] = "¤aa¡d1705al€amî{ah¡d1705î{",
+["128717"] = "¤aa¡d1708al€am\000‡°ah¡d1708\000‡°",
+["90407"] = "¤aa¡d1708­al€amĞah¡d1708Ğ",
+["221918"] = "¤aa¡d1708al€am\000-eah¡d1708\000-e",
+["g:121079:214"] = "¤aa¡d1705al€am\000´Ğah¡d1705\000´Ğ",
+["111601"] = "¤aa¡d1708ILal€am‚ah¡d1708‚",
+["36781"] = "¤aa¡d1708Æal€am\000$øah¡d1708\000$ø",
+["109124"] = "¤aa¡d1708üŸal€am6Lah¡d17086L",
+["172437"] = "¤aa¡d1708?al€am\000‘dah¡d1708\000‘d",
+["222699"] = "¤aa¡d1708\000	ƒal€amah¡d1708",
+["32229"] = "¤aa¡d1708\ral€amé4ah¡d1708é4",
+["g:224602:545"] = "¤aa¡d1705al€ah¡d1705\000JÄ am\000JÄ ",
+["2450"] = "¤aa¡d1708\0000­al€amú\000ah¡d1708ú\000",
+["192554"] = "¤aa¡d1708Lal€am.àah¡d1708.à",
+["36860"] = "¤aa¡d1708\nÇal€am\000[üah¡d1708\000[ü",
+["191523"] = "¤aa¡d1708Àal€amM¼ah¡d1708M¼",
+["7077"] = "¤aa¡d1708UËal€amah¡d1708",
+["112293"] = "¤aa¡d1708%al€am\000­Lah¡d1708\000­L",
+["7071"] = "¤aa¡d17082al€ama¨ah¡d1708a¨",
+["212666"] = "¤aa¡d1708\000/al€am\000zXah¡d1708\000zX",
+["4382"] = "¤aa¡d1708Aal€am\000Vhah¡d1708\000Vh",
+["173095"] = "¤aa¡d1708„al€am\000o)ah¡d1708\000o)",
+["212670"] = "¤aa¡d1708W™al€am\000ÿÜah¡d1708\000ÿÜ",
+["g:188015:229"] = "¤aa¡d1705al€am0ô\\ah¡d17050ô\\",
+["127731"] = "¤aa¡d1708al€amw5º¬ah¡d1708w5º¬",
+["109629"] = "¤aa¡d1708al€am3ah¡d17083",
+["106404"] = "¤aa¡d1705al€amÈ:Üah¡d1705È:Ü",
+["191320"] = "¤aa¡d1708$al€am\000­°ah¡d1708\000­°",
+["2963"] = "¤aa¡d1705al€am øah¡d1705 ø",
+["130177"] = "¤aa¡d1708Tal€am\000¿ ah¡d1708\000¿ ",
+["1080"] = "¤aa¡d1708Ìal€am	Äah¡d1708	Ä",
+["222646"] = "¤aa¡d1708al€amÀy ah¡d1708Ày ",
+["194806"] = "¤aa¡d1708Gal€am\000à¸ah¡d1708\000à¸",
+["225565"] = "¤aa¡d1708\000âal€am,$ah¡d1708,$",
+["g:219479:548"] = "¤aa¡d1705al€am\000Éœah¡d1705\000Éœ",
+["201601"] = "¤aa¡d1708al€am\000LK@ah¡d1708\000LK@",
+["7082"] = "¤aa¡d1708ƒal€am\000©\000ah¡d1708\000©\000",
+["5082"] = "¤aa¡d1708Wal€am\000Dƒah¡d1708\000Dƒ",
+["222666"] = "¤aa¡d1708®al€am\000\r@ah¡d1708\000\r@",
+["36931"] = "¤aa¡d1708õal€am\000q\000ah¡d1708\000q\000",
+["g:224607:538"] = "¤aa¡d1705al€ah¡d1705\0005g|am\0005g|",
+["36134"] = "¤aa¡d1705al€amï8ah¡d1705ï8",
+["2374"] = "¤aa¡d1705al€am””ˆah¡d1705””ˆ",
+["18567"] = "¤aa¡d1708çal€am\000İXah¡d1708\000İX",
+["221857"] = "¤aa¢d1712^Cd1708NÍal€ah¢d1712\000ˆd1708\000pèam\000ˆ",
+["194792"] = "¤aa¡d1708dal€am\000ÎÀah¡d1708\000ÎÀ",
+["153615"] = "¤aa¡d1708Xal€amB#0ah¡d1708B#0",
+["200005"] = "¤aa¡d17083al€ah¡d1708\000Ğam\000Ğ",
+["6586"] = "¤aa¡d1705al€am\000=ğah¡d1705\000=ğ",
+["34330"] = "¤aa¡d1708@al€ah¡d1708M¼amM¼",
+["222794"] = "¤aa¡d1708¼®al€am\000ó¸ah¡d1708\000ó¸",
+["720"] = "¤aa¡d1705al€am°•ah¡d1705°•",
+["108343"] = "¤aa¡d1708Üal€am ah¡d1708 ",
+["22797"] = "¤aa¡d1708Wal€am\000Kı ah¡d1708\000Kı ",
+["194803"] = "¤aa¡d1708eal€am\000† ah¡d1708\000† ",
+["201406"] = "¤aa¡d1708‚al€am\000sah¡d1708\000s",
+["76134"] = "¤aa¡d1708®al€amN„ah¡d1708N„",
+["52195"] = "¤aa¡d1708­al€am\000[`ah¡d1708\000[`",
+["172439"] = "¤aa¡d1708_al€amrØah¡d1708rØ",
+["43117"] = "¤aa¡d1708al€am}dah¡d1708}d",
+["74860"] = "¤aa¡d1708%al€amœ@ah¡d1708œ@",
+["124110"] = "¤aa¡d1708(tal€amèah¡d1708è",
+["219947"] = "¤aa¡d1708\000ˆ	al€am\000»Äah¡d1708\000»Ä",
+["128741"] = "¤aa¡d1708al€amÉÁ(ah¡d1708ÉÁ(",
+["g:204415:415"] = "¤aa¡d1705al€ah¡d1705“95€am“95€",
+["g:224601:506"] = "¤aa¡d1705al€ah¡d1705\000Õû°am\000Õû°",
+["32598"] = "¤aa¡d17080al€am\000Ê”ah¡d1708\000Ê”",
+["g:106531:186"] = "¤aa¡d1705al€am‰İ<ah¡d1705‰İ<",
+["13754"] = "¤aa¡d1708\nTal€am[Ìah¡d1708[Ì",
+["36169"] = "¤aa¡d1705al€ah¡d1705Ä˜amÄ˜",
+["220143"] = "¤aa¡d1708)âal€am\000©€ah¡d1708\000©€",
+["71998"] = "¤aa¡d1708.al€amĞah¡d1708Ğ",
+["198203"] = "¤aa¡d1708\000,¡al€am\000Xah¡d1708\000X",
+["160711"] = "¤aa¡d1708*©al€amdah¡d1708d",
+["173172"] = "¤aa¡d1708Bal€aml˜ah¡d1708l˜",
+["9382"] = "¤aa¡d1705al€am9Ş\000ah¡d17059Ş\000",
+["171291"] = "¤aa¡d1708Xal€am–dah¡d1708–d",
+["173103"] = "¤aa¡d1708‰al€am\000„€ah¡d1708\000„€",
+["194809"] = "¤aa¡d17086al€am\000‰Sah¡d1708\000‰S",
+["44269"] = "¤aa¡d1708al€am\000¯yàah¡d1708\000¯yà",
+["3486"] = "¤aa¡d1708Bal€amJ8ah¡d1708J8",
+["116170"] = "¤aa¡d1708«al€am|ah¡d1708|",
+["94269"] = "¤aa¡d1705al€am.ääah¡d1705.ää",
+["210120"] = "¤aa¡d1705al€am/‘$ah¡d1705/‘$",
+["14561"] = "¤aa¡d1705al€am™ª|ah¡d1705™ª|",
+["212505"] = "¤aa¢d17129d1708G9al¡d1712\000t¬ah¢d1712\000utd1708\000\rLLam\000t¬",
+["g:224602:538"] = "¤aa¡d1705al€ah¡d1705\000<E°am\000<E°",
+["76139"] = "¤aa¡d1708éal€am\000/¼ah¡d1708\000/¼",
+["129032"] = "¤aa¡d1708\000o\ral€am\000½Pah¡d1708\000½P",
+["g:24709:197"] = "¤aa¡d1705al€am\000˜\n¨ah¡d1705\000˜\n¨",
+["186362"] = "¤aa¡d1705al€amğªpah¡d1705ğªp",
+["31562"] = "¤aa¡d1705al€am«?dah¡d1705«?d",
+["191516"] = "¤aa¡d1708	?al€amœah¡d1708œ",
+["19230"] = "¤aa¡d1708Lal€am\000† ah¡d1708\000† ",
+["112275"] = "¤aa¡d1708al€am\000_ah¡d1708\000_",
+["222559"] = "¤aa¡d17089al€am\000K•œah¡d1708\000K•œ",
+["198307"] = "¤aa¡d1708)al€am\000ÔÀah¡d1708\000ÔÀ",
+["208746"] = "¤aa¡d1708al€am\000† ah¡d1708\000† ",
+["106701"] = "¤aa¡d1705al€am\000²¾˜ah¡d1705\000²¾˜",
+["208189"] = "¤aa¡d1708sal€am\000O€ah¡d1708\000O€",
+["222512"] = "¤aa¡d1708al€am\000%bPah¡d1708\000%bP",
+["212275"] = "¤aa¡d1708òal€am\0009Äah¡d1708\0009Ä",
+["192844"] = "¤aa¡d1708|al€amÀah¡d1708À",
+["204934"] = "¤aa¡d1705al€am2©ø€ah¡d17052©ø€",
+["178787"] = "¤aa¡d1708\n:al€am\000B@ah¡d1708\000B@",
+["222685"] = "¤aa¡d1708$¼al€am\000† ah¡d1708\000† ",
+["79311"] = "¤aa¡d1708al€am\000Lah¡d1708\000L",
+["35627"] = "¤aa¡d1708al€am\000fĞah¡d1708\000fĞ",
+["78263"] = "¤aa¡d1705al€am.ôjôah¡d1705.ôjô",
+["120"] = "¤aa¡d1705al€am0Æ ah¡d17050Æ ",
+["173079"] = "¤aa¡d1708=al€am\000ah¡d1708\000",
+["204929"] = "¤aa¡d1705al€am\n«Ğìah¡d1705\n«Ğì",
+["19275"] = "¤aa¡d1708al€am\000,Ğah¡d1708\000,Ğ",
+["24477"] = "¤aa¡d1708r¯al€amÈah¡d1708È",
+["g:152413:245"] = "¤aa¡d1705al€am5¤ÀÄah¡d17055¤ÀÄ",
+["1965"] = "¤aa¡d1705al€am‘Uš`ah¡d1705‘Uš`",
+["153603"] = "¤aa¡d1708al€am\000q°ah¡d1708\000q°",
+["190538"] = "¤aa¡d1708al€am\000\"Q(ah¡d1708\000\"Q(",
+["g:172318:190"] = "¤aa¡d1705al€am]J€ah¡d1705]J€",
+["225671"] = "¤aa¡d17082al€am\000kàah¡d1708\000kà",
+["19231"] = "¤aa¡d1708al€amÂ$ah¡d1708Â$",
+["16000"] = "¤aa¡d1708,al€am\000\\Àah¡d1708\000\\À",
+["200581"] = "¤aa¡d17084al€amJ8ah¡d1708J8",
+["198237"] = "¤aa¡d1708,al€am+Àah¡d1708+À",
+["109147"] = "¤aa¡d1708Æal€am\000¤Pah¡d1708\000¤P",
+["52843"] = "¤aa¡d1708õal€am\000€ah¡d1708\000€",
+["198238"] = "¤aa¡d17089al€am\000’Xah¡d1708\000’X",
+["219946"] = "¤aa¡d1708\000Úal€am\000¼Œah¡d1708\000¼Œ",
+["109118"] = "¤aa¡d1708\000AÂal€amàah¡d1708à",
+["g:186359:252"] = "¤aa¡d1705al€am2Í1°ah¡d17052Í1°",
+["118565"] = "¤aa¡d1708]al€am\000f¦èah¡d1708\000f¦è",
+["39354"] = "¤aa¡d1708\000'úöal€amdah¡d1708d",
+["7068"] = "¤aa¡d1708Õøal€amah¡d1708",
+["142336"] = "¤aa¡d1708-°al€am,ah¡d1708,",
+["213770"] = "¤aa¡d1708ºal€amtÛpah¡d1708tÛp",
+["153605"] = "¤aa¡d1708al€amÉÃ€ah¡d1708ÉÃ€",
+["6889"] = "¤aa¡d1708¿al€amÍah¡d1708Í",
+["36912"] = "¤aa¡d17081Oal€am\000[Dah¡d1708\000[D",
+["31882"] = "¤aa¡d1708:al€am\000}äah¡d1708\000}ä",
+["222619"] = "¤aa¡d1708\000¥¨al€am\000GØah¡d1708\000GØ",
+["72104"] = "¤aa¡d1708,al€am\000)ö0ah¡d1708\000)ö0",
+["g:224602:558"] = "¤aa¡d1705*al€am\000&.8ah¡d1705\000&.8",
+["178786"] = "¤aa¡d1708'½al€am„ah¡d1708„",
+["173142"] = "¤aa¡d1708al€am\000û`ah¡d1708\000û`",
+["132505"] = "¤aa¡d1705al€am13¤ah¡d170513¤",
+["109133"] = "¤aa¡d1708al€am<ah¡d1708<",
+["7079"] = "¤aa¡d1708„<al€am ah¡d1708 ",
+["67229"] = "¤aa¡d1708.al€am}\000ah¡d1708}\000",
+["77467"] = "¤aa¡d1708‡al€am\000I(ah¡d1708\000I(",
+["219950"] = "¤aa¡d1708\000‡ al€am\000PTah¡d1708\000PT",
+["127713"] = "¤aa¡d1708al€amæZ‹`ah¡d1708æZ‹`",
+["15179"] = "¤aa¡d1705al€am´€ah¡d1705´€",
+["191359"] = "¤aa¡d1708$öal€am\000+ğah¡d1708\000+ğ",
+["52327"] = "¤aa¡d1708Ø‘al€am\000†<ah¡d1708\000†<",
+["129286"] = "¤aa¡d1708Dal€am\000%^hah¡d1708\000%^h",
+["220153"] = "¤aa¡d1708jal€am\000[§Hah¡d1708\000[§H",
+["204932"] = "¤aa¡d1705al€amĞ8ah¡d1705Ğ8",
+["191467"] = "¤aa¡d1708al€am	Äah¡d1708	Ä",
+["198199"] = "¤aa¡d1708Ãal€am\000»ˆah¡d1708\000»ˆ",
+["222655"] = "¤aa¡d1708!al€am\000llah¡d1708\000ll",
+["43104"] = "¤aa¡d1708al€am\000môah¡d1708\000mô",
+["74659"] = "¤aa¡d1708Lal€am:˜ah¡d1708:˜",
+["9950"] = "¤aa¡d1705al€am\000\\È¼ah¡d1705\000\\È¼",
+["188658"] = "¤aa¡d1708\000PĞal€am\000\"àah¡d1708\000\"à",
+["g:204930:379"] = "¤aa¡d1705al€amÑnhah¡d1705Ñnh",
+["111652"] = "¤aa¡d1708üal€am˜ah¡d1708˜",
+["12803"] = "¤aa¡d1708!¨al€am\000Dah¡d1708\000D",
+["193261"] = "¤aa¡d1708sNal€amèah¡d1708è",
+["220150"] = "¤aa¡d1708ñal€am\000Û¸ah¡d1708\000Û¸",
+["64392"] = "¤aa¡d1708al€am\000\r”,ah¡d1708\000\r”,",
+["168652"] = "¤aa¡d1708Öal€am\000¢$ah¡d1708\000¢$",
+["227770"] = "¤aa¡d1708³al€am1Räah¡d17081Rä",
+["g:147516:214"] = "¤aa¡d1705al€amÇdah¡d1705Çd",
+["153624"] = "¤aa¡d1708al€am\000álah¡d1708\000ál",
+["222583"] = "¤aa¡d1708’al€amÎÈah¡d1708ÎÈ",
+["13889"] = "¤aa¡d1708\n`al€amò0ah¡d1708ò0",
+["9854"] = "¤aa¡d1705al€am\000C§ˆah¡d1705\000C§ˆ",
+["2986"] = "¤aa¡d1705al€am Øˆah¡d1705 Øˆ",
+["64397"] = "¤aa¡d1708ìal€amÉÃ€ah¡d1708ÉÃ€",
+["19281"] = "¤aa¡d1708al€am\0003’¼ah¡d1708\0003’¼",
+["g:106670:186"] = "¤aa¡d1705al€amtf›Àah¡d1705tf›À",
+["153607"] = "¤aa¡d1708al€am\000¦Üah¡d1708\000¦Ü",
+["204994"] = "¤aa¡d1708al€am\000·.ìah¡d1708\000·.ì",
+["213221"] = "¤aa¡d1708Ğ al€am\000!‘Àah¡d1708\000!‘À",
+["2463"] = "¤aa¡d1705al€am\000ÑÑHah¡d1705\000ÑÑH",
+["108296"] = "¤aa¡d1708Zal€am\000Š@ah¡d1708\000Š@",
+["197722"] = "¤aa¡d1708=Œal€am\000iah¡d1708\000i",
+["201405"] = "¤aa¡d1708	Úal€am\000ùdah¡d1708\000ùd",
+["193369"] = "¤aa¡d1708\000H¤al€amah¡d1708",
+["109135"] = "¤aa¡d1708'Ãal€am&¬ah¡d1708&¬",
+["190531"] = "¤aa¡d1708\n@al€am\000Á8ah¡d1708\000Á8",
+["193952"] = "¤aa¡d1708Ğal€am	Äah¡d1708	Ä",
+["g:172315:190"] = "¤aa¡d1705al€am»ø ah¡d1705»ø ",
+["169407"] = "¤aa¡d1705al€am‹^Èah¡d1705‹^È",
+["52181"] = "¤aa¡d1708al€am\000¼ˆah¡d1708\000¼ˆ",
+["171287"] = "¤aa¡d1708=al€amBah¡d1708B",
+["43115"] = "¤aa¡d1708öal€amÔäah¡d1708Ôä",
+["2924"] = "¤aa¡d1708±al€amah¡d1708",
+["11371"] = "¤aa¡d1708‰al€am\000¼|ah¡d1708\000¼|",
+["2886"] = "¤aa¡d1708\nal€amˆah¡d1708ˆ",
+["32249"] = "¤aa¡d1708±al€am›ah¡d1708›",
+["194754"] = "¤aa¡d1708àal€am\000‹\000ah¡d1708\000‹\000",
+["228233"] = "¤aa¡d1708\000–óal€ameah¡d1708e",
+["g:224602:506"] = "¤aa¡d1705al€ah¡d1705\0005gàam\0005gà",
+["19263"] = "¤aa¡d1708\nal€amúğah¡d1708úğ",
+["51950"] = "¤aa¡d1708<Bal€am\000\"àah¡d1708\000\"à",
+["14685"] = "¤aa¡d1705al€am[#0ah¡d1705[#0",
+["108346"] = "¤aa¡d1708al€am–\000ah¡d1708–\000",
+["200565"] = "¤aa¡d1708wal€am\0007¸ah¡d1708\0007¸",
+["g:71640:181"] = "¤aa¡d1705al€am\000ReÀah¡d1705\000ReÀ",
+["10938"] = "¤aa¡d1708\000Ual€am%äah¡d1708%ä",
+["173108"] = "¤aa¡d1708÷al€ambÔah¡d1708bÔ",
+["13757"] = "¤aa¡d1708šal€am&Hah¡d1708&H",
+["45709"] = "¤aa¡d1705al€am\000\\hah¡d1705\000\\h",
+["15412"] = "¤aa¡d1708#al€am¯Èah¡d1708¯È",
+["74844"] = "¤aa¡d1708ûèal€amlah¡d1708l",
+["193379"] = "¤aa¡d1708`al€am\000†<ah¡d1708\000†<",
+["9886"] = "¤aa¡d1705al€am\000\"lah¡d1705\000\"l",
+["8750"] = "¤aa¡d1705al€am\0000ah¡d1705\0000",
+["194575"] = "¤aa¡d1708%al€am\000—¤ah¡d1708\000—¤",
+["8846"] = "¤aa¡d1708%İal€amÂìah¡d1708Âì",
+["7910"] = "¤aa¡d1708W‡al€amˆah¡d1708ˆ",
+["130176"] = "¤aa¡d1708òal€amKdah¡d1708Kd",
+["112299"] = "¤aa¡d1708al€amúğ€ah¡d1708úğ€",
+["22710"] = "¤aa¡d1708}al€am\0004Pah¡d1708\0004P",
+["41813"] = "¤aa¡d1708Ÿal€am&¬ah¡d1708&¬",
+["12203"] = "¤aa¡d1708Üíal€amÈah¡d1708È",
+["g:224606:558"] = "¤aa¡d1705'al¡d1705\000q°am\000q°ah¡d1705\000ÖĞ",
+["19232"] = "¤aa¡d1708Šal€am\000¶Hah¡d1708\000¶H",
+["79253"] = "¤aa¡d1708“al€am\000âlah¡d1708\000âl",
+["g:224605:561"] = "¤aa¡d1705al€ah¡d1705\000Vdam\000Vd",
+["g:201943:336"] = "¤aa¡d1705al€am\0002ÏĞah¡d1705\0002ÏĞ",
+["212299"] = "¤aa¡d1708FEal€amùœah¡d1708ùœ",
+["164556"] = "¤aa¡d1705al€amÍ‹Hah¡d1705Í‹H",
+["191515"] = "¤aa¡d1708¯al€am\000@Pah¡d1708\000@P",
+["g:201601:270"] = "¤aa¡d1708al€am\000äáÀah¡d1708\000äáÀ",
+["79293"] = "¤aa¡d1708al€am\000¼`ah¡d1708\000¼`",
+["197753"] = "¤aa¡d1708dÁal€amXah¡d1708X",
+["210805"] = "¤aa¡d1708\000ˆôal€am\000Óøah¡d1708\000Óø",
+["212308"] = "¤aa¡d1708@al€am\000Ì¬ah¡d1708\000Ì¬",
+["g:106502:186"] = "¤aa¡d1705al€am=ÀLah¡d1705=ÀL",
+["29539"] = "¤aa¡d1708al€am\000e ah¡d1708\000e ",
+["173032"] = "¤aa¡d1708îãal€am¼ah¡d1708¼",
+["227696"] = "¤aa¡d1705al€ah¡d1705õàœamõàœ",
+["224801"] = "¤aa¡d1708.Zal€am\000G˜ah¡d1708\000G˜",
+["201942"] = "¤aa¡d1705al€ah¡d1705\000&\000 am\000&\000 ",
+["182978"] = "¤aa¡d1705al€amğ­,ah¡d1705ğ­,",
+["187703"] = "¤aa¡d1708è?al€am$¸ah¡d1708$¸",
+["1475"] = "¤aa¡d17089al€am\000@@ah¡d1708\000@@",
+["2835"] = "¤aa¡d1708\000al€am°ah¡d1708°",
+["3858"] = "¤aa¡d1708áal€am\000nÄah¡d1708\000nÄ",
+["2475"] = "¤aa¡d1705al€am\000“a°ah¡d1705\000“a°",
+["g:152413:247"] = "¤aa¡d1705al€am\rWHah¡d1705\rWH",
+["19282"] = "¤aa¡d1708al€am\000˜™ ah¡d1708\000˜™ ",
+["198423"] = "¤aa¡d1708\000-ğal€amøah¡d1708ø",
+["2775"] = "¤aa¡d1708>¡al€am\000Xah¡d1708\000X",
+["222427"] = "¤aa¡d1708 úal€am\000`Dˆah¡d1708\000`Dˆ",
+["6523"] = "¤aa¡d1705al€am•ù$ah¡d1705•ù$",
+["14227"] = "¤aa¡d1708kal€am\00020ah¡d1708\00020",
+["97621"] = "¤aa¡d1708†al€am<(ah¡d1708<(",
+["8349"] = "¤aa¡d1705al€am‚áXah¡d1705‚áX",
+["14581"] = "¤aa¡d1705al€am\000¼¹¬ah¡d1705\000¼¹¬",
+["2449"] = "¤aa¡d1708\000w¬al€am\000pah¡d1708\000p",
+["72095"] = "¤aa¡d1708.Ual€am\000‹€ah¡d1708\000‹€",
+["130172"] = "¤aa¡d1708~al€am\000€ah¡d1708\000€",
+["g:121127:214"] = "¤aa¡d1705al€am\000™ah¡d1705\000™",
+["22572"] = "¤aa¡d1708÷al€am\000b ah¡d1708\000b ",
+["62014"] = "¤aa¡d1708al€am\000-Æ\\ah¡d1708\000-Æ\\",
+["187827"] = "¤aa¡d1708\ral€am\000$”ah¡d1708\000$”",
+["39342"] = "¤aa¡d1708“al€amg„ah¡d1708g„",
+["190451"] = "¤aa¡d1708Â“al€am\000¾ah¡d1708\000¾",
+["222636"] = "¤aa¡d1708”al€am\000q­ah¡d1708\000q­",
+["204072"] = "¤aa¤d1705¿d1712Içd1707~µd1708Mal¡d1708lamĞah¤d1705èd1712Ğd1707Ğd1708Ğ",
+["152875"] = "¤aa¡d1708\000¦áal€am)ah¡d1708)",
+["171428"] = "¤aa¡d1708 °al€am\000÷ ah¡d1708\000÷ ",
+["g:193388:319"] = "¤aa¡d1705al€am\000LK@ah¡d1705\000LK@",
+["210809"] = "¤aa¡d1708\000kéal€am\000\000Ôah¡d1708\000\000Ô",
+["212306"] = "¤aa¡d1708[al€am\000Öah¡d1708\000Ö",
+["193555"] = "¤aa¡d1708¥al€am\0007Ìah¡d1708\0007Ì",
+["15308"] = "¤aa¡d1705al€amFLĞah¡d1705FLĞ",
+["193050"] = "¤aa¡d1708\000¢µal€amah¡d1708",
+["44293"] = "¤aa¡d1708al€am\000-Ó@ah¡d1708\000-Ó@",
+["224176"] = "¤aa¡d1708ªal€am\000_Œah¡d1708\000_Œ",
+["10111"] = "¤aa¡d1705al€am\000ÁËTah¡d1705\000ÁËT",
+["32478"] = "¤aa¡d1705al€am\n7g\\ah¡d1705\n7g\\",
+["24693"] = "¤aa¡d1705al€amIñ0ah¡d1705Iñ0",
+["5523"] = "¤aa¡d1708Ïal€am	Äah¡d1708	Ä",
+["111663"] = "¤aa¡d1708k\nal€amüah¡d1708ü",
+["87522"] = "¤aa¡d1705al€am1ah¡d17051",
+["2452"] = "¤aa¡d1708\0009al€am\000†<ah¡d1708\000†<",
+["192863"] = "¤aa¡d1708	»al€amxah¡d1708x",
+["219949"] = "¤aa¡d1708\000j?al€amê`ah¡d1708ê`",
+["192855"] = "¤aa¡d1708rYal€am Ğah¡d1708 Ğ",
+["115502"] = "¤aa¡d1708¿al€amL,ah¡d1708L,",
+["187825"] = "¤aa¡d1708al€am\000llah¡d1708\000ll",
+["22203"] = "¤aa¡d17080al€am\000$Ÿ\000ah¡d1708\000$Ÿ\000",
+["197752"] = "¤aa¡d1708Z’al€am\nŒah¡d1708\nŒ",
+["118472"] = "¤aa¡d1708[£al€am\000~Hah¡d1708\000~H",
+["198204"] = "¤aa¡d1708al€am&ah¡d1708&",
+["23572"] = "¤aa¡d1708Şal€am>€ah¡d1708>€",
+["g:224114:544"] = "¤aa£d1707	d1712d1708\nal€am\000I>\000ah£d1707\000-ÆÀd1712\000I>\000d1708\000,@ ",
+["43572"] = "¤aa¡d1708\"al€amlah¡d1708l",
+["897"] = "¤aa¡d1705al€amëÅ ah¡d1705ëÅ ",
+["40083"] = "¤aa¡d1708al€amJ|€ah¡d1708J|€",
+["85585"] = "¤aa¡d1708¾al€am\000„¬ah¡d1708\000„¬",
+["g:224114:557"] = "¤aa£d1707d1712d1708al€am\000äáÀah£d1707ü d1712\000äáÀd1708ü ",
+["5635"] = "¤aa¡d17086al€am¸ah¡d1708¸",
+["200004"] = "¤aa¡d1708\\al€ah¡d1708\00028am\00028",
+["22578"] = "¤aa¡d1708TÅal€am\000 ah¡d1708\000 ",
+["190534"] = "¤aa¡d1708lal€am\000½ˆah¡d1708\000½ˆ",
+["193231"] = "¤aa¡d1708ïal€am\000˜ah¡d1708\000˜",
+["3174"] = "¤aa¡d1708al€amğ÷Èah¡d1708ğ÷È",
+["9801"] = "¤aa¡d1705al€am\000*ø\000ah¡d1705\000*ø\000",
+["3355"] = "¤aa¡d1708’æal€am\000˜˜ah¡d1708\000˜˜",
+["127736"] = "¤aa¡d1708al€amJ~ah¡d1708J~",
+["8168"] = "¤aa¡d1708al€am×…ah¡d1708×…",
+["53065"] = "¤aa¡d1708ìal€am\000-@ah¡d1708\000-@",
+["43106"] = "¤aa¡d1708éal€am\0004´ah¡d1708\0004´",
+["31887"] = "¤aa¡d1708al€am\000“àah¡d1708\000“à",
+["36082"] = "¤aa¡d1705al€am4ah¡d17054",
+["220135"] = "¤aa¡d1708§Sal€am\000ìÔah¡d1708\000ìÔ",
+["21887"] = "¤aa¡d17081al€amšLah¡d1708šL",
+["g:217128:554"] = "¤aa¡d1705al€amw€ah¡d1705w€",
+["10647"] = "¤aa¡d1708]al€amdah¡d1708d",
+["193217"] = "¤aa¡d17081İal€am@tah¡d1708@t",
+["15085"] = "¤aa¡d1705al€amÄah¡d1705Ä",
+["10259"] = "¤aa¡d1705al€am\"Äah¡d1705\"Ä",
+["17010"] = "¤aa¡d1708	al€am9ah¡d17089",
+["212264"] = "¤aa¡d17081:al€ah¡d1708\000õ¬am\000õ¬",
+["19258"] = "¤aa¡d1708fal€am\000Ûìah¡d1708\000Ûì",
+["90491"] = "¤aa¡d1705al€amlvah¡d1705lv",
+["46378"] = "¤aa¡d1708˜al€am¯Èah¡d1708¯È",
+["220136"] = "¤aa¡d17082²al€am\000ûlah¡d1708\000ûl",
+["14572"] = "¤aa¡d1705al€am\000Ñpah¡d1705\000Ñp",
+["198259"] = "¤aa¡d1708`al€amÈ7ğah¡d1708È7ğ",
+["5524"] = "¤aa¡d1708ôal€am0ah¡d17080",
+["111664"] = "¤aa¡d1708aal€amah¡d1708",
+["224803"] = "¤aa¡d1708–al€am\000ã`ah¡d1708\000ã`",
+["37663"] = "¤aa¡d1708kal€am\000<E°ah¡d1708\000<E°",
+["193943"] = "¤aa¡d1708\nal€am\000\r@ah¡d1708\000\r@",
+["89112"] = "¤aa¡d1708\000©3al€amÅDah¡d1708ÅD",
+["7535"] = "¤aa¡d1705al€am\0005Gah¡d1705\0005G",
+["192839"] = "¤aa¡d1708>Ëal€amˆah¡d1708ˆ",
+["24781"] = "¤aa¡d1705al€am\000\\Æ\000ah¡d1705\000\\Æ\000",
+["g:71341:181"] = "¤aa¡d1705al€am\000-ÂØah¡d1705\000-ÂØ",
+["39970"] = "¤aa¡d1708'‘al€amM¼ah¡d1708M¼",
+["g:190627:278"] = "¤aa¡d1705al€am&%xğah¡d1705&%xğ",
+["3575"] = "¤aa¡d17083\nal€am\000$øah¡d1708\000$ø",
+["198420"] = "¤aa¡d1708GÅal€am™ ah¡d1708™ ",
+["180733"] = "¤aa¡d1708.şal€am\00044ah¡d1708\00044",
+["229077"] = "¤aa¡d1705al€am£àah¡d1705£à",
+["222882"] = "¤aa¡d1708cÏal€am1œah¡d17081œ",
+["1801"] = "¤aa¡d1705al€amo³¤ah¡d1705o³¤",
+["124438"] = "¤aa¡d1708\000ÚBal€amdah¡d1708d",
+["g:176965:170"] = "¤aa¡d1705al€amI³Øah¡d1705I³Ø",
+["67319"] = "¤aa¡d1708øal€am\000#`ah¡d1708\000#`",
+["164557"] = "¤aa¡d1705al€amwŸÄah¡d1705wŸÄ",
+["108349"] = "¤aa¡d1708*al€am\000—àah¡d1708\000—à",
+["191323"] = "¤aa¡d1708Xal€am\000œ€ah¡d1708\000œ€",
+["198535"] = "¤aa¡d1708¢al€am\000\"<ah¡d1708\000\"<",
+["5958"] = "¤aa¡d1705al€am&+\\ah¡d1705&+\\",
+["61998"] = "¤aa¡d1708\ral€am\000„ah¡d1708\000„",
+["199053"] = "¤aa¡d1708pal€am'ah¡d1708'",
+["190450"] = "¤aa¡d1708cal€am\000B@ah¡d1708\000B@",
+["21071"] = "¤aa¡d1708Hxal€am'ah¡d1708'",
+["152542"] = "¤aa¡d1708\000.…al€amôah¡d1708ô",
+["32428"] = "¤aa¡d1708¦al€amˆah¡d1708ˆ",
+["4231"] = "¤aa¡d1708al€améüah¡d1708éü",
+["191319"] = "¤aa¡d1708al€am lah¡d1708 l",
+["200860"] = "¤aa¡d1708\"al€am'ah¡d1708'",
+["206435"] = "¤aa¡d1705al€amm”\\ah¡d1705m”\\",
+["15065"] = "¤aa¡d1705	al€amÆšah¡d1705Æš",
+["191469"] = "¤aa¡d1708Ñ’al€am	`ah¡d1708	`",
+["7374"] = "¤aa¡d1705al€am\000Í^œah¡d1705\000Í^œ",
+["111672"] = "¤aa¡d1708¨úal€am ah¡d1708 ",
+["2313"] = "¤aa¡d1708éal€ah¡d1708u0amu0",
+["23117"] = "¤aa¡d1708\nal€amœah¡d1708œ",
+["6601"] = "¤aa¡d1705al€am\000)§¬ah¡d1705\000)§¬",
+["36919"] = "¤aa¡d1708*al€am\000œäah¡d1708\000œä",
+["7075"] = "¤aa¡d1708€(al€am\nğah¡d1708\nğ",
+["108298"] = "¤aa¡d1708«al€amNèah¡d1708Nè",
+["3182"] = "¤aa¡d1708Pal€am\000	\000Lah¡d1708\000	\000L",
+["5785"] = "¤aa¡d1708mal€am%€ah¡d1708%€",
+["g:204933:376"] = "¤aa¡d1705al€ah¡d1705•#,am•#,",
+["199964"] = "¤aa¡d1708`al€ah¡d1708\000°am\000°",
+["7373"] = "¤aa¡d1705al€am¦ÆHah¡d1705¦ÆH",
+["112182"] = "¤aa¡d1708¤al€am\000“àah¡d1708\000“à",
+["6037"] = "¤aa¡d1708q3al€am\0008ah¡d1708\0008",
+["127004"] = "¤aa¡d1708'»al€am5èah¡d17085è",
+["12359"] = "¤aa¡d1708\000Äal€am\000Å ah¡d1708\000Å ",
+["194786"] = "¤aa¡d1708al€am\000GØah¡d1708\000GØ",
+["6382"] = "¤aa¡d1705al€amš_Üah¡d1705š_Ü",
+["g:217128:551"] = "¤aa¡d1705al€amxhÀah¡d1705xhÀ",
+["198413"] = "¤aa¡d17084šal€am\nŒah¡d1708\nŒ",
+["g:147425:247"] = "¤aa¡d1705al€amúåah¡d1705úå",
+["191495"] = "¤aa¡d1708	al€am\000Üah¡d1708\000Ü",
+["52987"] = "¤aa¡d1708Çal€am›Üah¡d1708›Ü",
+["173080"] = "¤aa¡d1708’al€am\000˜Àah¡d1708\000˜À",
+["43119"] = "¤aa¡d17080œal€amMXah¡d1708MX",
+["7080"] = "¤aa¡d1708îal€am\000O€ah¡d1708\000O€",
+["20816"] = "¤aa¡d1708Õal€am\000&¤ah¡d1708\000&¤",
+["37701"] = "¤aa¡d1708$£al€amÌah¡d1708Ì",
+["7076"] = "¤aa¡d1708'}al€am„ah¡d1708„",
+["2375"] = "¤aa¡d1705al€am¤M˜ah¡d1705¤M˜",
+["783"] = "¤aa¡d1708Ñal€am:˜ah¡d1708:˜",
+["7282"] = "¤aa¡d1705al€am!ah¡d1705!",
+["3371"] = "¤aa¡d1708\000,eÇal€amdah¡d1708d",
+["222868"] = "¤aa¡d1708Äal€am\000·´ah¡d1708\000·´",
+["74847"] = "¤aa¡d1708)Ôal€am\000Hah¡d1708\000H",
+["24709"] = "¤aa¡d1705al€am\000˜\n¨ah¡d1705\000˜\n¨",
+["109625"] = "¤aa¡d1708 al€am'ah¡d1708'",
+["7413"] = "¤aa¡d1705al€am\000sŒÜah¡d1705\000sŒÜ",
+["7375"] = "¤aa¡d1705al€am«ápah¡d1705«áp",
+["191350"] = "¤aa¡d1708•al€am\000ºğah¡d1708\000ºğ",
+["37588"] = "¤aa¡d1708al€amJ~tah¡d1708J~t",
+["128159"] = "¤aa¡d1708al€amw5“œah¡d1708w5“œ",
+["32231"] = "¤aa¡d1708\r_al€amĞ4ah¡d1708Ğ4",
+["222683"] = "¤aa¡d1708²al€am\000Iğah¡d1708\000Iğ",
+["191324"] = "¤aa¡d17086al€am­Ôah¡d1708­Ô",
+["221867"] = "¤aa¡d1708øal¡d1708G_Lah¡d1708G_°amG_L",
+["165520"] = "¤aa¡d1705al€amÉ'@ah¡d1705É'@",
+["112281"] = "¤aa¡d1708Äal€am\000ôah¡d1708\000ô",
+["193922"] = "¤aa¡d1708\000ø$al€amah¡d1708",
+["44145"] = "¤aa¡d1708aal€amKÈah¡d1708KÈ",
+["12364"] = "¤aa¡d1708al€ams<ah¡d1708s<",
+["198187"] = "¤aa¡d1708_al€ah¡d1708\000r@am\000r@",
+["6124"] = "¤aa¡d1705al€aml;Àah¡d1705l;À",
+["90742"] = "¤aa¡d1705al€am\000ÏXah¡d1705\000ÏX",
+["123919"] = "¤aa¡d1708\000Ïƒal€am$¸ah¡d1708$¸",
+["44284"] = "¤aa¡d1708,al€am\00098pah¡d1708\00098p",
+["g:204932:376"] = "¤aa¡d1705al€amĞ8ah¡d1705Ğ8",
+["223697"] = "¤aa¡d1708`al€ah¡d1708„9àam„9à",
+["58238"] = "¤aa¡d1705al€am	˜ah¡d1705	˜",
+["43652"] = "¤aa¡d1708#al€am\000pah¡d1708\000p",
+["164553"] = "¤aa¡d1705al€am\n‚È ah¡d1705\n‚È ",
+["112278"] = "¤aa¡d1708Xal€am\000¡Ìah¡d1708\000¡Ì",
+["190532"] = "¤aa¡d1708Ÿal€am\000.ah¡d1708\000.",
+["61999"] = "¤aa¡d1708al€am\000Èah¡d1708\000È",
+["109134"] = "¤aa¡d1708ial€amah¡d1708",
+["222631"] = "¤aa¡d1708al€am¬éäah¡d1708¬éä",
+["153"] = "¤aa¡d1705al€am	zÀah¡d1705	zÀ",
+["13756"] = "¤aa¡d1708wal€am\000 Hah¡d1708\000 H",
+["201832"] = "¤aa¡d1708jal€amÿxah¡d1708ÿx",
+["130175"] = "¤aa¡d1708al€am\000¸ah¡d1708\000¸",
+["1789"] = "¤aa¡d1705al€amZ 4ah¡d1705Z 4",
+["136633"] = "¤aa¡d1708Mal€amh°ah¡d1708h°",
+["22663"] = "¤aa¡d1705al€amjèah¡d1705jè",
+["37702"] = "¤aa¡d1708§al€am\000pah¡d1708\000p",
+["g:198262:326"] = "¤aa¡d1708al€am\000¦xÌah¡d1708\000¦xÌ",
+["g:106404:186"] = "¤aa¡d1705al€amÈ:Üah¡d1705È:Ü",
+["56517"] = "¤aa¡d1708al€ah¡d1708\000\nñam\000\nñ",
+["193937"] = "¤aa¡d1708·al€am\0005@lah¡d1708\0005@l",
+["191518"] = "¤aa¡d1708\000al€am&¬ah¡d1708&¬",
+["194751"] = "¤aa¡d1708[al€amthah¡d1708th",
+["52988"] = "¤aa¡d1708»Èal€am\000Ôah¡d1708\000Ô",
+["6201"] = "¤aa¡d1705al€am×?ah¡d1705×?",
+["191471"] = "¤aa¡d1708£Ial€amU(ah¡d1708U(",
+["141568"] = "¤aa¡d1705al€am.;àah¡d1705.;à",
+["22792"] = "¤aa¡d1708/÷al€amtÌah¡d1708tÌ",
+["g:201601:282"] = "¤aa¡d1708al€am\n}Œ\000ah¡d1708\n}Œ\000",
+["2771"] = "¤aa¡d1708…Õal€amMXah¡d1708MX",
+["106600"] = "¤aa¡d1705al¡d1705-lah¡d1705-µDam-l",
+["222793"] = "¤aa¡d1708\000ôal€am¡Tah¡d1708¡T",
+["74832"] = "¤aa¡d1708`al€amØah¡d1708Ø",
+["173033"] = "¤aa¡d1708@?al€amèah¡d1708è",
+["193259"] = "¤aa¡d1708\000‹al€am˜ah¡d1708˜",
+["192850"] = "¤aa¡d1708òal€amÌah¡d1708Ì",
+["5637"] = "¤aa¡d1708_al€am7xah¡d17087x",
+["g:36150:357"] = "¤aa¡d1705al€am\000-\\ah¡d1705\000-\\",
+["g:186362:252"] = "¤aa¡d1705al€amğªpah¡d1705ğªp",
+["204460"] = "¤aa¡d1708\000!ˆal€am¸ah¡d1708¸",
+["38561"] = "¤aa¡d1708Cal€am\000Èäah¡d1708\000Èä",
+["g:175005:278"] = "¤aa¡d1708al€am”mhah¡d1708”mh",
+["172316"] = "¤aa¡d1705al€am\nº”œah¡d1705\nº”œ",
+["224177"] = "¤aa¡d1708_al€am\000-)¸ah¡d1708\000-)¸",
+["8175"] = "¤aa¡d1705al€am\000T”¼ah¡d1705\000T”¼",
+["222426"] = "¤aa¡d1708	Àal€am\000VÒah¡d1708\000VÒ",
+["168651"] = "¤aa¡d1708\nal€am\000 /tah¡d1708\000 /t",
+["g:219470:518"] = "¤aa¡d1705\ral€am]#pah¡d1705]#p",
+["g:106439:186"] = "¤aa¡d1705al€amÈphah¡d1705Èph",
+["2677"] = "¤aa¡d1708\000‘^al€am\000Û\000ah¡d1708\000Û\000",
+["21929"] = "¤aa¡d1708ÿal€amôah¡d1708ô",
+["15112"] = "¤aa¡d1705al€am»¼ah¡d1705»¼",
+["193236"] = "¤aa¡d1708;al€am@¼ah¡d1708@¼",
+["154818"] = "¤aa¡d1705al€am\000˜³Ìah¡d1705\000˜³Ì",
+["128727"] = "¤aa¡d1708al€am\000B@ah¡d1708\000B@",
+["55641"] = "¤aa¡d1705al€amo ah¡d1705o ",
+["168190"] = "¤aa¡d1708al€am‰äah¡d1708‰ä",
+["173202"] = "¤aa¡d1708\000$oTal€amdah¡d1708d",
+["74252"] = "¤aa¡d1708	üal€am%äah¡d1708%ä",
+["36161"] = "¤aa¡d1705al€amÉÃ€ah¡d1705ÉÃ€",
+["g:224601:460"] = "¤aa¡d1705al€ah¡d1705\000-ÆÀam\000-ÆÀ",
+["77468"] = "¤aa¡d1708Bal€amÃPah¡d1708ÃP",
+["194730"] = "¤aa¡d1708\000&ìal€am°ah¡d1708°",
+["15193"] = "¤aa¡d1705al€am«Güah¡d1705«Gü",
+["186359"] = "¤aa¡d1705al€am2Í1°ah¡d17052Í1°",
+["g:8294:357"] = "¤aa¡d1705al€am\000 ¸ah¡d1705\000 ¸",
+["1210"] = "¤aa¡d1708CNal€am&Hah¡d1708&H",
+["191524"] = "¤aa¡d1708šal€amMXah¡d1708MX",
+["8747"] = "¤aa¡d1705al€am\0001xah¡d1705\0001x",
+["222806"] = "¤aa¡d1708\0002İal€am\000$øah¡d1708\000$ø",
+["53643"] = "¤aa¡d1708Lal€amûôah¡d1708ûô",
+["2589"] = "¤aa¡d1708\000T¹al€amXah¡d1708X",
+["224632"] = "¤aa¡d1705ual€ah¡d1705\000&% am\000&% ",
+["152511"] = "¤aa¡d1708æšal€am\"Äah¡d1708\"Ä",
+["15170"] = "¤aa¡d1705al€amK*èah¡d1705K*è",
+["g:147424:247"] = "¤aa¡d1705al€am98!àah¡d170598!à",
+["193925"] = "¤aa¡d1708]al€amâah¡d1708â",
+["225989"] = "¤aa¡d1708al€am\000Kı ah¡d1708\000Kı ",
+["222879"] = "¤aa¡d1708Íal€amÀøah¡d1708Àø",
+["222627"] = "¤aa¡d1708al€am\000Emah¡d1708\000Em",
+["192853"] = "¤aa¡d1708\nal€am:˜ah¡d1708:˜",
+["g:224602:525"] = "¤aa¡d1705al€ah¡d1705\0005gàam\0005gà",
+["44267"] = "¤aa¡d1708al€am\000ºœah¡d1708\000ºœ",
+["14567"] = "¤aa¡d1705al€am;Hah¡d1705;H",
+["76140"] = "¤aa¡d1708\n´al€am\000^dah¡d1708\000^d",
+["31896"] = "¤aa¡d1708;al€am\000zah¡d1708\000z",
+["38425"] = "¤aa¡d1708.lal€am\000æ0ah¡d1708\000æ0",
+["112277"] = "¤aa¡d1708´al€am\000_ah¡d1708\000_",
+["212277"] = "¤aa¡d1708al€am7Ü4ah¡d17087Ü4",
+["154817"] = "¤aa¡d1705al€am\000Z dah¡d1705\000Z d",
+["9210"] = "¤aa¡d1708Lal€am\000Ü°ah¡d1708\000Ü°",
+["43012"] = "¤aa¡d1708L	al€am*”ah¡d1708*”",
+["44958"] = "¤aa¡d1708šal€am\000¥Pah¡d1708\000¥P",
+["g:224604:545"] = "¤aa¡d1705al¡d1705\0007¶€am\0007¶€ah¡d1705\000=/¬",
+["36926"] = "¤aa¡d1708$Gal€am%äah¡d1708%ä",
+["g:121240:214"] = "¤aa¡d1705al€am\000oû0ah¡d1705\000oû0",
+["g:224114:538"] = "¤aa£d1707d1712d1708al€am\000C#ah£d1707\000,@ d1712\000C#d1708\000,@ ",
+["193256"] = "¤aa¡d1708$fal€am\000€Äah¡d1708\000€Ä",
+["193953"] = "¤aa¡d1708al€amÌah¡d1708Ì",
+["36907"] = "¤aa¡d1708\nêal€amLôah¡d1708Lô",
+["221854"] = "¤aa£d1707cd17124sd1708•?al¡d1708\000\r|am\000ı€ah£d1707\000\r’œd1712\000ı€d1708\000\r’œ",
+["200578"] = "¤aa¡d1708\nSal€amJ8ah¡d1708J8",
+["6359"] = "¤aa¡d1708al€amq¬ah¡d1708q¬",
+["197736"] = "¤aa¡d1708_al€am\000úA<ah¡d1708\000úA<",
+["210672"] = "¤aa¡d1708#al€am\000pah¡d1708\000p",
+["197743"] = "¤aa¡d1708ual€amÈah¡d1708È",
+["217707"] = "¤aa¢d1708B§d17120gal€ah¢d1708\000W“ˆd1712\000[‘Ìam\000[‘Ì",
+["194808"] = "¤aa¡d1708Wal€am\0008€ah¡d1708\0008€",
+["g:106600:186"] = "¤aa¡d1705al€am-lah¡d1705-l",
+["3011"] = "¤aa¡d1705al€am\000—Œ|ah¡d1705\000—Œ|",
+["6289"] = "¤aa¡d1708\000úåal€amÈah¡d1708È",
+["191341"] = "¤aa¡d1708X7al€am,ˆah¡d1708,ˆ",
+["124441"] = "¤aa¡d1708\000²al€am0ah¡d17080",
+["108360"] = "¤aa¡d1708,al€am\000Šìah¡d1708\000Šì",
+["g:106668:186"] = "¤aa¡d1705al€am‹(¿(ah¡d1705‹(¿(",
+["191534"] = "¤aa¡d1708$al€am\000\r@ah¡d1708\000\r@",
+["204710"] = "¤aa¡d1708•al€am\000Šah¡d1708\000Š",
+["20896"] = "¤aa¡d1705al€amÈ-Èah¡d1705È-È",
+["189143"] = "¤aa¡d1708\000»gal€am\000í\\ah¡d1708\000í\\",
+["220146"] = "¤aa¡d1708ôal€am\000Á ah¡d1708\000Á ",
+["27438"] = "¤aa¡d1708\"…al€amèah¡d1708è",
+["38558"] = "¤aa¡d1708]oal€am\000=`ah¡d1708\000=`",
+["221786"] = "¤aa£d17071d1712]d1708>al€am\000˜–€ah£d17071-\000d1712\000˜–€d17081ğ",
+["168650"] = "¤aa¡d1708I„al€amĞah¡d1708Ğ",
+["67438"] = "¤aa¡d1708¹al€amÃPah¡d1708ÃP",
+["193942"] = "¤aa¡d1708zal€am\000$øah¡d1708\000$ø",
+["168302"] = "¤aa¡d1708?al€am„ah¡d1708„",
+["193386"] = "¤aa¡d1705al€am\000LK@ah¡d1705\000LK@",
+["221862"] = "¤aa¡d1708]al¡d1708\000J(am\000J(ah¡d1708\000K¸",
+["201400"] = "¤aa¡d1708²al€amLôah¡d1708Lô",
+["g:220316:362"] = "¤aa¡d1705	al€am\000<lah¡d1705\000<l",
+["106699"] = "¤aa¡d1705al€am;„Dah¡d1705;„D",
+["153621"] = "¤aa¡d1708al€am\000ìŒah¡d1708\000ìŒ",
+["g:198245:332"] = "¤aa¡d1708al€am\n}Œ\000ah¡d1708\n}Œ\000",
+["36929"] = "¤aa¡d1708×al€am_´ah¡d1708_´",
+["4737"] = "¤aa¡d1705al€am\000Gµah¡d1705\000Gµ",
+["171829"] = "¤aa¡d1708Äåal€amixah¡d1708ix",
+["121079"] = "¤aa¡d1705al€am\000´Ğah¡d1705\000´Ğ",
+["14667"] = "¤aa¡d1705al€am\000 }ğah¡d1705\000 }ğ",
+["10105"] = "¤aa¡d1705al€am\000\000ah¡d1705\000\000",
+["41809"] = "¤aa¡d1708¡al€ampäah¡d1708pä",
+["223706"] = "¤aa¡d1708al€ah¡d1708¦!ôam¦!ô",
+["g:224607:515"] = "¤aa¡d1705al€ah¡d1705+²¨am+²¨",
+["108353"] = "¤aa¡d1708Sal€amUğah¡d1708Uğ",
+["g:172253:200"] = "¤aa¡d1705al€amXah¡d1705X",
+["212263"] = "¤aa¡d1708HÇal€ah¡d1708\000ı´am\000ı´",
+["23440"] = "¤aa¡d1708Üal€am\000åhah¡d1708\000åh",
+["128742"] = "¤aa¡d1708al€amëšğah¡d1708ëšğ",
+["193228"] = "¤aa¡d1708al€am\000Lah¡d1708\000L",
+["1420"] = "¤aa¡d1705al€amİLah¡d1705İL",
+["43125"] = "¤aa¡d1708!¾al€amL,ah¡d1708L,",
+["173168"] = "¤aa¡d1708.öal€ah¡d1708\nğam\nğ",
+["10413"] = "¤aa¡d1705al€am\000n%¨ah¡d1705\000n%¨",
+["32230"] = "¤aa¡d1708“al€amé4ah¡d1708é4",
+["52722"] = "¤aa¡d1708&Fal€am}dah¡d1708}d",
+["6468"] = "¤aa¡d1705al€amxìÈah¡d1705xìÈ",
+["7286"] = "¤aa¡d1708J]al€am\000\rˆah¡d1708\000\rˆ",
+["39684"] = "¤aa¡d1708	al€amÖØah¡d1708ÖØ",
+["221863"] = "¤aa¡d1708	–al€am\000íøah¡d1708\000íø",
+["40199"] = "¤aa¡d1708Éal€amRah¡d1708R",
+["193960"] = "¤aa¡d17088al€am	Äah¡d1708	Ä",
+["173071"] = "¤aa¡d1708,al€am\000%‰`ah¡d1708\000%‰`",
+["194799"] = "¤aa¡d1708gal€am\000†<ah¡d1708\000†<",
+["25708"] = "¤aa¡d1708ÊÆal€am\000	¶¸ah¡d1708\000	¶¸",
+["193551"] = "¤aa¡d1708Pal€amˆah¡d1708ˆ",
+["g:221799:557"] = "¤aa£d1707d1712d1708al€ah£d1707¦/€d1712Àd1708¦/€amÀ",
+["g:172254:200"] = "¤aa¡d1705al€am\000\"âxah¡d1705\000\"âx",
+["222560"] = "¤aa¡d1708–al€am¦øÜah¡d1708¦øÜ",
+["g:204929:379"] = "¤aa¡d1705al€amæ²€ah¡d1705æ²€",
+["1211"] = "¤aa¡d1705al¡d1705\000\n¬lah¡d17059Ş\000am\000\n¬l",
+["43118"] = "¤aa¡d1708³Qal€am\000æ0ah¡d1708\000æ0",
+["10073"] = "¤aa¡d1705al€am\000ƒyĞah¡d1705\000ƒyĞ",
+["32599"] = "¤aa¡d1708al€am\000=€ah¡d1708\000=€",
+["222616"] = "¤aa¡d1708“al€am\000/M`ah¡d1708\000/M`",
+["193950"] = "¤aa¡d1708al€amĞah¡d1708Ğ",
+["3576"] = "¤aa¡d1708šÕal€amUğah¡d1708Uğ",
+["128721"] = "¤aa¡d1708al€am·€ah¡d1708·€",
+["152513"] = "¤aa¡d1708Øal€amQ¤ah¡d1708Q¤",
+["171832"] = "¤aa¡d1708¨«al€amFPah¡d1708FP",
+["172055"] = "¤aa¡d1708—åal€am¼ah¡d1708¼",
+["153634"] = "¤aa¡d1708al€am\000\r”,ah¡d1708\000\r”,",
+["44143"] = "¤aa¡d1708@al€am\000N<ah¡d1708\000N<",
+["10560"] = "¤aa¡d1708¨ìal€am\000DXah¡d1708\000DX",
+["g:219480:554"] = "¤aa¡d1705al€am\0005\000ah¡d1705\0005\000",
+["g:15146:320"] = "¤aa¡d1705al€am\000<œah¡d1705\000<œ",
+["10074"] = "¤aa¡d1705al€am\000Iğah¡d1705\000Iğ",
+["24793"] = "¤aa¡d1705al€am\000Ü¤Äah¡d1705\000Ü¤Ä",
+["190330"] = "¤aa¡d17083\"al€am'ah¡d1708'",
+["153622"] = "¤aa¡d1708al€am\000¡°ah¡d1708\000¡°",
+["222638"] = "¤aa¡d1708¤al€am\000<áğah¡d1708\000<áğ",
+["166815"] = "¤aa¡d1705al€am×?Ôah¡d1705×?Ô",
+["193930"] = "¤aa¡d1708(Ìal€am\000(ah¡d1708\000(",
+["g:106472:186"] = "¤aa¡d1705al€ame÷¨ah¡d1705e÷¨",
+["39682"] = "¤aa¡d1708Òal€am\00048ah¡d1708\00048",
+["172094"] = "¤aa¡d1708\000òAal€am ah¡d1708 ",
+["23676"] = "¤aa¡d1708™al€am,ìah¡d1708,ì",
+["153623"] = "¤aa¡d1708al€am\000ı|ah¡d1708\000ı|",
+["153625"] = "¤aa¡d1708al€am\000©ìah¡d1708\000©ì",
+["79284"] = "¤aa¡d1708al€am\000ÚAÔah¡d1708\000ÚAÔ",
+["g:9834:320"] = "¤aa¡d1705al€am\000 T$ah¡d1705\000 T$",
+["19284"] = "¤aa¡d1708al€am\000AÜah¡d1708\000AÜ",
+["222696"] = "¤aa¡d1708\000,…al€amah¡d1708",
+["72238"] = "¤aa¡d1708Ê£al€am\000Ğah¡d1708\000Ğ",
+["15148"] = "¤aa¡d1705al€am\000à0ah¡d1705\000à0",
+["190530"] = "¤aa¡d1708ñal€am\000‚Tah¡d1708\000‚T",
+["5465"] = "¤aa¡d1708Åal€amah¡d1708",
+["193218"] = "¤aa¡d1708\000@al€am›Üah¡d1708›Ü",
+["194566"] = "¤aa¡d1708•al€am\000#ah¡d1708\000#",
+["222513"] = "¤aa¡d1708¬al€amRÀPah¡d1708RÀP",
+["152549"] = "¤aa¡d1708Mal€am!üah¡d1708!ü",
+["221915"] = "¤aa¡d1708xal€am\000-x ah¡d1708\000-x ",
+["221855"] = "¤aa£d1707úd1712Ad1708[al¢d1712\000Dª d1708\000J'üam\000I³0ah£d1707\000H`d1712\000I³0d1708\000Jv€",
+["g:224604:538"] = "¤aa¡d1705al€ah¡d1705\000D‚¬am\000D‚¬",
+["5498"] = "¤aa¡d1708Cal€amtah¡d1708t",
+["g:220318:362"] = "¤aa¡d1705al€am\000…Øah¡d1705\000…Ø",
+["210934"] = "¤aa£d1707\000üd1712\000IKd1708\000al¢d1712\000ÊØd1708\000ÚÜam\000°ah£d1707\000ÊØd1712\000(d1708\000\r@",
+["95373"] = "¤aa¡d1708}al€am\000z8ah¡d1708\000z8",
+["3968"] = "¤aa¡d1705al€am\000!eœah¡d1705\000!eœ",
+["151719"] = "¤aa¡d1708%al€amN ah¡d1708N ",
+["74838"] = "¤aa¡d1708°al€ama¨ah¡d1708a¨",
+["127718"] = "¤aa¡d1708al€amJŒ„ah¡d1708JŒ„",
+["74850"] = "¤aa¡d1708ÊŸal€amyah¡d1708y",
+["43109"] = "¤aa¡d1708àal€am\000Cah¡d1708\000C",
+["222876"] = "¤aa¡d1708Îal€am\000„Hah¡d1708\000„H",
+["130905"] = "¤aa¡d1708Ïal€am\000ºŒah¡d1708\000ºŒ",
+["164393"] = "¤aa¡d1705al€am	E‡ah¡d1705	E‡",
+["g:221788:550"] = "¤aa£d1707\rd1712d1708al¡d17081Œah£d17071ğd1712”ld17081ğam”l",
+["225672"] = "¤aa¡d1708çal€am)‹àah¡d1708)‹à",
+["79301"] = "¤aa¡d1708al€am\000˜¹¨ah¡d1708\000˜¹¨",
+["38682"] = "¤aa¡d1708\000‰ûal€am„ah¡d1708„",
+["224805"] = "¤aa¡d1708«êal€am\000:ah¡d1708\000:",
+["197749"] = "¤aa¡d1708}al€am,ah¡d1708,",
+["112271"] = "¤aa¡d1708„al€am\000‚pah¡d1708\000‚p",
+["212271"] = "¤aa¡d1708dal€amûÈah¡d1708ûÈ",
+["g:14599:357"] = "¤aa¡d1705al€am\000 *Äah¡d1705\000 *Ä",
+["108359"] = "¤aa¡d1708*al€am\000\000ah¡d1708\000\000",
+["153608"] = "¤aa¡d1708al€am\000|ah¡d1708\000|",
+["221932"] = "¤aa¡d1708al€am\000ª\000ah¡d1708\000ª\000",
+["174328"] = "¤aa¡d1708éal€am˜Xah¡d1708˜X",
+["61981"] = "¤aa¡d17084sal€am>äah¡d1708>ä",
+["224824"] = "¤aa¡d1708\000@Ğal€amc8ah¡d1708c8",
+["97624"] = "¤aa¡d1708al€am@ah¡d1708@",
+["168583"] = "¤aa¡d1708Zöal€am¨Àah¡d1708¨À",
+["g:219471:521"] = "¤aa¡d1705al€amèGœah¡d1705èGœ",
+["191335"] = "¤aa¡d1708¥al€am6°ah¡d17086°",
+["52192"] = "¤aa¡d1708ial€am\000Iğah¡d1708\000Iğ",
+["128012"] = "¤aa¡d1708al€amw5•ah¡d1708w5•",
+["109584"] = "¤aa¡d1708èal€am\000(¨ah¡d1708\000(¨",
+["3358"] = "¤aa¡d1708Cal€amŞDah¡d1708ŞD",
+["37160"] = "¤aa¡d1708Fal€am\0000Œah¡d1708\0000Œ",
+["151721"] = "¤aa¡d17086al€am\000O×tah¡d1708\000O×t",
+["23438"] = "¤aa¡d1708al€am›ah¡d1708›",
+["75014"] = "¤aa¡d1708°al€amˆTah¡d1708ˆT",
+["81981"] = "¤aa¡d1705al€am\000¿„„ah¡d1705\000¿„„",
+["174327"] = "¤aa¡d1708	Ÿal€amdah¡d1708d",
+["108357"] = "¤aa¡d1708Úal€am\000^dah¡d1708\000^d",
+["154897"] = "¤aa¡d1708à·al€am¼ah¡d1708¼",
+["213751"] = "¤aa¡d1708Ûal€am\000‹ah¡d1708\000‹",
+["221758"] = "¤aa¡d1708pal€amŞah¡d1708Ş",
+["27682"] = "¤aa¡d1708%Õal€am°ah¡d1708°",
+["192842"] = "¤aa¡d1708,Xal€amù8ah¡d1708ù8",
+["3577"] = "¤aa¡d1708al€am\000 ¼ah¡d1708\000 ¼",
+["6135"] = "¤aa¡d1705al€am	”<¨ah¡d1705	”<¨",
+["g:169409:242"] = "¤aa¡d1705al€amA(ah¡d1705A(",
+["219951"] = "¤aa¡d1708›ñal€am\000\r¤0ah¡d1708\000\r¤0",
+["212672"] = "¤aa¡d1708!wal€am\000$(ah¡d1708\000$(",
+["160059"] = "¤aa¡d1708\000Jal€amah¡d1708",
+["14605"] = "¤aa¡d1705al€am\000İˆah¡d1705\000İˆ",
+["200567"] = "¤aa¡d1708Fal€am\000Rìah¡d1708\000Rì",
+["160298"] = "¤aa¡d1708\000Îal€am ah¡d1708 ",
+["15390"] = "¤aa¡d1705al€am1'ˆah¡d17051'ˆ",
+["159206"] = "¤aa¡d1705al€am\r>àtah¡d1705\r>àt",
+["152547"] = "¤aa¡d1708\000}al€amN ah¡d1708N ",
+["190326"] = "¤aa¡d1708\000‡;al€amWäah¡d1708Wä",
+["153635"] = "¤aa¡d1708\000C¨al€amÈah¡d1708È",
+["21840"] = "¤aa¡d1708Yİal€am ah¡d1708 ",
+["222586"] = "¤aa¡d1708æal€am\000Dôah¡d1708\000Dô",
+["32228"] = "¤aa¡d1708Ûal€amé˜ah¡d1708é˜",
+["31335"] = "¤aa¡d1705al€amä4ah¡d1705ä4",
+["36100"] = "¤aa¡d1705al€amäıah¡d1705äı",
+["192552"] = "¤aa¡d1708	al€am\000x¬ah¡d1708\000x¬",
+["222643"] = "¤aa¡d1708al€amuÛah¡d1708uÛ",
+["13511"] = "¤aa¡d1708bal€am\000&LLah¡d1708\000&LL",
+["8121"] = "¤aa¡d1705al€am\0001—Pah¡d1705\0001—P",
+["198534"] = "¤aa¡d1708Nal€am\000˜8ah¡d1708\000˜8",
+["36124"] = "¤aa¡d1705al€amÌ0ah¡d1705Ì0",
+["g:224638:545"] = "¤aa¡d1705al€am\000_(ah¡d1705\000_(",
+["172250"] = "¤aa¡d1705al€am£hah¡d1705£h",
+["10226"] = "¤aa¡d1705al€amÉ0ah¡d1705É0",
+["222612"] = "¤aa¡d1708şµal€am\000~@ah¡d1708\000~@",
+["g:224600:408"] = "¤aa¡d1705al€am\000b0ah¡d1705\000b0",
+["g:219476:558"] = "¤aa¡d1705al€amõ¹ğah¡d1705õ¹ğ",
+["171276"] = "¤aa¡d1708\nìal€am\000‚¸ah¡d1708\000‚¸",
+["72120"] = "¤aa¡d1708\000[al€am\\ah¡d1708\\",
+["153703"] = "¤aa¡d1708mal€ambah¡d1708b",
+["79314"] = "¤aa¡d1708al€am\000Ñxah¡d1708\000Ñx",
+["110609"] = "¤aa¡d1708\000ºîal€am,$ah¡d1708,$",
+["g:118890:330"] = "¤aa¡d1705al€amÍLah¡d1705ÍL",
+["g:224638:564"] = "¤aa¡d1705al€ah¡d1705\000-ê°am\000-ê°",
+["201401"] = "¤aa¡d1708yal€ams ah¡d1708s ",
+["222697"] = "¤aa¡d1708\000al€amLah¡d1708L",
+["82044"] = "¤aa¡d1705al€am\000Aø¬ah¡d1705\000Aø¬",
+["23448"] = "¤aa¡d1708›al€am\000'ò,ah¡d1708\000'ò,",
+["19227"] = "¤aa¡d1708al€ambZ\000ah¡d1708bZ\000",
+["147516"] = "¤aa¡d1705al€ah¡d1705ÇdamÇd",
+["219883"] = "¤aa¡d1708åal€am\000MŞÄah¡d1708\000MŞÄ",
+["222700"] = "¤aa¡d1708\000\r¤al€amèah¡d1708è",
+["212563"] = "¤aa¡d1708¬al€am\000ˆ¤ah¡d1708\000ˆ¤",
+["222626"] = "¤aa¡d1708qal€am\000<¶0ah¡d1708\000<¶0",
+["111665"] = "¤aa¡d1708íal€am¤ah¡d1708¤",
+["193964"] = "¤aa¡d1708¤al€amN ah¡d1708N ",
+["10109"] = "¤aa¡d1705al€am\000Eğ°ah¡d1705\000Eğ°",
+["53062"] = "¤aa¡d1708	;al€am)Ìah¡d1708)Ì",
+["190396"] = "¤aa¤d1705\000\r+d1712\000ÏXd1707\000	æ`d1708\0000al¢d1712\000pd1708¼am\000pah¤d1705ê`d1712\000=”d1707\000!d1708\000Fô",
+["39681"] = "¤aa¡d1708Ãal€am\000p¸ah¡d1708\000p¸",
+["194789"] = "¤aa¡d1708ˆal€am\000˜ah¡d1708\000˜",
+["74849"] = "¤aa¡d1708Æ0al€am”ah¡d1708”",
+["83092"] = "¤aa¡d1708Cal€am\rî8ah¡d1708\rî8",
+["24243"] = "¤aa¡d1708Cäal€amœ@ah¡d1708œ@",
+["118225"] = "¤aa¡d1708\rŠal€am,ah¡d1708,",
+["15136"] = "¤aa¡d1705al€am\000í¤Tah¡d1705\000í¤T",
+["g:221792:538"] = "¤aa¢d1707d1708al€am\000ô#œah¢d1707\000ô#œd1708\000ô#œ",
+["31899"] = "¤aa¡d1708al€am\000rpàah¡d1708\000rpà",
+["35622"] = "¤aa¡d1708\n	al€am\000Èxah¡d1708\000Èx",
+["3667"] = "¤aa¡d1708w\ral€am ah¡d1708 ",
+["25682"] = "¤aa¡d1705al€am\000Ó»èah¡d1705\000Ó»è",
+["10401"] = "¤aa¡d1705al€amóah¡d1705ó",
+["192878"] = "¤aa¡d1708Kal€amyah¡d1708y",
+["31915"] = "¤aa¡d1708al€am\000	\000°ah¡d1708\000	\000°",
+["2996"] = "¤aa¡d1708\000Jkal€am	Äah¡d1708	Ä",
+["11188"] = "¤aa¡d1707\nal€amqHah¡d1707qH",
+["22787"] = "¤aa¡d1708@al€amœ@ah¡d1708œ@",
+["128715"] = "¤aa¡d1708al€am\000˜opah¡d1708\000˜op",
+["36905"] = "¤aa¡d1708Iñal€amJ8ah¡d1708J8",
+["2880"] = "¤aa¡d1708\000M“al€amôah¡d1708ô",
+["g:224601:525"] = "¤aa¡d1705al€ah¡d1705\000%şam\000%ş",
+["7912"] = "¤aa¡d1708F+al€am\000ÀÔah¡d1708\000ÀÔ",
+["226031"] = "¤aa¡d1708¡al€am\000[€ah¡d1708\000[€",
+["8346"] = "¤aa¡d1705al€amIt,ah¡d1705It,",
+["6607"] = "¤aa¡d1705al€am\000-ã¨ah¡d1705\000-ã¨",
+["192861"] = "¤aa¡d1708ˆwal€am#(ah¡d1708#(",
+["212300"] = "¤aa¡d1708\nÇal€am\000‹€ah¡d1708\000‹€",
+["44266"] = "¤aa¡d1708al€am\000\r¹¬ah¡d1708\000\r¹¬",
+["15054"] = "¤aa¡d1705al€am3Û%€ah¡d17053Û%€",
+["23439"] = "¤aa¡d1708*al€amu0ah¡d1708u0",
+["38513"] = "¤aa¡d1705al€amC\\Xah¡d1705C\\X",
+["g:169411:242"] = "¤aa¡d1705al€am¼3 ah¡d1705¼3 ",
+["193255"] = "¤aa¡d1708\000«Nal€am|ah¡d1708|",
+["6370"] = "¤aa¡d1708nal€am\000pah¡d1708\000p",
+["38625"] = "¤aa¡d1708kal€am\000Ôøah¡d1708\000Ôø",
+["213219"] = "¤aa¡d1708±@al€am\00030ah¡d1708\00030",
+["109131"] = "¤aa¡d1708=al€am8¤ah¡d17088¤",
+["190394"] = "¤aa¤d1705\000d1712\000d1707\000 ¹d1708\000áal¢d1708Éd1712\0008€am\000ILah¤d1705ò0d1712\000ILd1707\000?$d1708\000?$",
+["193248"] = "¤aa¡d1708Üal€am\000LK@ah¡d1708\000LK@",
+["194870"] = "¤aa¡d1708al€am\000Møah¡d1708\000Mø",
+["37768"] = "¤aa¡d1705al€ah¡d1705ÇaXamÇaX",
+["40533"] = "¤aa¡d1708üal€am\0008ah¡d1708\0008",
+["9780"] = "¤aa¡d1705al€amÃ´ah¡d1705Ã´",
+["14048"] = "¤aa¡d1708\000âal€améüah¡d1708éü",
+["36906"] = "¤aa¡d1708>Šal€amê`ah¡d1708ê`",
+["g:219471:518"] = "¤aa¡d1705al€am\000~ğah¡d1705\000~ğ",
+["210931"] = "¤aa£d1707\000œÂd1712\000Õmd1708\0005øal¢d1712\000ñ|d1708\000.ôah£d1707\000~@d1712\000yld1708\000N4am\000I`",
+["9861"] = "¤aa¡d1705al€am\000ÅÂôah¡d1705\000ÅÂô",
+["g:15361:197"] = "¤aa¡d1705al€am\000…‰Œah¡d1705\000…‰Œ",
+["191494"] = "¤aa¡d1708Sal€am\000µ€ah¡d1708\000µ€",
+["193029"] = "¤aa¡d1708Íal€am\000AÜah¡d1708\000AÜ",
+["15130"] = "¤aa¡d1705al€am\000¢=4ah¡d1705\000¢=4",
+["175970"] = "¤aa¡d1708\000'al€ama¨ah¡d1708a¨",
+["76131"] = "¤aa¡d1708@al€am\000«Pah¡d1708\000«P",
+["22786"] = "¤aa¡d1708£al€ampäah¡d1708pä",
+["108336"] = "¤aa¡d1708õal€am6°ah¡d17086°",
+["6553"] = "¤aa¡d1705al€am\000z8ah¡d1705\000z8",
+["31281"] = "¤aa¡d1705al€amğú¨ah¡d1705ğú¨",
+["43108"] = "¤aa¡d1708Æal€am\000:tah¡d1708\000:t",
+["9755"] = "¤aa¡d1705al€amûÈ0ah¡d1705ûÈ0",
+["19998"] = "¤aa¡d1705al€amß€ah¡d1705ß€",
+["121127"] = "¤aa¡d1705al€am\000™ah¡d1705\000™",
+["1507"] = "¤aa¡d1705al€am\000lš¼ah¡d1705\000lš¼",
+["15116"] = "¤aa¡d1705al€am® ah¡d1705® ",
+["207023"] = "¤aa¤d1705‡d1712Rd1707£Êd1708§=al¡d1708 amLah¤d1705èd1712Ld1707èd1708",
+["220151"] = "¤aa¡d1708êal€am\000Xah¡d1708\000X",
+["7973"] = "¤aa¡d1708†al€am\000†<ah¡d1708\000†<",
+["79289"] = "¤aa¡d1708al€am1+ah¡d17081+",
+["15154"] = "¤aa¡d1705al€am™’Tah¡d1705™’T",
+["222590"] = "¤aa¡d1708ªal€am÷£¤ah¡d1708÷£¤",
+["191336"] = "¤aa¡d1708	áal€am ah¡d1708 ",
+["222887"] = "¤aa¡d1708¢al€am\000-ÆÀah¡d1708\000-ÆÀ",
+["19270"] = "¤aa¡d1708al€am\0006ah¡d1708\0006",
+["221920"] = "¤aa¡d1708ªal€am\000jÀah¡d1708\000jÀ",
+["193368"] = "¤aa¡d1708	Tal€am&¬ah¡d1708&¬",
+["36924"] = "¤aa¡d1708\nal€amu0ah¡d1708u0",
+["118832"] = "¤aa¡d1705al€amwÙdah¡d1705wÙd",
+["191476"] = "¤aa¡d1708ø=al€ams ah¡d1708s ",
+["41802"] = "¤aa¡d1708¡al€am0ah¡d17080",
+["194813"] = "¤aa¡d1708Bal€améüah¡d1708éü",
+["15306"] = "¤aa¡d1705al€amálah¡d1705ál",
+["172252"] = "¤aa¡d1705al€am\000öüah¡d1705\000öü",
+["168419"] = "¤aa¡d1708Xal€ah¡d1708\000Ö|am\000Ö|",
+["164434"] = "¤aa¡d1705al€am¢°øah¡d1705¢°ø",
+["37147"] = "¤aa¡d1708?al€amw$ah¡d1708w$",
+["10262"] = "¤aa¡d1705al€am\000z”ah¡d1705\000z”",
+["193954"] = "¤aa¡d1708fal€am¸ah¡d1708¸",
+["22662"] = "¤aa¡d1705al€am€R<ah¡d1705€R<",
+["194800"] = "¤aa¡d1708Şal€am\000<hah¡d1708\000<h",
+["124437"] = "¤aa¡d1708\000@öûal€amXah¡d1708X",
+["198218"] = "¤aa¡d1708al€am&¬ah¡d1708&¬",
+["224175"] = "¤aa¡d1708aal€am\000d°ah¡d1708\000d°",
+["39502"] = "¤aa¡d1708al€amÔÊàah¡d1708ÔÊà",
+["45087"] = "¤aa¡d17089Aal€am%äah¡d1708%ä",
+["198621"] = "¤aa¡d1708al€amÄÕ4ah¡d1708ÄÕ4",
+["198193"] = "¤aa¡d1708`äal€am\000Õ¸ah¡d1708\000Õ¸",
+["9719"] = "¤aa¡d1708al€am0éÙÀah¡d17080éÙÀ",
+["g:154819:242"] = "¤aa¡d1705al€am\000§ïhah¡d1705\000§ïh",
+["15087"] = "¤aa¡d1705al€am¢HÌah¡d1705¢HÌ",
+["212276"] = "¤aa¡d1708Xal€am\000=/Hah¡d1708\000=/H",
+["212289"] = "¤aa¡d1708-al€am\000$dhah¡d1708\000$dh",
+["12804"] = "¤aa¡d1708Tƒal€am|ah¡d1708|",
+["172057"] = "¤aa¡d17086al€am°ah¡d1708°",
+["13467"] = "¤aa¡d1708\ral€am\0008ah¡d1708\0008",
+["128884"] = "¤aa¡d1705al€amcTĞah¡d1705cTĞ",
+["9920"] = "¤aa¡d1705al€am\000m0ah¡d1705\000m0",
+["198232"] = "¤aa¡d1708Xal€am6Lah¡d17086L",
+["210093"] = "¤aa¡d1705al€ah¡d1705×\\€am×\\€",
+["36067"] = "¤aa¡d1705al€amÛÓ°ah¡d1705ÛÓ°",
+["128724"] = "¤aa¡d1708al€am\000øÀxah¡d1708\000øÀx",
+["g:219864:550"] = "¤aa¡d1708al€am1S¬ah¡d17081S¬",
+["27437"] = "¤aa¡d1708‹al€amah¡d1708",
+["192895"] = "¤aa¡d1708Åal€am\nğah¡d1708\nğ",
+["12037"] = "¤aa¡d1708\000®yal€amah¡d1708",
+["166836"] = "¤aa¡d1705al€amïŒah¡d1705ïŒ",
+["112289"] = "¤aa¡d1708al€am\000\r» ah¡d1708\000\r» ",
+["109142"] = "¤aa¡d1708Z]al€amèah¡d1708è",
+["218339"] = "¤aa¡d1708\000\rÇal€am0ah¡d17080",
+["198183"] = "¤aa¡d1708B-al€ah¡d1708\000\r@am\000\r@",
+["43013"] = "¤aa¡d1708Lsal€am'ah¡d1708'",
+["25651"] = "¤aa¡d17089al€ah¡d1708\000-“øam\000-“ø",
+["200569"] = "¤aa¡d1708/al€am\000˜4ah¡d1708\000˜4",
+["3961"] = "¤aa¡d1705al€am\000:ah¡d1705\000:",
+["g:169407:242"] = "¤aa¡d1705al€am‹^Èah¡d1705‹^È",
+["228232"] = "¤aa¡d1708\000×“al€am\000ßah¡d1708\000ß",
+["g:219478:545"] = "¤aa¡d1705al€am\000B@ah¡d1705\000B@",
+["g:224632:460"] = "¤aa¡d1705al€am\000v,ah¡d1705\000v,",
+["114931"] = "¤aa¡d1708Øal€amÁÀah¡d1708ÁÀ",
+["36910"] = "¤aa¡d1708pal€am\000\n,ah¡d1708\000\n,",
+["194814"] = "¤aa¡d1708al€am\000GÅÔah¡d1708\000GÅÔ",
+["6526"] = "¤aa¡d1705al€amjah¡d1705j",
+["190324"] = "¤aa¡d1708n”al€am\000Äˆah¡d1708\000Äˆ",
+["175886"] = "¤aa¡d1708B`al€am,ah¡d1708,",
+["177840"] = "¤aa¡d1708Šal€am\000,-Äah¡d1708\000,-Ä",
+["221933"] = "¤aa¡d1708xal€am\000‹Ìah¡d1708\000‹Ì",
+["31671"] = "¤aa¡d1708sal€am„ah¡d1708„",
+["9894"] = "¤aa¡d1705al€am\0001õØah¡d1705\0001õØ",
+["76087"] = "¤aa¡d1708Mal€am'ah¡d1708'",
+["127714"] = "¤aa¡d1708al€amw5•ah¡d1708w5•",
+["12205"] = "¤aa¡d1708\000h;al€amLah¡d1708L",
+["193934"] = "¤aa¡d1708qal€am\000¯Àah¡d1708\000¯À",
+["146669"] = "¤aa¡d1705al€am>•º€ah¡d1705>•º€",
+["180059"] = "¤aa¡d1708gal€am\000† ah¡d1708\000† ",
+["192851"] = "¤aa¡d1708š`al€am:˜ah¡d1708:˜",
+["6361"] = "¤aa¡d1708¶óal€am„ah¡d1708„",
+["222642"] = "¤aa¡d1708Xal€am\000rnìah¡d1708\000rnì",
+["172256"] = "¤aa¡d1705al€am“¤ah¡d1705“¤",
+["15074"] = "¤aa¡d1705al€am98!àah¡d170598!à",
+["186017"] = "¤aa¡d1708al€am\000øah¡d1708\000ø",
+["3893"] = "¤aa¡d1705al€am\000ŸOüah¡d1705\000ŸOü",
+["g:159200:320"] = "¤aa¡d1705al€am3ù¼ah¡d17053ù¼",
+["121022"] = "¤aa¡d1705al€am\000Ò~¸ah¡d1705\000Ò~¸",
+["116428"] = "¤aa¡d1708Äal€amĞah¡d1708Ğ",
+["52980"] = "¤aa¡d1708al€am\000<€ah¡d1708\000<€",
+["222645"] = "¤aa¡d1708hal€am\000Büah¡d1708\000Bü",
+["9893"] = "¤aa¡d1705al€am\000*ù,ah¡d1705\000*ù,",
+["220148"] = "¤aa¡d1708al€am\000æàah¡d1708\000æà",
+["194784"] = "¤aa¡d1708bÊal€am'ah¡d1708'",
+["g:219472:518"] = "¤aa¡d1705al€amõá\000ah¡d1705õá\000",
+["111589"] = "¤aa¡d1708„al€am”ah¡d1708”",
+["193246"] = "¤aa¡d1708Ñal€amé˜ah¡d1708é˜",
+["g:172251:200"] = "¤aa¡d1705al€am“–<ah¡d1705“–<",
+["108331"] = "¤aa¡d1708’al€am:4ah¡d1708:4",
+["108300"] = "¤aa¡d1708ûal€am¶ah¡d1708¶",
+["2304"] = "¤aa¡d1708†al€ah¡d1708 am ",
+["108345"] = "¤aa¡d1708@al€am’ah¡d1708’",
+["213774"] = "¤aa¡d1708al€amÉÃ€ah¡d1708ÉÃ€",
+["111671"] = "¤aa¡d17089ÿal€ampah¡d1708p",
+["15386"] = "¤aa¡d1705al€am1¸ah¡d17051¸",
+["160398"] = "¤aa¡d1708.ˆal€am4ah¡d17084",
+["228402"] = "¤aa¡d1708al€am\000&% ah¡d1708\000&% ",
+["153619"] = "¤aa¡d1708al€am\000<“Ğah¡d1708\000<“Ğ",
+["198419"] = "¤aa¡d1708Cöal€am4ah¡d17084",
+["204415"] = "¤aa¡d1705al€ah¡d1705Í=ğamÍ=ğ",
+["37159"] = "¤aa¡d1708Dal€amL,ah¡d1708L,",
+["133588"] = "¤aa¡d1708ƒal€amah¡d1708",
+["193945"] = "¤aa¡d1708zal€am,ˆah¡d1708,ˆ",
+["8197"] = "¤aa¡d1705al€am\000]úüah¡d1705\000]úü",
+["36932"] = "¤aa¡d1708Val€am:˜ah¡d1708:˜",
+["193224"] = "¤aa¡d1708 $al€am\0008ah¡d1708\0008",
+["76088"] = "¤aa¡d1708Jal€amg ah¡d1708g ",
+["177061"] = "¤aa¡d1708(al€amxah¡d1708x",
+["217127"] = "¤aa¡d1705al€am“”Hah¡d1705“”H",
+["52326"] = "¤aa¡d1708Š;al€am\000ah¡d1708\000",
+["74250"] = "¤aa¡d17087Bal€amÌah¡d1708Ì",
+["61980"] = "¤aa¡d1708@1al€am<Œah¡d1708<Œ",
+["226204"] = "¤aa¡d1708\000Ş8al€am¤ah¡d1708¤",
+["15426"] = "¤aa¡d1705al€amOòœah¡d1705Oòœ",
+["197756"] = "¤aa¡d1708\000z¼al€amah¡d1708",
+["109156"] = "¤aa¡d1708¶al€am,ìah¡d1708,ì",
+["170554"] = "¤aa¡d1708jÑal€ama¨ah¡d1708a¨",
+["15013"] = "¤aa¡d1705al€amr‚dah¡d1705r‚d",
+["3056"] = "¤aa¡d1705al€am\000ílah¡d1705\000íl",
+["1794"] = "¤aa¡d1705al€am4P„ah¡d17054P„",
+["1793"] = "¤aa¡d1705al€ah¡d1705\000ªµôam\000ªµô",
+["g:199014:200"] = "¤aa¡d1705al€amÕ@ah¡d1705Õ@",
+["153613"] = "¤aa¡d1708al€am\000\r”,ah¡d1708\000\r”,",
+["199014"] = "¤aa¡d1705al€amÕ@ah¡d1705Õ@",
+["24746"] = "¤aa¡d1705al€am\000¾¼ ah¡d1705\000¾¼ ",
+["24703"] = "¤aa¡d1705al€am\000‰»`ah¡d1705\000‰»`",
+["106356"] = "¤aa¡d1705al€am\000Æ]@ah¡d1705\000Æ]@",
+["198195"] = "¤aa¡d1708al€am\000!‘Àah¡d1708\000!‘À",
+["199054"] = "¤aa¡d1708Tal€amˆ¸ah¡d1708ˆ¸",
+["9827"] = "¤aa¡d1705al€am\000ÙØah¡d1705\000ÙØ",
+["25356"] = "¤aa¡d1705al€am\000*`ah¡d1705\000*`",
+["180732"] = "¤aa¡d1708®Ùal€am,ah¡d1708,",
+["210933"] = "¤aa£d1707\000…d1712\000zcd1708\000%–al¢d1712\000­Ld1708\000 ìam\000;àah£d1707\000Ìd1712\000;àd1708\000]x",
+["193957"] = "¤aa¡d1708¢al€amXah¡d1708X",
+["128499"] = "¤aa¡d1708ual€am°ah¡d1708°",
+["116183"] = "¤aa¡d1705al€am\r\r¬ah¡d1705\r\r¬",
+["191470"] = "¤aa¡d1708tal€ambÔah¡d1708bÔ",
+["205115"] = "¤aa¡d1708`al€am\000n Pah¡d1708\000n P",
+["224604"] = "¤aa¡d1705Qal€am\0005lah¡d1705\0005l",
+["219506"] = "¤aa¡d1708Zal€am\000ã[ ah¡d1708\000ã[ ",
+["72096"] = "¤aa¡d1708ºlal€am\000ªôah¡d1708\000ªô",
+["59453"] = "¤aa¡d1705al€am1G,ah¡d17051G,",
+["78244"] = "¤aa¡d1705al€am”Hah¡d1705”H",
+["17771"] = "¤aa¡d1708Åal€am1-\000ah¡d17081-\000",
+["24718"] = "¤aa¡d1705al€am\000}âah¡d1705\000}â",
+["2146"] = "¤aa¡d1705al€am\000ÍTØah¡d1705\000ÍTØ",
+["106531"] = "¤aa¡d1705al€am‰İ<ah¡d1705‰İ<",
+["220315"] = "¤aa¡d1705al€am\000“àah¡d1705\000“à",
+["41800"] = "¤aa¡d1708îal€am\000\n,ah¡d1708\000\n,",
+["44262"] = "¤aa¡d1708#al€am\00048ah¡d1708\00048",
+["15389"] = "¤aa¡d1705al€am\000ŞÜah¡d1705\000ŞÜ",
+["191519"] = "¤aa¡d1708ˆal€am´ah¡d1708´",
+["212309"] = "¤aa¡d1708ıal€am\000  ah¡d1708\000  ",
+["g:224638:525"] = "¤aa¡d1705al€am\000äáÀah¡d1705\000äáÀ",
+["151566"] = "¤aa¡d1708\000¸al€am ah¡d1708 ",
+["g:224638:558"] = "¤aa¡d1705al€ah¡d1705\000_(am\000_(",
+["7527"] = "¤aa¡d1705al€am\000*x¨ah¡d1705\000*x¨",
+["13512"] = "¤aa¡d17080al€am\000-Ÿ°ah¡d1708\000-Ÿ°",
+["44499"] = "¤aa¡d1708oal€am\r\rHah¡d1708\r\rH",
+["36145"] = "¤aa¡d1705al€am¼Shah¡d1705¼Sh",
+["55701"] = "¤aa¡d1705al€am\000C#€ah¡d1705\000C#€",
+["198197"] = "¤aa¡d1708al€am\000-àah¡d1708\000-à",
+["g:60202:177"] = "¤aa¡d1705al€am\000ådah¡d1705\000åd",
+["g:224602:564"] = "¤aa¡d1705al€ah¡d1705\000x=@am\000x=@",
+["g:217156:551"] = "¤aa¡d1705al€amëšğah¡d1705ëšğ",
+["g:204414:493"] = "¤aa¡d1705al€am1<hah¡d17051<h",
+["172317"] = "¤aa¡d1705al€amRêah¡d1705Rê",
+["52719"] = "¤aa¡d1708Ÿ|al€amádah¡d1708ád",
+["24802"] = "¤aa¡d1705al€am\000!£Tah¡d1705\000!£T",
+["g:219478:554"] = "¤aa¡d1705al€am\000B@ah¡d1705\000B@",
+["58088"] = "¤aa¡d1708al€am\000™pah¡d1708\000™p",
+["20898"] = "¤aa¡d1705al€am½)ah¡d1705½)",
+["15368"] = "¤aa¡d1705al€am¨ah¡d1705¨",
+["41266"] = "¤aa¡d1708´al€am\000	'Àah¡d1708\000	'À",
+["g:224604:558"] = "¤aa¡d1705al€am\0005lah¡d1705\0005l",
+["62786"] = "¤aa¡d1708\000D¦al€am'ah¡d1708'",
+["221935"] = "¤aa¡d1708Jal€ah¡d1708\000fìam\000fì",
+["187849"] = "¤aa¡d1708-al€am\000\r§Pah¡d1708\000\r§P",
+["191321"] = "¤aa¡d1708èal€am\000Šìah¡d1708\000Šì",
+["187699"] = "¤aa¡d1708]ôal€am¬Dah¡d1708¬D",
+["74833"] = "¤aa¡d1708Ial€am8¤ah¡d17088¤",
+["g:221790:550"] = "¤aa£d1707d1712d1708!al¢d1708O±€d1712ÉÃ€amÉÃ€ah£d1707^Ì°d1712Rù¬d1708^Ì°",
+["97622"] = "¤aa¡d1708ÿal€amÌah¡d1708Ì",
+["152641"] = "¤aa¡d17086al€am\000lĞah¡d1708\000lĞ",
+["212498"] = "¤aa¡d1708dXal¡d1708\000°am\000°ah¡d1708\0009¤",
+["172058"] = "¤aa¡d1708 „al€am°ah¡d1708°",
+["g:106503:186"] = "¤aa¡d1705al€am§n„ah¡d1705§n„",
+["g:198995:357"] = "¤aa¡d1705al€am·5Äah¡d1705·5Ä",
+["153700"] = "¤aa¡d1708–al€am\000’´ah¡d1708\000’´",
+["109628"] = "¤aa¡d1708!al€am@ah¡d1708@",
+["19268"] = "¤aa¡d1708]al€am\000\nÃah¡d1708\000\nÃ",
+["212279"] = "¤aa¡d1708al€am\000@Xah¡d1708\000@X",
+["g:151993:251"] = "¤aa¡d1705al€am¡@ah¡d1705¡@",
+["112157"] = "¤aa¡d1708al€am8@ah¡d17088@",
+["142335"] = "¤aa¡d1708\000NQal€am,ah¡d1708,",
+["191497"] = "¤aa¡d1708+ˆal€am.àah¡d1708.à",
+["22789"] = "¤aa¡d1708Cƒal€amÖah¡d1708Ö",
+["213765"] = "¤aa¡d1708ual€am\000<áğah¡d1708\000<áğ",
+["4050"] = "¤aa¡d1705al€am\000Ë½lah¡d1705\000Ë½l",
+["128738"] = "¤aa¡d1708al€am\0000ah¡d1708\0000",
+["115526"] = "¤aa¡d17085al€amlah¡d1708l",
+["198216"] = "¤aa¡d17083al€am¼ah¡d1708¼",
+["203652"] = "¤aa¡d1708ıal€amtÌah¡d1708tÌ",
+["168303"] = "¤aa¡d1708\000[al€amÈah¡d1708È",
+["173091"] = "¤aa¡d1708Oal€am\000F>ah¡d1708\000F>",
+["191339"] = "¤aa¡d1708hal€am,ìah¡d1708,ì",
+["36917"] = "¤aa¡d1708bal€am\0007¸ah¡d1708\0007¸",
+["4338"] = "¤aa¡d1708\000õ¹al€am¤ah¡d1708¤",
+["15433"] = "¤aa¡d1705al€am\000-å8ah¡d1705\000-å8",
+["109139"] = "¤aa¡d1708\000Xjal€am„ah¡d1708„",
+["11382"] = "¤aa¡d1708çal€am\000«çĞah¡d1708\000«çĞ",
+["g:121022:214"] = "¤aa¡d1705al€am\000Ò~¸ah¡d1705\000Ò~¸",
+["187850"] = "¤aa¡d17084al€am\000y¬ah¡d1708\000y¬",
+["200047"] = "¤aa¡d1708@al€ah¡d1708\000Š¸am\000Š¸",
+["6261"] = "¤aa¡d1708 al€amah¡d1708",
+["191357"] = "¤aa¡d1708hal€am,ˆah¡d1708,ˆ",
+["112295"] = "¤aa¡d1708Ral€am\000©Èah¡d1708\000©È",
+["g:219471:515"] = "¤aa¡d1705'al€am\000‚¸ah¡d1705\000‚¸",
+["25673"] = "¤aa¡d1705al€am_\000@ah¡d1705_\000@",
+["62785"] = "¤aa¡d1708­al€am,ah¡d1708,",
+["843"] = "¤aa¡d1705al€am\000\000pah¡d1705\000\000p",
+["207702"] = "¤aa¡d1708ùal€am\000yøah¡d1708\000yø",
+["219899"] = "¤aa¡d1708©al€am\000BšÈah¡d1708\000BšÈ",
+["39685"] = "¤aa¡d1708al€am¼9¦ah¡d1708¼9¦",
+["15346"] = "¤aa¡d1705al€am\000ÓE(ah¡d1705\000ÓE(",
+["191466"] = "¤aa¡d1708\000”.al€am¸ah¡d1708¸",
+["g:220321:362"] = "¤aa¡d1705al€am\000'\nìah¡d1705\000'\nì",
+["194755"] = "¤aa¡d1708\r÷al€am\000€ah¡d1708\000€",
+["106297"] = "¤aa¡d1705al€am(„hah¡d1705(„h",
+["187831"] = "¤aa¡d1708äal€am\000$ÃTah¡d1708\000$ÃT",
+["g:152087:249"] = "¤aa¡d1705al€amÛÂHah¡d1705ÛÂH",
+["10187"] = "¤aa¡d1705al€am\000¼0ôah¡d1705\000¼0ô",
+["g:118825:191"] = "¤aa¡d1705al€amİåXah¡d1705İåX",
+["200575"] = "¤aa¡d1708²al€amIÔah¡d1708IÔ",
+["23112"] = "¤aa¡d1708tal€am:˜ah¡d1708:˜",
+["224605"] = "¤aa¡d17051al¡d1705\0007´am\0007´ah¡d1705\000^Ä",
+["219889"] = "¤aa¡d1708«al€am\000c8ah¡d1708\000c8",
+["23427"] = "¤aa¡d17084al€am\000¸Øah¡d1708\000¸Ø",
+["g:221788:544"] = "¤aa£d1707d1712d1708al€ah£d17071Œd1712\000‰5dd17081Œam\000‰5d",
+["224603"] = "¤aa¡d1705-al¡d1705\000!èxam\000!èxah¡d1705\000&% ",
+["222418"] = "¤aa¡d1708kOal€am\000-x ah¡d1708\000-x ",
+["52177"] = "¤aa¡d1708cal€am\0004ah¡d1708\0004",
+["79254"] = "¤aa¡d1708\000Æal€am\\øah¡d1708\\ø",
+["102543"] = "¤aa¡d1708\nal€amLah¡d1708L",
+["61988"] = "¤aa¡d1708\ral€am\000=œah¡d1708\000=œ",
+["191329"] = "¤aa¡d1708+çal€amMXah¡d1708MX",
+["g:106499:186"] = "¤aa¡d1705al€amìÌ”ah¡d1705ìÌ”",
+["g:221790:544"] = "¤aa£d1707d1712$d1708al€amRù¬ah£d1707\000Æ\\Üd1712Rù¬d1708\000Æ\\Ü",
+["164551"] = "¤aa¡d1705al€am fÜah¡d1705 fÜ",
+["163943"] = "¤aa¡d1705al€amüRah¡d1705üR",
+["180457"] = "¤aa¡d1708al€am\000Wàah¡d1708\000Wà",
+["g:224607:525"] = "¤aa¡d1705al€ah¡d1705\000äá\\am\000äá\\",
+["4058"] = "¤aa¡d1705al€am\000àah¡d1705\000à",
+["3058"] = "¤aa¡d1705al€am\000˜–€ah¡d1705\000˜–€",
+["160502"] = "¤aa¡d17088Ğal€am0ah¡d17080",
+["67135"] = "¤aa¡d1705al€amÂuÈah¡d1705ÂuÈ",
+["g:198204:339"] = "¤aa¡d1708al€am\n}Œ\000ah¡d1708\n}Œ\000",
+["23449"] = "¤aa¡d1708al€am\000YßĞah¡d1708\000YßĞ",
+["31219"] = "¤aa¡d1705al€amJ ah¡d1705J ",
+["6396"] = "¤aa¡d1705al€amP? ah¡d1705P? ",
+["g:183010:226"] = "¤aa¡d1705al€am“ü@ah¡d1705“ü@",
+["g:224605:506"] = "¤aa¡d1705al€ah¡d1705\000-ÆÀam\000-ÆÀ",
+["111669"] = "¤aa¡d1708³al€amÌah¡d1708Ì",
+["79312"] = "¤aa¡d1708al€am\0005f´ah¡d1708\0005f´",
+["187836"] = "¤aa¡d1708al€am\000!q¸ah¡d1708\000!q¸",
+["192841"] = "¤aa¡d1708Âal€am›xah¡d1708›x",
+["g:154818:242"] = "¤aa¡d1705al€am\000˜³Ìah¡d1705\000˜³Ì",
+["219891"] = "¤aa¡d1708pal€am1,8ah¡d17081,8",
+["192848"] = "¤aa¡d1708 (al€am¤ah¡d1708¤",
+["191250"] = "¤aa¡d1708\"al€amÃPah¡d1708ÃP",
+["35182"] = "¤aa¡d1705al€am1.ah¡d17051.",
+["g:199014:357"] = "¤aa¡d1705al€am‡àah¡d1705‡à",
+["58087"] = "¤aa¡d1708Üal€am\000)2àah¡d1708\000)2à",
+["52193"] = "¤aa¡d1708al€am\000÷<ah¡d1708\000÷<",
+["193226"] = "¤aa¡d17085al€am\000\nàah¡d1708\000\nà",
+["52976"] = "¤aa¡d1708\000xal€am›Üah¡d1708›Ü",
+["194579"] = "¤aa¡d17080al€amœ@ah¡d1708œ@",
+["153633"] = "¤aa¡d1708#al€am\000@°ah¡d1708\000@°",
+["108323"] = "¤aa¡d1708\rKal€amah¡d1708",
+["191461"] = "¤aa¡d1708\000!Åal€amèah¡d1708è",
+["173092"] = "¤aa¡d1708©al€am\000'¬@ah¡d1708\000'¬@",
+["111666"] = "¤aa¡d1708(al€amTah¡d1708T",
+["132501"] = "¤aa¡d1705al€am\000şI¨ah¡d1705\000şI¨",
+["194568"] = "¤aa¡d1708oal€amÃPah¡d1708ÃP",
+["8261"] = "¤aa¡d1705al€am\000sÄah¡d1705\000sÄ",
+["8150"] = "¤aa¡d1708Ìal€am,ah¡d1708,",
+["24753"] = "¤aa¡d1705al€am\000·¡`ah¡d1705\000·¡`",
+["112284"] = "¤aa¡d1708*al€am\000ûĞah¡d1708\000ûĞ",
+["10257"] = "¤aa¡d1705al€am\000Ğ¨ah¡d1705\000Ğ¨",
+["4233"] = "¤aa¡d1708*çal€amœ@ah¡d1708œ@",
+["190312"] = "¤aa¡d1708,õal€amí€ah¡d1708í€",
+["79309"] = "¤aa¡d1708#al€am\000˜£\000ah¡d1708\000˜£\000",
+["172059"] = "¤aa¡d1708õal€amLah¡d1708L",
+["g:229077:561"] = "¤aa¡d1705al€am£àah¡d1705£à",
+["194801"] = "¤aa¡d1708al€am\000-Ç$ah¡d1708\000-Ç$",
+["162516"] = "¤aa¡d1708/al€am\000|pah¡d1708\000|p",
+["723"] = "¤aa¡d1708¶al€amÈah¡d1708È",
+["76136"] = "¤aa¡d1708Úal€amN„ah¡d1708N„",
+["g:106504:320"] = "¤aa¡d1705al€am¨Uah¡d1705¨U",
+["221868"] = "¤aa¢d1712–d1708\nµal€am\000!ßàah¢d1712\000!ßàd1708\000 ’¬",
+["21842"] = "¤aa¡d1708¡al€am„lah¡d1708„l",
+["220137"] = "¤aa£d1707Iïd1712w,d1708P'al¢d1712\000I(d1708\000•¸ah£d1707\000'ld1712\000ĞPd1708\000-Ham\000I(",
+["g:224605:564"] = "¤aa¡d1705\ral€ah¡d1705\000˜–€am\000˜–€",
+["200003"] = "¤aa¡d1708gal€ah¡d1708\000Şàam\000Şà",
+["124107"] = "¤aa¡d1708Nal€am€ah¡d1708€",
+["109153"] = "¤aa¡d1708xal€amSüah¡d1708Sü",
+["14560"] = "¤aa¡d1705al€ah¡d1705î{amî{",
+["222792"] = "¤aa¡d1708\000ŒAal€amš°ah¡d1708š°",
+["36117"] = "¤aa¡d1705al€am¯äøah¡d1705¯äø",
+["g:204929:376"] = "¤aa¡d1705al€am\n«Ğìah¡d1705\n«Ğì",
+["200582"] = "¤aa¡d1708éal€amº¸ah¡d1708º¸",
+["g:204415:441"] = "¤aa¡d1705al€ah¡d1705\000\000\000òy€am\000\000\000òy€",
+["192837"] = "¤aa¡d1708ßal€am'ah¡d1708'",
+["164427"] = "¤aa¡d1705al€amsÌah¡d1705sÌ",
+["173204"] = "¤aa¡d1708\0002#îal€amah¡d1708",
+["g:224114:564"] = "¤aa£d1707%d1712Gd1708)al€amWyLah£d1707“Aˆd1712WyLd1708“Aˆ",
+["221756"] = "¤aa¡d1708òal€am\000mèah¡d1708\000mè",
+["g:198996:357"] = "¤aa¡d1705al€am€·pah¡d1705€·p",
+["36923"] = "¤aa¡d1708øal€amu0ah¡d1708u0",
+["222789"] = "¤aa¡d1708\000æ§al€am§øah¡d1708§ø",
+["222501"] = "¤aa¡d1708Æal€amUßìah¡d1708Ußì",
+["g:121074:214"] = "¤aa¡d1705al€am–gTah¡d1705–gT",
+["213752"] = "¤aa¡d1708”al€am\000Cæah¡d1708\000Cæ",
+["9781"] = "¤aa¡d1705al€ah¡d1705É€amÉ€",
+["15094"] = "¤aa¡d1705al€am\0005gah¡d1705\0005g",
+["228406"] = "¤aa¡d1708Bal€amC®pah¡d1708C®p",
+["160399"] = "¤aa¡d1708al€am¼ah¡d1708¼",
+["106469"] = "¤aa¡d1705al€ah¡d1705‚h”am‚h”",
+["23793"] = "¤aa¡d17080Hal€am\000Üah¡d1708\000Ü",
+["g:224632:515"] = "¤aa¡d1705al€am\000-ÆÀah¡d1705\000-ÆÀ",
+["204995"] = "¤aa¡d1708Åal€am\000jöah¡d1708\000jö",
+["191493"] = "¤aa¡d17085al€am\000nah¡d1708\000n",
+["225569"] = "¤aa¡d1708\000•jal€am&¬ah¡d1708&¬",
+["1844"] = "¤aa¡d1705al€am\000g8ah¡d1705\000g8",
+["79306"] = "¤aa¡d1708al€am\000Æ~ah¡d1708\000Æ~",
+["g:224601:532"] = "¤aa¡d1705al€ah¡d1705®¦am®¦",
+["g:78882:187"] = "¤aa¡d1705al€am/nah¡d1705/n",
+["164443"] = "¤aa¡d1705al€amş1\000ah¡d1705ş1\000",
+["153617"] = "¤aa¡d1708'al€am\000*X<ah¡d1708\000*X<",
+["212674"] = "¤aa¡d17087Qal€am\000]ôah¡d1708\000]ô",
+["198996"] = "¤aa¡d1705al€am€·pah¡d1705€·p",
+["53070"] = "¤aa¡d1708;Tal€am'ah¡d1708'",
+["3207"] = "¤aa¡d1705al€amP,(ah¡d1705P,(",
+["20520"] = "¤aa¡d1708›al€am\000Ş€ah¡d1708\000Ş€",
+["36129"] = "¤aa¡d1705al€am	Ö*dah¡d1705	Ö*d",
+["223512"] = "¤aa¡d1708\000¼Øal¡d1708	Äam	Äah¡d1708'",
+["44271"] = "¤aa¡d1708	al€am\000I>\000ah¡d1708\000I>\000",
+["211807"] = "¤aa¡d1708Dàal€am\000hah¡d1708\000h",
+["192867"] = "¤aa¡d1708al€amdah¡d1708d",
+["14589"] = "¤aa¡d1705al¡d1705\0001@ah¡d1705\000FAğam\0001@",
+["197757"] = "¤aa¡d1708pal€amah¡d1708",
+["223704"] = "¤aa¡d1708„al€ah¡d1708]4 am]4 ",
+["27515"] = "¤aa¡d1708+al€am\000† ah¡d1708\000† ",
+["127735"] = "¤aa¢d1707d1708al€ah¢d1707J~d1708J~amJ~",
+["55700"] = "¤aa¡d1705al€am[G„ah¡d1705[G„",
+["79308"] = "¤aa¡d1708$al€am\000˜®Tah¡d1708\000˜®T",
+["22449"] = "¤aa¡d1708\000Gal€amo¸ah¡d1708o¸",
+["g:147038:245"] = "¤aa¡d1705al€amA*ah¡d1705A*",
+["201403"] = "¤aa¡d1708µal€amj¤ah¡d1708j¤",
+["46849"] = "¤aa¡d1708ïal€am\000:¾¬ah¡d1708\000:¾¬",
+["164428"] = "¤aa¡d1705al€amÒÔŒah¡d1705ÒÔŒ",
+["22793"] = "¤aa¡d1708	Bal€am”pah¡d1708”p",
+["31901"] = "¤aa¡d1708Cal€am\000]pah¡d1708\000]p",
+["4342"] = "¤aa¡d1708£Ãal€am|ah¡d1708|",
+["191511"] = "¤aa¡d1708val€amˆah¡d1708ˆ",
+["153626"] = "¤aa¡d1708al€am\000 ¼ah¡d1708\000 ¼",
+["106503"] = "¤aa¡d1705al€am§n„ah¡d1705§n„",
+["121352"] = "¤aa¡d1705al€am\000'ßlah¡d1705\000'ßl",
+["194798"] = "¤aa¡d1708Şal€am\000:ah¡d1708\000:",
+["105718"] = "¤aa¡d1708Bal€am\000¦˜ah¡d1708\000¦˜",
+["172053"] = "¤aa¡d1708tğal€am¼ah¡d1708¼",
+["128743"] = "¤aa¡d1708al€amĞÀah¡d1708ĞÀ",
+["219013"] = "¤aa¡d1708\rHal€amÍ(”ah¡d1708Í(”",
+["74845"] = "¤aa¡d1708al€amÂìah¡d1708Âì",
+["222632"] = "¤aa¡d1708eal€am\000d©$ah¡d1708\000d©$",
+["g:198262:332"] = "¤aa¡d1708al€am\000§Ø\\ah¡d1708\000§Ø\\",
+["94070"] = "¤aa¡d1705al€am]Lah¡d1705]L",
+["22457"] = "¤aa¡d1708#al€am\000ÍØah¡d1708\000ÍØ",
+["g:219477:551"] = "¤aa¡d1705al€am\000Lqìah¡d1705\000Lqì",
+["6581"] = "¤aa¡d1705al€am\000$L”ah¡d1705\000$L”",
+["90789"] = "¤aa¡d1705al€am,j”ah¡d1705,j”",
+["164568"] = "¤aa¡d1705al€amæºPah¡d1705æºP",
+["4357"] = "¤aa¡d1708¸6al€am ah¡d1708 ",
+["128733"] = "¤aa¡d1708al€am\000ĞDah¡d1708\000ĞD",
+["173100"] = "¤aa¡d1708al€am\000@Ùah¡d1708\000@Ù",
+["213758"] = "¤aa¡d1708[al€am\000˜–ah¡d1708\000˜–",
+["151993"] = "¤aa¡d1705al€amÉ½¤ah¡d1705É½¤",
+["7067"] = "¤aa¡d1708	¬al€amœ@ah¡d1708œ@",
+["34054"] = "¤aa¡d1708\000s‚al€amĞah¡d1708Ğ",
+["212673"] = "¤aa¡d1708¡al€am\000˜–€ah¡d1708\000˜–€",
+["g:198993:357"] = "¤aa¡d1705al€am\000u7Ğah¡d1705\000u7Ğ",
+["193388"] = "¤aa¡d1705al€am\000LK@ah¡d1705\000LK@",
+["4796"] = "¤aa¡d1705al€am¦Îğah¡d1705¦Îğ",
+["2675"] = "¤aa¡d1708#…al€amèah¡d1708è",
+["2840"] = "¤aa¡d1708ŒŞal€ah¡d1708\000Xam\000X",
+["2453"] = "¤aa¡d1708\000Ñial€am\000Stah¡d1708\000St",
+["112156"] = "¤aa¡d1708xal€am\000t ah¡d1708\000t ",
+["112296"] = "¤aa¡d1708\"al€amÃPah¡d1708ÃP",
+["23445"] = "¤aa¡d170835al€am\000(ah¡d1708\000(",
+["50069"] = "¤aa¡d1705al€am\000mÖ\\ah¡d1705\000mÖ\\",
+["18699"] = "¤aa¡d1705al€amXÈ¢xah¡d1705XÈ¢x",
+["g:172254:262"] = "¤aa¡d1705al€amõá\000ah¡d1705õá\000",
+["52180"] = "¤aa¡d1708al€am\000IŒah¡d1708\000IŒ",
+["152543"] = "¤aa¡d1708+åal€am!4ah¡d1708!4",
+["127037"] = "¤aa¡d1708&†al€am&¬ah¡d1708&¬",
+["210936"] = "¤aa¡d1708\000GÇal¡d1708\000Ham\000Hah¡d1708\000P0",
+["153669"] = "¤aa¡d1708],al€ambah¡d1708b",
+["3164"] = "¤aa¡d1708al€am\000|; ah¡d1708\000|; ",
+["108339"] = "¤aa¡d1708Ual€am Ğah¡d1708 Ğ",
+["25353"] = "¤aa¡d1705al€am\000[€ah¡d1705\000[€",
+["198221"] = "¤aa¡d1708¿al€am\000jÏ\\ah¡d1708\000jÏ\\",
+["g:106698:186"] = "¤aa¡d1705al€amf@ah¡d1705f@",
+["19441"] = "¤aa¡d17086Lal€am0ah¡d17080",
+["222877"] = "¤aa¡d1708oal€am\000¨øah¡d1708\000¨ø",
+["44144"] = "¤aa¡d1708;al€am%€ah¡d1708%€",
+["173081"] = "¤aa¡d1708Gal€am\000åPah¡d1708\000åP",
+["79310"] = "¤aa¡d1708al€am\000\rĞah¡d1708\000\rĞ",
+["192097"] = "¤aa¡d1708\000“Pal€am'ah¡d1708'",
+["g:221792:557"] = "¤aa£d1707d1712d1708al¡d1708\000 7 am\000 7 ah£d17070Şàd1712\000 7 d17080Şà",
+["2975"] = "¤aa¡d1705al€am\000geˆah¡d1705\000geˆ",
+["3975"] = "¤aa¡d1705al€am\000*Ôah¡d1705\000*Ô",
+["161072"] = "¤aa¡d1705al€am\000LK@ah¡d1705\000LK@",
+["153705"] = "¤aa¡d1708\n£al€ameah¡d1708e",
+["164445"] = "¤aa¡d1705al€amÖÆ|ah¡d1705ÖÆ|",
+["212313"] = "¤aa¡d1708ƒal€amŸ;ğah¡d1708Ÿ;ğ",
+["g:208420:457"] = "¤aa¡d1705al€ah¡d1705\000\000\0000\000am\000\000\0000\000",
+["153616"] = "¤aa¡d1708al€am\000 ah¡d1708\000 ",
+["g:221797:538"] = "¤aa£d1707$d1712d1708$al€ah£d1707\000*’pd1712\000=	\000d1708\000,am\000=	\000",
+["1944"] = "¤aa¡d1705al€ama6üah¡d1705a6ü",
+["g:106733:186"] = "¤aa¡d1705al€am\000Z Dah¡d1705\000Z D",
+["44147"] = "¤aa¡d1708?al€am\000Dœah¡d1708\000Dœ",
+["22445"] = "¤aa¡d1708Óal€ambpah¡d1708bp",
+["10190"] = "¤aa¡d1705al€am\000Hah¡d1705\000H",
+["213754"] = "¤aa¡d1708\000al€am\000o4Àah¡d1708\000o4À",
+["44686"] = "¤aa¡d1705al€am«?dah¡d1705«?d",
+["109141"] = "¤aa¡d1708ÄÓal€am„ah¡d1708„",
+["62791"] = "¤aa¡d1708h`al€am4ah¡d17084",
+["12644"] = "¤aa¡d1708p7al€amˆah¡d1708ˆ",
+["172054"] = "¤aa¡d1708\000Úal€am¼ah¡d1708¼",
+["222420"] = "¤aa¡d1708lal€am\000G·`ah¡d1708\000G·`",
+["74248"] = "¤aa¡d1708Gdal€amlüah¡d1708lü",
+["172231"] = "¤aa¡d1708\000—al€am ah¡d1708 ",
+},
+["Aggra(PortuguÃªs)"] = "€",
+}
+AUCTIONATOR_POSTING_HISTORY = {
+["210805"] = {
+{
+["price"] = 123300,
+["quantity"] = 17,
+["time"] = 1725356117,
+},
+{
+["price"] = 129700,
+["quantity"] = 17,
+["time"] = 1725361554,
+},
+{
+["price"] = 113300,
+["quantity"] = 9,
+["time"] = 1725394485,
+},
+{
+["price"] = 129900,
+["quantity"] = 34,
+["time"] = 1725640496,
+},
+{
+["price"] = 118000,
+["quantity"] = 18,
+["time"] = 1725778095,
+},
+},
+["210934"] = {
+{
+["price"] = 195000,
+["quantity"] = 1,
+["time"] = 1725394583,
+},
+{
+["price"] = 204800,
+["quantity"] = 4,
+["time"] = 1725640529,
+},
+{
+["price"] = 199000,
+["quantity"] = 7,
+["time"] = 1725778190,
+},
+},
+["221756"] = {
+{
+["price"] = 709000,
+["quantity"] = 1,
+["time"] = 1725183833,
+},
+},
+["210932"] = {
+{
+["price"] = 1769600,
+["quantity"] = 6,
+["time"] = 1725356091,
+},
+{
+["price"] = 1914400,
+["quantity"] = 2,
+["time"] = 1725361564,
+},
+{
+["price"] = 1830800,
+["quantity"] = 5,
+["time"] = 1725394504,
+},
+{
+["price"] = 2399900,
+["quantity"] = 5,
+["time"] = 1725640523,
+},
+{
+["price"] = 2000000,
+["quantity"] = 12,
+["time"] = 1725778110,
+},
+},
+["222533"] = {
+{
+["price"] = 130000,
+["quantity"] = 5,
+["time"] = 1725183798,
+},
+},
+["217707"] = {
+{
+["price"] = 3000000,
+["quantity"] = 3,
+["time"] = 1725183763,
+},
+{
+["price"] = 5950000,
+["quantity"] = 3,
+["time"] = 1725361576,
+},
+{
+["price"] = 5754200,
+["quantity"] = 1,
+["time"] = 1725394610,
+},
+{
+["price"] = 5451300,
+["quantity"] = 1,
+["time"] = 1725410334,
+},
+{
+["price"] = 5595700,
+["quantity"] = 2,
+["time"] = 1725640557,
+},
+{
+["price"] = 3669700,
+["quantity"] = 2,
+["time"] = 1725778180,
+},
+},
+["213613"] = {
+{
+["price"] = 190000,
+["quantity"] = 20,
+["time"] = 1725183751,
+},
+{
+["price"] = 228500,
+["quantity"] = 2,
+["time"] = 1725356112,
+},
+{
+["price"] = 239200,
+["quantity"] = 7,
+["time"] = 1725361578,
+},
+{
+["price"] = 170000,
+["quantity"] = 7,
+["time"] = 1725394601,
+},
+{
+["price"] = 229700,
+["quantity"] = 21,
+["time"] = 1725640554,
+},
+{
+["price"] = 184000,
+["quantity"] = 5,
+["time"] = 1725778176,
+},
+},
+["g:224599:525"] = {
+{
+["price"] = 10000000,
+["quantity"] = 1,
+["time"] = 1725778301,
+},
+},
+["g:224632:538"] = {
+{
+["price"] = 3739900,
+["quantity"] = 1,
+["time"] = 1725778355,
+},
+},
+["224632"] = {
+{
+["price"] = 3739900,
+["quantity"] = 1,
+["time"] = 1725778355,
+},
+},
+["224609"] = {
+{
+["price"] = 3667100,
+["quantity"] = 1,
+["time"] = 1725778348,
+},
+},
+["210803"] = {
+{
+["price"] = 382000,
+["quantity"] = 5,
+["time"] = 1725640492,
+},
+{
+["price"] = 349700,
+["quantity"] = 6,
+["time"] = 1725778091,
+},
+},
+["210806"] = {
+{
+["price"] = 200000,
+["quantity"] = 10,
+["time"] = 1725183943,
+},
+{
+["price"] = 219800,
+["quantity"] = 2,
+["time"] = 1725356115,
+},
+{
+["price"] = 212100,
+["quantity"] = 8,
+["time"] = 1725361557,
+},
+{
+["price"] = 188000,
+["quantity"] = 9,
+["time"] = 1725394482,
+},
+{
+["price"] = 188300,
+["quantity"] = 2,
+["time"] = 1725410317,
+},
+{
+["price"] = 204400,
+["quantity"] = 20,
+["time"] = 1725640498,
+},
+{
+["price"] = 181900,
+["quantity"] = 7,
+["time"] = 1725778097,
+},
+},
+["225569"] = {
+{
+["price"] = 9900,
+["quantity"] = 3,
+["time"] = 1725410352,
+},
+},
+["225566"] = {
+{
+["price"] = 10000,
+["quantity"] = 2,
+["time"] = 1725778228,
+},
+},
+["213197"] = {
+{
+["price"] = 820000,
+["quantity"] = 1,
+["time"] = 1725183854,
+},
+{
+["price"] = 2599700,
+["quantity"] = 1,
+["time"] = 1725410330,
+},
+{
+["price"] = 3818800,
+["quantity"] = 2,
+["time"] = 1725640549,
+},
+},
+["__dbversion"] = 1,
+["212498"] = {
+{
+["price"] = 276900,
+["quantity"] = 3,
+["time"] = 1725410326,
+},
+{
+["price"] = 289900,
+["quantity"] = 2,
+["time"] = 1725640545,
+},
+{
+["price"] = 397900,
+["quantity"] = 2,
+["time"] = 1725778145,
+},
+},
+["212511"] = {
+{
+["price"] = 897500,
+["quantity"] = 1,
+["time"] = 1725410328,
+},
+},
+["224828"] = {
+{
+["price"] = 225000,
+["quantity"] = 2,
+["time"] = 1725356119,
+},
+{
+["price"] = 230000,
+["quantity"] = 5,
+["time"] = 1725361587,
+},
+{
+["price"] = 220000,
+["quantity"] = 11,
+["time"] = 1725394604,
+},
+{
+["price"] = 226100,
+["quantity"] = 6,
+["time"] = 1725410350,
+},
+{
+["price"] = 310000,
+["quantity"] = 6,
+["time"] = 1725640583,
+},
+{
+["price"] = 309000,
+["quantity"] = 10,
+["time"] = 1725778222,
+},
+},
+["210935"] = {
+{
+["price"] = 359800,
+["quantity"] = 1,
+["time"] = 1725640527,
+},
+},
+["210801"] = {
+{
+["price"] = 3550000,
+["quantity"] = 1,
+["time"] = 1725394473,
+},
+{
+["price"] = 3540000,
+["quantity"] = 5,
+["time"] = 1725640487,
+},
+{
+["price"] = 3313300,
+["quantity"] = 2,
+["time"] = 1725778087,
+},
+},
+["210937"] = {
+{
+["price"] = 112800,
+["quantity"] = 9,
+["time"] = 1725183987,
+},
+{
+["price"] = 199800,
+["quantity"] = 1,
+["time"] = 1725356095,
+},
+{
+["price"] = 199700,
+["quantity"] = 3,
+["time"] = 1725361566,
+},
+{
+["price"] = 160900,
+["quantity"] = 4,
+["time"] = 1725394535,
+},
+{
+["price"] = 180000,
+["quantity"] = 14,
+["time"] = 1725640537,
+},
+{
+["price"] = 179100,
+["quantity"] = 9,
+["time"] = 1725778139,
+},
+},
+["g:224609:538"] = {
+{
+["price"] = 3667100,
+["quantity"] = 1,
+["time"] = 1725778348,
+},
+},
+["210798"] = {
+{
+["price"] = 449600,
+["quantity"] = 10,
+["time"] = 1725356086,
+},
+{
+["price"] = 472500,
+["quantity"] = 10,
+["time"] = 1725361545,
+},
+{
+["price"] = 417700,
+["quantity"] = 9,
+["time"] = 1725394451,
+},
+{
+["price"] = 480000,
+["quantity"] = 7,
+["time"] = 1725640481,
+},
+{
+["price"] = 448900,
+["quantity"] = 18,
+["time"] = 1725778080,
+},
+},
+["213610"] = {
+{
+["price"] = 35000,
+["quantity"] = 26,
+["time"] = 1725183780,
+},
+{
+["price"] = 116400,
+["quantity"] = 7,
+["time"] = 1725356104,
+},
+{
+["price"] = 99000,
+["quantity"] = 17,
+["time"] = 1725361571,
+},
+{
+["price"] = 60000,
+["quantity"] = 15,
+["time"] = 1725394592,
+},
+{
+["price"] = 70000,
+["quantity"] = 2,
+["time"] = 1725410332,
+},
+{
+["price"] = 45800,
+["quantity"] = 19,
+["time"] = 1725640551,
+},
+{
+["price"] = 30000,
+["quantity"] = 21,
+["time"] = 1725778169,
+},
+},
+["213612"] = {
+{
+["price"] = 870000,
+["quantity"] = 4,
+["time"] = 1725361573,
+},
+{
+["price"] = 680000,
+["quantity"] = 7,
+["time"] = 1725394598,
+},
+{
+["price"] = 584000,
+["quantity"] = 9,
+["time"] = 1725778174,
+},
+},
+["210936"] = {
+{
+["price"] = 130000,
+["quantity"] = 97,
+["time"] = 1725183868,
+},
+{
+["price"] = 133700,
+["quantity"] = 5,
+["time"] = 1725356093,
+},
+{
+["price"] = 137000,
+["quantity"] = 29,
+["time"] = 1725361568,
+},
+{
+["price"] = 138000,
+["quantity"] = 37,
+["time"] = 1725394531,
+},
+{
+["price"] = 151600,
+["quantity"] = 19,
+["time"] = 1725410322,
+},
+{
+["price"] = 119900,
+["quantity"] = 33,
+["time"] = 1725640531,
+},
+{
+["price"] = 128400,
+["quantity"] = 23,
+["time"] = 1725778130,
+},
+},
+["221853"] = {
+{
+["price"] = 790000,
+["quantity"] = 2,
+["time"] = 1725410342,
+},
+},
+["212495"] = {
+{
+["price"] = 776600,
+["quantity"] = 3,
+["time"] = 1725778143,
+},
+},
+["221856"] = {
+{
+["price"] = 745000,
+["quantity"] = 2,
+["time"] = 1725410344,
+},
+},
+["210799"] = {
+{
+["price"] = 270000,
+["quantity"] = 3,
+["time"] = 1725361549,
+},
+{
+["price"] = 378500,
+["quantity"] = 10,
+["time"] = 1725394456,
+},
+{
+["price"] = 420000,
+["quantity"] = 2,
+["time"] = 1725410313,
+},
+{
+["price"] = 300400,
+["quantity"] = 14,
+["time"] = 1725640483,
+},
+{
+["price"] = 193900,
+["quantity"] = 19,
+["time"] = 1725778082,
+},
+},
+["210810"] = {
+{
+["price"] = 2569900,
+["quantity"] = 4,
+["time"] = 1725778107,
+},
+},
+["210221"] = {
+{
+["price"] = 540000,
+["quantity"] = 1,
+["time"] = 1725640469,
+},
+},
+["210796"] = {
+{
+["price"] = 250000,
+["quantity"] = 123,
+["time"] = 1725183545,
+},
+{
+["price"] = 227500,
+["quantity"] = 19,
+["time"] = 1725356084,
+},
+{
+["price"] = 240000,
+["quantity"] = 41,
+["time"] = 1725361543,
+},
+{
+["price"] = 234500,
+["quantity"] = 32,
+["time"] = 1725394436,
+},
+{
+["price"] = 329000,
+["quantity"] = 63,
+["time"] = 1725640476,
+},
+{
+["price"] = 314900,
+["quantity"] = 57,
+["time"] = 1725778075,
+},
+},
+["212667"] = {
+{
+["price"] = 110000,
+["quantity"] = 4,
+["time"] = 1725778156,
+},
+},
+["212664"] = {
+{
+["price"] = 118000,
+["quantity"] = 3,
+["time"] = 1725361585,
+},
+{
+["price"] = 106300,
+["quantity"] = 2,
+["time"] = 1725394590,
+},
+{
+["price"] = 44400,
+["quantity"] = 4,
+["time"] = 1725778151,
+},
+},
+["213611"] = {
+{
+["price"] = 457200,
+["quantity"] = 4,
+["time"] = 1725778171,
+},
+},
+["210809"] = {
+{
+["price"] = 610000,
+["quantity"] = 2,
+["time"] = 1725183918,
+},
+{
+["price"] = 564100,
+["quantity"] = 1,
+["time"] = 1725394492,
+},
+{
+["price"] = 540000,
+["quantity"] = 5,
+["time"] = 1725640505,
+},
+{
+["price"] = 679800,
+["quantity"] = 13,
+["time"] = 1725778105,
+},
+},
+["212505"] = {
+{
+["price"] = 759900,
+["quantity"] = 3,
+["time"] = 1725778147,
+},
+},
+["210797"] = {
+{
+["price"] = 266600,
+["quantity"] = 14,
+["time"] = 1725183583,
+},
+{
+["price"] = 259400,
+["quantity"] = 11,
+["time"] = 1725361547,
+},
+{
+["price"] = 237000,
+["quantity"] = 9,
+["time"] = 1725394446,
+},
+{
+["price"] = 320000,
+["quantity"] = 24,
+["time"] = 1725640478,
+},
+{
+["price"] = 320100,
+["quantity"] = 39,
+["time"] = 1725778077,
+},
+},
+["220136"] = {
+{
+["price"] = 224800,
+["quantity"] = 3,
+["time"] = 1725356108,
+},
+{
+["price"] = 150000,
+["quantity"] = 4,
+["time"] = 1725778199,
+},
+},
+["210931"] = {
+{
+["price"] = 199800,
+["quantity"] = 2,
+["time"] = 1725184019,
+},
+{
+["price"] = 340000,
+["quantity"] = 5,
+["time"] = 1725356101,
+},
+{
+["price"] = 420000,
+["quantity"] = 23,
+["time"] = 1725361562,
+},
+{
+["price"] = 344000,
+["quantity"] = 15,
+["time"] = 1725394500,
+},
+{
+["price"] = 251000,
+["quantity"] = 28,
+["time"] = 1725640519,
+},
+{
+["price"] = 418300,
+["quantity"] = 23,
+["time"] = 1725778112,
+},
+},
+["210802"] = {
+{
+["price"] = 143200,
+["quantity"] = 2,
+["time"] = 1725361592,
+},
+{
+["price"] = 140000,
+["quantity"] = 7,
+["time"] = 1725640489,
+},
+{
+["price"] = 134800,
+["quantity"] = 10,
+["time"] = 1725778089,
+},
+},
+["210933"] = {
+{
+["price"] = 153400,
+["quantity"] = 1,
+["time"] = 1725356097,
+},
+{
+["price"] = 148400,
+["quantity"] = 14,
+["time"] = 1725410320,
+},
+{
+["price"] = 140900,
+["quantity"] = 8,
+["time"] = 1725640525,
+},
+{
+["price"] = 139900,
+["quantity"] = 9,
+["time"] = 1725778193,
+},
+},
+["221859"] = {
+{
+["price"] = 860000,
+["quantity"] = 3,
+["time"] = 1725410346,
+},
+{
+["price"] = 928600,
+["quantity"] = 1,
+["time"] = 1725778215,
+},
+},
+["218338"] = {
+{
+["price"] = 9900,
+["quantity"] = 2,
+["time"] = 1725410338,
+},
+},
+["210800"] = {
+{
+["price"] = 370000,
+["quantity"] = 4,
+["time"] = 1725183970,
+},
+{
+["price"] = 680000,
+["quantity"] = 3,
+["time"] = 1725361552,
+},
+{
+["price"] = 639900,
+["quantity"] = 6,
+["time"] = 1725394460,
+},
+{
+["price"] = 741000,
+["quantity"] = 2,
+["time"] = 1725410315,
+},
+{
+["price"] = 601000,
+["quantity"] = 6,
+["time"] = 1725640485,
+},
+{
+["price"] = 609800,
+["quantity"] = 6,
+["time"] = 1725778084,
+},
+},
+["221862"] = {
+{
+["price"] = 2051000,
+["quantity"] = 3,
+["time"] = 1725410348,
+},
+},
+["218339"] = {
+{
+["price"] = 2000,
+["quantity"] = 3,
+["time"] = 1725778186,
+},
+},
+["210807"] = {
+{
+["price"] = 850000,
+["quantity"] = 5,
+["time"] = 1725394479,
+},
+{
+["price"] = 869900,
+["quantity"] = 2,
+["time"] = 1725640500,
+},
+{
+["price"] = 880000,
+["quantity"] = 2,
+["time"] = 1725778100,
+},
+},
+["220137"] = {
+{
+["price"] = 203800,
+["quantity"] = 6,
+["time"] = 1725356126,
+},
+},
+["223512"] = {
+{
+["price"] = 10000,
+["quantity"] = 10,
+["time"] = 1725410360,
+},
+},
+["210808"] = {
+{
+["price"] = 479900,
+["quantity"] = 34,
+["time"] = 1725183897,
+},
+{
+["price"] = 266600,
+["quantity"] = 6,
+["time"] = 1725361590,
+},
+{
+["price"] = 341000,
+["quantity"] = 12,
+["time"] = 1725394489,
+},
+{
+["price"] = 170000,
+["quantity"] = 26,
+["time"] = 1725640503,
+},
+{
+["price"] = 195000,
+["quantity"] = 16,
+["time"] = 1725778102,
+},
+},
+["210804"] = {
+{
+["price"] = 2068000,
+["quantity"] = 4,
+["time"] = 1725640494,
+},
+{
+["price"] = 1948300,
+["quantity"] = 3,
+["time"] = 1725778093,
+},
+},
+["221754"] = {
+{
+["price"] = 4600000,
+["quantity"] = 1,
+["time"] = 1725361580,
+},
+{
+["price"] = 4790000,
+["quantity"] = 2,
+["time"] = 1725778206,
+},
+},
+["212508"] = {
+{
+["price"] = 760000,
+["quantity"] = 4,
+["time"] = 1725778149,
+},
+},
+["210938"] = {
+{
+["price"] = 716000,
+["quantity"] = 1,
+["time"] = 1725361582,
+},
+{
+["price"] = 434700,
+["quantity"] = 11,
+["time"] = 1725394587,
+},
+{
+["price"] = 429600,
+["quantity"] = 2,
+["time"] = 1725410323,
+},
+{
+["price"] = 411400,
+["quantity"] = 10,
+["time"] = 1725640543,
+},
+{
+["price"] = 366300,
+["quantity"] = 14,
+["time"] = 1725778137,
+},
+},
+["224599"] = {
+{
+["price"] = 10000000,
+["quantity"] = 1,
+["time"] = 1725778301,
+},
+},
+["210930"] = {
+{
+["price"] = 424900,
+["quantity"] = 159,
+["time"] = 1725183722,
+},
+{
+["price"] = 319900,
+["quantity"] = 22,
+["time"] = 1725356099,
+},
+{
+["price"] = 322000,
+["quantity"] = 18,
+["time"] = 1725361559,
+},
+{
+["price"] = 341000,
+["quantity"] = 40,
+["time"] = 1725394496,
+},
+{
+["price"] = 320000,
+["quantity"] = 76,
+["time"] = 1725410318,
+},
+{
+["price"] = 392000,
+["quantity"] = 54,
+["time"] = 1725640517,
+},
+{
+["price"] = 402000,
+["quantity"] = 52,
+["time"] = 1725778114,
+},
+},
+["225670"] = {
+{
+["price"] = 949600,
+["quantity"] = 1,
+["time"] = 1725410356,
+},
+},
+["222417"] = {
+{
+["price"] = 3369500,
+["quantity"] = 1,
+["time"] = 1725778219,
+},
+},
+["228414"] = {
+{
+["price"] = 35800,
+["quantity"] = 4,
+["time"] = 1725410363,
+},
+},
+["212242"] = {
+{
+["price"] = 55500,
+["quantity"] = 16,
+["time"] = 1725778258,
+},
+},
+}
+AUCTIONATOR_VENDOR_PRICE_CACHE = {
+["81414"] = 5200,
+["3371"] = 20,
+["200860"] = 50000,
+["211806"] = 27500,
+["222695"] = 1010,
+["227309"] = 7000,
+["128838"] = 5000,
+["159"] = 1,
+["20815"] = 800,
+["2901"] = 123,
+["39354"] = 4,
+["128834"] = 10000,
+["224070"] = 250000,
+["4470"] = 38,
+["188152"] = 1500000,
+["92794"] = 10000,
+["38682"] = 1000,
+["128837"] = 5000,
+["6256"] = 1,
+["128764"] = 5000,
+["39505"] = 750,
+["6219"] = 900,
+["81409"] = 5200,
+["222696"] = 1225,
+["227301"] = 9000,
+["225238"] = 200000,
+["81400"] = 4800,
+["217896"] = 23750,
+["60335"] = 120000,
+["228414"] = 38000,
+["37460"] = 7500,
+["228956"] = 95000,
+["44617"] = 2000,
+["5956"] = 1,
+["128763"] = 5000,
+["58274"] = 2200,
+["__dbversion"] = 1,
+["227317"] = 7000,
+["227325"] = 7500,
+["6218"] = 10000,
+["227326"] = 7500,
+["11026"] = 8000,
+["227318"] = 7000,
+["128833"] = 5000,
+["81415"] = 25600,
+["227660"] = 250000,
+["138293"] = 2000000,
+["222699"] = 1125,
+["64670"] = 800,
+["44618"] = 10000,
+["224764"] = 700,
+["10498"] = 13300,
+["227272"] = 9000,
+["44616"] = 1500,
+["85663"] = 158,
+["224071"] = 250000,
+["52188"] = 15000,
+["227327"] = 7500,
+["18662"] = 16,
+["227273"] = 9000,
+["222700"] = 1075,
+["228424"] = 237500,
+["81401"] = 4800,
+["222701"] = 1000,
+["222697"] = 860,
+["227310"] = 7000,
+["7005"] = 124,
+["81407"] = 22400,
+["210828"] = 118750,
+["74636"] = 5200,
+["227302"] = 9000,
+["81406"] = 4800,
+["212754"] = 570000000,
+}
+AUCTIONATOR_RECENT_SEARCHES = {
+"\"Frayed Wiring\"",
+"\"Whimsical Wiring\"",
+"Pattern: Draconic Combatant's Resilient Shoulderpads",
+"[Pattern: Draconic Combatant's Resilient Shoulderpads]",
+"Infurious Hide",
+";Armor/Leather/Head;0;0;70;71;0;0;0;0;;#;;",
+";Profession Equipment/Mining/Accessories;0;0;0;0;0;0;0;0;;#;;",
+";Profession Equipment/Mining/Tools;0;0;0;0;0;0;0;0;;#;;",
+}
+AUCTIONATOR_SELLING_GROUPS = {
+["CustomGroups"] = {
+{
+["name"] = "FAVOURITES",
+["type"] = 1,
+["hidden"] = false,
+["list"] = {
+},
+},
+},
+["Version"] = 1,
+["HiddenItems"] = {
+},
+}

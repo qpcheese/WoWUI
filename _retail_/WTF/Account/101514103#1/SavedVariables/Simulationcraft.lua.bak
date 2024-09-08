@@ -1,0 +1,89 @@
+
+SimulationCraftDB = {
+["profileKeys"] = {
+["Qpaladin - Ragnaros"] = "Qpaladin - Ragnaros",
+["Qpcheese - Chamber of Aspects"] = "Qpcheese - Chamber of Aspects",
+["Qpcheese - Ragnaros"] = "Qpcheese - Ragnaros",
+["Qpc - Draenor"] = "Qpc - Draenor",
+["Zelení - Draenor"] = "Zelení - Draenor",
+["Sikducker - Sylvanas"] = "Sikducker - Sylvanas",
+["Dogson - Ragnaros"] = "Dogson - Ragnaros",
+["Qpebank - Draenor"] = "Qpebank - Draenor",
+["Laurs - Ragnaros"] = "Laurs - Ragnaros",
+["Djagon - Ragnaros"] = "Djagon - Ragnaros",
+["Gammelemil - Grim Batol"] = "Gammelemil - Grim Batol",
+["Qtte - Sylvanas"] = "Qtte - Sylvanas",
+["Qute - Sylvanas"] = "Qute - Sylvanas",
+["Myfficraider - Ragnaros"] = "Myfficraider - Ragnaros",
+["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
+["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
+["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
+["Qpe - Ravencrest"] = "Qpe - Ravencrest",
+["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
+["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
+["Qpew - Ragnaros"] = "Qpew - Ragnaros",
+["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
+},
+["profiles"] = {
+["Qpaladin - Ragnaros"] = {
+},
+["Qpcheese - Chamber of Aspects"] = {
+},
+["Qpcheese - Ragnaros"] = {
+["frame"] = {
+["ofsx"] = 0.9999418258666992,
+["ofsy"] = 1.000040292739868,
+},
+["minimap"] = {
+["minimapPos"] = 283.5359443822794,
+},
+},
+["Qpc - Draenor"] = {
+},
+["Zelení - Draenor"] = {
+},
+["Sikducker - Sylvanas"] = {
+},
+["Dogson - Ragnaros"] = {
+},
+["Qpebank - Draenor"] = {
+},
+["Laurs - Ragnaros"] = {
+},
+["Djagon - Ragnaros"] = {
+},
+["Gammelemil - Grim Batol"] = {
+},
+["Qtte - Sylvanas"] = {
+},
+["Qute - Sylvanas"] = {
+},
+["Myfficraider - Ragnaros"] = {
+},
+["Fishanus - Ragnaros"] = {
+},
+["Cyclosarin - Ragnaros"] = {
+},
+["Jerwin - Ragnaros"] = {
+},
+["Qpe - Ravencrest"] = {
+},
+["Flurrq - Ragnaros"] = {
+},
+["Qubit - Ragnaros"] = {
+},
+["Qpfromage - Ragnaros"] = {
+["frame"] = {
+["ofsx"] = 201,
+["ofsy"] = 19.0001106262207,
+["point"] = "BOTTOM",
+["relativePoint"] = "BOTTOM",
+},
+},
+["Qpew - Ragnaros"] = {
+},
+["Qpfromage - Sylvanas"] = {
+},
+},
+}

@@ -1,0 +1,10 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+  <Script file="Quests.lua"/>
+  <Script file="Dungeon.lua"/>
+  <Script file="Scenario.lua"/>
+  <Script file="Achievements.lua"/>
+  <Script file="WorldQuests.lua"/>
+  <Script file="Keystone.lua"/>
+  <Script file="BonusObjectives.lua"/>
+</Ui>

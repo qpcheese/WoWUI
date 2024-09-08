@@ -1,0 +1,1 @@
+- Fixed - Error in Level-Up! Localization - [core.lua]

@@ -1,0 +1,145 @@
+
+FrameColorDB = {
+["profileKeys"] = {
+["Qpaladin - Ragnaros"] = "Default",
+["Qute - Sylvanas"] = "Default",
+["Qpfromage - Sylvanas"] = "Default",
+["Gammelemil - Grim Batol"] = "Default",
+},
+["profiles"] = {
+["Default"] = {
+["ActionBars"] = {
+["ClassTalentFrame"] = {
+},
+["CharacterFrame"] = {
+},
+["InspectFrame"] = {
+},
+["TargetFrame"] = {
+},
+["FrameColor_Skin"] = {
+},
+["FriendsFrame"] = {
+},
+["DelvesFrame"] = {
+},
+["PlayerSpellsFrame"] = {
+},
+["Ace3_Skin"] = {
+},
+["PlayerFrame"] = {
+},
+},
+["Group"] = {
+["InspectFrame"] = {
+},
+["TargetFrame"] = {
+},
+["FrameColor_Skin"] = {
+},
+["FriendsFrame"] = {
+},
+["DelvesFrame"] = {
+},
+["PlayerSpellsFrame"] = {
+},
+["PlayerFrame"] = {
+},
+["ClassTalentFrame"] = {
+},
+["CharacterFrame"] = {
+},
+["Ace3_Skin"] = {
+},
+},
+["UnitFrames"] = {
+["InspectFrame"] = {
+},
+["TargetFrame"] = {
+},
+["CharacterFrame"] = {
+},
+["FriendsFrame"] = {
+},
+["DelvesFrame"] = {
+},
+["PlayerSpellsFrame"] = {
+},
+["PlayerFrame"] = {
+},
+["ClassTalentFrame"] = {
+},
+["FrameColor_Skin"] = {
+},
+["Ace3_Skin"] = {
+},
+},
+["Windows"] = {
+["ClassTalentFrame"] = {
+},
+["CharacterFrame"] = {
+},
+["Ace3_Skin"] = {
+},
+["PlayerFrame"] = {
+},
+["InspectFrame"] = {
+},
+["TargetFrame"] = {
+},
+["FrameColor_Skin"] = {
+},
+["FriendsFrame"] = {
+},
+["DelvesFrame"] = {
+},
+["PlayerSpellsFrame"] = {
+},
+},
+["Skins"] = {
+["CharacterFrame"] = {
+},
+["InspectFrame"] = {
+},
+["DelvesFrame"] = {
+},
+["Ace3_Skin"] = {
+},
+["PlayerFrame"] = {
+},
+["FrameColor_Skin"] = {
+},
+["ClassTalentFrame"] = {
+},
+["PlayerSpellsFrame"] = {
+},
+["FriendsFrame"] = {
+},
+["TargetFrame"] = {
+},
+},
+["HUD"] = {
+["InspectFrame"] = {
+},
+["TargetFrame"] = {
+},
+["CharacterFrame"] = {
+},
+["FriendsFrame"] = {
+},
+["DelvesFrame"] = {
+},
+["Ace3_Skin"] = {
+},
+["PlayerFrame"] = {
+},
+["PlayerSpellsFrame"] = {
+},
+["FrameColor_Skin"] = {
+},
+["ClassTalentFrame"] = {
+},
+},
+},
+},
+}

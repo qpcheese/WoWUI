@@ -1,0 +1,9 @@
+VER 3 0100000000000002 "AI self" "134400"
+#showtooltip
+/cast [@player] Arcane Intellect
+END
+VER 3 0100000000000001 "mount" "2399288"
+/use surf jelly
+/use Ashes of Al'ar
+/dismount
+END

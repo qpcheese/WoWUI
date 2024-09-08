@@ -1,0 +1,17 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+  <Script file="Currency.lua" />
+  <Script file="Objective.lua"/>
+  <Script file="QuestItem.lua"/>
+  <Script file="Reward.lua"/>
+  <Script file="Quest.lua"/>
+  <Script file="QuestHeader.lua"/>
+  <Script file="QuestBlock.lua"/>
+  <Script file="DungeonBlock.lua"/>
+  <Script file="ScenarioBlock.lua"/>
+  <Script file="Achievement.lua"/>
+  <Script file="WorldQuest.lua"/>
+  <Script file="WorldQuestBlock.lua"/>
+  <Script file="BonusObjectives.lua"/>
+  <Script file="Keystone.lua"/>
+</Ui>

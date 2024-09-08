@@ -1,0 +1,28 @@
+## Interface: 90001
+## Title: EskaTracker - |cffff6a00Objectives|r
+## Author: Skamer
+## Notes: EskaTracker - |cffff6a00Objectives|r
+## RequiredDeps: EskaTracker
+## Version: 1.5.4-release
+
+# Localization files
+Locales\locales.xml
+
+# Utils & Helper functions
+Utils.lua
+
+# Theme Files (add new properties)
+Themes\themes.xml
+
+# Core Files
+Interfaces\interfaces.xml
+Classes\classes.xml
+Supports\supports.xml
+EskaTracker_Objectives.lua
+
+
+# Module files
+Modules\modules.xml
+
+# Options files
+Options\Options.lua

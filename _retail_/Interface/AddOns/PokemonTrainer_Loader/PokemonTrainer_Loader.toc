@@ -1,0 +1,7 @@
+## Interface: 110002
+## Title: Pokemon Trainer Loader
+## Version: 11.0.2-20240814-2
+## Notes: The pet battle addon with many helpers!
+## Author: grdn
+
+Loader.lua

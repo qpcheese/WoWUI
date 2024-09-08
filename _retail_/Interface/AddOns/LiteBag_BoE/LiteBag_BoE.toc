@@ -1,0 +1,8 @@
+## Interface: 110002
+## Author: Voopie
+## Title: LiteBag BoE
+## Version: 0.23
+## IconTexture: 133639
+## Dependencies: LiteBag
+
+LiteBag_BoE.lua

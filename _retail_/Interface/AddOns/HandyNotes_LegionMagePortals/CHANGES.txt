@@ -1,0 +1,12 @@
+tag c34d59059ffa1ae4b6f46b20ca8291dc6347fe75 v3.2a
+Author:	David Mcanulty <github@hellspark.com>
+Date:	Wed Aug 14 01:29:46 2024 +0000
+
+Release 3.2a
+
+commit 43da8670aa0163179df3d90cfcae0736d7b9758d
+Author: David Mcanulty <github@hellspark.com>
+Date:   Wed Aug 14 01:29:26 2024 +0000
+
+    Bump toc for 11.02
+
