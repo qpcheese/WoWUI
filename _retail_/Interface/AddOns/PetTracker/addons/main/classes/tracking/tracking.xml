@@ -1,0 +1,6 @@
+<Ui>
+	<Include file="templates.xml"/>
+	<Script file="progressBar.lua"/>
+	<Script file="specieLine.lua"/>
+	<Script file="tracker.lua"/>
+</Ui>

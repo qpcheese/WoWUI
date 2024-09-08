@@ -1,0 +1,30 @@
+## Interface: 90001
+## Title: EskaTracker
+## Author: Skamer
+## Notes: EskaTracker
+## SavedVariables: EskaTrackerDB
+## Version: 1.5.3c-release
+## Dependencies: PLoop, Scorpio
+## OptionalDeps: LibStub, LibSharedMedia-3.0
+embeds.xml
+
+# Module Type file
+EskaModule.lua
+
+# Localization files
+Locales\locales.xml
+
+# Loader Files
+Loader.lua
+
+# Core API Files
+API\API.xml
+
+# Main files
+EskaTracker.lua
+
+# Theme files
+Themes\themes.xml
+
+# Options files
+Options\Options.xml

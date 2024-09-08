@@ -1,0 +1,29 @@
+## Interface: 110002
+## Author: Merathilis
+## Version: 6.38
+## Title: |cFF1784d1ElvUI|r |cffffffffMerathilis|r|cffff7d0aUI|r
+## AddonCompartmentFunc: MerathilisUI_OnAddonCompartmentClick
+## IconTexture: Interface\AddOns\ElvUI_MerathilisUI\Media\Textures\m2
+## Notes: A decorative edit for ElvUI + additional features.
+## Notes-deDE: Eine dekorative Erweiterung für ElvUI + einige zusätzliche Funktionen.
+## RequiredDeps: ElvUI
+## DefaultState: Enabled
+## SavedVariables: MERData
+## SavedVariablesPerCharacter: MERDataPerChar
+## OptionalDeps: SharedMedia, BigWigs, ls_Toasts, WeakAuras, WeakAurasOptions
+## X-Credits: Simpy, Benik, Azilroka, Darth Predator, fang2hou, fgprodigal, Siweia, Solor, Elv, Toxi, Blazeflack & all AddOn Authors who inspired me.
+## X-ElvUIVersion: 13.76
+## X-Curse-Project-Name: MerathilisUI
+## X-Curse-Project-ID: 97589
+## X-WoWI-ID: 24117
+## X-Wago-ID: VBNBZVNx
+## X-Flavor: Mainline
+
+Libs/Libs.xml
+Init.lua
+Locales\Load_Locales.xml
+Core\Load_Core.xml
+Media\Load_Media.xml
+Filters\Load_Filters.xml
+Modules\Load_Modules.xml
+Options\Load_Options.xml
