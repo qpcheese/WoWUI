@@ -33,9 +33,9 @@ _G[addon] = Engine
 
 do
 	-- when packager packages a new version for release
-	-- "6.38" is replaced with the version number
+	-- "6.39-Fix-1" is replaced with the version number
 	-- which is the latest tag
-	Engine.version = "6.38"
+	Engine.version = "6.39-Fix-1"
 
 	if strfind(Engine.version, "project%-version") then
 		Engine.version = "development"
@@ -161,7 +161,7 @@ function MER:Initialize()
 		)
 	end
 
-	for name, module in self:IterateModules() do
+	for _, module in self:IterateModules() do
 		Engine[2].Developer.InjectLogger(module)
 	end
 
@@ -201,9 +201,8 @@ end
 do
 	local checked = false
 	function MER:PLAYER_ENTERING_WORLD(_, isInitialLogin, isReloadingUi)
-		E:Delay(7, self.CheckInstalledVersion, self)
-
 		if isInitialLogin then
+			E:Delay(6, self.CheckInstalledVersion, self)
 			local icon = Engine[2].GetIconString([[Interface\AddOns\ElvUI_MerathilisUI\Media\Textures\pepeSmall]], 14)
 			if E.db.mui.core.installed and E.global.mui.core.loginMsg then
 				print(

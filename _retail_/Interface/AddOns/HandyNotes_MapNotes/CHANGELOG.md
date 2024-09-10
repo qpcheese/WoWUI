@@ -1,36 +1,12 @@
 # MapNote
-## [2.2.8](https://github.com/Ssesmar/MapNote) (2024-09-07)
+## [2.3.0](https://github.com/Ssesmar/MapNote) (2024-09-10)
 - Note:
 
 -- MapNotes now works on every version of World of Warcraft. Classic Era / Cataclysm / Retail / PTR
 
 Retail:
 
-    add a new area in the generally tab für chat messages
-    A confirmation query has been added for Hide MapNotes, Hide Worldmapbutton, Hide Minimapbutton and synchronize capitals & capitals minimap as well as for synchronize zones & minimap icons
-    An error has been fixed that was caused when you activated or deactivated Unexplored Area and Fog of the Unexplored if the world map had not been opened once before
-    Activating or deactivating icons of an entire tab (Capitals, Zones, Continents, Azeroth, Worldmap or Dungeons (activate icons)) now opens the corresponding area of ​​the world map
-    For example, if the world map is open and a Horde player is in a Horde capital other than Orgrimmar, that map will of course not be changed
-    The switch will only take effect if the map is closed, you have opened the map of an enemy capital or are on another map type (Zone/Azeroth/Worldmap/Dungeon) when you activate or deactivate this map tab
-    Every activation or deactivation button in an entire tab now has this function
-    The switch only takes effect if the map is closed, or you are in an enemy capital, or you are on a different map type when you activate or deactivate this map tab
-
-Different maps open for Horde , Alliance and Neutral
-    Horde:
-        Capital = Orgrimmar
-        Capital Enemy = Stormwind
-        Zone = Durotar
-        Zone Enemy = Elwynn Forest
-        Continent = Kalimdor
-        Dungeon = Icecrown Glacier
-
-    Alliance:
-        Capital = Stormwind
-        Capital Enemy = Orgrimmar
-        Zone = Elwynn Forest
-        Zone Enemy = Durotar
-        Continent = Eastern kingdom
-        Dungeon = IcecrownGlacier
+changed incorrect translation of the chat function "legacy" changed to "classic".
 
 - Description:
 

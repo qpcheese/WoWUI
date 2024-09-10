@@ -1,6 +1,6 @@
 ## Interface: 100002
 ## Author: p3lim
-## Version: 6.38
+## Version: 6.39-Fix-1
 ## Title: Lib: DropDown
 ## Notes: Library that allows easy creation of DropDown menus
 ## OptionalDeps: LibStub

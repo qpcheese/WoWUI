@@ -1,15 +1,19 @@
 ## Changes
 
-Updated for patch 10.2.7.
+Updated for patch 11.0.2.
 
-### Comms throttle
+### History Export
 
-Voting Frame data is no longer being sent when reloading/reconnecting.
+Added a new export option for Google Sheets and English versions of Excel that uses ";" as formula delimiter.
 
-`Add Rolls` option has been reset to `false` due to the extra comms required for it.
+Changed default export to Player Export.
+
+### Winners of item in Voting Frame
+
+The more info tooltip in the votingframe nows shows previous winners of the selected item.
+Their response and the item level of the version of the item they received is also shown there.
 
 ## Bugfixes
 
-- *Fixed `/rc council` not properly opening council menu.*
-
+- *Enabling "Observe" now more reliably prepares the voting frame for the next session.*
 

@@ -713,7 +713,7 @@ local CapitalIDs = WorldMapFrame:GetMapID() == 84 or WorldMapFrame:GetMapID() ==
       return
   end
 
-  if (button == "LeftButton") and IsAltKeyDown() then
+  if (button == "RightButton") and IsAltKeyDown() then
     StaticPopup_Show ("Delete_Icon?")
   end
 
@@ -828,9 +828,6 @@ local CapitalIDs = WorldMapFrame:GetMapID() == 84 or WorldMapFrame:GetMapID() ==
       end
       if WorldMapFrame:IsMaximized() then 
         WorldMapFrame:Minimize() 
-        if not ns.Addon.db.profile.ChatMassage then 
-          print("\n" .. TextIconMNL4:GetIconString() .. " " .. "|cffff0000Map|r|cff00ccffNotes |r" .. "|cffffff00" .. L["Information because you just used an instance icon with a maximized map"] .. "|r" .. "\n" .. TextIconMNL4:GetIconString() .. " " .. "|cffff0000Map|r|cff00ccffNotes |r" .. "|cffffff00" .. L["If the dungeon map is not maximized, you have to press the button once that would open your world map!"]) 
-        end 
       end
       EncounterJournal_OpenJournal(difficulty, dungeonID)
       _G.EncounterJournal:SetScript("OnShow", nil)
@@ -851,7 +848,7 @@ end
 function Addon:ZONE_CHANGED_NEW_AREA()
   local mapID = C_Map.GetBestMapForUnit("player")
   if mapID then
-    if ns.Addon.db.profile.activate.ZoneChanged then
+    if ns.Addon.db.profile.ZoneChanged then
       print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. "|cffffff00" .. " " .. L["Location"] .. ": ", "|cff00ff00" .. "==>  " .. C_Map.GetMapInfo(mapID).name .. "  <==")
     end
   end
@@ -859,7 +856,7 @@ end
 
 local subzone = GetSubZoneText()
 function Addon:ZONE_CHANGED_INDOORS()
-    if ns.Addon.db.profile.activate.ZoneChanged and ns.Addon.db.profile.activate.ZoneChangedDetail and not ns.CapitalMiniMapIDs then
+    if ns.Addon.db.profile.ZoneChanged and ns.Addon.db.profile.ZoneChangedDetail and not ns.CapitalMiniMapIDs then
       print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. "|cffffff00" .. " " .. L["Location"] .. ": ", "|cff00ff00" .. "==>  " .. "|cff00ff00" .. GetZoneText() .. " " .. "|cff00ccff" .. GetSubZoneText().. "|cff00ff00" .. "  <==")
     end
 end
@@ -867,7 +864,7 @@ end
 function Addon:ZONE_CHANGED()
   local mapID = C_Map.GetBestMapForUnit("player")
   if mapID then
-    if ns.Addon.db.profile.activate.ZoneChanged and ns.Addon.db.profile.activate.ZoneChangedDetail and not ns.CapitalMiniMapIDs then
+    if ns.Addon.db.profile.ZoneChanged and ns.Addon.db.profile.ZoneChangedDetail and not ns.CapitalMiniMapIDs then
       print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. "|cffffff00" .. " " .. L["Location"] .. ": ", "|cff00ff00" .. "==>  " .. GetZoneText() .. " " .. "|cff00ccff" .. GetSubZoneText() .. "|cff00ff00" .. "  <==")
     end
   end
@@ -878,7 +875,9 @@ function Addon:OnProfileChanged(event, database, profileKeys)
   ns.dbChar = database.profile.deletedIcons
   ns.FogOfWar = database.profile.FogOfWarColor
   HandyNotes:GetModule("FogOfWarButton"):Refresh()
-  print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. " " .. "|cffffff00" .. L["Profile has been changed"])
+  if ns.Addon.db.profile.CoreChatMassage then
+    print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. " " .. "|cffffff00" .. L["Profile has been changed"])
+  end
   ns.Addon:FullUpdate()
   HandyNotes:SendMessage("HandyNotes_NotifyUpdate", "MapNotes")
 end
@@ -896,7 +895,9 @@ function Addon:OnProfileReset(event, database, profileKeys)
   wipe(ns.dbChar.ZoneDeletedIcons)
   wipe(ns.dbChar.MinimapZoneDeletedIcons)
   wipe(ns.dbChar.DungeonDeletedIcons)
-  print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. " " .. "|cffffff00" .. L["Profile has been reset to default"])
+  if ns.Addon.db.profile.CoreChatMassage then
+    print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. " " .. "|cffffff00" .. L["Profile has been reset to default"])
+  end
   HandyNotes:GetModule("FogOfWarButton"):Refresh()
   ns.Addon:FullUpdate()
   HandyNotes:SendMessage("HandyNotes_NotifyUpdate", "MapNotes")
@@ -907,7 +908,9 @@ function Addon:OnProfileCopied(event, database, profileKeys)
   ns.dbChar = database.profile.deletedIcons
   ns.FogOfWar = database.profile.FogOfWarColor
   HandyNotes:GetModule("FogOfWarButton"):Refresh()
-  print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. " " .. "|cffffff00" .. L["Profile has been adopted"])
+  if ns.Addon.db.profile.CoreChatMassage then
+    print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. " " .. "|cffffff00" .. L["Profile has been adopted"])
+  end
   ns.Addon:FullUpdate()
   HandyNotes:SendMessage("HandyNotes_NotifyUpdate", "MapNotes")
 end
@@ -917,7 +920,9 @@ function Addon:OnProfileDeleted(event, database, profileKeys)
   ns.dbChar = database.profile.deletedIcons
   ns.FogOfWar = database.profile.FogOfWarColor
   HandyNotes:GetModule("FogOfWarButton"):Refresh()
-  print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. " " .. "|cffffff00" .. L["Profile has been deleted"])
+  if ns.Addon.db.profile.CoreChatMassage then
+    print(TextIconMNL4:GetIconString() .. " " .. ns.COLORED_ADDON_NAME .. " " .. TextIconMNL4:GetIconString() .. " " .. "|cffffff00" .. L["Profile has been deleted"])
+  end
   ns.Addon:FullUpdate()
   HandyNotes:SendMessage("HandyNotes_NotifyUpdate", "MapNotes")
 end

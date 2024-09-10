@@ -1,6 +1,6 @@
 ## Interface: 110002
 ## Author: Merathilis
-## Version: 6.38
+## Version: 6.39-Fix-1
 ## Title: |cFF1784d1ElvUI|r |cffffffffMerathilis|r|cffff7d0aUI|r
 ## AddonCompartmentFunc: MerathilisUI_OnAddonCompartmentClick
 ## IconTexture: Interface\AddOns\ElvUI_MerathilisUI\Media\Textures\m2

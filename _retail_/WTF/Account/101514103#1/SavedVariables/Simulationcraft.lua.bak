@@ -10,9 +10,9 @@ SimulationCraftDB = {
 ["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 ["Qpebank - Draenor"] = "Qpebank - Draenor",
 ["Laurs - Ragnaros"] = "Laurs - Ragnaros",
-["Djagon - Ragnaros"] = "Djagon - Ragnaros",
 ["Gammelemil - Grim Batol"] = "Gammelemil - Grim Batol",
-["Qtte - Sylvanas"] = "Qtte - Sylvanas",
+["Djagon - Ragnaros"] = "Djagon - Ragnaros",
+["Qubit - Ragnaros"] = "Qubit - Ragnaros",
 ["Qute - Sylvanas"] = "Qute - Sylvanas",
 ["Myfficraider - Ragnaros"] = "Myfficraider - Ragnaros",
 ["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
@@ -20,7 +20,7 @@ SimulationCraftDB = {
 ["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
 ["Qpe - Ravencrest"] = "Qpe - Ravencrest",
 ["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
-["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+["Qtte - Sylvanas"] = "Qtte - Sylvanas",
 ["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 ["Qpew - Ragnaros"] = "Qpew - Ragnaros",
 ["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
@@ -51,11 +51,11 @@ SimulationCraftDB = {
 },
 ["Laurs - Ragnaros"] = {
 },
-["Djagon - Ragnaros"] = {
-},
 ["Gammelemil - Grim Batol"] = {
 },
-["Qtte - Sylvanas"] = {
+["Djagon - Ragnaros"] = {
+},
+["Qubit - Ragnaros"] = {
 },
 ["Qute - Sylvanas"] = {
 },
@@ -71,7 +71,7 @@ SimulationCraftDB = {
 },
 ["Flurrq - Ragnaros"] = {
 },
-["Qubit - Ragnaros"] = {
+["Qtte - Sylvanas"] = {
 },
 ["Qpfromage - Ragnaros"] = {
 ["frame"] = {

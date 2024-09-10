@@ -1,4 +1,3 @@
--- Generated from CurseForge on Wed Jul 24 07:55:18 UTC 2024
 local ns = select(2, ...) ---@class ns @The addon namespace.
 
 if ns:IsSameLocale("frFR") then
@@ -8,7 +7,7 @@ if ns:IsSameLocale("frFR") then
 
 	L.LOCALE_NAME = "frFR"
 
-L["ALLOW_IN_LFD"] = "Autoriser pour la Recherche de Donjon"
+	L["ALLOW_IN_LFD"] = "Autoriser pour la Recherche de Donjon"
 --[[Translation missing --]]
 --[[ L["ALLOW_IN_LFD_CLASSIC"] = ""--]] 
 --[[Translation missing --]]
@@ -716,5 +715,6 @@ L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "RaiderIO: Vous devez d'abord désactive
 --[[ L["WIPE_RWF_MODE_BUTTON"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["WIPE_RWF_MODE_BUTTON_TOOLTIP"] = ""--]] 
+
 
 end

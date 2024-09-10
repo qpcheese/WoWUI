@@ -19,7 +19,9 @@
 	lootHistory:
 		RCHistory_ResponseEdit - fires when the user edits the response of a history entry. args: data (see LootHistory:BuildData())
 		RCHistory_NameEdit	-	fires when the user edits the receiver of a history entry. args: data.
-]] 
+	ItemStorage:
+		RCItemStorageInitialized - fires when the item storage is initialized. args: #itemStorage.
+]]
 --[[ Notable Comm messages: (See Classes/Services/Comms.lua for subscribing to comms)
 	Comms:
 	P: Permanent, T: Temporary
@@ -36,12 +38,13 @@
 			lt_add 				P - Partial lootTable (additions) sent from ML.
 			mldb 				P - MLDB sent from ML.
 			reroll 				P - (Partial) lootTable with items we should reroll on.
+			re_roll				P - (Partial) lootTable and list of candidates that should reroll.
 			lootAck 			P - LootAck received from another player. Used for checking if have received the required data.
 			Rgear				P - Anyone requests our currently equipped gear.
 			bonus_roll 			P - Sent whenever we do a bonus roll.
 			getCov 				P - Anyone request or covenant ID.
 ]]
--- GLOBALS: GetLootMethod, GetAddOnMetadata, UnitClass
+-- GLOBALS: GetLootMethod, C_AddOns.GetAddOnMetadata, UnitClass
 local addonname, addontable = ...
 --- @class RCLootCouncil : AceAddon-3.0, AceConsole-3.0, AceEvent-3.0, AceHook-3.0, AceTimer-3.0, AceBucket-3.0
 _G.RCLootCouncil = LibStub("AceAddon-3.0"):NewAddon(addontable, addonname, "AceConsole-3.0", "AceEvent-3.0",
@@ -64,6 +67,7 @@ local ItemUtils = RCLootCouncil.Require "Utils.Item"
 -- Init shorthands
 local db, debugLog; -- = self.db.profile, self.db.global.log
 -- init modules
+---@enum (key) DefaultModules
 local defaultModules = {
 	masterlooter = "RCLootCouncilML",
 	lootframe = "RCLootFrame",
@@ -74,6 +78,7 @@ local defaultModules = {
 	tradeui = "TradeUI",
 	sync = "Sync",
 }
+---@enum (key) UserModules
 local userModules = {
 	masterlooter = nil,
 	lootframe = nil,
@@ -111,7 +116,7 @@ local playersData = { -- Update on login/encounter starts. it stores the informa
 function RCLootCouncil:OnInitialize()
 	self.Log = self.Require "Utils.Log":New()
 	-- IDEA Consider if we want everything on self, or just whatever modules could need.
-	self.version = GetAddOnMetadata("RCLootCouncil", "Version")
+	self.version = C_AddOns.GetAddOnMetadata("RCLootCouncil", "Version")
 	self.nnp = false
 	self.debug = false
 	self.tVersion = nil -- String or nil. Indicates test version, which alters stuff like version check. Is appended to 'version', i.e. "version-tVersion" (max 10 letters for stupid security)
@@ -152,6 +157,7 @@ function RCLootCouncil:OnInitialize()
 		{cmd = "add [item]", desc = L["chat_commands_add"]},
 		{cmd = "award", desc = L["chat_commands_award"]},
 		{cmd = "sync", desc = L["chat_commands_sync"]},
+		{cmd = "profile", desc = L.chat_commands_profile, },
 	}
 
 	self.lootGUIDToIgnore = { -- List of GUIDs we shouldn't register loot from
@@ -211,9 +217,9 @@ function RCLootCouncil:OnInitialize()
 				 "color", "class", "isAwardReason", "difficultyID", "mapID", "groupSize", "tierToken"}
 	},
 	]]
-	self.db.RegisterCallback(self, "OnProfileChanged", ReloadUI)
-	self.db.RegisterCallback(self, "OnProfileCopied", ReloadUI)
-	self.db.RegisterCallback(self, "OnProfileReset", ReloadUI)
+	self.db.RegisterCallback(self, "OnProfileChanged", "UpdateDB")
+	self.db.RegisterCallback(self, "OnProfileCopied", "UpdateDB")
+	self.db.RegisterCallback(self, "OnProfileReset", "UpdateDB")
 
 	self:ClearOldVerTestCandidates()
 	self:InitClassIDs()
@@ -376,7 +382,7 @@ function RCLootCouncil:ChatCommand(msg)
 				elseif v.module.version then
 					print(v.module.baseName, "|cFFFFA500", v.module.version)
 				else
-					print(v.module.baseName, "|cFFFFA500", GetAddOnMetadata(v.module.baseName, "Version"))
+					print(v.module.baseName, "|cFFFFA500", C_AddOns.GetAddOnMetadata(v.module.baseName, "Version"))
 				end
 			end
 			if v.cmd then
@@ -419,6 +425,10 @@ function RCLootCouncil:ChatCommand(msg)
 		SettingsPanel:SelectCategory(category)
 		LibStub("AceConfigDialog-3.0"):SelectGroup("RCLootCouncil", "mlSettings", "councilTab")
 
+	elseif input == "profile" or input == "profiles" then
+		Settings.OpenToCategory(self.optionsFrame.name)
+		LibStub("AceConfigDialog-3.0"):SelectGroup("RCLootCouncil", "settings", "profiles")
+
 	elseif input == 'test' or input == L["test"] then
 		self:Test(tonumber(args[1]) or 1)
 	elseif input == 'fulltest' or input == 'ftest' then
@@ -433,18 +443,7 @@ function RCLootCouncil:ChatCommand(msg)
 
 	elseif input == "history" or input == string.lower(_G.HISTORY) or input == "h" or input == "his" or input == "hist" then
 		self:CallModule("history")
-		-- @debug@
-	elseif input == "nnp" then
-		self.nnp = not self.nnp
-		self:Print("nnp = " .. tostring(self.nnp))
-	elseif input == "exporttrinketdata" then
-		self:ExportTrinketData(tonumber(args[1]), 0, tonumber(args[2]), 1)
-	elseif input == 'trinkettest' or input == 'ttest' then
-		self.playerClass = string.upper(args[1])
-		self:Test(1, false, true)
-	elseif input == "exporttokendata" then
-		self:ExportTokenData(tonumber(args[1]))
-		-- @end-debug@
+
 	elseif input == "whisper" or input == string.lower(_G.WHISPER) then
 		self:Print(L["whisper_help"])
 
@@ -488,18 +487,7 @@ function RCLootCouncil:ChatCommand(msg)
 		self.Require "Utils.GroupLoot":HideGroupLootFrames()
 
 	elseif input == "reset" or input == string.lower(_G.RESET) then
-		for k, v in pairs(db.UI) do -- We can't easily reset due to the wildcard in defaults
-			if k == "lootframe" then -- Loot Frame is special
-				v.y = -200
-			else
-				v.y = 0
-			end
-			v.point = "CENTER"
-			v.x = 0
-			v.scale = 0.8
-		end
-		for _, frame in ipairs(self.UI.minimizeableFrames) do frame:RestorePosition() end
-		db.chatFrameName = self.defaults.profile.chatFrameName
+		self:ResetUI()
 		self:Print(L["Windows reset"])
 
 	elseif input == "start" or input == string.lower(_G.START) then
@@ -526,10 +514,24 @@ function RCLootCouncil:ChatCommand(msg)
 	elseif input == "safemode" then
 		db.safemode = not db.safemode
 		self:Print("SafeMode " .. (db.safemode and "On" or "Off"))
-		-- @debug@
 
 	elseif input == "export" then
-		self:ExportCurrentSession()
+			self:ExportCurrentSession()
+
+	--[==[@debug@
+	elseif input == "nnp" then
+		self.nnp = not self.nnp
+		self:Print("nnp = " .. tostring(self.nnp))
+
+	elseif input == "exporttrinketdata" then
+		self:ExportTrinketData(tonumber(args[1]), 0, tonumber(args[2]), 1)
+
+	elseif input == "trinkettest" or input == "ttest" then
+		self.playerClass = string.upper(args[1])
+		self:Test(1, false, true)
+
+	elseif input == "exporttokendata" then
+		self:ExportTokenData(tonumber(args[1]))
 
 	elseif input == 't' then -- Tester cmd
 		-- Test items with several modifiers. Should probably be added to the regular test func
@@ -541,7 +543,7 @@ function RCLootCouncil:ChatCommand(msg)
 				print(Player:Get(guid), "in guild = ", inGuild)
 			end
 		end
-		-- @end-debug@
+	--@end-debug@]==]
 	else
 		-- Check if the input matches anything
 		for k, v in pairs(self.customChatCmd) do if k == input then return v.module[v.func](v.module, unpack(args)) end end
@@ -764,7 +766,7 @@ function RCLootCouncil:Test(num, fullTest, trinketTest)
 
 	if fullTest then -- Add items from encounter journal which includes items from different difficulties.
 		testItems = {}
-		LoadAddOn("Blizzard_EncounterJournal")
+		C_AddOns.LoadAddOn("Blizzard_EncounterJournal")
 		local cached = true
 		local difficulties = {14, 15, 16} -- Normal, Heroic, Mythic
 
@@ -833,7 +835,7 @@ function RCLootCouncil:UpdatePlayersGears(startSlot, endSlot)
 	for i = startSlot, endSlot do
 		local iLink = GetInventoryItemLink("player", i)
 		if iLink then
-			local iName = GetItemInfo(iLink)
+			local iName = C_Item.GetItemInfo(iLink)
 			if iName then
 				playersData.gears[i] = iLink
 			else -- Blizzard bug that GetInventoryItemLink returns incomplete link. Retry
@@ -884,7 +886,7 @@ function RCLootCouncil:GetPlayersGear(link, equipLoc, gearsTable)
 		slot = self.INVTYPE_Slots[self:GetTypeCodeForItem(link)]
 
 		-- TODO Dirty hack for context tokens. Could do with a better system for both determining typecode and equiploc overrides
-		local _, _, _, _, _, itemClassID, itemSubClassID = GetItemInfoInstant(link)
+		local _, _, _, _, _, itemClassID, itemSubClassID = C_Item.GetItemInfoInstant(link)
 		if itemClassID == 5 and itemSubClassID == 2 then slot = self.INVTYPE_Slots.CONTEXT_TOKEN end
 	end
 	if not slot then return nil, nil end
@@ -897,10 +899,10 @@ end
 --- Generates a "type code" used to determine which set of buttons to use for the item.
 --- The returned code can be used directly in `mldb.responses[code]` and `mldb.buttons[code]`.
 --- @see Constants.lua#RESPONSE_CODE_GENERATORS.
---- @param item Item @Any valid input for GetItemInfoInstant
+--- @param item Item @Any valid input for C_Item.GetItemInfoInstant
 --- @return typecode
 function RCLootCouncil:GetTypeCodeForItem(item)
-	local itemID, _, _, itemEquipLoc, _, itemClassID, itemSubClassID = GetItemInfoInstant(item)
+	local itemID, _, _, itemEquipLoc, _, itemClassID, itemSubClassID = C_Item.GetItemInfoInstant(item)
 	if not itemID then return "default" end -- We can't handle uncached items!
 
 	for _, func in ipairs(self.RESPONSE_CODE_GENERATORS) do
@@ -968,7 +970,7 @@ function RCLootCouncil:GetIlvlDifference(item, g1, g2)
 		self.Log:E("GetIlvlDifference: no gear for item:", item)
 		return 0 -- Fallback value incase no gear is provided
 	end
-	local _, link, _, ilvl, _, _, _, _, equipLoc = GetItemInfo(item)
+	local _, link, _, ilvl, _, _, _, _, equipLoc = C_Item.GetItemInfo(item)
 
 	if not ilvl then
 		self.Log:E(format("GetIlvlDifference: item: %s had ilvl %s", tostring(item), tostring(ilvl)))
@@ -979,17 +981,17 @@ function RCLootCouncil:GetIlvlDifference(item, g1, g2)
 	if equipLoc == "INVTYPE_TRINKET" or equipLoc == "INVTYPE_FINGER" then
 		local id = ItemUtils:GetItemIDFromLink(link)
 		if id == ItemUtils:GetItemIDFromLink(g1) then -- compare with it
-			local ilvl2 = select(4, GetItemInfo(g1))
+			local ilvl2 = select(4, C_Item.GetItemInfo(g1))
 			return ilvl - ilvl2
 
 		elseif g2 and id == ItemUtils:GetItemIDFromLink(g2) then
-			local ilvl2 = select(4, GetItemInfo(g2))
+			local ilvl2 = select(4, C_Item.GetItemInfo(g2))
 			return ilvl - ilvl2
 		end
 		-- We haven't equipped this item, do it normally
 	end
 	local diff = 0
-	local g1diff, g2diff = g1 and select(4, GetItemInfo(g1)), g2 and select(4, GetItemInfo(g2))
+	local g1diff, g2diff = g1 and select(4, C_Item.GetItemInfo(g1)), g2 and select(4, C_Item.GetItemInfo(g2))
 	if g1diff and g2diff then
 		diff = g1diff >= g2diff and ilvl - g2diff or ilvl - g1diff
 	elseif g1diff then
@@ -1000,8 +1002,9 @@ function RCLootCouncil:GetIlvlDifference(item, g1, g2)
 	return diff
 end
 
--- @param link The itemLink of the item.
--- @return If the item level data is not available, return nil. Otherwise, return the minimum item level of the gear created by the token.
+---@param link #The itemLink of the item.
+---@return #If the item level data is not available, return nil. Otherwise, return the minimum item level of the gear created by the token.
+---@deprecated v3.13.0: No longer tracks token ilvl as that's contained on the token.
 function RCLootCouncil:GetTokenIlvl(link)
 	local id = ItemUtils:GetItemIDFromLink(link)
 	if not id then return end
@@ -1058,8 +1061,8 @@ end
 function RCLootCouncil:PrepareLootTable(lootTable)
 	for ses, v in pairs(lootTable) do
 		local _, link, rarity, ilvl, _, _, subType, _, equipLoc, texture, _, typeID, subTypeID, bindType, _, _, _ =
-						GetItemInfo(ItemUtils:UncleanItemString(v.string))
-		local itemID = GetItemInfoInstant(link)
+						C_Item.GetItemInfo(ItemUtils:UncleanItemString(v.string))
+		local itemID = C_Item.GetItemInfoInstant(link)
 		v.link = link
 		v.itemID = itemID
 		v.quality = rarity
@@ -1363,13 +1366,13 @@ end
 function RCLootCouncil:IsItemBoE(item)
 	if not item then return false end
 	-- Item binding type: 0 - none; 1 - on pickup; 2 - on equip; 3 - on use; 4 - quest.
-	return select(14, GetItemInfo(item)) == LE_ITEM_BIND_ON_EQUIP
+	return select(14, C_Item.GetItemInfo(item)) == LE_ITEM_BIND_ON_EQUIP
 end
 
 function RCLootCouncil:IsItemBoP(item)
 	if not item then return false end
 	-- Item binding type: 0 - none; 1 - on pickup; 2 - on equip; 3 - on use; 4 - quest.
-	return select(14, GetItemInfo(item)) == LE_ITEM_BIND_ON_ACQUIRE
+	return select(14, C_Item.GetItemInfo(item)) == LE_ITEM_BIND_ON_ACQUIRE
 end
 
 function RCLootCouncil:GetPlayersGuildRank()
@@ -1506,10 +1509,10 @@ function RCLootCouncil:OnEvent(event, ...)
 			self.Log("Player relog...")
 
 			-- Restore masterlooter from cache, but only if not already set.
-			if not self.masterLooter and self.db.global.cache.masterlooter then
-				self.masterLooter = Player:Get(self.db.global.cache.masterlooter)
+			if not self.masterLooter and self.db.global.cache.masterLooter then
+				self.masterLooter = Player:Get(self.db.global.cache.masterLooter)
 			end
-			self.Log:d("ML:", self.masterLooter)
+			self.Log:d("ML, Cached:", self.masterLooter, self.db.global.cache.masterLooter)
 
 			-- Restore mldb and council
 			if self.db.global.cache.mldb then
@@ -1554,7 +1557,6 @@ function RCLootCouncil:OnEvent(event, ...)
 	elseif event == "LOOT_CLOSED" then
 		if not IsInInstance() then return end -- Don't do anything out of instances
 		self.Log:d("Event:", event, ...)
-		local i = 0
 		for k, info in pairs(self.lootSlotInfo) do
 			if not info.isLooted and info.guid and info.link then
 				if tContains(itemsBeingGroupLooted, info.link) then
@@ -1567,7 +1569,6 @@ function RCLootCouncil:OnEvent(event, ...)
 
 				return
 			end
-			i = k -- Only update if we have items
 		end
 		self.lootOpen = false
 
@@ -1803,7 +1804,7 @@ function RCLootCouncil:GetInstalledModulesFormattedData()
 			modules[num] = self:GetModule(name).baseName .. " - " .. self:GetModule(name).version
 			if self:GetModule(name).tVersion then modules[num] = modules[num] .. "-" .. self:GetModule(name).tVersion end
 		else
-			local ver = GetAddOnMetadata(self:GetModule(name).baseName, "Version")
+			local ver = C_AddOns.GetAddOnMetadata(self:GetModule(name).baseName, "Version")
 			modules[num] = self:GetModule(name).baseName .. " - " .. (ver or _G.UNKNOWN)
 		end
 	end
@@ -1922,11 +1923,14 @@ end
 
 function RCLootCouncil:Getdb() return db end
 
+---@return RCLootCouncil.HistoryDB
 function RCLootCouncil:GetHistoryDB() return self.lootDB.factionrealm end
 
 function RCLootCouncil:UpdateDB()
-	db = self.db.profile
+	self.Log:D("UpdateDB")
 	self.db:RegisterDefaults(self.defaults)
+	db = self.db.profile
+	self:ActivateSkin(self.db.profile.currentSkin)
 	self:SendMessage("RCUpdateDB")
 end
 
@@ -2072,11 +2076,10 @@ function RCLootCouncil:CallModule(module)
 	self:EnableModule(userModules[module] or defaultModules[module])
 end
 
---- Returns the active module.
---	Always use this when calling functions in another module.
--- @paramsig module
--- @param module String, must correspond to a index in self.defaultModules.
--- @return The module object of the active module or nil if not found. Prioritises userModules if set.
+--- Returns the active module if found or fails silently.
+---	Always use this when calling functions in another module.
+--- @param module DefaultModules|UserModules Index in self.defaultModules.
+--- @return AceAddon? #The module object of the active module or nil if not found. Prioritises userModules if set.
 function RCLootCouncil:GetActiveModule(module)
 	return self:GetModule(userModules[module] or defaultModules[module], false)
 end
@@ -2158,11 +2161,47 @@ end
 function RCLootCouncil:GetUnitClassColoredName(name)
 	local player = Player:Get(name)
 	if player then
-		return _G.GetClassColoredTextForUnit("player", self.Ambiguate(name))
+		return player:GetClassColoredName()
 	else
 		local englishClass = select(2, UnitClass(Ambiguate(name, "short")))
-		return _G.GetClassColoredTextForUnit(englishClass, self.Ambiguate(name))
+		return self:WrapTextInClassColor(englishClass, self.Ambiguate(name))
 	end
+end
+
+--- 2/3s of `GetClassColoredTextForUnit` - useful when you have class but not a valid unit.
+---@param class ClassFile Class to use color from.
+---@param text string Text to wrap.
+function RCLootCouncil:WrapTextInClassColor(class, text)
+	local color = GetClassColorObj(class)
+	return color and color:WrapTextInColorCode(text) or text
+end
+
+--- Creates a string with class icon in front of a class colored name of the player.
+---@param nameOrPlayer string|Player
+---@param size number? Size of the icon, defaults to 12.
+function RCLootCouncil:GetClassIconAndColoredName(nameOrPlayer, size)
+	local player = type(nameOrPlayer) == "string" and Player:Get(nameOrPlayer) or nameOrPlayer
+	size = size or 12
+	if not (player and player:GetClass()) then
+		self.Log:E("GetClassIconAndColoredName: No class found for ", nameOrPlayer)
+		return nameOrPlayer or ""
+	end
+	return format("|W%s %s|w", CreateAtlasMarkup(self.CLASS_TO_ATLAS[player:GetClass()], size, size), player:GetClassColoredName())
+end
+
+--- Creates a string with spec icon in front of a class colored name of the player.
+--- Uses class icon if specID is not available.
+---@param nameOrPlayer string|Player
+---@param size number? Size of the icon, defaults to 12.
+function RCLootCouncil:GetSpecIconAndColoredName(nameOrPlayer, size)
+	local player = type(nameOrPlayer) == "string" and Player:Get(nameOrPlayer) or nameOrPlayer
+	size = size or 12
+	if not (player and player.specID and type(player.specID) == "number") then
+		-- No spec ID, fallback to class
+		return self:GetClassIconAndColoredName(player or nameOrPlayer, size)
+	end
+	local specIcon = select(4, GetSpecializationInfoByID(player.specID))
+	return format("|W%s %s|w", CreateSimpleTextureMarkup(specIcon, size), player:GetClassColoredName())
 end
 
 -- cName is name of the module
@@ -2183,7 +2222,7 @@ end
 
 --- Update all frames registered with RCLootCouncil:CreateFrame().
 -- Updates all the frame's colors as set in the db.
-function RCLootCouncil:UpdateFrames() for _, frame in pairs(self.UI.minimizeableFrames) do frame:Update() end end
+function RCLootCouncil:UpdateFrames() for _, frame in pairs(self.UI:GetCreatedFramesOfType("RCFrame")) do frame:Update() end end
 
 --- Applies a skin to all frames
 -- Skins must be added to the db.skins table first.
@@ -2249,13 +2288,27 @@ function RCLootCouncil:HideTooltip()
 	GameTooltip:Hide()
 end
 
+function RCLootCouncil:ResetUI()
+	db = self:Getdb()
+	for name, data in pairs(db.UI) do -- We can't easily reset due to the wildcard in defaults
+		for k in pairs(data) do
+			if self.defaults.profile.UI[name] and self.defaults.profile.UI[name][k] then
+				db.UI[name][k] = self.defaults.profile.UI[name][k]
+			else
+				db.UI[name][k] = self.defaults.profile.UI["**"][k]
+			end
+		end
+	end
+	for _, frame in ipairs(self.UI.minimizeableFrames) do frame:RestorePosition() end
+	db.chatFrameName = self.defaults.profile.chatFrameName
+end
+
 local itemStatsRet = {}
 -- Get item bonus text (socket, leech, etc)
 -- Item needs to be cached.
 function RCLootCouncil:GetItemBonusText(link, delimiter)
 	if not delimiter then delimiter = "/" end
-	wipe(itemStatsRet)
-	C_Item.GetItemStats(link, itemStatsRet)
+	itemStatsRet = C_Item.GetItemStats(link)
 	local text = ""
 	for k, _ in pairs(itemStatsRet) do
 		if k:find("SOCKET") then
@@ -2311,7 +2364,7 @@ function RCLootCouncil:GetItemTypeText(link, subType, equipLoc, typeID, subTypeI
 		else
 			return tokenText
 		end
-	elseif equipLoc ~= "" and getglobal(equipLoc) then
+	elseif equipLoc ~= "" and equipLoc ~= "INVTYPE_NON_EQUIP_IGNORE" and getglobal(equipLoc) then
 		if classesFlag and classesFlag ~= 0xffffffff then
 			return getglobal(equipLoc) .. ", " .. self:GetClassNamesFromFlag(classesFlag)
 		elseif equipLoc == "INVTYPE_TRINKET" then
@@ -2435,8 +2488,8 @@ end
 function RCLootCouncil:GetResponseColor(type, name) return unpack(self:GetResponse(type, name).color) end
 
 -- #end UI Functions -----------------------------------------------------
--- @debug@
 -- debug func
+--[==[@debug@
 _G.printtable = function(data, level)
 	if not data then return end
 	level = level or 0
@@ -2455,7 +2508,7 @@ _G.printtable = function(data, level)
 		until true
 	end
 end
--- @end-debug@
+--@end-debug@]==]
 
 function RCLootCouncil:ExportCurrentSession()
 	if not lootTable or #lootTable == 0 then return self:Print(L["No session running"]) end
@@ -2464,9 +2517,9 @@ function RCLootCouncil:ExportCurrentSession()
 		exportData[session + 1] = table.concat({session, data.link:gsub("|", "||"), data.itemID, data.ilvl}, ",")
 	end
 	local csv = table.concat(exportData, "\n")
-	local frame = RCLootCouncil:GetActiveModule("history"):GetFrame()
-	frame.exportFrame.edit:SetText(csv)
-	frame.exportFrame:Show()
+	local exportFrame = self.UI:New("RCExportFrame")
+	exportFrame.edit:SetText(csv)
+	exportFrame:Show()
 end
 
 --- These comms should live all the time
@@ -2513,6 +2566,13 @@ function RCLootCouncil:SubscribeToPermanentComms()
 		reroll = function(data, sender)
 			if self.Utils:UnitIsUnit(sender, self.masterLooter) and self.enabled then
 				self:OnReRollReceived(sender, unpack(data))
+			end
+		end,
+
+		---@param data [string[], LootTable] 1: List of transmittable player GUIDs of candidates that should reroll. 2: LootTable.
+		re_roll = function (data, sender)
+			if self.Utils:UnitIsUnit(sender, self.masterLooter) and self.enabled then
+				self:OnNewReRollReceived(sender, unpack(data))
 			end
 		end,
 
@@ -2576,7 +2636,7 @@ end
 
 local function CheckCachedLootTable(lootTable)
 	local cached = true
-	for _, v in pairs(lootTable) do if not GetItemInfo("item:" .. v.string) then cached = false end end
+	for _, v in pairs(lootTable) do if not C_Item.GetItemInfo("item:" .. v.string) then cached = false end end
 	return cached
 end
 
@@ -2675,10 +2735,15 @@ function RCLootCouncil:OnMLDBReceived(input)
 
 	if not self.mldb.buttons.default then self.mldb.buttons.default = {} end
 	setmetatable(self.mldb.buttons.default, {__index = self.defaults.profile.buttons.default})
+
+	if self.mldb.observe then
+		if not self:GetActiveModule("votingframe"):IsEnabled() then
+			self:CallModule("votingframe")
+		end
+	end
 end
 
-function RCLootCouncil:OnReRollReceived(sender, lt)
-	self:Print(format(L["'player' has asked you to reroll"], self.Ambiguate(sender)))
+function RCLootCouncil:DoReroll(lt)
 	self:PrepareLootTable(lt)
 	self:DoAutoPasses(lt)
 	-- REVIEW Are these needed?
@@ -2691,6 +2756,22 @@ function RCLootCouncil:OnReRollReceived(sender, lt)
 	if self.inCombat then
 		self.UI:DelayedMinimize()
 	end
+end
+
+function RCLootCouncil:OnReRollReceived(sender, lt)
+	self:Print(format(L["'player' has asked you to reroll"], self:GetClassIconAndColoredName(sender)))
+	self:DoReroll(lt)
+end
+
+---@param candidates string[] List of transmittable player GUIDs of candidates that should reroll.
+---@param lt LootTable
+function RCLootCouncil:OnNewReRollReceived(sender, candidates, lt)
+	self:Print(format(L["'player' has asked you to reroll"], self:GetClassIconAndColoredName(sender)))
+	if not tContains(candidates, self.player:GetForTransmit()) then
+		self.Log:D("We are not in the reRoll candidate list")
+		return
+	end
+	self:DoReroll(lt)
 end
 
 function RCLootCouncil:OnLootAckReceived()

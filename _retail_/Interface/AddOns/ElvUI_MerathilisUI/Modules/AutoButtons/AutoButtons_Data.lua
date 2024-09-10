@@ -245,6 +245,7 @@ local potions = {
 		212972,
 		212973,
 		212974,
+		224464,
 	},
 }
 
@@ -652,6 +653,8 @@ local foods = {
 		-- https://www.wowhead.com/items/consumables/food-and-drinks/min-level:80/min-req-level:75?filter=92:166;1:11;0:0
 		224762,
 		226811,
+		227272,
+		227273,
 		227301,
 		227302,
 		227303,
@@ -714,7 +717,10 @@ local utilities = {
 	132514,
 	132516,
 	193470,
-	199414,
+	221945,
+	221953,
+	221954,
+	221955,
 }
 
 local openableItems = {
@@ -1043,6 +1049,9 @@ local openableItems = {
 local professionItems = {
 	-- https://www.wowhead.com/items/miscellaneous/other?filter=166:98:111;11:1:2;0:0:1
 	-- https://www.wowhead.com/items/miscellaneous/other?filter=107;0;increase+your+Khaz+Algar
+	213779,
+	213780,
+	213781,
 	222546,
 	222547,
 	222548,
@@ -1052,6 +1061,7 @@ local professionItems = {
 	222552,
 	222553,
 	222554,
+	222621,
 	222649,
 	224007,
 	224023,
@@ -1330,6 +1340,17 @@ local delveItem = {
 	229353,
 }
 
+local fishItems = {
+	220139,
+	220135,
+	220152,
+	220146,
+	220134,
+	220137,
+	220138,
+	220136,
+}
+
 local function createList(base, ...)
 	local list = {}
 	for _, key in pairs({ ... }) do
@@ -1374,4 +1395,5 @@ module.moduleList = {
 	["BIGDIG"] = bigDig,
 	["ENGINEER"] = engineerItems,
 	["DELVE"] = delveItem,
+	["FISHING"] = fishItems,
 }

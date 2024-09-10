@@ -15,7 +15,7 @@ GNU General Public License for more details.
 This file is part of C_Everywhere.
 --]]
 
-local C = LibStub:NewLibrary('C_Everywhere', 11)
+local C = LibStub:NewLibrary('C_Everywhere', 12)
 if C then
 	wipe(C)
 else
@@ -83,6 +83,10 @@ pack(C.CurrencyInfo, 'GetCurrencyInfo', 'name, quantity, iconFileID, quantityEar
 pack(C.CurrencyInfo, 'GetCurrencyListInfo', 'name, isHeader, isHeaderExpanded, isTypeUnused, isShowInBackpack, quantity, iconFileID, maxQuantity, canEarnPerWeek, quantityEarnedThisWeek, discovered')
 pack(C.Spell, 'GetSpellInfo', 'name, rank, iconID, castTime, minRange, maxRange, spellID, originalIconID')
 
+GetOrCreateTableEntry(C.CurrencyInfo, 'IsAccountTransferableCurrency', nop)
+GetOrCreateTableEntry(C.CurrencyInfo, 'IsAccountWideCurrency', nop)
+C.Item.IsDressableItemByID = IsDressableItem
+
 if not C_TooltipInfo then
 	local tip = C_EverywhereTip or CreateFrame('GameTooltip', 'C_EverywhereTip', UIParent, 'GameTooltipTemplate')
 	local meta = getmetatable(tip).__index
@@ -109,5 +113,3 @@ if not C_AddOns then
 		return GetAddOnEnableState(character, addon)
 	end
 end
-
-C.Item.IsDressableItemByID = IsDressableItem

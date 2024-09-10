@@ -21,6 +21,16 @@ function module:ScaleCollections()
 	module:SetElementScale("wardrobe", "WardrobeFrame")
 end
 
+function module:ScaleItemUpgrade()
+	module:SetElementScale("itemUpgrade", "ItemUpgradeFrame")
+	module:SetElementScale("equipmentFlyout", "EquipmentFlyoutFrameButtons")
+end
+
+function module:ScaleCatalyst()
+	module:SetElementScale("itemUpgrade", "ItemInteractionFrame")
+	module:SetElementScale("equipmentFlyout", "EquipmentFlyoutFrameButtons")
+end
+
 -- Credits to Kayr
 function module:AdjustTransmogFrame()
 	if not E.db.mui.scale.transmog.enable then
@@ -98,7 +108,20 @@ function module:ScaleAuctionHouse()
 end
 
 function module:ScaleProfessions()
-	module:SetElementScale("professions", "ProfessionsBookFrame")
+	E:Delay(0.01, function()
+		local isHooked = module.hookedFrames["profession"] == true
+		if not isHooked then
+			-- Scale initially
+			module:SetElementScale("profession", "ProfessionsFrame")
+
+			local frame = _G["ProfessionsFrame"]
+			frame:HookScript("OnShow", function()
+				module:SetElementScale("profession", "ProfessionsFrame")
+			end)
+
+			module.hookedFrames["profession"] = true
+		end
+	end)
 end
 
 function module:Scale()
@@ -111,16 +134,22 @@ function module:Scale()
 		return
 	end
 
+	module.hookedFrames = {}
+
 	module:SetElementScale("characterFrame", "CharacterFrame")
 	module:SetElementScale("dressingRoom", "DressUpFrame")
 	module:SetElementScale("groupFinder", "PVEFrame")
+	module:SetElementScale("vendor", "MerchantFrame")
+	module:SetElementScale("gossip", "GossipFrame")
+	module:SetElementScale("quest", "QuestFrame")
+	module:SetElementScale("mailbox", "MailFrame")
 
 	module:AddCallbackOrScale("Blizzard_InspectUI", self.ScaleInspectUI)
 	module:AddCallbackOrScale("Blizzard_PlayerSpells", self.ScaleTalents)
 	module:AddCallbackOrScale("Blizzard_AuctionHouseUI", self.ScaleAuctionHouse)
 	module:AddCallbackOrScale("Blizzard_Collections", self.ScaleCollections)
 	module:AddCallbackOrScale("Blizzard_Collections", self.AdjustTransmogFrame)
-	module:AddCallbackOrScale("Blizzard_ProfessionsBook", self.ScaleProfessions)
+	module:AddCallbackOrScale("Blizzard_Professions", self.ScaleProfessions)
 end
 
 module:AddCallback("Scale")

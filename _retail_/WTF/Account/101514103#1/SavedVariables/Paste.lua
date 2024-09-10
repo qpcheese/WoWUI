@@ -10,9 +10,9 @@ PasteDB = {
 ["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
 ["Dogson - Ragnaros"] = "Dogson - Ragnaros",
 ["Laurs - Ragnaros"] = "Laurs - Ragnaros",
-["Qtte - Sylvanas"] = "Qtte - Sylvanas",
-["Gammelemil - Grim Batol"] = "Default",
 ["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+["Djagon - Ragnaros"] = "Djagon - Ragnaros",
+["Qtte - Sylvanas"] = "Qtte - Sylvanas",
 ["Qute - Sylvanas"] = "Qute - Sylvanas",
 ["Myfficraider - Ragnaros"] = "Myfficraider - Ragnaros",
 ["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
@@ -20,7 +20,7 @@ PasteDB = {
 ["Qpebank - Draenor"] = "Qpebank - Draenor",
 ["Qpe - Ravencrest"] = "Qpe - Ravencrest",
 ["Jerwin - Ragnaros"] = "Jerwin - Ragnaros",
-["Djagon - Ragnaros"] = "Djagon - Ragnaros",
+["Gammelemil - Grim Batol"] = "Default",
 ["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 ["Qpew - Ragnaros"] = "Qpew - Ragnaros",
 ["Sikducker - Sylvanas"] = "Sikducker - Sylvanas",
@@ -78,7 +78,7 @@ PasteDB = {
 ["Djagon - Ragnaros"] = {
 ["loaded"] = true,
 },
-["Qtte - Sylvanas"] = {
+["Qubit - Ragnaros"] = {
 ["loaded"] = true,
 },
 ["Qute - Sylvanas"] = {
@@ -102,7 +102,7 @@ PasteDB = {
 ["Jerwin - Ragnaros"] = {
 ["loaded"] = true,
 },
-["Qubit - Ragnaros"] = {
+["Qtte - Sylvanas"] = {
 ["loaded"] = true,
 },
 ["Qpfromage - Ragnaros"] = {

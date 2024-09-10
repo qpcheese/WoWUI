@@ -7,19 +7,17 @@ HandyNotes_WarWithinDB = {
 },
 ["profiles"] = {
 ["Qpaladin - Ragnaros"] = {
-["zonesHidden"] = {
-[2215] = false,
-},
-["show_treasure_filter"] = "all",
 ["groupsHidden"] = {
 ["snuffling"] = false,
 ["glyphs"] = false,
 ["races"] = false,
 ["beledar"] = false,
-["professionknowledge"] = false,
 ["beledarspawn"] = false,
+["professionknowledge"] = false,
 },
-["show_npcs_filter"] = "all",
+["zonesHidden"] = {
+[2215] = false,
+},
 ["achievementsHidden"] = {
 [40704] = false,
 [40762] = false,
@@ -28,6 +26,8 @@ HandyNotes_WarWithinDB = {
 [40625] = false,
 [40851] = false,
 },
+["show_npcs_filter"] = "all",
+["show_treasure_filter"] = "all",
 },
 ["Qpfromage - Sylvanas"] = {
 },

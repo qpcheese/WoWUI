@@ -26,9 +26,6 @@ local addon = select(2, ...)
 _G.RCLootCouncilML = addon:NewModule("RCLootCouncilML", "AceEvent-3.0", "AceBucket-3.0", "AceTimer-3.0", "AceHook-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("RCLootCouncil")
 
--- WoW API
-local GetItemInfo, GetItemInfoInstant
-	 = GetItemInfo, GetItemInfoInstant
 -- Lua
 local time, date, tonumber, unpack, select, wipe, pairs, ipairs, format, table, tinsert, tremove, bit, tostring, type
 	 = time, date, tonumber, unpack, select, wipe, pairs, ipairs, format, table, tinsert, tremove, bit, tostring, type
@@ -90,7 +87,7 @@ function RCLootCouncilML:OnEnable()
 end
 
 function RCLootCouncilML:GetItemInfo(item)
-	local name, link, rarity, ilvl, iMinLevel, type, subType, iStackCount, equipLoc, texture, sellPrice, typeID, subTypeID, bindType, expansionID, itemSetID, isCrafting = GetItemInfo(item) -- luacheck: ignore
+	local name, link, rarity, ilvl, iMinLevel, type, subType, iStackCount, equipLoc, texture, sellPrice, typeID, subTypeID, bindType, expansionID, itemSetID, isCrafting = C_Item.GetItemInfo(item) -- luacheck: ignore
 	local itemID = ItemUtils:GetItemIDFromLink(link)
 	if name then
 		-- Most of these are kept for use in SessionFrame
@@ -459,13 +456,13 @@ end
 
 function RCLootCouncilML:OnTradeComplete(link, recipient, trader)
 	if db.printCompletedTrades then
-		addon:Print(format(L["trade_complete_message"], addon.Ambiguate(trader), link, addon.Ambiguate(recipient)))
+		addon:Print(format(L["trade_complete_message"], addon:GetClassIconAndColoredName(trader), link, addon:GetClassIconAndColoredName(recipient)))
 	end
 end
 
 function RCLootCouncilML:HandleReceivedTradeable (sender, item)
 	if not (addon.handleLoot and item and item ~= "") then return self.Log:E("HandleReceivedTradeable", sender, item) end -- Auto fail criterias
-	if not GetItemInfo(item) then
+	if not C_Item.GetItemInfo(item) then
 		self.Log:d("Tradable item uncached: ", item, sender)
 		return self:ScheduleTimer("HandleReceivedTradeable", 1, item, sender)
 	end
@@ -474,7 +471,7 @@ function RCLootCouncilML:HandleReceivedTradeable (sender, item)
 
 	-- For ML loot method, ourselve must be excluded because it should be handled in self:LootOpen()
 	if not addon:UnitIsUnit(sender, "player") or addon.lootMethod ~= "master" then
-		local quality = select(3, GetItemInfo(item))
+		local quality = select(3, C_Item.GetItemInfo(item))
 		local autoAward, mode, winner = self:ShouldAutoAward(item, quality)
 		if autoAward then
 			self:AutoAward(nil, item, quality, winner, mode, addon.bossName, sender)
@@ -596,9 +593,9 @@ end
 
 -- Do we have free space in our bags to hold this item?
 function RCLootCouncilML:HaveFreeSpaceForItem(item)
-	local itemFamily = GetItemFamily(item)
+	local itemFamily = C_Item.GetItemFamily(item)
 	-- If the item is a container, then the itemFamily should be 0
-	local equipSlot = select(4, GetItemInfoInstant(item))
+	local equipSlot = select(4, C_Item.GetItemInfoInstant(item))
 	if equipSlot == "INVTYPE_BAG" then
 		itemFamily = 0
 	end
@@ -672,7 +669,7 @@ function RCLootCouncilML:CanGiveLoot(slot, item, winner)
 		  return false, "out_of_instance" -- Winner not in the same instance as ML
 		end
 
-		local bindType = select(14, GetItemInfo(item))
+		local bindType = select(14, C_Item.GetItemInfo(item))
 
 		if not found then
 			if bindType ~= LE_ITEM_BIND_ON_ACQUIRE then
@@ -990,7 +987,7 @@ RCLootCouncilML.announceItemStrings = {
 	["&i"] = function(...) return select(2,...) end,
 	["&l"] = function(_, item)
 		local t = RCLootCouncilML:GetItemInfo(item)
-		return t and addon.Utils:GetItemLevelText(t.ilvl, t.token) or "" end,
+		return t and t.ilvl or "" end,
 	["&t"] = function(_, item)
 		local t = RCLootCouncilML:GetItemInfo(item)
 		return t and addon:GetItemTypeText(t.link, t.subType, t.equipLoc, t.typeID, t.subtypeID, t.classes, t.token, t.relic) or "" end,
@@ -1012,7 +1009,7 @@ function RCLootCouncilML:AnnounceItems(table)
 	addon:SendAnnouncement(db.announceText, db.announceChannel)
 	local link
 	for k,v in ipairs(table) do
-		link = v.link and v.link or select(2, GetItemInfo(ItemUtils:UncleanItemString(v.string)))
+		link = v.link and v.link or select(2, C_Item.GetItemInfo(ItemUtils:UncleanItemString(v.string)))
 		local msg = db.announceItemString
 		for text, func in pairs(self.announceItemStrings) do
 			-- escapePatternSymbols is defined in FrameXML/ChatFrame.lua that escapes special characters.
@@ -1036,7 +1033,7 @@ RCLootCouncilML.awardStrings = {
 	["&n"] = function(...) return select(4, ...) or "" end,
 	["&l"] = function(_, item)
 		local t = RCLootCouncilML:GetItemInfo(item)
-		return t and addon.Utils:GetItemLevelText(t.ilvl, t.token) or "" end,
+		return t and t.ilvl or "" end,
 	["&t"] = function(_, item)
 		local t = RCLootCouncilML:GetItemInfo(item)
 		return t and addon:GetItemTypeText(t.link, t.subType, t.equipLoc, t.typeID, t.subTypeID, t.classes, t.token, t.relic) or "" end,
@@ -1097,13 +1094,13 @@ end
 --		winner string: The candidate that should receive the auto award.
 function RCLootCouncilML:ShouldAutoAward(item, quality)
 	if not item then return false end
-	local _, _, _, _, _, itemClassID = GetItemInfoInstant(item)
+	local _, _, _, _, _, itemClassID = C_Item.GetItemInfoInstant(item)
 	if itemClassID == 1 then return false end -- Ignore containers
 
 	if not next(addon.candidatesInGroup) then addon:UpdateCandidatesInGroup() end
 
 	local boe = addon:IsItemBoE(item)
-	if boe and db.autoAwardBoE and quality == 4 and IsEquippableItem(item) then -- Epic Equippable BoE
+	if boe and db.autoAwardBoE and quality == 4 and C_Item.IsEquippableItem(item) then -- Epic Equippable BoE
 		for _,name in ipairs(db.autoAwardBoETo) do
 			if addon.candidatesInGroup[addon:UnitName(name)] then
 				return true, "boe", addon:UnitName(name)
@@ -1113,7 +1110,7 @@ function RCLootCouncilML:ShouldAutoAward(item, quality)
 		return false
 	end
 	if db.autoAward and quality >= db.autoAwardLowerThreshold and quality <= db.autoAwardUpperThreshold
-		and IsEquippableItem(item) then
+		and C_Item.IsEquippableItem(item) then
 		if db.autoAwardLowerThreshold >= GetLootThreshold() or db.autoAwardLowerThreshold < 2 then
 			for _, name in ipairs(db.autoAwardTo) do
 				if addon.candidatesInGroup[addon:UnitName(name)] then
@@ -1131,7 +1128,7 @@ end
 function RCLootCouncilML:PrintAutoAwardErrorWithPlayer(name)
 	name = name or "Missing Candidate"
 	addon:Print(L["Cannot autoaward:"])
-	addon:Print(format(L["Could not find 'player' in the group."], name))
+	addon:Print(format(L["Could not find 'player' in the group."], addon:GetClassIconAndColoredName(name)))
 end
 
 --- Auto award an item to a player.
@@ -1205,8 +1202,8 @@ function RCLootCouncilML:TrackAndLogLoot(winner, link, responseID, boss, reason,
 	history_table["instance"] 		= instanceName.."-"..difficultyName
 	history_table["boss"] 			= boss or _G.UNKNOWN
 	history_table["votes"] 			= candData and candData.votes
-	history_table["itemReplaced1"]= (candData and candData.gear1) and select(2,GetItemInfo(candData.gear1))
-	history_table["itemReplaced2"]= (candData and candData.gear2) and select(2,GetItemInfo(candData.gear2))
+	history_table["itemReplaced1"]= (candData and candData.gear1) and select(2,C_Item.GetItemInfo(candData.gear1))
+	history_table["itemReplaced2"]= (candData and candData.gear2) and select(2,C_Item.GetItemInfo(candData.gear2))
 	history_table["response"] 		= reason and reason.text or response.text
 	history_table["responseID"] 	= reason and reason.sort - 400 or responseID 										-- Changed in v2.0 (reason responseID was 0 pre v2.0)
 	history_table["color"]			= reason and reason.color or response.color											-- New in v2.0
@@ -1356,7 +1353,7 @@ function RCLootCouncilML:GetItemsFromMessage(msg, sender, retryCount)
 	local g2 = item2
 
 	local itemNeedCaching = false
-	local g1diff, g2diff = g1 and select(4, GetItemInfo(g1)), g2 and select(4, GetItemInfo(g2))
+	local g1diff, g2diff = g1 and select(4, C_Item.GetItemInfo(g1)), g2 and select(4, C_Item.GetItemInfo(g2))
 	if g1diff and g2diff then
 		diff = g1diff >= g2diff and ilvl - g2diff or ilvl - g1diff
 	elseif g1 and g2 then
@@ -1393,7 +1390,7 @@ function RCLootCouncilML:GetItemsFromMessage(msg, sender, retryCount)
 	local typeCode = self.lootTable[ses].typeCode or self.lootTable[ses].equipLoc
 
 	-- Let people know we've done stuff
-	addon:Print(format(L["Item received and added from 'player'"], addon.Ambiguate(sender)))
+	addon:Print(format(L["Item received and added from 'player'"], addon:GetClassIconAndColoredName(sender)))
 	SendChatMessage("[RCLootCouncil]: "..format(L["Response to 'item' acknowledged as 'response'"],
 		addon:GetItemTextWithCount(link, count), addon:GetResponse(typeCode, response).text), "WHISPER", nil, sender)
 end
@@ -1415,7 +1412,7 @@ function RCLootCouncilML:SendWhisperHelp(target)
 		SendChatMessage(msg, "WHISPER", nil, target)
 	end
 	SendChatMessage(L["whisper_guide2"], "WHISPER", nil, target)
-	addon:Print(format(L["Sent whisper help to 'player'"], addon.Ambiguate(target)))
+	addon:Print(format(L["Sent whisper help to 'player'"], addon:GetClassIconAndColoredName(target)))
 end
 
 --- Award popup control functions
@@ -1423,7 +1420,7 @@ end
 --	data contains: session, winner, responseID, reason, votes, gear1, gear2, isTierRoll, isRelicRoll, link, isToken
 function RCLootCouncilML.AwardPopupOnShow(frame, data)
 	frame:SetFrameStrata("FULLSCREEN")
-	frame.text:SetText(format(L["Are you sure you want to give #item to #player?"], data.link, addon.Ambiguate(data.winner)))
+	frame.text:SetText(format(L["Are you sure you want to give #item to #player?"], data.link, addon:GetClassIconAndColoredName(data.winner)))
 	frame.icon:SetTexture(data.texture)
 end
 
@@ -1628,18 +1625,18 @@ function RCLootCouncilML:OnReconnectReceived (sender)
 		self:ScheduleTimer("Send", 4, requestPlayer, "lootTable", self:GetLootTableForTransmit(true))
 		-- REVIEW v2.2.6 For backwards compability we're just sending avotingFrame's lootTable
 		-- This is quite redundant and should be removed in the future
-		if db.observe or Council:Contains(requestPlayer) then -- Only send all data to councilmen
-			-- Patch 10.2.7: New comms throttles doesn't allow us to send this...
-			-- local table = addon:GetActiveModule("votingframe"):GetLootTable()
-			-- -- Remove our own voting data if any
-			-- for _, v in ipairs(table) do
-			-- 	v.haveVoted = false
-			-- 	for _, d in pairs(v.candidates) do
-			-- 		d.haveVoted = false
-			-- 	end
-			-- end
-			-- self:ScheduleTimer("Send", 5, requestPlayer, "reconnectData", table)
-		end
+		-- if db.observe or Council:Contains(requestPlayer) then -- Only send all data to councilmen
+		-- 	-- Patch 10.2.7: New comms throttles doesn't allow us to send this...
+		-- 	local table = addon:GetActiveModule("votingframe"):GetLootTable()
+		-- 	-- Remove our own voting data if any
+		-- 	for _, v in ipairs(table) do
+		-- 		v.haveVoted = false
+		-- 		for _, d in pairs(v.candidates) do
+		-- 			d.haveVoted = false
+		-- 		end
+		-- 	end
+		-- 	self:ScheduleTimer("Send", 5, requestPlayer, "reconnectData", table)
+		-- end
 	end
 	self.Log("Responded to reconnect from", sender)
 end

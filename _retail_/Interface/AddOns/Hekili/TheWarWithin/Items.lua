@@ -45,7 +45,7 @@ all:RegisterAbilities( {
         toggle = "cooldowns",
 
         proc = "damage",
-    },	
+    },
 	
     bursting_light_shard = {
         cast = 0,
@@ -111,7 +111,7 @@ all:RegisterAbilities( {
         toggle = "cooldowns",
 
         handler = function()
-            applyBuff( "skarmorak_shard")
+            applyBuff( "skarmorak_shard" )
         end,
 
         proc = "mastery",
@@ -131,7 +131,7 @@ all:RegisterAbilities( {
         cooldown = 120,
         gcd = "off",
 
-        item = 219298,
+        item = 219318,
         toggle = "cooldowns",
 
         proc = "damage",

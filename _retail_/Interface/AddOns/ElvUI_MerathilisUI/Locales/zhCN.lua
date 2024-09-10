@@ -421,6 +421,16 @@ L["Korea"] = true
 L["Americas & Oceania"] = true
 L["Europe"] = true
 L["Server List"] = true
+L["Trade Tabs"] = true
+L["Enable Tabs on the Profession Frames"] = true
+L["Group Finder"] = true
+L["Equipment Upgrade"] = true
+L["Vendor"] = true
+L["Class Trainer"] = true
+L["Gossip"] = true
+L["Class Icon"] = true
+L["Deathknight"] = true
+L["Evoker"] = true
 
 -- Tooltip
 L["Your Status:"] = "你的状态: "
@@ -463,6 +473,12 @@ L["Reference"] = true
 L["Preview"] = true
 L["Template"] = true
 L["Please click the button below to read reference."] = true
+L["Spec Icon"] = true
+L["Show the icon of the specialization."] = true
+L["Race Icon"] = true
+L["Show the icon of the player race."] = true
+L["Health Bar"] = true
+L["Group Info"] = true
 
 -- Notification
 L["Notification"] = "通知"
@@ -838,6 +854,17 @@ L["Ringing Deeps"] = true
 L["Spreading The Light"] = true
 L["Underworld Operative"] = true
 L["World Soul"] = true
+L["Rectangle Minimap"] = true
+L["Expansion Landing Page"] = true
+L["Instance Difficulty"] = true
+L["Reskin the instance diffculty in text style."] = true
+L["Text Align"] = true
+L["Hide Blizzard Indicator"] = true
+L["Left"] = true
+L["Center"] = true
+L["Right"] = true
+L["Minimap Coords"] = true
+L["Add coords to your Minimap."] = true
 
 -- SMB
 L["Minimap Buttons"] = "小地图按钮"
@@ -1361,6 +1388,8 @@ L["Change the color of the name to the in-playing game style."] =
 	"根据正在游玩的游戏的风格来改变姓名颜色."
 L["Use Class Color"] = "使用职业颜色"
 L["Font Setting"] = "字体设定"
+L["Hide Realm"] = true
+L["Hide the realm name of friends."] = true
 
 -- Vehicle Bar
 L["VehicleBar"] = true

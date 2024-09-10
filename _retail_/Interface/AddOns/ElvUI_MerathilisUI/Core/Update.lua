@@ -14,14 +14,12 @@ local function UpdateMessage(text, from)
 		F.Print(L["Update"])
 	end
 
-	print(text .. format("(|cff00a8ff%.2f|r -> |cff00a8ff%s|r)...", from, MER.Version, DONE_ICON))
+	E:Delay(1, function()
+		print(text .. format("(|cff00a8ff%.2f|r -> |cff00a8ff%s|r)...", from, MER.Version) .. DONE_ICON)
+	end)
 end
 
-function MER:ForPreReleaseUser() end
-
 function MER:UpdateScripts() -- DB Convert
-	MER:ForPreReleaseUser()
-
 	local currentVersion = tonumber(MER.Version) -- Installed MerathilisUI Version
 	local globalVersion = tonumber(E.global.mui.version or "0") -- Version in ElvUI Global
 
@@ -37,10 +35,12 @@ function MER:UpdateScripts() -- DB Convert
 		return
 	end
 
+	print(globalVersion, profileVersion, privateVersion, currentVersion)
+
 	isFirstLine = true
 
 	if profileVersion and profileVersion <= 6.37 then
-		if E.db.mui.blizzard.friendsList then
+		if E.db.mui and E.db.mui.blizzard.friendsList then
 			E.db.mui.blizzard.friendsList.client = nil
 			E.db.mui.blizzard.friendsList.factionIcon = nil
 
@@ -57,11 +57,27 @@ function MER:UpdateScripts() -- DB Convert
 	end
 
 	if profileVersion and profileVersion <= 6.38 then
-		if E.db.mui.maps.eventTracker then
+		if E.db.mui and E.db.mui.maps.eventTracker then
 			if E.db.mui.maps.eventTracker.iskaaranFishingNet then
 				E.db.mui.maps.eventTracker.iskaaranFishingNet.enable = false
 				UpdateMessage(L["Event Tracker"] .. ": " .. L["Update Database"], profileVersion)
 			end
+		end
+	end
+
+	if profileVersion and profileVersion < 6.39 then
+		if E.db.mui and E.db.mui.maps.eventTracker then
+			if E.db.mui.maps.eventTracker.worldSoul then
+				E.db.mui.maps.eventTracker.worldSoul = nil
+				UpdateMessage(L["Event Tracker"] .. " - " .. L["Update Database"], profileVersion)
+			end
+		end
+	end
+
+	if globalVersion and globalVersion < 6.39 then
+		if E.global.mui and E.global.mui.core then
+			E.global.mui.core.fixPlaystyle = nil
+			UpdateMessage(L["Core"] .. " - " .. L["Update Database"], globalVersion)
 		end
 	end
 

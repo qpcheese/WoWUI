@@ -3,7 +3,7 @@
 ## Name: AllTheThings
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Author: Crieve-Sargeras
-## Version: 4.0.11
+## Version: 4.0.13
 ## Interface: 11503
 ## X-Interface: 11503
 ## X-Wago-ID: yQKyY5K7
@@ -51,6 +51,7 @@ locales\ko.lua
 locales\pt.lua
 locales\ru.lua
 locales\cn.lua
+locales\tw.lua
 
 # Search Cache
 src\Cache.lua

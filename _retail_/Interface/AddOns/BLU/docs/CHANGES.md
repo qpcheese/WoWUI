@@ -1,1 +1,4 @@
-- Fixed - Error in Level-Up! Localization - [core.lua]
+- Updated - Delve Companion level-up handling - [core.lua, initialization.lua]
+- Updated - Sound trigger for Brann level-up based on chat message verification - [core.lua]
+- Updated - Registered Delve Companion level-up events for Retail - [initialization.lua]
+- Added - Back in missing Delve Companion event handling logic - [core.lua, initialization.lua]

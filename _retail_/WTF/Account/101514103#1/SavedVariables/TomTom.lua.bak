@@ -10,9 +10,9 @@ TomTomDB = {
 ["Flurrq - Ragnaros"] = "Default",
 ["Cyclosarin - Ragnaros"] = "Default",
 ["Laurs - Ragnaros"] = "Default",
-["Djagon - Ragnaros"] = "Default",
 ["Gammelemil - Grim Batol"] = "Default",
-["Qtte - Sylvanas"] = "Default",
+["Djagon - Ragnaros"] = "Default",
+["Qubit - Ragnaros"] = "Default",
 ["Qute - Sylvanas"] = "Default",
 ["Myfficraider - Ragnaros"] = "Default",
 ["Fishanus - Ragnaros"] = "Default",
@@ -20,7 +20,7 @@ TomTomDB = {
 ["Qpebank - Draenor"] = "Default",
 ["Qpe - Ravencrest"] = "Default",
 ["Dogson - Ragnaros"] = "Default",
-["Qubit - Ragnaros"] = "Default",
+["Qtte - Sylvanas"] = "Default",
 ["Qpfromage - Ragnaros"] = "Default",
 ["Qpew - Ragnaros"] = "Default",
 ["Qpfromage - Sylvanas"] = "Default",
@@ -70,9 +70,9 @@ TomTomWaypointsM = {
 ["Flurrq - Ragnaros"] = "Flurrq - Ragnaros",
 ["Cyclosarin - Ragnaros"] = "Cyclosarin - Ragnaros",
 ["Laurs - Ragnaros"] = "Laurs - Ragnaros",
-["Djagon - Ragnaros"] = "Djagon - Ragnaros",
 ["Gammelemil - Grim Batol"] = "Gammelemil - Grim Batol",
-["Qtte - Sylvanas"] = "Qtte - Sylvanas",
+["Djagon - Ragnaros"] = "Djagon - Ragnaros",
+["Qubit - Ragnaros"] = "Qubit - Ragnaros",
 ["Qute - Sylvanas"] = "Qute - Sylvanas",
 ["Myfficraider - Ragnaros"] = "Myfficraider - Ragnaros",
 ["Fishanus - Ragnaros"] = "Fishanus - Ragnaros",
@@ -80,7 +80,7 @@ TomTomWaypointsM = {
 ["Qpebank - Draenor"] = "Qpebank - Draenor",
 ["Qpe - Ravencrest"] = "Qpe - Ravencrest",
 ["Dogson - Ragnaros"] = "Dogson - Ragnaros",
-["Qubit - Ragnaros"] = "Qubit - Ragnaros",
+["Qtte - Sylvanas"] = "Qtte - Sylvanas",
 ["Qpfromage - Ragnaros"] = "Qpfromage - Ragnaros",
 ["Qpew - Ragnaros"] = "Qpew - Ragnaros",
 ["Qpfromage - Sylvanas"] = "Qpfromage - Sylvanas",
@@ -365,25 +365,9 @@ TomTomWaypointsM = {
 },
 ["Laurs - Ragnaros"] = {
 },
-["Djagon - Ragnaros"] = {
-},
 ["Gammelemil - Grim Batol"] = {
 },
-["Qtte - Sylvanas"] = {
-},
-["Qute - Sylvanas"] = {
-},
-["Myfficraider - Ragnaros"] = {
-},
-["Fishanus - Ragnaros"] = {
-},
-["Jerwin - Ragnaros"] = {
-},
-["Qpebank - Draenor"] = {
-},
-["Qpe - Ravencrest"] = {
-},
-["Dogson - Ragnaros"] = {
+["Djagon - Ragnaros"] = {
 },
 ["Qubit - Ragnaros"] = {
 [2023] = {
@@ -411,6 +395,22 @@ TomTomWaypointsM = {
 ["world"] = true,
 },
 },
+},
+["Qute - Sylvanas"] = {
+},
+["Myfficraider - Ragnaros"] = {
+},
+["Fishanus - Ragnaros"] = {
+},
+["Jerwin - Ragnaros"] = {
+},
+["Qpebank - Draenor"] = {
+},
+["Qpe - Ravencrest"] = {
+},
+["Dogson - Ragnaros"] = {
+},
+["Qtte - Sylvanas"] = {
 },
 ["Qpfromage - Ragnaros"] = {
 [1527] = {

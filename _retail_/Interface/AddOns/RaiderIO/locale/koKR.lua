@@ -1,4 +1,3 @@
--- Generated from CurseForge on Wed Jul 24 07:55:22 UTC 2024
 local ns = select(2, ...) ---@class ns @The addon namespace.
 
 if ns:IsSameLocale("koKR") then
@@ -8,7 +7,7 @@ if ns:IsSameLocale("koKR") then
 
 	L.LOCALE_NAME = "koKR"
 
-L["ALLOW_IN_LFD"] = "던전 찾기 허용"
+	L["ALLOW_IN_LFD"] = "던전 찾기 허용"
 --[[Translation missing --]]
 --[[ L["ALLOW_IN_LFD_CLASSIC"] = ""--]] 
 --[[Translation missing --]]
@@ -617,5 +616,6 @@ L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "RaiderIO: 먼저 내 프로필 위치 �
 --[[ L["WIPE_RWF_MODE_BUTTON"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["WIPE_RWF_MODE_BUTTON_TOOLTIP"] = ""--]] 
+
 
 end

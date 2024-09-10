@@ -165,6 +165,7 @@ P.blizzard = {
 		useGameColor = true,
 		useClientColor = true,
 		useNoteAsName = false,
+		hideRealm = false,
 		textures = {
 			status = "square",
 			gameIcon = "PATCH",
@@ -385,6 +386,44 @@ P.chat = {
 		},
 	},
 }
+
+if MER.ChineseLocale then
+	P.chat.chatText.customAbbreviation[L["BigfootWorldChannel"]] = "世"
+	P.chat.chatText.customAbbreviation["尋求組隊"] = "世"
+	P.chat.chatText.customAbbreviation["組隊頻道"] = "世"
+
+	tinsert(P.chat.chatBar.channels.world.config, {
+		region = "TW",
+		faction = "Alliance",
+		realmID = "ALL",
+		name = "組隊頻道",
+		autoJoin = true,
+	})
+
+	tinsert(P.chat.chatBar.channels.world.config, {
+		region = "TW",
+		faction = "Horde",
+		realmID = "ALL",
+		name = "尋求組隊",
+		autoJoin = true,
+	})
+
+	tinsert(P.chat.chatBar.channels.world.config, {
+		region = "TW",
+		faction = "ALL",
+		realmID = "ALL",
+		name = L["BigfootWorldChannel"],
+		autoJoin = true,
+	})
+
+	tinsert(P.chat.chatBar.channels.world.config, {
+		region = "CN",
+		faction = "ALL",
+		realmID = "ALL",
+		name = L["BigfootWorldChannel"],
+		autoJoin = true,
+	})
+end
 
 P.colors = {
 	styleAlpha = 1,
@@ -931,7 +970,7 @@ P.autoButtons = {
 		buttonsPerRow = 10,
 		anchor = "TOPLEFT",
 		spacing = 3,
-		tooltip = false,
+		tooltip = true,
 		qualityTier = {
 			size = 16,
 			xOffset = 0,
@@ -961,7 +1000,7 @@ P.autoButtons = {
 				b = 1,
 			},
 		},
-		include = "QUEST,BANNER,EQUIP,PROF,OPENABLE,DELVE",
+		include = "QUEST,BANNER,EQUIP,PROF,OPENABLE,DELVE,FISHING",
 	},
 	bar2 = {
 		enable = true,
@@ -1733,10 +1772,6 @@ P.maps = {
 			enable = true,
 			desaturate = true,
 		},
-		worldSoul = {
-			enable = true,
-			desaturate = true,
-		},
 		khazAlgarEmissary = {
 			enable = true,
 			desaturate = true,
@@ -2054,7 +2089,7 @@ P.scale = {
 		scale = 1,
 	},
 
-	professions = {
+	profession = {
 		scale = 1,
 	},
 
@@ -2064,5 +2099,33 @@ P.scale = {
 
 	transmog = {
 		enable = false,
+	},
+
+	itemUpgrade = {
+		scale = 1,
+	},
+
+	equipmentFlyout = {
+		scale = 2,
+	},
+
+	vendor = {
+		scale = 1,
+	},
+
+	gossip = {
+		scale = 1,
+	},
+
+	quest = {
+		scale = 1,
+	},
+
+	mailbox = {
+		scale = 1,
+	},
+
+	classTrainer = {
+		scale = 1,
 	},
 }

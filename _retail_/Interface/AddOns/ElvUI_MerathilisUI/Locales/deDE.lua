@@ -120,7 +120,7 @@ L["Level"] = "Level"
 L["Translate Item"] = "Übersetze Gegenstand"
 L["Translate the name in item links into your language."] = "Übersetze den Namen in Gegenstandlinks in Deiner Sprache."
 L["Icon"] = "Symbol"
-L["Armor Category"] = "Rüstungs Kategorie"
+L["Armor Category"] = "Arsenal Kategorie"
 L["Weapon Category"] = "Waffenkategorie"
 L["Filters some messages out of your chat, that some Spam AddOns use."] =
 	"Filtert einige Nachrichten von Spam AddOns aus deinem Chat."
@@ -293,7 +293,7 @@ L["Announce in chat when someone placed an usefull item."] =
 L["Miscellaneous"] = "Sonstiges"
 L["Guild News Item Level"] = "Gildennachrichten Gegenstandsstufe"
 L["Add Item level Infos in Guild News"] = "Fügt den Gildennachrichten die Gegenstandsstufe an."
-L["Spell Alert Scale"] = "Zauberwarnung Skalierung"
+L["Spell Alert Scale"] = "Skalierung Zauberaktivierungswarnung"
 L["Add Title"] = "Titel hinzufügen"
 L["Display an additional title."] = "Zusätzlichen Titel anzeigen."
 L["Add LFG group info to tooltip."] = "LFG Gruppeninformationen zum Tooltip hinzufügen."
@@ -455,7 +455,6 @@ L["Add a styled section title to the context menu."] = "Fügt einen Abschnittsti
 L["Guild Invite"] = "Gildeneinladung"
 L["Who"] = "Wer"
 L["Report Stats"] = "Werte berichten"
-L["Armory"] = true
 L["Set Region"] = "Region auswählen"
 L["If the game language is different from the primary language in this server, you need to specify which area you play on."] =
 	"Wenn sich die Spielsprache von der Primärsprache auf diesem Server unterscheidet, mußt Du angeben, in welchem Bereich Du spielst."
@@ -463,8 +462,18 @@ L["Auto-detect"] = "Auto Erkennung"
 L["Taiwan"] = true
 L["Korea"] = true
 L["Americas & Oceania"] = true
-L["Europe"] = true
+L["Europe"] = "Europa"
 L["Server List"] = "Serverliste"
+L["Trade Tabs"] = "Berufe Tabs"
+L["Enable Tabs on the Profession Frames"] = "Aktiviere die Tabs in den Berufsfenstern"
+L["Group Finder"] = "Gruppenfinder"
+L["Equipment Upgrade"] = "Gegenstandsverbesserung"
+L["Vendor"] = "Händler"
+L["Class Trainer"] = "Klassentrainer"
+L["Gossip"] = "Tratsch"
+L["Class Icon"] = "Klassensymbol"
+L["Deathknight"] = "Todesritter"
+L["Evoker"] = "Rufer"
 
 -- Nameplates
 L["NamePlates"] = "Namensplaketten"
@@ -514,6 +523,12 @@ L["Preview"] = "Vorschau"
 L["Template"] = "Vorlage"
 L["Please click the button below to read reference."] =
 	"Klicke bitte auf die Schaltfläche unten, um die Referenz zu lesen."
+L["Spec Icon"] = "Spezifikationssymbol"
+L["Show the icon of the specialization."] = "Zeigt das Symbol der Spezialisierung an."
+L["Race Icon"] = "Rassensymbol"
+L["Show the icon of the player race."] = "Zeigt das Symbol der Spielerrasse an."
+L["Health Bar"] = "Gesundheitsleiste"
+L["Group Info"] = "Gruppeninfo"	
 
 -- Notification
 L["Notification"] = "Benachrichtigungen"
@@ -596,9 +611,9 @@ L["LEFT"] = "LINKS"
 L["RIGHT"] = "RECHTS"
 
 -- Armory
-L["Armory"] = "Rüstung"
+L["Armory"] = "Arsenal"
 L["Enable/Disable the |cffff7d0aMerathilisUI|r Armory Mode."] =
-	"Aktiviere/deaktiviere den Waffenkammermodus |cffff7d0aMerathilisUI|r."
+	"Aktiviere/deaktiviere den Arsernalmodus |cffff7d0aMerathilisUI|r."
 L["Enchant & Socket Strings"] = "Verzauberungs- und Sockel Strings"
 L["Settings for strings displaying enchant and socket info from the items"] =
 	"Einstellungen für Strings, die Verzauberungs- und Sockelinformationen der Gegenstände anzeigen"
@@ -907,16 +922,27 @@ L["Ringing Deeps"] = "Die Schallenden Tiefen"
 L["Spreading The Light"] = "Verbreitung des Lichts"
 L["Underworld Operative"] = "Unterweltagent"
 L["World Soul"] = "Weltenseele"
+L["Rectangle Minimap"] = "Rechteckige Minimap"
+L["Expansion Landing Page"] = "Erweitungs Zielseite"
+L["Instance Difficulty"] = "Instanzschwierigkeit"
+L["Reskin the instance diffculty in text style."] = "Ändere den Schwierigkeitsgrad der Instanz im Textstil."
+L["Text Align"] = "Text Ausrichtung"
+L["Hide Blizzard Indicator"] = "Blizzard-Indikator ausblenden"
+L["Left"] = "Links"
+L["Center"] = "Mitte"
+L["Right"] = "Rechts"
+L["Minimap Coords"] = "Minikarten Koordinaten"
+L["Add coords to your Minimap."] = "Füge Deiner Minikarte Koordinaten hinzu."
 
 -- SMB
-L["Minimap Buttons"] = "Minimap Tasten"
+L["Minimap Buttons"] = "Minikarte Tasten"
 L["Add an extra bar to collect minimap buttons."] =
 	"Fügt eine zusätzliche Leiste hinzu, um Minikartenschaltflächen zu sammeln."
-L["Toggle minimap buttons bar."] = "Minimap Tastenleiste einblenden"
+L["Toggle minimap buttons bar."] = "Minikarte Tastenleiste einblenden"
 L["Mouse Over"] = "Mouseover"
 L["Only show minimap buttons bar when you mouse over it."] =
 	"Zeige die Minikartenschaltflächenleiste nur an, wenn mit der Maus darüber gefahren wird."
-L["Minimap Buttons Bar"] = "Minimap Tastenleiste"
+L["Minimap Buttons Bar"] = "Minikarte Tastenleiste"
 L["Bar Backdrop"] = "Leistenhintergrund"
 L["Show a backdrop of the bar."] = "Zeige einen Hintergrund von der Leiste."
 L["Backdrop Spacing"] = "Hintergrund Abstand"
@@ -924,7 +950,7 @@ L["The spacing between the backdrop and the buttons."] = "Der Abstand zwischen d
 L["Inverse Direction"] = "Umgekehrte Richtung"
 L["Reverse the direction of adding buttons."] = "Kehre die Richtung des Hinzufügens von Schaltflächen um."
 L["Orientation"] = "Orientierung"
-L["Arrangement direction of the bar."] = "Arrangierrichtung der Bar."
+L["Arrangement direction of the bar."] = "Arrangierrichtung der Leiste."
 L["Drag"] = "Ziehen"
 L["Horizontal"] = true -- no need to translate
 L["Vertical"] = "Vertikal"
@@ -1468,6 +1494,8 @@ L["Use Game Color"] = "Verwende Spielfarbe"
 L["Change the color of the name to the in-playing game style."] = "Ändere die Farbe des Namens in dem Spielstil."
 L["Use Class Color"] = "Verwende Klassenfarbe"
 L["Font Setting"] = "Schrifteinstellungen"
+L["Hide Realm"] = "Server verstecken"
+L["Hide the realm name of friends."] = "Versteckt den Servernamen von Freunden."
 
 -- Advanced Settings
 L["Advanced Settings"] = "Erweiterte Einstellungen"

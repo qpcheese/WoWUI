@@ -1,4 +1,3 @@
--- Generated from CurseForge on Wed Jul 24 07:55:31 UTC 2024
 local ns = select(2, ...) ---@class ns @The addon namespace.
 
 if ns:IsSameLocale("zhTW") then
@@ -8,7 +7,7 @@ if ns:IsSameLocale("zhTW") then
 
 	L.LOCALE_NAME = "zhTW"
 
-L["ALLOW_IN_LFD"] = "允許用在地城搜尋器"
+	L["ALLOW_IN_LFD"] = "允許用在地城搜尋器"
 L["ALLOW_IN_LFD_CLASSIC"] = "允許在隊伍搜尋器"
 L["ALLOW_IN_LFD_CLASSIC_DESC"] = "在「隊伍搜尋器」中以滑鼠右鍵按一下隊伍或申請人以複製 Raider.IO 個人資料連結。"
 L["ALLOW_IN_LFD_DESC"] = "右鍵點擊地城搜尋器上的隊伍或申請人來複製Raider.IO設定檔網址。"
@@ -226,28 +225,17 @@ L["RAID_BOSS_AVOTI_5"] = "『超凡者』達西亞"
 L["RAID_BOSS_AVOTI_6"] = "庫洛格‧恐怖圖騰"
 L["RAID_BOSS_AVOTI_7"] = "幼龍守衛者戴恩娜"
 L["RAID_BOSS_AVOTI_8"] = "『噬風者』菈薩葛絲"
---[[Translation missing --]]
---[[ L["RAID_BOSS_BOT_1"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BOT_2"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BOT_3"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BOT_4"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BOT_5"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BWD_1"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BWD_2"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BWD_3"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BWD_4"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BWD_5"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_BWD_6"] = ""--]] 
+L["RAID_BOSS_BOT_1"] = "哈福斯．破龍者"
+L["RAID_BOSS_BOT_2"] = "瑟拉里恩和瓦莉歐娜"
+L["RAID_BOSS_BOT_3"] = "卓越者議會"
+L["RAID_BOSS_BOT_4"] = "丘加利"
+L["RAID_BOSS_BOT_5"] = "賽絲特拉"
+L["RAID_BOSS_BWD_1"] = "全能魔像防禦系統"
+L["RAID_BOSS_BWD_2"] = "熔喉"
+L["RAID_BOSS_BWD_3"] = "亞特拉米德"
+L["RAID_BOSS_BWD_4"] = "奇瑪隆"
+L["RAID_BOSS_BWD_5"] = "瑪洛里亞克"
+L["RAID_BOSS_BWD_6"] = "奈法利安的末路"
 L["RAID_BOSS_CN_1"] = "石嘯翼蝠"
 L["RAID_BOSS_CN_10"] = "戴納瑟斯王"
 L["RAID_BOSS_CN_2"] = "獵人亞提默"
@@ -335,10 +323,8 @@ L["RAID_BOSS_SOD_6"] = "痛苦工匠拉茲內爾"
 L["RAID_BOSS_SOD_7"] = "首創者的守護者"
 L["RAID_BOSS_SOD_8"] = "述命者羅卡洛"
 L["RAID_BOSS_SOD_9"] = "科爾蘇加德"
---[[Translation missing --]]
---[[ L["RAID_BOSS_TOTFW_1"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_TOTFW_2"] = ""--]] 
+L["RAID_BOSS_TOTFW_1"] = "風之議會"
+L["RAID_BOSS_TOTFW_2"] = "奧拉基爾"
 L["RAID_BOSS_VOTI_1"] = "伊拉諾格"
 L["RAID_BOSS_VOTI_2"] = "忒羅司"
 L["RAID_BOSS_VOTI_3"] = "洪荒議會"
@@ -347,10 +333,8 @@ L["RAID_BOSS_VOTI_5"] = "『超凡者』達西亞"
 L["RAID_BOSS_VOTI_6"] = "庫洛格‧恐怖圖騰"
 L["RAID_BOSS_VOTI_7"] = "幼龍守衛者戴恩娜"
 L["RAID_BOSS_VOTI_8"] = "『噬風者』菈薩葛絲"
---[[Translation missing --]]
---[[ L["RAID_BOT"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BWD"] = ""--]] 
+L["RAID_BOT"] = "暮光堡壘"
+L["RAID_BWD"] = "黑翼陷窟"
 L["RAID_DIFFICULTY_NAME_HEROIC"] = "英雄"
 L["RAID_DIFFICULTY_NAME_HEROIC10"] = "英雄10人"
 L["RAID_DIFFICULTY_NAME_HEROIC25"] = "英雄25人"
@@ -368,8 +352,7 @@ L["RAID_DIFFICULTY_SUFFIX_NORMAL25"] = "N25"
 L["RAID_ENCOUNTERS_DEFEATED_TITLE"] = "已擊敗的團隊首領"
 L["RAID_ICC"] = "冰冠城寨"
 L["RAID_RS"] = "晶紅聖所"
---[[Translation missing --]]
---[[ L["RAID_TOTFW"] = ""--]] 
+L["RAID_TOTFW"] = "四風王座"
 L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = "限時%s層的建議分數"
 L["RAIDERIO_BEST_RUN"] = "Raider.IO 大秘最佳紀錄"
 L["RAIDERIO_CLIENT_CUSTOMIZATION"] = "RaiderIO客戶端自訂"
@@ -495,5 +478,6 @@ L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "RaiderIO：您必須先取消M+紀錄�
 L["WARNING_RWF_MODE_ENABLE"] = "|cffFFFFFF%s|r 競賽世界第一模式為啟用。你如想停用請輸入|cffFFFFFF/raiderio rwf|r。"
 L["WIPE_RWF_MODE_BUTTON"] = "清除"
 L["WIPE_RWF_MODE_BUTTON_TOOLTIP"] = "單擊以從儲存檔中清除日誌。這將導致您的界面重新載入。"
+
 
 end

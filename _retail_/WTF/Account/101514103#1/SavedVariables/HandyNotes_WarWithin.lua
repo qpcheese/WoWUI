@@ -10,9 +10,9 @@ HandyNotes_WarWithinDB = {
 ["groupsHidden"] = {
 ["snuffling"] = false,
 ["glyphs"] = false,
-["beledarspawn"] = false,
-["beledar"] = false,
 ["professionknowledge"] = false,
+["beledar"] = false,
+["beledarspawn"] = false,
 ["races"] = false,
 },
 ["zonesHidden"] = {

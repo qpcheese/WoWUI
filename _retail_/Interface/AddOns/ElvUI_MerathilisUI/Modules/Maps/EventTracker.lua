@@ -18,6 +18,8 @@ local math_pow = math.pow
 local CreateFrame = CreateFrame
 local GetCurrentRegion = GetCurrentRegion
 local GetServerTime = GetServerTime
+local GetProfessions = GetProfessions
+local GetProfessionInfo = GetProfessionInfo
 local PlaySoundFile = PlaySoundFile
 
 local GetBestMapForUnit = C_Map.GetBestMapForUnit
@@ -32,7 +34,6 @@ local LeftButtonIcon = "|TInterface\\TUTORIALFRAME\\UI-TUTORIAL-FRAME:13:11:0:-1
 local eventList = {
 	-- TWW
 	-- "TWWProfessions",
-	"WorldSoul",
 	"KhazAlgarEmissary",
 	"TheaterTroupe",
 	"RingingDeeps",
@@ -174,7 +175,8 @@ local functionFactory = {
 			self.icon:CreateBackdrop("Transparent")
 			self.icon.backdrop:SetOutside(self.icon, 1, 1)
 			self.name = self:CreateFontString(nil, "OVERLAY")
-			self.completed = self:CreateFontString(nil, "OVERLAY")
+			self.completed = self:CreateTexture(nil, "ARTWORK")
+			self.completed:SetTexture("Interface\\AddOns\\ElvUI_MerathilisUI\\Media\\Textures\\UI-LFG-ICON-ROLES.blp")
 
 			self:SetScript("OnMouseDown", function()
 				if self.args.onClick then
@@ -194,11 +196,10 @@ local functionFactory = {
 			self.name:SetPoint("LEFT", self, "LEFT", 30, 0)
 			self.name:SetText(self.args.label)
 
-			module:SetFont(self.completed, 13)
 			self.completed:ClearAllPoints()
+			self.completed:SetSize(16, 16)
 			self.completed:SetPoint("RIGHT", self, "RIGHT", 0, 0)
-			self.completed:SetText(self.args.completedText)
-			self.completed:SetTextColor(C.RGBFromTemplate("greyLight"))
+			self.completed:SetTexCoord(F.GetRoleTexCoord("PENDING"))
 		end,
 		ticker = {
 			interval = 2,
@@ -223,8 +224,9 @@ local functionFactory = {
 
 			uiUpdater = function(self)
 				self.icon:SetDesaturated(self.args.desaturate and self.isCompleted)
-				self.completed:SetText(self.isCompleted and self.args.completedText or self.args.notCompletedText)
-				self.completed:SetTextColor(C.RGBFromTemplate(self.isCompleted and "greyLight" or "danger"))
+				local texCoord = self.isCompleted and { F.GetRoleTexCoord("READY") } or { F.GetRoleTexCoord("REFUSE") }
+				self.completed:SetTexCoord(unpack(texCoord))
+				self.completed:SetDesaturated(self.isCompleted)
 			end,
 			alert = E.noop,
 		},
@@ -909,29 +911,6 @@ local eventData = {
 			eventName = L["Professions Weekly"],
 			location = GetMapInfo(2339).name,
 			label = L["Professions Weekly"],
-			completedText = L["Completed"],
-			notCompletedText = L["Not Completed"],
-			onClick = worldMapIDSetter(2339),
-			onClickHelpText = L["Click to show location"],
-		},
-	},
-	WorldSoul = {
-		dbKey = "worldSoul",
-		args = {
-			icon = 2565092,
-			type = "weekly",
-			questIDs = {
-				82452,
-				82482,
-				82485,
-				82511,
-			},
-			hasWeeklyReward = true,
-			eventName = L["World Soul"],
-			location = GetMapInfo(2339).name,
-			label = L["World Soul"],
-			completedText = L["Completed"],
-			notCompletedText = L["Not Completed"],
 			onClick = worldMapIDSetter(2339),
 			onClickHelpText = L["Click to show location"],
 		},
@@ -942,15 +921,48 @@ local eventData = {
 			icon = 236681,
 			type = "weekly",
 			questIDs = {
-				83443,
-				83457,
+				82449,
+				82452,
+				82453,
+				82482,
+				82483,
+				82485,
+				82486,
+				82487,
+				82488,
+				82489,
+				82490,
+				82491,
+				82492,
+				82493,
+				82494,
+				82495,
+				82496,
+				82497,
+				82498,
+				82499,
+				82500,
+				82501,
+				82502,
+				82503,
+				82504,
+				82505,
+				82506,
+				82507,
+				82508,
+				82509,
+				82510,
+				82511,
+				82512,
+				82516,
+				82659,
+				82678,
+				82708,
 			},
 			hasWeeklyReward = true,
 			eventName = L["Khaz Algar Emissary"],
 			location = GetMapInfo(2339).name,
 			label = L["Khaz Algar Emissary"],
-			completedText = L["Completed"],
-			notCompletedText = L["Not Completed"],
 			onClick = worldMapIDSetter(2339),
 			onClickHelpText = L["Click to show location"],
 		},
@@ -960,7 +972,9 @@ local eventData = {
 		args = {
 			icon = 5788303,
 			type = "loopTimer",
-			questIDs = { 83240 },
+			questIDs = {
+				83240,
+			},
 			hasWeeklyReward = true,
 			duration = 15 * 60,
 			interval = 60 * 60,
@@ -997,13 +1011,13 @@ local eventData = {
 		args = {
 			icon = 2120036,
 			type = "weekly",
-			questIDs = { 83333 },
+			questIDs = {
+				83333,
+			},
 			hasWeeklyReward = true,
 			eventName = L["Ringing Deeps"],
 			location = GetMapInfo(2214).name,
 			label = L["Ringing Deeps"],
-			completedText = L["Completed"],
-			notCompletedText = L["Not Completed"],
 			onClick = worldMapIDSetter(2214),
 			onClickHelpText = L["Click to show location"],
 		},
@@ -1013,13 +1027,13 @@ local eventData = {
 		args = {
 			icon = 5927633,
 			type = "weekly",
-			questIDs = { 76586 },
+			questIDs = {
+				76586,
+			},
 			hasWeeklyReward = true,
 			eventName = L["Spreading The Light"],
 			location = GetMapInfo(2215).name,
 			label = L["Spreading The Light"],
-			completedText = L["Completed"],
-			notCompletedText = L["Not Completed"],
 			onClick = worldMapIDSetter(2215),
 			onClickHelpText = L["Click to show location"],
 		},
@@ -1029,13 +1043,15 @@ local eventData = {
 		args = {
 			icon = 5309857,
 			type = "weekly",
-			questIDs = { 80670, 80671, 80672 },
+			questIDs = {
+				80670,
+				80671,
+				80672,
+			},
 			hasWeeklyReward = true,
 			eventName = L["Underworld Operative"],
 			location = GetMapInfo(2255).name,
 			label = L["Underworld Operative"],
-			completedText = L["Completed"],
-			notCompletedText = L["Not Completed"],
 			onClick = worldMapIDSetter(2255),
 			onClickHelpText = L["Click to show location"],
 		},

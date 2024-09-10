@@ -40,20 +40,9 @@ function BLU:HandlePetBattleLevelChanged()
     self:HandleEvent("PET_BATTLE_LEVEL_CHANGED", "BattlePetLevelSoundSelect", "BattlePetLevelVolume", defaultSounds[2])
 end
 
-function BLU:HandlePerksActivityCompleted(_, activityID)
+function BLU:HandlePerksActivityCompleted()
     self:PrintDebugMessage("PERKS_ACTIVITY_COMPLETED_TRIGGERED")
     self:HandleEvent("PERKS_ACTIVITY_COMPLETED", "PostSoundSelect", "PostVolume", defaultSounds[9])
-
-    -- Retrieve the activity info table
-    local activityInfo = C_PerksActivities.GetActivityInfo(activityID)
-
-    -- Check if the activity info and name are valid
-    if activityInfo and activityInfo.activityName then
-        self:PrintDebugMessage("PERKS_ACTIVITY_COMPLETED_MSG" .. activityInfo.activityName)
-        print(BLU_PREFIX .. "PERKS_ACTIVITY_COMPLETED_MSG" .. activityInfo.activityName)
-    else
-        self:PrintDebugMessage("PERKS_ACTIVITY_ERROR")
-    end
 end
 
 --=====================================================================================
@@ -64,7 +53,7 @@ function BLU:ReputationChatFrameHook()
     if BLU.chatFrameHooked then return end
 
     ChatFrame_AddMessageEventFilter("CHAT_MSG_SYSTEM", function(_, _, msg)
-        self:PrintDebugMessage("INCOMING_CHAT_MESSAGE" .. msg)
+        self:PrintDebugMessage("INCOMING_CHAT_MESSAGE: " .. msg)
 
         local rankFound = false
         if string.match(msg, "You are now Exalted with") then
@@ -111,12 +100,6 @@ function BLU:ReputationChatFrameHook()
     BLU.chatFrameHooked = true
 end
 
--- Initialize a table to track the last processed time for each faction
-BLU.recentReputationRanks = BLU.recentReputationRanks or {}
-
--- Define the cooldown duration in seconds (e.g., 86400 for 24 hours)
-local COOLDOWN_DURATION = 15 -- 24 hours
-
 function BLU:ReputationRankIncrease(rank, msg)
     if self.functionsHalted then 
         self:PrintDebugMessage("FUNCTIONS_HALTED")
@@ -126,56 +109,44 @@ function BLU:ReputationRankIncrease(rank, msg)
     -- Extract the faction name from the message
     local factionName = string.match(msg, "with (.+)")
 
-    -- Get the current time
-    local currentTime = GetTime()
-
-    -- Check if the faction was processed recently
-    if factionName and self.recentReputationRanks[factionName] and (currentTime - self.recentReputationRanks[factionName] < COOLDOWN_DURATION) then
-        self:PrintDebugMessage("Duplicate reputation rank increase for " .. factionName .. ", skipping.")
-        return
-    end
-
-    -- Update the last processed time for the faction
-    if factionName then
-        self.recentReputationRanks[factionName] = currentTime
-    end
-
     self:PrintDebugMessage("Reputation rank increase triggered for rank: " .. rank .. " with faction: " .. factionName)
     local sound = self:SelectSound(self.db.profile.RepSoundSelect)
     if not sound then
-        self:PrintDebugMessage("ERROR_SOUND_NOT_FOUND" .. self.db.profile.RepSoundSelect)
+        self:PrintDebugMessage("ERROR_SOUND_NOT_FOUND: " .. self.db.profile.RepSoundSelect)
         return
     end
     local volumeLevel = self.db.profile.RepVolume
     self:PlaySelectedSound(sound, volumeLevel, defaultSounds[6])
 end
 
-
-
 --=====================================================================================
 -- Delve Level-Up Event Handler
 --=====================================================================================
-function BLU:DelveLevelUpChatFrameHook()
+function BLU:OnDelveCompanionLevelUp(event, ...)
+    -- Print debug message for the triggering event
+    self:PrintDebugMessage(event .. " event fired, awaiting CHAT_MSG_SYSTEM for confirmation.")
 
-    ChatFrame_AddMessageEventFilter("CHAT_MSG_SYSTEM", function(_, _, msg)
-        self:PrintDebugMessage("INCOMING_CHAT_MESSAGE" .. msg)
+    -- Only proceed with the CHAT_MSG_SYSTEM event to finalize the check
+    if event == "CHAT_MSG_SYSTEM" then
+        local msg = ...
+        self:PrintDebugMessage("INCOMING_CHAT_MESSAGE: " .. msg)
 
-        local level = string.match(msg, "Brann Bronzebeard has reached Level")
-        if level and tonumber(level) >= 1 and tonumber(level) <= 999 then
-            self:PrintDebugMessage("Brann Bronzebeard has leveled up!")
-            self:HandleDelveLevelUp(level)
+        -- Check if Brann's level-up message is found in the chat
+        local levelUpMatch = string.match(msg, "Brann Bronzebeard has reached Level (%d+)")
+        if levelUpMatch then
+            local level = tonumber(levelUpMatch)
+            self:PrintDebugMessage("|cff00ff00Brann Level-Up detected: Level " .. level .. "|r")
+            self:TriggerDelveLevelUpSound(level)
         else
-            self:PrintDebugMessage("NO_BRANN_LEVEL_FOUND")
+            self:PrintDebugMessage("NO_LEVEL_FOUND")
         end
-
-        return false
-    end)
+    end
 end
 
 --=====================================================================================
--- Handle Delve Level-Up Detection
+-- Trigger Sound on Delve Level-Up
 --=====================================================================================
-function BLU:HandleDelveLevelUp(level)
+function BLU:TriggerDelveLevelUpSound(level)
     if self.functionsHalted then
         self:PrintDebugMessage("Functions halted. Event not processed.")
         return
@@ -233,5 +204,3 @@ end
 function BLU:TestRepSound()
     self:TestSound("RepSoundSelect", "RepVolume", defaultSounds[6], "TEST_REP_SOUND")
 end
-
-

@@ -462,7 +462,7 @@ function MER:SetupLayout()
 	E.db["bags"]["bagSize"] = 34
 	E.db["bags"]["bagWidth"] = 433
 	E.db["bags"]["bankSize"] = 34
-	E.db["bags"]["bankWidth"] = 427
+	E.db["bags"]["bankWidth"] = 600
 	E.db["bags"]["moneyFormat"] = "CONDENSED"
 	E.db["bags"]["itemLevelThreshold"] = 1
 	E.db["bags"]["junkIcon"] = true
@@ -550,7 +550,7 @@ function MER:SetupLayout()
 	E.db["movers"]["MER_EquipmentSetsBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-75,14"
 	E.db["movers"]["MER_MicroBarMover"] = "TOP,ElvUIParent,TOP,0,-19"
 	E.db["movers"]["MER_OrderhallMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,2-2"
-	E.db["movers"]["MER_RaidBuffReminderMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,2,-12"
+	E.db["movers"]["MER_RaidBuffReminderMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,2,-20"
 	E.db["movers"]["MER_RaidManager"] = "TOPLEFT,ElvUIParent,TOPLEFT,268,-15"
 	E.db["movers"]["MER_MinimapButtonsToggleButtonMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,0,184"
 	E.db["movers"]["MER_NotificationMover"] = "TOP,ElvUIParent,TOP,0,-70"
@@ -2430,7 +2430,7 @@ function MER:SetupDts()
 				["fontSize"] = 10,
 				["fontOutline"] = "SHADOWOUTLINE",
 			},
-			["height"] = 20,
+			-- ["height"] = 20,
 			["numPoints"] = 1,
 			["backdrop"] = false,
 			["visibility"] = "[petbattle][combat] hide;show",

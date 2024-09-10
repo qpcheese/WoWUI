@@ -369,15 +369,15 @@ options.scale = {
 					max = 2,
 					step = 0.05,
 				},
-				professions = {
+				profession = {
 					order = 5,
 					type = "range",
-					name = L["Professions Book"],
+					name = L["Profession"],
 					get = function(_)
-						return E.db.mui.scale.professions.scale
+						return E.db.mui.scale.profession.scale
 					end,
 					set = function(_, value)
-						E.db.mui.scale.professions.scale = value
+						E.db.mui.scale.profession.scale = value
 						MI:Scale()
 					end,
 					min = 0.5,
@@ -410,6 +410,111 @@ options.scale = {
 					end,
 					set = function(_, value)
 						E.db.mui.scale.groupFinder.scale = value
+						MI:Scale()
+					end,
+					min = 0.5,
+					max = 3,
+					step = 0.05,
+				},
+				itemUpgrade = {
+					order = 8,
+					type = "range",
+					name = L["Item Upgrade"],
+					get = function(_)
+						return E.db.mui.scale.itemUpgrade.scale
+					end,
+					set = function(_, value)
+						E.db.mui.scale.itemUpgrade.scale = value
+						MI:Scale()
+					end,
+					min = 0.5,
+					max = 3,
+					step = 0.05,
+				},
+				equipmentFlyout = {
+					order = 9,
+					type = "range",
+					name = L["Equipment Upgrade"],
+					get = function(_)
+						return E.db.mui.scale.equipmentFlyout.scale
+					end,
+					set = function(_, value)
+						E.db.mui.scale.equipmentFlyout.scale = value
+						MI:Scale()
+					end,
+					min = 0.5,
+					max = 3,
+					step = 0.05,
+				},
+				vendor = {
+					order = 10,
+					type = "range",
+					name = L["Vendor"],
+					get = function(_)
+						return E.db.mui.scale.vendor.scale
+					end,
+					set = function(_, value)
+						E.db.mui.scale.vendor.scale = value
+						MI:Scale()
+					end,
+					min = 0.5,
+					max = 3,
+					step = 0.05,
+				},
+				classTrainer = {
+					order = 11,
+					type = "range",
+					name = L["Class Trainer"],
+					get = function(_)
+						return E.db.mui.scale.classTrainer.scale
+					end,
+					set = function(_, value)
+						E.db.mui.scale.classTrainer.scale = value
+						MI:Scale()
+					end,
+					min = 0.5,
+					max = 3,
+					step = 0.05,
+				},
+				gossip = {
+					order = 12,
+					type = "range",
+					name = L["Gossip"],
+					get = function(_)
+						return E.db.mui.scale.gossip.scale
+					end,
+					set = function(_, value)
+						E.db.mui.scale.gossip.scale = value
+						MI:Scale()
+					end,
+					min = 0.5,
+					max = 3,
+					step = 0.05,
+				},
+				quest = {
+					order = 13,
+					type = "range",
+					name = L["Quest"],
+					get = function(_)
+						return E.db.mui.scale.quest.scale
+					end,
+					set = function(_, value)
+						E.db.mui.scale.quest.scale = value
+						MI:Scale()
+					end,
+					min = 0.5,
+					max = 3,
+					step = 0.05,
+				},
+				mailbox = {
+					order = 14,
+					type = "range",
+					name = L["Mailbox"],
+					get = function(_)
+						return E.db.mui.scale.mailbox.scale
+					end,
+					set = function(_, value)
+						E.db.mui.scale.mailbox.scale = value
 						MI:Scale()
 					end,
 					min = 0.5,
@@ -850,7 +955,7 @@ options.automation = {
 options.contextMenu = {
 	order = 15,
 	type = "group",
-	name = E.NewSign .. L["Context Menu"],
+	name = L["Context Menu"],
 	get = function(info)
 		return E.db.mui.misc.contextMenu[info[#info]]
 	end,

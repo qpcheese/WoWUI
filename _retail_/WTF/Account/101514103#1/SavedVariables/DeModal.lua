@@ -11,15 +11,6 @@ DEMODAL_DB = {
 50.00007629394531,
 },
 },
-["ProfessionsBookFrame"] = {
-{
-"LEFT",
-"UIParent",
-"LEFT",
-337.0002746582031,
-115.9999771118164,
-},
-},
 ["ProfessionsFrame"] = {
 {
 "LEFT",
@@ -29,6 +20,15 @@ DEMODAL_DB = {
 -76.99989318847656,
 },
 },
+["QuestFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+22.00003242492676,
+2.99998950958252,
+},
+},
 ["AuctionHouseFrame"] = {
 {
 "LEFT",
@@ -36,6 +36,15 @@ DEMODAL_DB = {
 "LEFT",
 24.99998474121094,
 87.99996948242188,
+},
+},
+["ProfessionsBookFrame"] = {
+{
+"LEFT",
+"UIParent",
+"LEFT",
+337.0002746582031,
+115.9999771118164,
 },
 },
 },

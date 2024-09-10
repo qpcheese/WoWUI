@@ -1097,6 +1097,19 @@ options.blizzard.args.friendsList = {
 				return not E.db.mui.blizzard.friendsList.enable
 			end,
 			args = {
+				hideRealm = {
+					order = 1,
+					type = "toggle",
+					name = L["Hide Realm"],
+					desc = L["Hide the realm name of friends."],
+					get = function()
+						return E.db.mui.blizzard.friendsList.hideRealm
+					end,
+					set = function(_, value)
+						E.db.mui.blizzard.friendsList.hideRealm = value
+						FriendsFrame_Update()
+					end,
+				},
 				font = {
 					order = 2,
 					type = "group",
@@ -1156,7 +1169,7 @@ options.blizzard.args.friendsList = {
 options.blizzard.args.turnIn = {
 	order = 7,
 	type = "group",
-	name = E.NewSign .. L["Turn In"],
+	name = L["Turn In"],
 	get = function(info)
 		return E.db.mui.quest.turnIn[info[#info]]
 	end,
@@ -1350,7 +1363,7 @@ options.blizzard.args.turnIn = {
 options.blizzard.args.switchButtons = {
 	order = 8,
 	type = "group",
-	name = E.NewSign .. L["Switch Buttons"],
+	name = L["Switch Buttons"],
 	get = function(info)
 		return E.db.mui.quest.switchButtons[info[#info]]
 	end,

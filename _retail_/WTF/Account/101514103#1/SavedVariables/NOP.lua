@@ -9,11 +9,11 @@ NewOpenablesProfile = {
 ["version"] = "|cFFFFFFFFv1.10m use |cFFFF00FF/nop|cFFFFFFFF",
 },
 ["profileKeys"] = {
+["Qtte - Sylvanas"] = "Default",
 ["Qpaladin - Ragnaros"] = "Default",
-["Sikducker - Sylvanas"] = "Default",
 ["Kaijid - Ragnaros"] = "Default",
 ["Gammelemil - Grim Batol"] = "Default",
-["Qtte - Sylvanas"] = "Default",
+["Sikducker - Sylvanas"] = "Default",
 ["Qute - Sylvanas"] = "Default",
 ["Qpfromage - Sylvanas"] = "Default",
 ["Dogson - Ragnaros"] = "Default",
@@ -34,8 +34,8 @@ nil,
 ["T_BLACKLIST"] = {
 [211416] = true,
 [211515] = true,
-[210421] = true,
 [210246] = true,
+[210421] = true,
 [0] = true,
 },
 ["qb"] = {
